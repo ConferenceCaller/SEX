@@ -1,0 +1,64 @@
+﻿l_english:
+
+ BM_TradeGood_Events.1.t: "Commercial Whaling"
+ BM_TradeGood_Events.1.d: "In the 1600s regular voyages were made into the Arctic to practice whaling. They were led by Basque specialists, who became the first to practice commecial whaling. The demand for whale goods and competition between whaling nations ensured prices remained high."
+ BM_TradeGood_Events.1.a: "Yes, Please"
+ COMMERCIAL_WHALING: "Commercial Whaling"
+ whaling_tooltip: "Every §YFish§! province in the §YNorth Sea§!, §YGulf of St. Lawrence§!, §YHudson Bay§!, and §YWhite Sea§! will receive §G+1§! Base Production. \nSeveral important Whaling stations will be established across the §YNorth Sea§!."
+
+ CM_new_trade_good_whaling_mod: "Commercialised Whaling"
+ desc_CM_new_trade_good_whaling_mod: ""
+
+
+ BM_TradeGood_Events.2.t: "Reinheitsgebot"
+ BM_TradeGood_Events.2.d: "The Reinheitsgebot was adopted as perhaps the oldest food regulation in european history. The Gebot ordered that the ingredients of beer be restricted to water, barley, and hops. Food regulation law was applied throughout Germany and made beer more scarce, but crucially, more lucrative as a business which jumpstarted several breweries across Germany and Bohemia."
+ BM_TradeGood_Events.2.a: "This calls for a feast, perhaps in October?"
+ REIN: "Reinheitsgebot"
+ beer_tooltip: "Every §YGrain§! province in §YNorth Germany§! and §YSouth Germany§! will receive §G+1§! Base Production. \nSeveral important breweries will be established across §YGermany§!."
+
+ CM_new_trade_good_beer_mod: "Reinheitsgebot"
+ desc_CM_new_trade_good_beer_mod: ""
+
+
+ BM_TradeGood_Events.3.t: "Introducing potatoes to Europe"
+ BM_TradeGood_Events.3.d: "The potato was introduced into the Europe in the second half of the 16th century, part of the Columbian exchange. The staple was subsequently conveyed by European mariners to territories and ports throughout the world."
+ BM_TradeGood_Events.3.a: "Great"
+ potato_tooltip: "Every European §YGrain§! province has a §G25.0%§! chance of getting:"
+
+ CM_new_trade_good_potato_mod: "Potatoes"
+ desc_CM_new_trade_good_potato_mod: ""
+
+
+ BM_TradeGood_Events.4.t: "Cheese variations"
+ BM_TradeGood_Events.4.d: "With the passing the advancements in preservaments and the cheese-making art in Europe, the expansion into new cheese variations like Cheddar or Parmesan led to integration of various cheeses into French, Dutch and Italian cuisine."
+ BM_TradeGood_Events.4.a: "Great"
+
+ CM_new_trade_good_cheese_mod: "Cheese Center"
+ desc_CM_new_trade_good_cheese_mod: ""
+
+
+ BM_TradeGood_Events.5.t: "Introducing tomatoes to Europe"
+ BM_TradeGood_Events.5.d: "The tomato was introduced into Europe in the second half of the 16th century as part of the Columbian exchange. The staple was subsequently conveyed by European mariners to territories and ports throughout the world, becoming an essential ingredient in many cooking recipes across West European and the Mediterranean."
+ BM_TradeGood_Events.5.a: "Fantastic!"
+ tomato_tooltip: "Every §YGrain§!, §YWine§!, or §YLivestock§! province in the §YIberian§!, §YFrench§!, §YItalian§!, or §YBalkan§! region has a §G10.0%§! chance of getting:"
+ CM_new_trade_good_tomato_mod: "Tomatoes"
+ desc_CM_new_trade_good_tomato_mod: ""
+
+ BM_TradeGood_Events.6.t: "Effects of Deforestation"
+ BM_TradeGood_Events.6.d: "As the world population grows and ever more land is being cleared for farming, alongside increasing demands for wood for various industries, especially the maritime, the world has subsequently grown more deforested, leading to a shortage in lumber and higher prices."
+ BM_TradeGood_Events.6.a: "A log, a log, my kingdom for a log!"
+ DEFORESTATION_HAPPEN: "Deforestation"
+
+
+ BM_TradeGood_Events.7.t: "Collapse of the Silk Road"
+ BM_TradeGood_Events.7.d: "As the Celestial Empire fragments itself into various feudatory states, the once reliable supply of silk fabrics and fine porcelain have been strangled by chaos and civil war. Merchants from Beijing to Constantinople have abandoned the Silk Road as trade in the Orient becomes dangerous and unstable."
+ BM_TradeGood_Events.7.a: "Not the silk!"
+ COLLAPSE_OF_THE_SILK_ROAD: "Collapse of the Silk Road"
+ FALL_OF_THE_SILK_ROAD: "Collapse of the Silk Road"
+ silk_road_tooltip: "Every Country in §YChina§! will lose §R20 Trade Power§! along the §YSilk Road§!."
+
+
+ BM_TradeGood_Events.8.t: "Decline of Cavalry"
+ BM_TradeGood_Events.8.d: "The emergence of gunpowder weaponry and changes in military tactics have reduced the demand for war horses. As a result, horse prices have declined significantly in recent years, presenting both challenges and opportunities for our equestrian industry."
+ BM_TradeGood_Events.8.a: "Adapt to New Roles"
+ DECLINE_OF_CAVALRY: "Decline of Cavalry"

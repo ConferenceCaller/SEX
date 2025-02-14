@@ -1,0 +1,305 @@
+﻿l_english:
+
+
+ #POLAND
+ CM_moreflavour_POL.1.t: "Incorporation of Rawa and Belz to the Crown"
+ CM_moreflavour_POL.1.d: "In 1462, as a result of the tragic death of the reigning Duke of Mazovia, the Polish Crown has incorporated the territories of Rawa and Belz into the Kingdom. Attempts were made to incorporate the state fully, but the keen politics and the opposition of the Mazovian Nobility has successfully prevented that from happening."
+ CM_moreflavour_POL.1.a: "Splendid."
+ CM_moreflavour_POL.1.b: "We cannot risk to displease the Mazovian Dukes!"
+
+
+ CM_moreflavour_POL.2.t: "Founding of Zamosc"
+ CM_moreflavour_POL.2.d: "Zamosc, Padua of the North, Pearl of the Renaissance, was a city founded by Jan Zamoyski, one of the most important political figures and magnates in the Commonwealth of his time. The city was built from scratch and was meant to be both functional, and as a splendid residence of the Zamoyski family. The city was built as per the ideals of Renaissance architecture, with some solutions introduced based on its unique location."
+ CM_moreflavour_POL.2.a: "While he may be rich, he could use more funds for sure!"
+ CM_moreflavour_POL.2.b: "Great news to hear!"
+
+
+ CM_moreflavour_POL.3.t: "Wieliczka Salt Mine"
+ CM_moreflavour_POL.3.d: "The Wieliczka salt mine located in the outskirts of Krakow has since the 13th century been excavated for its deposits of rock salt. King Casimir III 'the Great' contributed greatly to the development of the mine during his reign, granting it many privileges and taking the miners under his care. It is often described that 'he turned a Poland of Wood into a Poland of stone' due to the great amount of that was cut down to use in various constructions across Poland, the Wieliczka mine included. \nEven today in the 15th century, the salt mine is one of the most profitable businesses of Krakow, and of the Polish Kingdom."
+ CM_moreflavour_POL.3.a: "We should fund further excavations!"
+ CM_moreflavour_POL.3.b: "Investments should be evenly spread in Krakow."
+
+ CM_moreflavour_POL_wieliczka_mine: "Wieliczka Salt Mine"
+ desc_CM_moreflavour_POL_wieliczka_mine: ""
+
+
+ CM_moreflavour_POL.4.t: "Kraków Printing Industry"
+ CM_moreflavour_POL.4.d: "Beginning in 1473, the Polish printing industry began in Kraków as part of the Polish Renaissance. This marked the beginning of the Polish Golden Age where academies of arts and science, universities for education, and architectural revolution greatly contributed to Poland, and later the Commonwealth, being able to compete with its neighbours until the early 17th century. In Kraków alone there were 8 printing houses with up to 20 across the Commonwealth."
+ CM_moreflavour_POL.4.a: "Fund the Printing Houses."
+ CM_moreflavour_POL.4.b: "Fund the Jagiellon University."
+ CM_moreflavour_POL.4.c: "Fund both the University and the Printing Industry!"
+ CM_moreflavour_POL.4.e: "Diamon- I mean Salt is forever!"
+
+ CM_moreflavour_POL_krakow_printing: "Kraków Printing Industry"
+ desc_CM_moreflavour_POL_krakow_printing: ""
+
+
+
+
+
+
+ #NAPLES
+ CM_moreflavour_NAP.1.t: "The Kingdom of Naples"
+ CM_moreflavour_NAP.1.d: "The Court of Naples was at this time one of the most refined and open to cultural innovations of the Renaissance; they were guests of Alfonso Lorenzo Valla, who durng his stay in Naples denounced the false historian of Constantine's donation, the humanist Antonio Beccadelli and the Greek Emanuele Crisolora. Alfonso was also responsible for the reconstruction of Castel Nuovo. The administrative structure of the kingdom remained roughly the same as during the 'Angevin Age', however, the powers of the ancient rulers had been considerably reduced as local nobles, both Neapolitan and Aragonese would vie for power over the Kingdom."
+ CM_moreflavour_NAP.1.a: "Let us shake of Arragonese oppression!"
+ CM_moreflavour_NAP.1.b: "A new century for Naples!"
+
+ CM_moreflavour_NAP_struggle_anew: "Struggle Anew"
+ desc_CM_moreflavour_NAP_struggle_anew: ""
+
+
+ CM_moreflavour_NAP.2.t: "Neapolitan Renaissaince"
+ CM_moreflavour_NAP.2.d: "Franco-Flemish influence dominated the artistic scene, linked to political and, in part, commercial routes. The numerous foreign artists made the city of Napoli a center for artistic and cultural exchange. During this time, several schools for artisanship, architecture and religous studies were established which attracted many new-thinkers of the renaissaince."
+ CM_moreflavour_NAP.2.a: "Let's hire one of those 'free-thinkers'."
+ CM_moreflavour_NAP.2.b: "Perhaps there's an architect who we can employ?"
+ CM_moreflavour_NAP.2.c: "Those Flemish painters sure are good."
+
+ CM_moreflavour_NAP_scuola_siciliana: "Scuola Siciliana"
+ desc_CM_moreflavour_NAP_scuola_siciliana: ""
+
+
+ CM_moreflavour_NAP.3.t: "Granary of the Kingdom"
+ CM_moreflavour_NAP.3.d: "In the Bourbon Kingdom, as in the other pre-unification states, agricutlure was the predominant sector of the economy. The climatic conditions of Sicily and Naples proved to be perfect for the production of wheat, barley, oats, legumes, oil, and later potatoes. Other important cultivations were citrus, fruits and other plants which suited the Mediterranean climate, such as the olive tree, the vine, figs, cherries, chestnuts, hazelnuts, walnuts and almonds. The most important economic factor for Sicily, Naples and later the Two Sicilies was of course the sheeps, horses and pigs who provided wool, meat and workhorses that complimented all other agricultural productions."
+ CM_moreflavour_NAP.3.a: "Agrarianism is the future!"
+ CM_moreflavour_NAP_agrarianism: "Agrarianism"
+ desc_CM_moreflavour_NAP_agrarianism: ""
+ CM_moreflavour_NAP_agrarianism_TT: "By being the leading producer or producing at least §Y10.0§! unit(s) of §YWool§! we will get:"
+ CM_moreflavour_NAP_agrarianism_TT2: "Up to §Y5§! provinces that produce §YWool§ or §YLivestock§ will get §G+2§! £dip£ Production Development and change their trade goods to §YCloth§!."
+
+ CM_moreflavour_NAP.4.t: "The Enclosures"
+ CM_moreflavour_NAP.4.d: "With the emergence of a more predominant bourgeoisie, and the drop in wool prices, a focus has shifted towards the implementation of new agricultural techniques that can maximise the profitability of farms and pastures. Several economists has proposed that we commit to a project of 'enclosures', which would effectively evict the peasantry from the rural farmlands, leaving them no choice but to move into towns and cities, leaving the farms and the cattle for the state to seize and utilize."
+ CM_moreflavour_NAP.4.a: "Upkeep of sheep divided by amount of land X price of Wool = A lot of ducats."
+ CM_moreflavour_NAP_agrarianism_TT3: "\n§Y5§! provinces that produce §YWool§! or §YLivestock§! will get §G+2§! £dip£ Production Development and change their trade goods to §YCloth§!."
+ CM_moreflavour_NAP_enclosures: "The Enclosures"
+ desc_CM_moreflavour_NAP_enclosures: ""
+
+
+
+ #OTTOMANS
+ CM_moreflavour_TUR.1.t: "The submission of Athens"
+ CM_moreflavour_TUR.1.d: "With the fall of Constantinople and the complete subjugation of the remnants of the Byzantine Empire, only the grand city of Athens stands. Surrounded on all sides and diplomatically isolated, the Mayor and Duke of Athens has submitted the formal surrender of the city as to avoid any unnecessary bloodshed. It is now up to us to decide what to do with it. The Athenian elite has urged for some semblance of sovereignty by serving the Ottomans as a vassal, meanwhile the Morean Palaiologos dynasty has historical, cultural and religious connections with Athens and could incorporate the city with ease. We could also just formally annex it as another province in our Empire."
+ CM_moreflavour_TUR.1.a: "Vassalization is befitting that of a City-State."
+ CM_moreflavour_TUR.1.b: "Let the Moreans have Athens, it is easier to manage just one subject."
+ CM_moreflavour_TUR.1.c: "Athens is an important coastal city, one which we must control!"
+
+ BM_TUR_higher_vassal_dues: "The City of Athens"
+ desc_BM_TUR_higher_vassal_dues: ""
+
+
+
+
+ # TIMURID AND TIMURID PRINCES
+ # Events:
+ ME_Timurid_Princes_Event.1.t: "Ulugh Beg - The Pride of Samarkand"
+ ME_Timurid_Princes_Event.1.d: "Atop the rich throne of Transoxiana sits grandson of Tamerlane, Ulugh Beg himself. Among the princes of the Timurid Empire, Beg was in perhaps the best position in 1444. He exerted considerable influence over the Silk Road, controlling one of its main stops: Samarkand. The only true danger to Transoxiana was the Uzbek Horde, which launched dozens of border raids of the years. The Chagatai sit to the east, weakened and ripe for the taking. To our west, the Khorasani wait patiently for the death of Shah Rukh, though hardly in a state to begin their conquests. Ulugh Beg is the only prince in a truly favorable position, which he will undoubtedly use to his advantage."
+ ME_Timurid_Princes_Event.1.a: "He is not only a competent leader, but a true Thinker-Prince!"
+
+ ME_Timurid_Princes_Event.2.t: "Babur bin Baysunkur - The Combatant of Khorasan"
+ ME_Timurid_Princes_Event.2.d: "Babur bin Baysunkur, also known as Abul-Qasim Babur Mirza, was perhaps the greatest strategist of the Timurid brothers. Though his holdings were relatively small, he would move on to defeat the Transoxianians in combat, nearly restoring the Timurid Empire to its height under Shah Rukh. Khorasan sits in a somehwat troubling position: a handful of Persian nations to the west offer promising expansion, but if we cannot deal with Ulugh Beg, he will surely spell our downfall."
+ ME_Timurid_Princes_Event.2.a: "Very well"
+
+ ME_Timurid_Princes_Event.3.t: "Malik Mahmud - Ruler of Sistan"
+ ME_Timurid_Princes_Event.3.d: "Malik Mahmud sits upon a crumbling throne. Not a Timurid himself, he receives no special care at the hands of Shah Rukh. He is not a prince of the empire, but merely a vassal, forced to serve. The situation does not appear favorable, but anything can happen in the heat of battle."
+ ME_Timurid_Princes_Event.3.a: "Perhaps an opportunity will present itself to us?"
+
+ ME_Timurid_Princes_Event.4.t: "Death of Ulugh Beg"
+ ME_Timurid_Princes_Event.4.d: "Just like Shah Rukh perished decades ago, so did the benevolent Ulugh Beg, leaving the state in temporary turmoil. A great scholar, he helped push the scientific fields further, while also ruling his domain. For his great deeds, he was consequently nicknamed 'Ulugh Beg' which means 'Great Ruler'."
+ ME_Timurid_Princes_Event.4.a: "We mourn this loss."
+
+ ME_Timurid_Princes_Event.8.t: "Karatshar bin Soyurghatmish - The Governor in Kabul"
+ ME_Timurid_Princes_Event.8.d: "In 1444, Afghanistan is ruled by Karatshar bin Soyurghatmish, member of the Timurid Dynasty. Not much is known by his reign, except for the fact that he avoided conflict."
+ ME_Timurid_Princes_Event.8.a: "Ok"
+
+ ME_Timurid_Princes_Event.9.t: "Mu'izz al-Din Malik- The Regency of Farsistan"
+ ME_Timurid_Princes_Event.9.d: "The state of Fars is currently plunged in turmoil caused by the Regency."
+ ME_Timurid_Princes_Event.9.a: "Ok"
+
+ ME_Timurid_Princes_Event.10.t: "Muhammad bin Baysonqor - Rebel of the West"
+ ME_Timurid_Princes_Event.10.d: "Muhammad bin Baysonqor, born a son of the Shah Rukh, is now up in arms against his former overlord, who is also his father. Will he prevail or will he succumb to his the wrath of his father? Only time will tell."
+ ME_Timurid_Princes_Event.10.a: "Ok"
+
+
+ ME_Timurid_Princes_Event.11.t: "The Crisis of the Timurids"
+ ME_Timurid_Princes_Event.11.d: "With the death of Shah Rukh, the Empire that Timur established in Central Asia has come to an existential precipice. The Timurid princes has seized the tumultuous vacuum that Shah Rukh left, demanding help with their external and internal issues, or maybe they are simply seeking to strengthen their hold on the region as heir to the throne. Whatever it may be, refusing their demands will cause much disturbance with our subjects, though it will keep our immediate iron grip for now."
+ ME_Timurid_Princes_Event.11.a: "Send our envoys to meet with our Transoxianan subjects first."
+
+ ME_Timurid_Princes_Event.12.t: "The Demands of Transoxiana"
+ ME_Timurid_Princes_Event.12.d: "The Transoxianan prince is the strongest claimant to the Timurid throne and is not only militarily powerful, but also highly prestigious with its observatories, thriving culture and strong grip over Samarkand, a important trading hub for the Silk Road. It is not without its issues however, the northern border is hard to defend against Tatar, Kazakh and Uzbek raids. The Transoxianan prince not only demands help with these border raids but also urges a return of territories they consider falls under Transoxianan jurisdiction."
+
+ ME_Timurid_Princes_EventOPTION.12.a: "Transoxiana will receive nothing!"
+ ME_Timurid_Princes_EventOPTION.12.b: "We simply cannot help them, and those territories are rightfully ours!"
+ ME_Timurid_Princes_EventOPTION.12.c: "They ask for soldiers, and soldiers they shall receive."
+ ME_Timurid_Princes_EventOPTION.12.d: "What do I care for a couple border towns, we must spare every man for ourselves."
+ ME_Timurid_Princes_EventOPTION.12.e: "I suppose their requests will be approved, if nothing else than to appease them."
+
+
+ ME_Timurid_Princes_Event.13.t: "The Demands of Afghanistan"
+ ME_Timurid_Princes_Event.13.d: "Afghanistan, though one of the weaker Timurid princes, still holds significant power in the east. With cities like Jhalabad, Roh, Kandahar, and most importantly, Kabul, the Afghani people has managed to establish a considerable powerbase in the eastern territories. Still, many Afghani people do not reside within the borders that the Afghani princedom holds, but within our domain, something that the prince of Afghanistan has now begged to rectify. Kabul has also fallen into decay after civil wars and internal conflicts and require an investment that only the treasury of the Timurid Empire can afford."
+ ME_Timurid_Princes_EventOPTION.13.a: "They think that we will bow to mere mountain princes?! Outlandish!"
+ ME_Timurid_Princes_EventOPTION.13.b: "Those lands are ours, regardless of cultural identity!"
+ ME_Timurid_Princes_EventOPTION.13.c: "I suppose we can afford to rebuild the city."
+ ME_Timurid_Princes_EventOPTION.13.d: "It is a majority-afghan territory after all. They can have it."
+ ME_Timurid_Princes_EventOPTION.13.e: "Of course we shall grant them whatever they need. Benevolence is the duty of the ruler."
+
+ ME_Timurid_Princes_Event.14.t: "The Demands of Khorasan"
+ ME_Timurid_Princes_Event.14.d: "Khorasan houses the most elite of the Timurid armies, with their military prowess they have managed to form their own faction within the borders of the Timurid Empire. So far the demands of the princes have been relatively tame, the Khorasani military elite has come with outlandish requests for even more land and military support. Not only do they want our northern territories, but a permanent seat in our court as commanders as well as men to fuel their armies. It would seem that their ambitions rival those of ours as these demands have even come with the threat of war if they are not given."
+ ME_Timurid_Princes_EventOPTION.14.a: "Who do they think they are?! Timur himself?!"
+ ME_Timurid_Princes_EventOPTION.14.b: "These demands are simply too much!"
+ ME_Timurid_Princes_EventOPTION.14.c: "We must give in, we require their armies for war."
+
+ ME_Timurid_Princes_Event.15.t: "The Demands of Fars" 
+ ME_Timurid_Princes_Event.15.d: "Fars is the lesser prince in our collection of subjects. Often struggling with internal squabbles between the native Persian governors and the foreign Uzbek rulers, the Farsi princedome has little to demand at the negotiation table. A simple request to finance a new market district in Siraf is all that has been proposed."
+ ME_Timurid_Princes_EventOPTION.15.a: "Hah! They think we are so careless with our money?"
+ ME_Timurid_Princes_EventOPTION.15.b: "We simply don't have the funds to support this."
+ ME_Timurid_Princes_EventOPTION.15.c: "That's all they're asking for? Grant it."
+
+ ME_Timurid_Princes_Event.16.t: "The Demands of The Nobles"
+ ME_Timurid_Princes_Event.16.d: "The Timurid nobles hold considerable power in both the countryside, and in the inner courts. They have now deemed our current heir inadequate for their standards and have instead proposed someone more 'appropriate'. Naturally this heir is the son of the mightiest noble family in our country. Should we refuse, we can expect the nobles to retaliate violently."
+ ME_Timurid_Princes_EventOPTION.16.a: "The current heir is both rightful heir and more adequate than this buffoon!"
+ ME_Timurid_Princes_EventOPTION.16.b: "We cannot decline the demands of our nobles, they hold too much power."
+
+ ME_Timurid_Princes_Event.17.t: "The Timurid Crisis passes"
+ ME_Timurid_Princes_Event.17.d: "Despite numerous troubles, we have overcome all of them. The Timurid Crisis as it has been called has passed and is now behind us."
+ ME_Timurid_Princes_EventOPTION.17.a: "A bright future is ahead of us!"
+
+
+ #MODIFIERS:
+ BM_Transoxiana_Ulugh_Beg: "Pride of Samarkand"
+ desc_BM_Transoxiana_Ulugh_Beg: ""
+
+ ME_Khorasan_Babur: "Combatant of Khorasan"
+ desc_ME_Khorasan_Babur: ""
+
+ ME_sistan: "Ruler of Sistan"
+ desc_ME_sistan: ""
+
+ ME_Karatshar: "Governor of Kabul"
+ desc_ME_Karatshar: ""
+
+ ME_fars_regency: "Malik Regency"
+ desc_ME_fars_regency: ""
+
+ ME_Baysonqor: "Rebel of the West"
+ desc_ME_Baysonqor: ""
+
+ CM_dead_shah_rukh_trouble: "Crisis of the Timurids"
+ desc_CM_dead_shah_rukh_trouble: ""
+
+ CM_legitimacy_questioned: "Legitimacy Questioned"
+ desc_CM_legitimacy_questioned: ""
+
+ #OPINION MODIFIERS:
+ CM_refused_demands: "Refused Demands"
+
+
+
+ #RUSSIAN MINORS
+ CM_moreflavour_RUS_minors.1.t: "Boris the Great"
+ CM_moreflavour_RUS_minors.1.d: "Since 1425, Boris Aleksandrovich has ruled the Principality of Tver as Grand Duke ever since Ivan Mikhailovich, Boris' father Aleksander Ivanovich and his brother Yuri Aleksandrovich died from the plague. As Grand Duke of Tver Boris has, through cunning diplomacy with both Ryazan and Lithuania, managed to stay relatively independent from Muscovite dominance. Though with the death of King Vytautas in Lithuania and Ryazan growing closer to submission by the Great Horde, Tver will now have to deepen their alliance with Ryazan."
+ CM_moreflavour_RUS_minors.1.a: "Send our diplomats to Ryazan!"
+ CM_TVER_boris_bear: "Boris 'the Great' of Tver"
+ desc_CM_TVER_boris_bear: ""
+
+ CM_moreflavour_RUS_minors.2.t: "Alliance with Tver?"
+ CM_moreflavour_RUS_minors.2.d: "Our treaty with Tver has since the death of Vytautas of Lithuania remained aloof. However, it would seem that Boris of Tver wishes to sign a second treaty, establishing an alliance between our Principalities. Not only would this help us ward off the aggressive posturing of the Great Horde, but it will also allow us to get closer to the Muscovite Principality."
+ CM_moreflavour_RUS_minors.2.a: "Sign the treaty."
+ CM_RUSSIAN_MINORS_TT1: "With the end of the Civil War, both Tver and Ryazan will offer their allegiance to Moscow."
+
+ CM_moreflavour_RUS_minors.3.t: "A Marriage Offer"
+ CM_moreflavour_RUS_minors.3.d: "With the dust settling aftet the Civil War, both Tver and Ryazan has come to our court offering their allegiance to Muscovy. Tver has for long enjoyed independence from Muscovite rule and Ryazan fears invasion from the Great Horde. By offering protection to them both we will be closer to uniting the whole of Russia."
+ CM_RUSSIAN_MINORS_TT2: "Both §YTver§! and §YRyazan§! will be turned into §TIncorporated Vassals§! which are cheaper to integrate and do not cost a diplomatic relations slot."
+
+ CM_moreflavour_RUS_minors.3.a: "Of course we accept!"
+ CM_moreflavour_RUS_minors.3.b: "For some reason, I hate getting free stuff."
+
+ CM_PERM_great_perm: "Great Perm"
+ desc_CM_PERM_great_perm: ""
+
+
+
+ #DUTCH FLAVOUR:
+ CM_moreflavour_DUTCH.1.t: "Dutch Factionalism"
+ CM_moreflavour_DUTCH.1.d: "The wars of the Hoecks and the Cabbeljaws were a conflict in the Netherlands that lasted from 1350 to the end of the 15th century. There were several civil wars and conflicts, partially about who holds the title of 'Count of Holland', but it was also a big ground of conflict between the more progressive cities and the slowly establishing bourgeois - the Cods or 'Kabbeljauwse' in Dutch on one side, and the more conservative ruling nobility - the Hooks or 'Hoekse' on the other side. \n \nWe should seek to mend the schism between these two factions as soon as possible, for our neighbours have been using this civil war for their own gain and only a united nation can stem itself against this tide."
+ CM_moreflavour_DUTCH.1.a: "We shall put an end to this discord."
+ CM_moreflavour_DUTCH_TT1: "We can remove the following modifier with the '§YEnd the Factional Strife§! decision."
+
+
+ CM_moreflavour_DUTCH.2.t: "Flemish Cloth"
+ CM_moreflavour_DUTCH.2.d: "The period between the 11th and 13 century was a golden age for Flanders. Thanks to the diligence of its weaver guilds and the entrepreneurship of its merchants, Flemish cloth is renowned for its exceptionally high quality and is in great demand throughout Europe, attracting wealthy Italian and Spanish merchants. With these demands, Flanders has turned its cloth industry into the cornerstone of its economy and been able to bankroll its infrastructure and the expansion of Bruges into the busiest port in northern Europe."
+ CM_moreflavour_DUTCH.2.a: "Profits are ensured!"
+
+
+ CM_moreflavour_DUTCH.3.t: "Favor of the Burgundians"
+ CM_moreflavour_DUTCH.3.d: "Wars and flagrant spending has emptied our treasury, and inefficient administration destroyed our income from our prospering cities and fiefdoms. But since the ascension of Philippe 'the good' as Duke of Burgundy, he has taken it upon himself to rebuild the Brabantian duchy's economy from its ashes. Reforming our systems and bureacrautic administrations and creating a truly able governmental apparatus has saved us from our woes. It now stands to order that we use our military experience in the name of the Duke himself, as favoured Duchy of the Lowlands."
+ CM_moreflavour_DUTCH.3.a: "To arms! In the name of the Duke!"
+
+
+ CM_moreflavour_DUTCH.4.t: "Middelburg Canal"
+ CM_moreflavour_DUTCH.4.d: "Established in the late medieval period, Middelburg's canal system has served as a vital artery for trade and transportation in the heart of Zeeland. Originating in the 12th century, the canals were strategically designed to facilitate the movement of goods and people, contributing to the economic prosperity of the various fishing towns spanning Zeeland. The waterways played a significant role in connecting Middelburg to the broader network of maritime trade routes that were ongoing in the Netherlands and beyond, enhancin its status as a bustling commercial hub. Over the centuries the canals witnessed urban development and eventually adapting to changing economic landscapes as entire cities formed around the canals."
+ CM_moreflavour_DUTCH.4.a: "Quite an engineering marvel!"
+
+ #DECISION:
+ CM_DUTCH_factional_strife_title: "End the Factional Strife"
+ CM_DUTCH_factional_strife_desc: "It is high time that we end the factionalism that has caused much discord in Holland."
+
+ CM_moreflavour_DUTCH_decision_yes_TT1: "£yes£ If we have reached Reform Level §Y3§! then we will get:"
+ CM_moreflavour_DUTCH_decision_no_TT1: "£no£ If we have reached Reform Level §Y3§! then we will get:"
+
+ CM_moreflavour_DUTCH_decision_yes_TT2: "£yes£ If the §YNobles Estate§! has at least §Y60§! Influence and the §YBurghers Estate§! have less than §Y40§!, we will get:"
+ CM_moreflavour_DUTCH_decision_no_TT3: "£no£ If the §YNobles Estate§! has at least §Y60§! Influence and the §YBurghers Estate§! have less than §Y40§!, we will get:"
+
+ CM_moreflavour_DUTCH_decision_yes_TT3: "£yes£ If the §YBurghers Estate§! has at least §Y60§! Influence and the §YNobles Estate§! have less than §Y40§!, we will get:"
+ CM_moreflavour_DUTCH_decision_no_TT3: "£no£ If the §YBurghers Estate§! has at least §Y60§! Influence and the §YNobles Estate§! have less than §Y40§!, we will get:"
+
+
+ #MODIFIERS:
+ CM_DUTCH_factional_strife: "Factional Strife"
+ desc_CM_DUTCH_factional_strife: "The Hooks and Cods are vying for control over Holland and the direction of the Netherlands at large. We must put an end to this as soon as possible."
+
+ CM_DUTCH_mended_schism: "Mended the Factional Schism"
+ desc_CM_DUTCH_mended_schism: ""
+
+ CM_DUTCH_hook_victory: "Hook Victory"
+ desc_CM_DUTCH_hook_victory: ""
+
+ CM_DUTCH_cod_victory: "Cod Victory"
+ desc_CM_DUTCH_cod_victory: ""
+
+ CM_DUTCH_flemish_cloth: "Flemish Cloth"
+ desc_CM_DUTCH_flemish_cloth: ""
+
+ CM_DUTCH_burgundian_support: "Burgundian Support"
+ desc_CM_DUTCH_burgundian_support: ""
+ CM_DUTCH_burgundian_support_TT: "This modifier lasts as long as we are Subjects of §YBurgundy§!."
+
+
+
+ #MAMLUKS 
+ CM_moreflavour_MAMLUKS.1.t: "Julban Mutiny"
+ CM_moreflavour_MAMLUKS.1.d: "During the reign of Sultan Jaqmaq Burji, many of his most trusted colleagues and friends had been promoted to high-ranking posts such as the 'Dawadar Kabir', Grand Executive Secretary, or 'Atabik al-Asakir, Commander-In-Chief. This created an elite that was trusted and reliable on an institutional level, but also caused much unrest within the Mamluk caste who saw it as nepotistic and antithetical to the meritocratic ideals that the Mamluke Sultanate was founded. This outrage eventually formed into the 'Julban', a rebellious band of mamluke soldiers who eventually surrounded the citadel in Cairo, demanding the release of several mamluks who had been dismissed and the immediate resignation of the Commander-In-Chief."
+ CM_moreflavour_MAMLUKS.1.a: "Accursed Mutineers!"
+ CM_moreflavour_MAMLUKS.1.b: "I suppose we can give in to their demands."
+
+
+ CM_moreflavour_MAMLUKS.2.t: "Egyptian Soldiers Mutiny"
+ CM_moreflavour_MAMLUKS.2.d: "While Mamluks make up the core of our forces, not all of our military consists of warrior slaves. Local Egyptian soldiers are an important addition to our army, often employed as guards and garrisons. \nSmall chances for advancements within the army and low pay aren't the best motivators however, and it is not clear how far we can trust these men. Certainly their training and equipment are often neglected by the Amir in charge of them. \nIn the Delta, the mistrust between the Egyptian and Mamluk Amirs have led to a mutiny."
+ CM_moreflavour_MAMLUKS.2.a: "We must crush this in its cradle!"
+ CM_moreflavour_MAMLUKS.2.b: "We should improve their situation."
+
+
+ CM_moreflavour_MAMLUKS.3.t: "Suspicious Mutinies"
+ CM_moreflavour_MAMLUKS.3.d: "With the recent rebellions, there are now whispers in the court on who is to blame for these uprisings against the Caliphate. Some point fingers to the Amirs, local nobles who are not part of the institutional-elite of the Mamluks, others points the inner circle of the Caliph, others to the Mamluks themselves. \nWhichever the case, we must act swift to root out these traitors."
+ CM_moreflavour_MAMLUKS.3.a: "It must be the Amirs!"
+ CM_moreflavour_MAMLUKS.3.b: "My own advisors must be the cause!"
+ CM_moreflavour_MAMLUKS.3.c: "The Mamluk slaves! How could they?"
+
+
+ #MODIFIERS:
+ CM_MAMLUKS_seized_grain: "Seized Grain"
+ desc_CM_MAMLUKS_seized_grain: "The rebels has seized our grain stores here."
+
+ CM_MAMLUKS_placated_population: "Placated Garrisons"
+ desc_CM_MAMLUKS_placated_population: ""
+
+ CM_MAMLUKS_rooting_out_rebellious_amirs: "Rooting out rebellious Amirs"
+ desc_CM_MAMLUKS_rooting_out_rebellious_amirs: ""

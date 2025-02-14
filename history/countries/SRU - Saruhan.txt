@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = beylik_government
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 2297	# Saruhan
+
+
+1388.1.1 = {
+	monarch = {
+		name = "Hizir I"
+		dynasty = "Saruhanoglu"
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+	add_piety = -0.1
+	add_ruler_personality = sinner_personality
+	add_ruler_personality = loose_lips_personality
+	leader = {
+		name = "Uglúk"
+		type = general
+		fire = 4
+		shock = 4
+		manuever = 6
+		siege = 0
+		personality = master_of_arms_personality
+	}
+}

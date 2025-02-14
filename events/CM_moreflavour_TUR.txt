@@ -1,0 +1,65 @@
+namespace = CM_moreflavour_TUR
+
+country_event = {
+	id = CM_moreflavour_TUR.1
+	title = CM_moreflavour_TUR.1.t # Vassalization/Morea Incorporates Athens/Annex Athens
+	desc = CM_moreflavour_TUR.1.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	trigger = {
+		tag = TUR
+	}
+	
+	option = {
+		name = CM_moreflavour_TUR.1.a # Let's Vassalize them
+
+		ai_chance = { factor = 1 }
+
+		vassalize = ATH
+		ATH = {
+			change_subject_type = {
+				subject_type = incorporated_vassal
+			}
+			add_liberty_desire = -50
+			add_country_modifier = {
+				name = BM_TUR_higher_vassal_dues
+				duration = 7300
+			}
+		}
+		add_core = 146
+	}
+
+	option = {
+		name = CM_moreflavour_TUR.1.b # Let Morea Incorporate them
+
+		ai_chance = { factor = 1 }
+		
+		MOE = {
+			inherit = ATH
+			add_liberty_desire = -10
+			add_country_modifier = {
+				name = BM_TUR_higher_vassal_dues
+				duration = 7300
+			}
+		}
+		add_core = 146
+		add_adm_power = 25
+		add_dip_power = 25
+	}
+
+	option = {
+		name = CM_moreflavour_TUR.1.c # Let's annex them ourselves
+
+		ai_chance = { factor = 1 }
+		
+		ATH = {
+			146 = {
+				cede_province = TUR
+			}
+		}
+	}
+}

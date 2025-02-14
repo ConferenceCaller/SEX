@@ -1,0 +1,984 @@
+namespace = ME_Timurid_Princes_Event
+
+country_event = { #Ulugh Beg
+	id = ME_Timurid_Princes_Event.1
+	title = ME_Timurid_Princes_Event.1.t
+	desc = ME_Timurid_Princes_Event.1.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TRS
+	}
+
+	option = {
+		name = ME_Timurid_Princes_Event.1.a
+
+		add_ruler_modifier = {
+			name = BM_Transoxiana_Ulugh_Beg
+			duration = -1
+		}
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+	}
+}
+
+country_event = { #Babur
+	id = ME_Timurid_Princes_Event.2
+	title = ME_Timurid_Princes_Event.2.t
+	desc = ME_Timurid_Princes_Event.2.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHO
+	}
+
+	option = {
+		name = ME_Timurid_Princes_Event.2.a
+
+		add_ruler_modifier = {
+			name = ME_Khorasan_Babur
+			duration = -1
+		}
+		define_ruler_to_general = {
+			fire = 2
+			shock = 5
+			manuever = 3
+			siege = 1
+		}
+		add_army_tradition = 20
+	}
+}
+
+country_event = { #justiceforsistan
+	id = ME_Timurid_Princes_Event.3
+	title = ME_Timurid_Princes_Event.3.t
+	desc = ME_Timurid_Princes_Event.3.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SIS
+	}
+
+	option = {
+		name = ME_Timurid_Princes_Event.3.a
+
+		add_ruler_modifier = {
+			name = ME_sistan
+			duration = -1
+		}
+		add_years_of_estate_land_income = 5
+		every_owned_province = {
+			add_random_development = 1
+		}
+	}
+}
+
+country_event = { #Death of Ulugh Beg
+	id = ME_Timurid_Princes_Event.4
+	title = ME_Timurid_Princes_Event.4.t
+	desc = ME_Timurid_Princes_Event.4.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			has_ruler_modifier = BM_Transoxiana_Ulugh_Beg
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_Event.4.a
+
+		add_splendor = 100
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+	}
+}
+
+country_event = { #Karatshar bin Soyurghatmish
+	id = ME_Timurid_Princes_Event.8
+	title = ME_Timurid_Princes_Event.8.t
+	desc = ME_Timurid_Princes_Event.8.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = AFG
+	}
+
+	option = {
+		name = ME_Timurid_Princes_Event.8.a
+
+		add_ruler_modifier = {
+			name = ME_Karatshar
+			duration = -1
+		}
+		add_stability = 1
+	}
+}
+
+country_event = { #Regency in Fars
+	id = ME_Timurid_Princes_Event.9
+	title = ME_Timurid_Princes_Event.9.t
+	desc = ME_Timurid_Princes_Event.9.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = FRS
+	}
+
+	option = {
+		name = ME_Timurid_Princes_Event.9.a
+
+		add_ruler_modifier = {
+			name = ME_fars_regency
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = all
+			loyalty = 15
+		}
+	}
+}
+
+country_event = { #Muhammad bin Baysonqor
+	id = ME_Timurid_Princes_Event.10
+	title = ME_Timurid_Princes_Event.10.t
+	desc = ME_Timurid_Princes_Event.10.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = QOM
+	}
+
+
+	option = {
+		name = ME_Timurid_Princes_Event.10.a
+
+		add_ruler_modifier = {
+			name = ME_Baysonqor
+			duration = -1
+		}
+		add_manpower = 5
+	}
+}
+
+
+country_event = { #The Demands of the Princes
+	id = ME_Timurid_Princes_Event.11
+	title = ME_Timurid_Princes_Event.11.t
+	desc = ME_Timurid_Princes_Event.11.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TIM
+		has_global_flag = death_of_shah_rukh
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+
+	option = {
+		name = ME_Timurid_Princes_Event.11.a # Uh Oh...
+
+		add_legitimacy = -20
+		add_ruler_modifier = {
+			name = CM_legitimacy_questioned
+		}
+
+		add_country_modifier_for_age = {
+			name = CM_dead_shah_rukh_trouble
+			age = age_of_discovery
+		}
+
+		country_event = {
+			id = ME_Timurid_Princes_Event.12
+			days = 30
+		}
+
+		hidden_effect = {
+			every_subject_country = {
+				add_trust = {
+					who = root
+					value = -35
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+
+	}
+}
+
+country_event = { #The Demands of Transoxiana
+	id = ME_Timurid_Princes_Event.12
+	title = ME_Timurid_Princes_Event.12.t
+	desc = ME_Timurid_Princes_Event.12.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TIM
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ME_Timurid_Princes_Event.13
+				days = 60
+				random = 30
+			}
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.12.a # They get NOTHING from us!
+
+		trigger = {
+			NOT = {
+				TRS = {
+					is_subject_of = root
+				}
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_adm_power = 50
+		TRS = {
+			add_prestige = -10
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_liberty_desire = 20
+				add_manpower = 5
+				add_years_of_income = 0.8
+			}
+			add_liberty_desire = 10
+			add_trust = {
+				who = root
+				value = -10
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.12.b # They get NOTHING from us! (Independent)
+
+		trigger = {
+			TRS = {
+				is_subject_of = root
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_adm_power = 50
+		TRS = {
+			add_prestige = -10
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_liberty_desire = 20
+				add_manpower = 5
+				add_years_of_income = 0.8
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.12.c # They will get the manpower, not the land
+
+		trigger = {
+			TRS = {
+				is_subject_of = root
+			}
+		}
+		add_prestige = -10
+		add_manpower = -3
+		TRS = {
+			add_manpower = 3
+			hidden_effect = {
+				add_liberty_desire = 20
+				add_manpower = 5
+				add_years_of_income = 0.8
+			}
+			add_trust = {
+				who = root
+				value = -5
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.12.d # They get the land
+
+		trigger = {
+			TRS = {
+				is_subject_of = root
+			}
+		}
+		add_prestige = -10
+		every_owned_province = {
+			limit = {
+				is_core = TRS
+			}
+			cede_province = TRS
+			remove_core = root
+		}
+		TRS = {
+			add_trust = {
+				who = root
+				value = -5
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.12.e # They get both land and manpower
+
+		trigger = {
+			TRS = {
+				is_subject_of = root
+			}
+		}
+		add_prestige = -20
+		add_manpower = -3
+		TRS = {
+			add_manpower = 3
+			add_liberty_desire = -10
+		}
+		every_owned_province = {
+			limit = {
+				is_core = TRS
+			}
+			cede_province = TRS
+			remove_core = root
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #The Demands of Afghanistan
+	id = ME_Timurid_Princes_Event.13
+	title = ME_Timurid_Princes_Event.13.t
+	desc = ME_Timurid_Princes_Event.13.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TIM
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ME_Timurid_Princes_Event.14
+				days = 60
+				random = 30
+			}
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.13.a # They get NOTHING from us!
+
+		trigger = {
+			NOT = {
+				AFG = {
+					is_subject_of = root
+				}
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_dip_power = 50
+		AFG = {
+			add_prestige = -10
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_liberty_desire = 10
+				add_manpower = 5
+				add_years_of_income = 0.8
+			}
+			add_liberty_desire = 10
+			add_trust = {
+				who = root
+				value = -10
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.13.b # They get NOTHING from us! (Independent)
+
+		trigger = {
+			AFG = {
+				is_subject_of = root
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_dip_power = 50
+		AFG = {
+			add_prestige = -10
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_liberty_desire = 10
+				add_manpower = 5
+				add_years_of_income = 2
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.13.c # They will get the money, not the land
+
+		trigger = {
+			AFG = {
+				is_subject_of = root
+			}
+		}
+		add_prestige = -10
+		add_treasury = -150
+		AFG = {
+			add_treasury = 150
+			hidden_effect = {
+				add_years_of_income = 0.8
+			}
+			add_trust = {
+				who = root
+				value = -5
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.13.d # They get the land
+
+		trigger = {
+			AFG = {
+				is_subject_of = root
+			}
+		}
+		add_prestige = -10
+		449 = {
+			cede_province = AFG
+		}
+		2225 = {
+			cede_province = AFG
+		}
+		2229 = {
+			cede_province = AFG
+		}
+		AFG = {
+			hidden_effect = {
+				add_years_of_income = 2
+			}
+			add_trust = {
+				who = root
+				value = -5
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.13.e # They get both money and land
+
+		trigger = {
+			AFG = {
+				is_subject_of = root
+			}
+		}
+		add_prestige = -20
+		add_treasury = -150
+		AFG = {
+			add_treasury = 150
+			add_liberty_desire = -10
+			capital_scope = {
+				add_or_upgrade_tax_building = yes
+				add_base_tax = 1
+			}
+			hidden_effect = {
+				add_years_of_income = 2
+			}
+		}
+		449 = {
+			cede_province = AFG
+		}
+		2225 = {
+			cede_province = AFG
+		}
+		2229 = {
+			cede_province = AFG
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #The Demands of Khorasan
+	id = ME_Timurid_Princes_Event.14
+	title = ME_Timurid_Princes_Event.14.t
+	desc = ME_Timurid_Princes_Event.14.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TIM
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ME_Timurid_Princes_Event.15
+				days = 60
+				random = 30
+			}
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.14.a # They get NOTHING from us!
+
+		trigger = {
+			NOT = {
+				KHO = {
+					is_subject_of = root
+				}
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_mil_power = 50
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		KHO = {
+			declare_war_with_cb = {
+				casus_belli = cb_core
+				war_goal_province = 4326
+				who = root
+			}
+			add_prestige = -10
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_manpower = 20
+				add_treasury = 750
+				add_years_of_income = 2
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_liberty_desire = 10
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.14.b # They get NOTHING from us! (Independent)
+
+		trigger = {
+			KHO = {
+				is_subject_of = root
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_mil_power = 50
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		KHO = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = root
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_years_of_income = 2
+				add_manpower = 10
+				add_treasury = 500
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.14.c # They will get land they desire
+
+		trigger = {
+			KHO = {
+				is_subject_of = root
+			}
+		}
+		change_mil = -1
+		add_mil_power = -50
+		add_manpower = -3
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		KHO = {
+			add_stability_or_adm_power = yes
+			add_liberty_desire = -10
+			add_mil_power = 50
+			add_manpower = 3
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 20
+			}
+			hidden_effect = {
+				add_years_of_income = 2
+			}
+		}
+		4326 = {
+			cede_province = KHO
+		}
+		2221 = {
+			cede_province = KHO
+		}
+		4325 = {
+			cede_province = KHO
+		}
+		4336 = {
+			cede_province = KHO
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #The Demands of Fars
+	id = ME_Timurid_Princes_Event.15
+	title = ME_Timurid_Princes_Event.15.t
+	desc = ME_Timurid_Princes_Event.15.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TIM
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ME_Timurid_Princes_Event.16
+				days = 60
+				random = 30
+			}
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.15.a # They get NOTHING from us! (Independent)
+
+		trigger = {
+			NOT = {
+				FRS = {
+					is_subject_of = root
+				}
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		FRS = {
+			add_prestige = -10
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_manpower = 8
+				add_treasury = 200
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.15.b # They get NOTHING from us!
+
+		trigger = {
+			FRS = {
+				is_subject_of = root
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		FRS = {
+			add_prestige = -10
+			add_trust = {
+				who = root
+				value = -10
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = root
+					modifier = CM_refused_demands
+				}
+				add_manpower = 1
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_liberty_desire = 10
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.15.c # They will get money to upgrade their trade center
+
+		trigger = {
+			FRS = {
+				is_subject_of = root
+			}
+		}
+		add_treasury = -200
+		FRS = {
+			add_stability_or_adm_power = yes
+			add_liberty_desire = -10
+			change_adm = 1
+		}
+		4332 = {
+			add_center_of_trade_level = 1
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+country_event = { #The Demands of the Nobles
+	id = ME_Timurid_Princes_Event.16
+	title = ME_Timurid_Princes_Event.16.t
+	desc = ME_Timurid_Princes_Event.16.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TIM
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.16.a # NO! Our heir is the correct one!
+
+		add_stability = -2
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -5
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = pretender
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader = pretender
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader = pretender
+			}
+		}
+		kill_advisor_by_category_effect = {
+			mil = yes
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.16.b # They will be allowed to appoint their heir
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_FURTHERED_SPOUSES_FAMILY_NOBLES
+			influence = 15
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
+		add_prestige = -50
+		define_heir = {
+			adm = 1
+			dip = 0
+			mil = 1
+			age = 12
+			culture = root
+			religion = root
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+country_event = { #The Timurid Crisis over
+	id = ME_Timurid_Princes_Event.17
+	title = ME_Timurid_Princes_Event.17.t
+	desc = ME_Timurid_Princes_Event.17.d
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		tag = TIM
+		stability = 1
+		all_subject_country = {
+			NOT = {
+				liberty_desire = 50
+			}
+		}
+		has_country_modifier = CM_dead_shah_rukh_trouble
+		total_development = 300
+	}
+
+	option = {
+		name = ME_Timurid_Princes_EventOPTION.17.a # NO! Our heir is the correct one!
+
+		add_legitimacy = 100
+		remove_country_modifier = CM_dead_shah_rukh_trouble
+	}
+
+}

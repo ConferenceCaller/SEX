@@ -1,0 +1,586 @@
+country_decisions = {
+	BM_permit_taqiyya = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+		}
+
+		allow = {
+			piety = 50
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+					NOT = {
+						has_country_modifier = BM_selected_caliphal_action
+					}
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+		}
+		effect = {
+			add_piety = -0.25
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+			custom_tooltip = BM_permit_taqiyya_caliph_TT
+			hidden_effect = {
+				every_province = {
+					limit = {
+						religion_group = muslim
+						owner = {
+							NOT = {
+								religion_group = muslim
+							}
+						}
+					}
+					add_province_modifier = {
+						name = BM_permit_taqiyya_modifier
+						duration = 10950
+					}
+				}
+				add_country_modifier = {
+					name = BM_selected_caliphal_action
+					duration = 5475
+					hidden = yes
+				}
+			}
+			tooltip = {
+				add_province_modifier = {
+					name = BM_permit_taqiyya_modifier
+					duration = 10950
+				}
+			}
+		}
+	}
+
+	BM_promote_our_maddhab = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+			NOT = {
+				OR = {
+					has_country_modifier = BM_promote_our_maddhab_hanafi
+					has_country_modifier = BM_promote_our_maddhab_hanbali
+					has_country_modifier = BM_promote_our_maddhab_maliki
+					has_country_modifier = BM_promote_our_maddhab_shafii
+					has_country_modifier = BM_promote_our_maddhab_ismaili_school
+					has_country_modifier = BM_promote_our_maddhab_ismaili_jafari
+					has_country_modifier = BM_promote_our_maddhab_ismaili_zaidi
+				}
+			}
+		}
+		allow = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+					NOT = {
+						has_country_modifier = BM_selected_caliphal_action
+					}
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+			if = {
+				limit = { 
+					calc_true_if = {
+						amount = 3
+						all_country = {
+							AND = {
+								has_religious_school_of = root
+								has_opinion = {
+									who = root
+									value = 150
+								}
+							}
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_promote_our_maddhab_trigger_TT_yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = BM_promote_our_maddhab_trigger_TT_no
+				}
+			}
+			hidden_trigger = {
+				calc_true_if = {
+					amount = 3
+					any_ally = {
+						has_religious_school_of = root
+						has_opinion = {
+							who = root
+							value = 100
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = BM_promote_our_maddhab_TT
+			hidden_effect = {
+				add_country_modifier = {
+					name = BM_selected_caliphal_action
+					duration = 5475
+					hidden = yes
+				}
+				every_country = {
+					limit = {
+						religion = root
+						has_religious_school_of = root
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = hanafi_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_hanafi
+							duration = 7300
+						}
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = hanbali_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_hanbali
+							duration = 7300
+						}
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = maliki_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_maliki
+							duration = 7300
+						}
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = shafii_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_shafii
+							duration = 7300
+						}
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = ismaili_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_ismaili_school
+							duration = 7300
+						}
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = jafari_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_ismaili_jafari
+							duration = 7300
+						}
+					}
+					if = {
+						limit = { 
+							root = {
+								religious_school = {
+									group = muslim
+									school = zaidi_school
+								}
+							}
+						}
+						add_country_modifier = {
+							name = BM_promote_our_maddhab_ismaili_zaidi
+							duration = 7300
+						}
+					}
+				}
+			}
+		}	
+	}
+
+	BM_promote_religious_exchange = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+			NOT = {
+				has_country_modifier = BM_promote_religious_exchange_modifier
+			}
+		}
+		allow = {
+			has_global_modifier_value = {
+				which = diplomatic_reputation
+				value = 0.03
+			}
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+					NOT = {
+						has_country_modifier = BM_selected_caliphal_action
+					}
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = BM_promote_religious_exchange_modifier
+				duration = 7300
+			}
+			custom_tooltip = BM_promote_religious_exchange_TT
+			hidden_effect = {
+				add_country_modifier = {
+					name = BM_selected_caliphal_action
+					duration = 5475
+					hidden = yes
+				}
+			}
+		}	
+	}
+
+	BM_inspire_religious_fervor = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+			has_country_modifier = custodian_of_the_two_holy_mosques
+			NOT = {
+				has_country_modifier = BM_inspire_religious_fervor_modifier
+			}
+		}
+		allow = {
+			piety = -50
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+					NOT = {
+						has_country_modifier = BM_selected_caliphal_action
+					}
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+		}
+		effect = {
+			add_piety = 0.25
+			custom_tooltip = BM_inspire_religious_fervor_TT
+			hidden_effect = {
+				every_province = {
+					limit = {
+						religion = ROOT
+						owner = {
+							religion = ROOT
+						}
+					}
+					ROOT = {
+						add_manpower = 0.1
+					}
+				}
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = BM_inspire_religious_fervor_modifier
+					duration = 10950
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						religion = ROOT
+					}
+					add_country_modifier = {
+						name = BM_inspire_religious_fervor_modifier
+						duration = 10950
+					}
+				}
+				add_country_modifier = {
+					name = BM_selected_caliphal_action
+					duration = 10950
+					hidden = yes
+				}
+			}
+		}	
+	}
+
+	BM_permit_sufi_teachings = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+			NOT = {
+				has_country_modifier = BM_permit_sufi_teachings_modifier
+			}
+		}
+		allow = {
+			piety = -50
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+					NOT = {
+						has_country_modifier = BM_selected_caliphal_action
+					}
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+		}
+		effect = {
+			add_piety = 0.125
+			add_country_modifier = {
+				name = BM_permit_sufi_teachings_modifier
+				duration = 7300
+			}
+			custom_tooltip = BM_permit_sufi_teachings_TT
+			hidden_effect = {
+				every_country = {
+					limit = {
+						religion = root
+					}
+					add_country_modifier = {
+						name = BM_permit_sufi_teachings_clerical_education_modifier
+						duration = 7300
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+
+	BM_relax_sharia = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+			NOT = {
+				has_country_modifier = BM_relax_sharia_modifier
+			}
+		}
+		allow = {
+			piety = 50
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+		}
+		effect = {
+			add_piety = -0.125
+			custom_tooltip = BM_relax_sharia_TT
+			hidden_effect = {
+				add_country_modifier = {
+					name = BM_selected_caliphal_action
+					duration = 5475
+					hidden = yes
+				}
+				every_country = {
+					limit = {
+						religion = root
+					}
+					add_country_modifier = {
+						name = BM_relax_sharia_modifier
+						duration = 7300
+					}
+					random_owned_province = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+							}
+						}
+						add_base_tax = 1
+						add_base_production = 1
+					}
+					random_owned_province = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+							}
+						}
+						add_base_tax = 1
+						add_base_production = 1
+					}
+					random_owned_province = {
+						limit = {
+							NOT = {
+								religion_group = muslim
+							}
+						}
+						add_base_tax = 1
+						add_base_production = 1
+					}
+				}
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = BM_relax_sharia_modifier
+					duration = 7300
+				}
+			}
+			custom_tooltip = BM_relax_sharia_TT2
+		}	
+	}
+
+	BM_endorse_literature = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			any_owned_province = {
+				has_province_modifier = BM_abbasid_caliph_triggered_province_modifier
+			}
+			religion_group = muslim
+			NOT = {
+				has_country_modifier = BM_endorse_literature_modifier
+			}
+		}
+		allow = {
+			prestige = 50
+			if = {
+				limit = { 
+					has_country_modifier = BM_selected_caliphal_action
+				}
+				custom_trigger_tooltip = {
+					tooltip = BM_selected_caliphal_action_TT
+				}
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_modifier = BM_selected_caliphal_action
+				}
+			}
+		}
+		effect = {
+			add_splendor = 25
+			add_prestige_or_monarch_power = { amount = 25 }
+
+			custom_tooltip = BM_endorse_literature_TT
+			tooltip = {
+				add_country_modifier = {
+					name = BM_endorse_literature_modifier
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						religion = root
+					}
+					add_country_modifier = {
+						name = BM_endorse_literature_modifier
+						duration = 7300
+					}
+				}
+				add_country_modifier = {
+					name = BM_selected_caliphal_action
+					duration = 5475
+					hidden = yes
+				}
+			}
+		}	
+	}
+}

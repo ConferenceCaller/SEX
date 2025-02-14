@@ -1,0 +1,17 @@
+#273 - Livland
+
+owner = LIV
+controller = LIV
+culture = estonian
+religion = catholic
+capital = "Fellin"
+trade_goods = livestock
+hre = no
+base_tax = 4 
+base_production = 3
+base_manpower = 4
+is_city = yes
+add_core = LIV
+add_core = LTG
+discovered_by = western
+discovered_by = eastern

@@ -1,0 +1,89 @@
+guiTypes = {
+    custom_shield = {
+        name = "por_bandeirante_frontier"
+        potential = {
+            FROM = {
+                TAG = POR
+                has_estate_privilege = estate_burghers_bandeirantes
+                has_country_modifier = bandeirantes_exploration_contracts
+            }
+            ROOT = {
+                or = {
+                    continent = north_america
+                    continent = south_america
+                }
+            }
+        }
+        trigger = {
+            NOT = {
+                colonysize = 1
+                has_province_modifier = jesuit_mission
+            }
+        }
+        effect = {
+            FROM = {
+                change_estate_land_share = {
+                    estate = estate_burghers
+                    share = 1
+                }
+                add_estate_loyalty = {
+                    estate = estate_church
+                    loyalty = -5
+                }
+                ROOT = {
+                    create_colony = 100
+                    add_province_modifier = {
+                        name = "bandeirantes_mission"
+                        duration = -1
+                    }
+                }
+            }            
+        }
+        tooltip = "Sends a Bandeirantes mission with 100 settlers with no colonial maintenance."
+    }
+
+    custom_shield = {
+        name = "por_jessuit_frontier"
+        potential = {
+            FROM = {
+                TAG = POR
+                has_estate_privilege = estate_church_jesuits_mission
+                has_country_modifier = jessuit_mission_rights
+            }
+            ROOT = {
+                or = {
+                    continent = north_america
+                    continent = south_america
+                }
+            }
+        }
+        trigger = {
+            NOT = { 
+                colonysize = 1 
+                has_province_modifier = bandeirantes_mission
+            }
+        }
+        effect = {
+            FROM = {
+                change_estate_land_share = {
+                    estate = estate_church
+                    share = 1
+                }
+                add_estate_loyalty = {
+                    estate = estate_burghers
+                    loyalty = -5
+                }   
+                ROOT = {
+                    create_colony = 100
+                    change_culture = FROM
+                    change_religion = FROM
+                    add_province_modifier = {
+                        name = "jesuit_mission"
+                        duration = -1
+                    }
+                }                             
+            }
+        }
+        tooltip = "Sends a Jesuit mission with 100 settlers with no colonial maintenance."
+    }    
+}

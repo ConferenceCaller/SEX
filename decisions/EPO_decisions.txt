@@ -1,0 +1,380 @@
+country_decisions = {
+    
+    pro_recruit_cawa = {
+        major = yes
+
+        potential = {
+            tag = POR
+            has_country_flag = por_ethiopian_alliance
+        }
+
+        allow = {
+            tag = POR
+            has_country_flag = por_ethiopian_alliance
+            POR = {
+                alliance_with = ETH
+            }
+            or = {
+                and = {
+                    total_development = 100
+                    not = {
+                        num_of_cawa = 6
+                    }
+                }
+                and = {
+                    total_development = 150
+                    not = {
+                        num_of_cawa = 12
+                    }
+                }
+                and = {
+                    total_development = 250
+                    not = {
+                        num_of_cawa = 16
+                    }
+                }
+                and = {
+                    total_development = 400
+                    not = {
+                        num_of_cawa = 18
+                    }
+                }
+                and = {
+                    total_development = 600
+                    not = {
+                        num_of_cawa = 20
+                    }
+                }
+            }
+        }
+
+        estate_action_off_cooldown = {
+            estate_action = ASK_FOR_CONTRIBUTION_BURGHERS
+            days = 3650
+        }
+
+        effect = {
+            add_mil_power = -2
+            ETH = {
+				add_opinion = {
+					who = root
+					modifier = requested_cawa
+                    multiplier = -5
+				}
+			}
+            capital_scope = {
+                cawa_infantry = root
+            }
+        }
+    }
+
+###Colonial States
+
+    #Estado de Mocambique
+    por_release_EDM = {
+        major = yes
+        potential = {
+            tag = POR
+            has_unlocked_government_reform = portuguese_overseas_administration_reform
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 10
+                or = {
+                    region = east_africa_region
+                    region = south_africa_region
+                }
+            }
+        }
+        every_owned_province = {
+			limit = {
+				region = east_africa_region
+			}
+			add_core = EDM
+			if = {
+				limit = { is_core = POR }
+				remove_core = POR
+			}
+		}
+		every_owned_province = {
+			limit = {
+				region = south_africa_region
+			}
+			add_core = EDM
+			if = {
+				limit = { is_core = POR }
+				remove_core = POR
+			}
+		}
+		release = EDM	
+		create_subject = {
+			subject_type = commercial_enterprise
+			who = EDM
+		}
+		EDM = {
+			change_government = republic
+			add_government_reform = viceroyalty_government_reform
+			change_religion = ROOT
+			change_primary_culture = ROOT
+			define_ruler = {
+				name = "Afonso de Albuquerque"
+				dynasty = "de Albuquerque"
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				max_age = 50
+				min_age = 30
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 1000
+			set_prestige_to_zero = yes
+			add_republican_tradition = 100
+		}
+    }
+
+    #Estado de Angola
+    por_release_EDA = {
+        major = yes
+        potential = {
+            tag = POR
+            has_unlocked_government_reform = portuguese_overseas_administration_reform
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 10
+                region = kongo_region
+            }
+        }
+        every_owned_province = {
+			limit = {
+				region = kongo_region
+			}
+			add_core = EDA
+			if = {
+				limit = { is_core = POR }
+				remove_core = POR
+			}
+		}
+		release = EDA	
+		create_subject = {
+			subject_type = commercial_enterprise
+			who = EDA
+		}
+		EDA = {
+			change_government = republic
+			add_government_reform = viceroyalty_government_reform
+			change_religion = ROOT
+			change_primary_culture = ROOT
+			define_ruler = {
+				name = "Afonso de Albuquerque"
+				dynasty = "de Albuquerque"
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				max_age = 50
+				min_age = 30
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 1000
+			set_prestige_to_zero = yes
+			add_republican_tradition = 100
+		}
+    }
+
+    #Estado da Guine
+    por_release_EDG = {
+        major = yes
+        potential = {
+            tag = POR
+            has_unlocked_government_reform = portuguese_overseas_administration_reform
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 10
+                region = guinea_region
+            }
+        }
+        every_owned_province = {
+			limit = {
+				region = guinea_region
+			}
+			add_core = EDG
+			if = {
+				limit = { is_core = POR }
+				remove_core = POR
+			}
+		}
+		release = EDG	
+		create_subject = {
+			subject_type = commercial_enterprise
+			who = EDG
+		}
+		EDG = {
+			change_government = republic
+			add_government_reform = viceroyalty_government_reform
+			change_religion = ROOT
+			change_primary_culture = ROOT
+			define_ruler = {
+				name = "Afonso de Albuquerque"
+				dynasty = "de Albuquerque"
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				max_age = 50
+				min_age = 30
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 1000
+			set_prestige_to_zero = yes
+			add_republican_tradition = 100
+		}
+    }
+
+    #Estado de Timor
+    por_release_EDT = {
+        major = yes
+        potential = {
+            tag = POR
+            has_unlocked_government_reform = portuguese_overseas_administration_reform
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 10
+                region = moluccas_region
+            }
+        }
+		every_owned_province = {
+			limit = {
+				region = moluccas_region
+			}
+			add_core = EDT
+			if = {
+				limit = { is_core = POR }
+				remove_core = POR
+			}
+		}
+		release = EDT	
+		create_subject = {
+			subject_type = commercial_enterprise
+			who = EDT
+		}
+		EDT = {
+			change_government = republic
+			add_government_reform = viceroyalty_government_reform
+			change_religion = ROOT
+			change_primary_culture = ROOT
+			define_ruler = {
+				name = "Afonso de Albuquerque"
+				dynasty = "de Albuquerque"
+				change_adm = 5
+				change_dip = 5
+				change_mil = 5
+				max_age = 50
+				min_age = 30
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 1000
+			set_prestige_to_zero = yes
+			add_republican_tradition = 100
+		}
+    }
+
+###Jesuits vs Bandeirantes
+
+    burghers_bandeirantes_frontier_decision = {
+        major = yes
+        potential = {
+            tag = POR
+            has_estate_privilege = estate_burghers_bandeirantes
+        }
+        allow = {
+            not = {
+                OR = {
+                    has_country_modifier = bandeirantes_exploration_contracts
+                    has_country_modifier = jessuit_mission_rights
+                }
+            }
+        }
+        effect = {
+            add_estate_influence_modifier = {
+                estate = estate_burghers
+                desc = "Bandeirantes Exploration Contracts"
+                influence = 10
+                duration = 7300
+            }
+            hidden_effect = {
+                add_country_modifier = {
+                    name = bandeirantes_exploration_contracts
+                    duration = 7300
+                }
+            }        
+            create_conquistador = { tradition = 100 }
+        }             
+    }
+
+
+    church_jesuits_mission_decision = {
+        major = yes
+        potential = {
+            tag = POR
+            has_estate_privilege = estate_church_jesuits_mission
+        }
+        allow = {
+            tag = POR
+            not = {
+                or = {
+                    has_country_modifier = bandeirantes_exploration_contracts
+                    has_country_modifier = jessuit_mission_rights
+                }
+            }
+        }
+        effect = {
+            custom_tooltip = BM_church_jesuits_mission_decision_TT
+            tooltip = {
+                add_colonysize = 100
+                change_religion = root
+                add_province_modifier = {
+                    name = jesuit_mission_rights_province_modifier
+                    duration = -1
+                }
+            }
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        is_colony = yes
+                    }
+                    add_colonysize = 100
+                    change_religion = root
+                    add_province_modifier = {
+                        name = jesuit_mission_rights_province_modifier
+                        duration = -1
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = BM_jesuit_mission_rights_country_modifier
+                duration = 7300
+            }
+            change_estate_land_share = {
+                estate = estate_church
+                share = 1
+            }
+            add_estate_loyalty = {
+                estate = estate_burghers
+                loyalty = -2
+            }
+            add_estate_influence_modifier = {
+                estate = estate_church
+                desc = "Jesuit Mission Rights"
+                influence = 10
+                duration = 7300
+            }
+            hidden_effect = {                                
+                add_country_modifier = {
+                    name = jessuit_mission_rights
+                    duration = 7300
+                }
+            }    
+        }             
+    } 
+}

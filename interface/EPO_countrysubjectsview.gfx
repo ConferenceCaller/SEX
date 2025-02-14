@@ -1,0 +1,51 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "privilege_sagres"
+		texturefile = "gfx/interface/privileges/privilege_sagres.dds"
+	}
+
+	spriteType = {
+		name = "privilege_bandeirantes"
+		texturefile = "gfx/interface/privileges/privilege_bandeirantes.dds"
+	}
+
+	spriteType = {
+		name = "privilege_bandeirantes"
+		texturefile = "gfx/interface/privileges/privilege_bandeirantes.dds"
+	}
+
+	spriteType = {
+		name = "privilege_capitanias_herditarias"
+		texturefile = "gfx/interface/privileges/privilege_capitanias_herditarias.dds"
+	}
+
+	spriteType = {
+		name = "privilege_feitorias"
+		texturefile = "gfx/interface/privileges/privilege_feitorias.dds"
+	}
+
+	spriteType = {
+		name = "privilege_jesuits_missions"
+		texturefile = "gfx/interface/privileges/privilege_jesuits_missions.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_icon_viceroy"
+		texturefile = "gfx//interface//icon_diplomacy_am_viceroy.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_icon_diplomacy_lead_viceroy"
+		texturefile = "gfx//interface//icon_diplomacy_lead_viceroy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_diplomacy_am_viceroy"
+		texturefile = "gfx//interface//icon_diplomacy_am_viceroy.dds"
+	}
+
+}

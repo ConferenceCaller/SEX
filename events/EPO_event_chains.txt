@@ -1,0 +1,819 @@
+﻿########################################
+# Expanded from the great events from:
+#
+# Johan Andersson
+########################################
+
+namespace = epo_chain
+normal_or_historical_nations = yes
+
+country_event = {
+    id = epo_chain.1
+	title = "epo_chain.1.t"
+	desc = "epo_chain.1.d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = POR
+        or = {
+            is_year = 1486
+            has_discovered = 1177
+        }
+        or = {
+            has_idea_group = exploration_ideas
+            has_idea_group = expansion_ideas 
+        }
+        NOT = { is_year = 1506 }
+    }
+
+    mean_time_to_happen = {
+		months = 6
+	}
+
+    option = {
+        name = epo_chain.1.a
+        add_treasury = -30
+        add_country_modifier = {
+            name = por_exploration_intensivies
+            duration = 10950
+        }
+        hidden_effect = {
+            POR = {
+                country_event = {
+                    id = epo_chain.2
+                    days = 260
+                }
+            }
+        }
+    }
+
+    option = {
+        name = epo_chain.1.b
+        add_prestige = -5
+    }
+}
+
+country_event = {
+    id = epo_chain.2
+	title = "epo_chain.2.t"
+	desc = "epo_chain.2.d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+    
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = epo_chain.2.a
+        add_adm_power = -20
+        add_dip_power = -20
+		add_innovativeness_or_monarch_power = { amount = 2 }
+        hidden_effect = {
+            POR = {
+                country_event = {
+                    id = epo_chain.3
+                    days = 280
+                }
+            }
+        }
+    }
+
+    option = {
+        name = epo_chain.2.b
+        add_prestige = -5
+        remove_country_modifier = por_exploration_intensivies
+    }
+}
+
+country_event = {
+    id = epo_chain.3
+	title = "epo_chain.3.t"
+	desc = "epo_chain.3.d"
+	picture = 5_Rajput_Estate_eventPicture
+    
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = epo_chain.3.a
+        malabar_area = {
+            discover_country = POR
+        }
+        kanara_area = {
+            discover_country = POR
+        }
+        2999 = {
+            discover_country = POR
+        }
+        mozambique_area = {
+            discover_country = POR
+        }
+        1186 = {
+            discover_country = POR
+        }
+        1192 = {
+            discover_country = POR
+        }
+        add_prestige = 10
+    }
+
+    option = {
+        name = epo_chain.3.b
+        malabar_area = {
+            discover_country = POR
+        }
+        kanara_area = {
+            discover_country = POR
+        }
+        2999 = {
+            discover_country = POR
+        }
+        mozambique_area = {
+            discover_country = POR
+        }
+        1186 = {
+            discover_country = POR
+        }
+        1192 = {
+            discover_country = POR
+        }
+        add_treasury = -40
+        hidden_effect = {
+            POR = {
+                country_event = {
+                    id = epo_chain.4
+                    days = 300
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = epo_chain.4
+	title = "epo_chain.4.t"
+	desc = "epo_chain.4.d"
+	picture = MALI_RULER_eventPicture
+    
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+        iberia_region = {
+            discover_country = ETH
+        }
+    }
+
+    option = {
+        name = epo_chain.4.a
+        trigger = {
+			any_country = {
+                AND = {
+					religion_group = christian
+					any_owned_province = {
+						region = horn_of_africa_region	
+					}
+				}
+            }
+		}
+        horn_of_africa_region = {
+            discover_country = POR
+        }
+        reverse_add_opinion = {
+            who = ETH
+            modifier = opinion_pleased
+        }
+        add_legitimacy = -10
+        add_papal_influence = 20
+    }
+    option = {
+        name = epo_chain.4.b
+        horn_of_africa_region = {
+            discover_country = POR
+        }
+        reverse_add_opinion = {
+            who = ETH
+            modifier = opinion_insulted
+        }
+        add_prestige = -5
+    }
+}
+
+########################################
+#
+# BRAZILIAN GOLD
+# REDO FUTURE
+########################################
+
+# The reliance on Brazilian gold #
+country_event = {
+	id = epo_chain.5
+	title = epo_chain.5.t
+	desc = epo_chain.5.d
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	fire_only_once = yes
+	#### FIX THIS
+	is_triggered_only = yes
+
+	trigger = {
+		tag = POR
+        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+            value = 3
+            trade_goods = gold
+        }
+        is_year = 1560
+	}
+
+
+    immediate = {
+        hidden_effect = {
+            POR = {
+                country_event = {
+                    id = epo_chain.6
+                    days = 3600
+                }
+            }
+        }
+    }
+
+	option = {
+		name = epo_chain.5.a
+
+		add_inflation = 2
+		add_country_modifier = {
+			name = por_gold_rush
+			duration = 7000
+		}
+	}
+
+	option = {
+		name = epo_chain.5.b
+        trigger = {
+            or = {
+                ruler_has_personality = industrious_personality
+                ruler_has_personality = scholar_personality
+                ruler_has_personality = reformist_personality
+                ruler_has_personality = lawgiver_personality
+            }
+        }
+		add_adm_power = 100
+        add_innovativeness_or_monarch_power = { amount = 2.5 }
+	}
+    option = {
+		name = epo_chain.5.c
+        trigger = {
+            or = {
+                ruler_has_personality = navigator_personality
+                ruler_has_personality = expansionist_personality
+            }
+        }
+		add_dip_power = 100
+		add_navy_tradition_or_dip_power = { amount = 15 }
+	}
+    option = {
+		name = epo_chain.5.e
+        trigger = {
+            or = {
+                ruler_has_personality = conqueror_personality
+                ruler_has_personality = tactical_genius_personality
+                ruler_has_personality = martial_educator_personality
+            }
+        }
+		add_mil_power = 100
+        add_army_tradition_or_mil_power = { amount = 15 }
+	}
+}
+
+# Over reliance on Brazilian gold #
+country_event = {
+	id = epo_chain.6
+	title = epo_chain.6.t
+	desc = epo_chain.6.d
+	picture = BANKRUPTCY_eventPicture
+
+	#### FIX THIS
+	is_triggered_only = yes
+
+	option = {
+		name = epo_chain.6.a
+
+		add_inflation = 5
+		add_stability = -1
+        add_years_of_income = 3
+        every_subject_country = {
+            limit = {
+                is_subject_of = POR
+                is_overseas_subject = yes
+            }
+            add_liberty_desire = 10
+        }
+	}
+
+    option = {
+		name = epo_chain.6.b
+
+		add_adm_power = -100
+        add_dip_power = -100
+        add_mil_power = -100
+        add_country_modifier = {
+            name = por_gold_economy
+            duration = 18250
+        }
+	}
+}
+
+########################################
+#
+# Feitorias Arguim e Elmina
+# Early colonization
+# 
+########################################
+
+country_event = {
+	id = epo_chain.7
+	title = "epo_chain.7.t"
+	desc = "epo_chain.7.d"
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+    goto = 1111
+
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = POR
+        1111 = {
+            owned_by = POR
+            is_city = yes
+        }
+    }
+
+    immediate = {
+        country_event = {
+            id = epo_chain.9
+            days = 360
+        }
+    }
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = "epo_chain.7.a"
+
+        hidden_effect = {
+            country_event = {
+                id = epo_chain.8
+                days = 360
+            }
+        }
+		1111 = {
+            add_building_construction = {
+                building = fort_15th
+                speed = 0.5
+                cost = 0.5
+            }
+            add_province_modifier = {
+                name = first_feitoria
+                duration = 14600
+            }
+        }
+        add_adm_power = -40
+	}
+
+	option = {
+		name = "epo_chain.7.b"
+        add_mercantilism_or_monarch_power = { amount = 1 }
+        add_prestige = -10
+	}		
+}
+
+country_event = {
+	id = epo_chain.8
+	title = "epo_chain.8.t"
+	desc = "epo_chain.8.d"
+	picture = COLONIZATION_eventPicture
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = POR
+		1069 = {
+            owned_by = POR
+        }
+	}
+
+	option = {
+		name = "epo_chain.8.a"
+        if = {
+            limit = {
+                1069 = {
+                    owned_by = POR
+                    is_colony = yes
+                }
+            }
+			1069 = {
+				add_colonysize = 200
+			}
+        }
+        else = {
+			1069 = {
+				create_colony = 150
+			}
+        }
+        add_country_modifier = {
+            name = atlantic_currents
+            duration = 7300
+        }
+        add_dip_power = -80
+	}
+
+    option = {
+		name = "epo_chain.8.b"
+        add_prestige = -10
+        add_legitimacy = -5
+	}		
+}
+
+country_event = {
+	id = epo_chain.9
+	title = "epo_chain.9.t"
+	desc = "epo_chain.9.d"
+	picture = AFRICAN_KING_MEDIATING_eventPicture
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+		name = "epo_chain.9.a"
+
+		every_country = {
+			limit = {
+				any_owned_province = {
+					or = {
+						region = niger_region
+						region = guinea_region
+					}
+				}
+			}
+			add_opinion = {
+				who = POR
+				modifier = por_subsaharan_trade
+			} 			
+		}      
+        add_dip_power = -60
+	}
+
+    option = {
+		name = "epo_chain.9.b"
+
+        add_prestige = -5
+	}		
+}
+
+country_event = {
+	id = epo_chain.10
+	title = "epo_chain.10.t"
+	desc = "epo_chain.10.d"
+	picture = AFRICAN_EUROPEAN_TRADE_eventPicture
+    goto = 1466
+
+	fire_only_once = yes
+    
+    mean_time_to_happen = {
+        days = 120
+    }
+
+	trigger = {
+		tag = POR
+		or = {
+			guinea_region = {
+				any_country = {
+					gold = 1
+					or = {
+						has_opinion = {
+							who = POR
+							value = 80
+						}
+						truce_with = POR
+					}
+				}
+			}
+			niger_region = {
+				any_country = {
+					gold = 1
+					or = {
+						has_opinion = {
+							who = POR
+							value = 80
+						}
+						truce_with = POR
+					}
+				}
+			}
+		}
+		1139 = {
+			owned_by = POR
+			is_owned_by_trade_company = yes
+		}
+		2258 = {
+			owned_by = POR
+			is_owned_by_trade_company = yes
+		}
+		1466 = {
+			has_trader = POR
+		}
+	}
+
+	option = {
+		name = "epo_chain.10.a"
+
+		custom_tooltip = epo_chain.10.tt	
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = guinea_region
+					has_port = yes
+					not = { province_id = 1096 }
+				}
+				change_trade_goods = slaves
+			}
+			1139 = {
+				add_building_construction = {
+					building = fort_15th
+					speed = 0.5
+					cost = 0
+				}
+				change_trade_goods = gold
+			}
+		}
+        add_treasury = -250
+        add_adm_power = -100
+        add_dip_power = -100
+	}
+
+    option = {
+		name = "epo_chain.10.b"
+
+        add_prestige = -5
+        add_country_modifier = {
+            name = por_focus_india
+            duration = 7300
+        }
+	}		
+}
+
+country_event = {
+	id = epo_chain.11
+	title = "epo_chain.11.t"
+	desc = "epo_chain.11.d"
+	picture = AFRICAN_EXPLORER_eventPicture
+    goto = 2258
+
+	fire_only_once = yes
+    
+    trigger = {
+        1306 = {
+            owned_by = POR
+            is_city = yes
+        }
+        tag = POR
+        any_owned_province = {
+            trade_goods = sugar
+        }
+    }
+
+	option = {
+		name = "epo_chain.11.a"
+
+        1306 = {
+            change_trade_goods = sugar
+            add_building_construction = {
+                building = plantations
+                cost = 0.5
+                speed = 0.75
+            }
+        }
+        add_treasury = -50
+        add_adm_power = -60
+	}
+
+	option = {
+		name = "epo_chain.11.b"
+
+        add_prestige = -5
+	}	    
+}
+
+
+########################################
+#
+# EPOPEIA
+# END GAME
+# 
+########################################
+
+country_event = {
+	id = epo_chain.12
+	title = epo_chain.12.t
+	desc = epo_chain.12.d
+	picture = GASPAR_DE_GUZMAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = POR }
+		1851 = {	# Coimbra
+			owned_by = root
+			has_building = university
+		}
+		227 = {		# Lisboa
+			owned_by = root
+		}
+		1751 = {	# Ceuta
+			owned_by = root
+		}
+		2030 = {	# Goa
+			owned_by = root
+		}
+		2999 = {	# Hormuz
+			owned_by = root
+		}
+		668 = {		# Macau
+			owned_by = root
+		}
+		596 = {		# Malaca
+			owned_by = root
+		}
+		1186 = {	# Sofala
+			owned_by = root
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {	# As armas e os barões assinalados
+		name = epo_chain.12.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.13
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.13
+	title = epo_chain.13.t
+	desc = epo_chain.13.d
+	picture = ADULT_BAPTISME_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Que da ocidental praia Lusitana
+		name = epo_chain.13.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.14
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.14
+	title = epo_chain.14.t
+	desc = epo_chain.14.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Por mares nunca de antes navegados
+		name = epo_chain.14.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.15
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.15
+	title = epo_chain.15.t
+	desc = epo_chain.15.d
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Passaram ainda além da Taprobana
+		name = epo_chain.15.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.16
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.16
+	title = epo_chain.16.t
+	desc = epo_chain.16.d
+	picture = SONGHAI_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Em perigos e guerras esforçados
+		name = epo_chain.16.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.17
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.17
+	title = epo_chain.17.t
+	desc = epo_chain.17.d
+	picture = DHOW_AT_SEA_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Mais do que prometia a força humana
+		name = epo_chain.17.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.18
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.18
+	title = epo_chain.18.t
+	desc = epo_chain.18.d
+	picture = FLAGSHIP_CAPTURED_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# E entre gente remota edificaram
+		name = epo_chain.18.a
+
+		hidden_effect = {
+			country_event = {
+				id = epo_chain.19
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = epo_chain.19
+	title = epo_chain.19.t
+	desc = epo_chain.19.d
+	picture = EPOPEIA_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Novo Reino, que tanto sublimaram
+		name = epo_chain.19.a
+
+        add_splendor = 1000
+        add_prestige = 20
+
+		add_country_modifier = {
+			name = por_lusiadas
+			duration = 36500
+		}
+        define_advisor = {
+			type = artist
+			name = "Luís Vaz de Camões"
+			skill = 3
+			culture = portugese
+			religion = catholic
+			cost_multiplier = 0.2
+		}
+	}
+}

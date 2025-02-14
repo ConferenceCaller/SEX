@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = office_of_lord_regent_reform
+technology_group = western
+unit_type = western
+primary_culture = swedish
+religion = catholic
+add_accepted_culture = finnish
+capital = 1	#Stockholm
+
+national_focus = MIL
+
+change_estate_land_share = {
+	estate = estate_church
+	share = 5
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = -5
+}

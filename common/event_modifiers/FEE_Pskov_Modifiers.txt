@@ -1,0 +1,24 @@
+#Legal code of Pskov
+fee_psk_legal_code_of_pskov = {
+	stability_cost_modifier = -0.1
+}
+
+BM_PSKOV_fish_modifier = {
+	trade_value = 2.5
+	trade_efficiency = 0.05
+}
+
+BM_PSKOV_grain_modifier = {
+	local_manpower = 1
+	global_supply_limit_modifier = 0.1
+}
+
+BM_PSKOV_gems_modifier = {
+	tax_income = 12
+	local_build_time = -0.15
+}
+
+BM_PSKOV_iron_modifier = {
+	infantry_cost = -0.1
+	local_defensiveness = 0.15
+}

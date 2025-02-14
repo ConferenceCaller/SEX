@@ -1,0 +1,23 @@
+#Hangul introduced
+fee_kor_hangul_introduced = {
+	adm_tech_cost_modifier = -0.1
+}
+#Hangul introduced
+fee_kor_usurper = {
+	global_unrest = 2
+}
+#Sarim in Korea
+fee_kor_sarim = {
+	idea_cost = -0.05
+}
+#Hyangyak
+fee_kor_hyangyak = {
+	local_tax_modifier = 0.1
+}
+#Silhak
+fee_kor_silhak = {
+	reform_progress_growth = 0.1
+}
+fee_kor_westernisation = {
+	global_institution_spread = 0.1
+}

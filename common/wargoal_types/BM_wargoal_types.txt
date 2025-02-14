@@ -1,0 +1,109 @@
+take_capital_cb_aq_ambition = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			owned_by = QAR
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	
+	war_name = CB_AQ_AMBITION	
+}
+
+take_capital_cb_pol_ambition = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			owned_by = DNZ
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			owned_by = TEU
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+	
+	war_name = cb_conquest	
+}
+
+maritime_conquest = {
+	type = blockade_ports
+	
+	attacker = {
+		badboy_factor = 2
+		prestige_factor = 0.5
+		peace_cost_factor = 1.5
+		peace_cost_factor_non_allowed_treaty = 2
+
+		allowed_provinces = {
+			has_port = yes
+			controlled_by = ROOT
+        }
+
+		allowed_provinces_are_eligible = yes
+		
+		peace_options = {
+			po_demand_provinces
+			po_gold
+			po_trade_power
+			po_steer_trade
+			po_humiliate
+			po_become_tributary_state
+		}
+
+		transfer_trade_cost_factor = 0.25
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_gold
+			po_concede_defeat
+			po_trade_power
+			po_steer_trade
+		}
+	}
+}

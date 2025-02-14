@@ -1,0 +1,20 @@
+# Advisor events
+fee_advisor_collecting_taxes = {
+	global_tax_income = 5
+}
+
+fee_advisor_full_day_work = {
+	global_unrest = -3
+}
+
+fee_advisor_excessive_bureaucracy = {
+	global_tax_modifier = -0.05
+}
+
+fee_advisor_young_skilled_commander = {
+	army_tradition = 0.25
+}
+
+fee_advisor_disloyal_peasantry = {
+	local_unrest = 2
+}

@@ -1,0 +1,62 @@
+government = monarchy
+add_government_reform = ottoman_government
+primary_culture = turkish
+add_accepted_culture = bulgarian
+add_accepted_culture = greek
+religion = sunni
+technology_group = ottoman
+historical_rival = MAM
+historical_rival = BYZ
+historical_rival = HAB
+historical_rival = TIM
+capital = 149 # Edirne
+national_focus = MIL
+add_army_professionalism = 0.1
+religious_school = hanafi_school
+
+change_estate_land_share = {
+	estate = estate_dhimmi
+	share = -15
+}
+change_estate_land_share = {
+	estate = estate_janissaries
+	share = 10
+}
+
+1444.10.1 = {
+	set_estate_privilege = estate_dhimmi_guaranteed_autonomy
+	set_estate_privilege = estate_dhimmi_tolerance
+	set_estate_privilege = estate_janissary_strict_devshirme_recruitment
+}
+
+1439.1.1 = {
+	leader = {
+		name = "Hadim Sehabeddin"
+		type = general
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1453.9.9
+		personality = inspirational_leader_general_personality
+	}
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Mehmed II Fatih"
+		dynasty = Osmanoglu
+		birth_date = 1432.3.30
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_piety = -0.2
+	add_manpower = 6
+	add_treasury = 250
+	add_adm_power = 75
+	add_dip_power = 50
+	add_mil_power = 25
+}

@@ -1,0 +1,145 @@
+country_decisions = {
+
+	BM_economic_golden_era = {
+		color = {
+			255 255 0
+		}
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = BM_has_enacted_golden_age }
+		}
+		allow = {
+			splendor = 600
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			is_bankrupt = no
+		}
+		effect = {
+			set_country_flag = BM_has_enacted_golden_age
+			add_country_modifier = {
+				name = BM_in_economic_golden_era
+				duration = 9125
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	BM_disinherit_heir = {
+		color = {
+			0 170 255
+		}
+		potential = {
+			has_heir = yes
+			ai = no
+		}
+		allow = {
+			prestige = 0
+		}
+		effect = {
+			custom_tooltip = BM_disinherit_heir_TT
+			add_prestige = -25
+			root = {
+				kill_heir = {}
+			}
+			on_heir_disinherited_or_death_effect = yes
+		}
+	}
+
+	BM_disinherit_ruler = {
+		color = {
+			0 170 255
+		}
+		potential = {
+			has_regency = no
+			ai = no
+			NOT = {
+				OR = {
+					government = republic
+					AND = {
+						government = theocracy
+						NOT = {
+							has_reform = caliphate_theocracy_reform
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			prestige = 0
+			is_at_war = no
+			heir_age = 15
+			OR = {
+				ruler_age = 60
+				months_of_ruling = 240
+			}
+		}
+		effect = {
+			custom_tooltip = BM_disinherit_ruler_TT
+			add_legitimacy = -20
+			add_horde_unity = -20
+			add_prestige = -25
+			kill_ruler = yes
+		}
+	}
+
+	sea_state_edicts_decision = {
+		color = {
+			0 170 255
+		}
+		major = yes
+		provinces_to_highlight = {
+			has_state_edict_enabled = yes
+			owned_by = ROOT
+		}
+		potential = {
+			ai = no
+			NOT = { has_country_flag = sea_state_edicts_flag }
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = sea_state_edicts_decision_ttt
+				always = yes
+			}
+		}
+		effect = {
+			set_country_flag = sea_state_edicts_flag
+			country_event = { id = sealand_events.28 }
+			custom_tooltip = sea_state_edicts_decision_tt
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	BM_get_specific_advisor = {
+		color = {
+			0 170 255
+		}
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = sea_get_specific_advisor_flag }
+		}
+		allow = {
+			treasury = 33
+		}
+		effect = {
+			set_country_flag = sea_get_specific_advisor_flag
+			country_event = { id = sea_advisor_event.0 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

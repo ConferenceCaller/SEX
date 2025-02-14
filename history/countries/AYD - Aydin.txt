@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = beylik_government
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 4309	# Aydin
+religious_school = hanafi_school
+
+
+1405.1.1 = {
+	monarch = {
+		name = "Junayd"
+		dynasty = "Aydinoglu"
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = lawgiver_personality
+	add_piety = 0.3
+	heir = {
+		name = "Musa"
+		birth_date = 1434.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

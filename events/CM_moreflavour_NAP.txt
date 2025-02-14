@@ -1,0 +1,272 @@
+namespace = CM_moreflavour_NAP
+
+country_event = {
+	id = CM_moreflavour_NAP.1
+	title = CM_moreflavour_NAP.1.t # The Kingdom of Naples
+	desc = CM_moreflavour_NAP.1.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			is_year = 1460
+		}
+	}
+	
+	trigger = {
+		tag = NAP
+		OR = {
+			is_free_or_tributary_trigger = yes
+			is_year = 1460
+		}
+	}
+	
+	option = {
+		name = CM_moreflavour_NAP.1.a #
+
+		trigger = {
+			is_free_or_tributary_trigger = no
+		}
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_struggle_anew
+			duration = 5475
+		}
+		add_liberty_desire = 10
+	}
+
+	option = {
+		name = CM_moreflavour_NAP.1.b #
+
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		
+		ai_chance = { factor = 1 }
+		
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_struggle_anew
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = CM_moreflavour_NAP.2
+	title = CM_moreflavour_NAP.2.t # Neapolitan Renaissaince
+	desc = CM_moreflavour_NAP.2.d
+	picture = CULTURE_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	trigger = {
+		tag = NAP
+		is_institution_enabled = renaissance
+	}
+	
+	option = {
+		name = CM_moreflavour_NAP.2.a # An influential thinker?
+		ai_chance = { factor = 1 }
+
+		add_reform_progress_medium_effect = yes
+
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_scuola_siciliana
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = CM_moreflavour_NAP.2.b # Architecture
+		ai_chance = { factor = 1 }
+
+		121 = { 
+			add_or_upgrade_tax_building = yes
+			add_base_tax = 1
+		}
+		
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_scuola_siciliana
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = CM_moreflavour_NAP.2.c # Painter
+		ai_chance = { factor = 1 }
+
+		define_advisor = {
+			type = artist
+			skill = 2
+			cost_multiplier = 0.5
+			culture = flemish
+			religion = root
+		}
+		
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_scuola_siciliana
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = CM_moreflavour_NAP.3
+	title = CM_moreflavour_NAP.3.t # Wool Industry
+	desc = CM_moreflavour_NAP.3.d
+	picture = PEASANTS_BARTERING_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	trigger = {
+		tag = NAP
+		has_institution = renaissance
+		is_year = 1470
+	}
+
+	immediate = {
+		set_country_flag = CM_more_flavour_NAP_wool_industry_flag
+	}
+	
+	option = {
+		name = CM_moreflavour_NAP.3.a # 
+		ai_chance = { factor = 1 }
+
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_agrarianism
+			duration = 5475
+		}
+		120 = {
+			change_trade_goods = wool
+		}
+		4734 = {
+			change_trade_goods = wool
+		}
+		1933 = {
+			change_trade_goods = wool
+		}
+		122 = {
+			change_trade_goods = wool
+		}
+		2984 = {
+			change_trade_goods = wool
+		}
+		custom_tooltip = CM_moreflavour_NAP_agrarianism_TT
+		country_event_with_effect_insight = {
+			id = CM_moreflavour_NAP.4
+			effect =  "
+				custom_tooltip = CM_moreflavour_NAP_agrarianism_TT2
+			"
+		}
+	}
+}
+
+country_event = {
+	id = CM_moreflavour_NAP.4
+	title = CM_moreflavour_NAP.4.t # Wool Industry
+	desc = CM_moreflavour_NAP.4.d
+	picture = TEXTILE_INDUSTRY_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = NAP
+			tag = TTS
+			was_tag = NAP
+			was_tag = TTS
+		}
+		has_country_flag = CM_more_flavour_NAP_wool_industry_flag
+		OR = {
+			trading_bonus = {
+				trade_goods = wool
+				value = yes
+			}
+			trade_goods_produced_amount = {
+				trade_goods = wool
+				amount = 10
+			}
+		}
+	}
+	
+	option = {
+		name = CM_moreflavour_NAP.4.a # 
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = CM_moreflavour_NAP_enclosures
+			duration = 14600
+		}
+		change_estate_land_share = {
+			estate = all
+			share = -10
+		}
+		custom_tooltip = CM_moreflavour_NAP_agrarianism_TT3
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+					}
+				}
+				change_trade_goods = cloth
+				add_base_production = 2
+			}
+		}
+	}
+}

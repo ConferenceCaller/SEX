@@ -1,0 +1,146 @@
+﻿l_english:
+
+ fu_axum_obelisk:0 "Obelisk of Aksum"
+ fu_axum_obelisk_desc:0 ""
+
+ meroe_pyramids:0 "Pyramids of Meroë"
+ meroe_pyramids_desc:0 ""
+
+ kasbah_marrakesh:0 "Kasbah of Marrakesh"
+ kasbah_marrakesh_desc:0 ""
+
+ fu_kasbah_of_tunis:0 "Kasbah of Tunis"
+ fu_kasbah_of_tunis_desc:0 ""
+
+ marcus_aurelius_arch:0 "Arch of Marcus Aurelius"
+ marcus_aurelius_arch_desc:0 ""
+
+ sphinx:0 "Great Sphinx of Giza"
+ sphinx_desc:0 ""
+
+ nuremberg_church:0 "Frauenkirche of Nürnberg"
+ nuremberg_church_desc:0 ""
+
+ holstentor:0 "Holstentor"
+ holstentor_desc:0 ""
+
+ mainz_cathedral:0 "Mainz Cathedral"
+ mainz_cathedral_desc:0 ""
+
+ herrenhausen_gardens:0 "Herrenhausen Gardens"
+ herrenhausen_gardens_desc:0 ""
+
+ marburg_university_monument:0 "University of Marburg"
+ marburg_university_monument_desc:0 ""
+
+ askia_monument:0 "Tomb of Askia"
+ askia_monument_desc:0 ""
+
+ ashanti_monument:0 "Ashanti Red Shrine"
+ ashanti_monument_desc:0 ""
+
+ fu_antwerp_dike:0 "Antwerp Bourse"
+ fu_antwerp_dike_desc:0 ""
+
+ peterpaul:0 "Peter and Paul Fortress"
+ peterpaul_desc:0 ""
+
+ kizhi_pogost:0 "Kizhi Pogost"
+ kizhi_pogost_desc:0 ""
+
+ monreale_cathedral:0 "Duomo di Monreale"
+ monreale_cathedral_desc:0 ""
+
+ fu_leaning_tower:0 "Leaning Tower"
+ fu_leaning_tower_desc:0 ""
+
+ castelvecchio:0 "Castelvecchio"
+ castelvecchio_desc:0 ""
+
+ castel_monte:0 "Castel del Monte"
+ castel_monte_desc:0 ""
+
+ colosseum:0 "Colosseum"
+ colosseum_desc:0 ""
+
+ mont_saint_michel:0 "Mont-Saint-Michel"
+ mont_saint_michel_desc:0 ""
+
+ sanktgallabbey:0 "Abbey of Saint Gall"
+ sanktgallabbey_desc:0 ""
+
+ casadecontratacion:0 "Casa de Contratacion"
+ casadecontratacion_desc:0 ""
+
+ arcdetriomphe:0 "Arc de Triomphe"
+ arcdetriomphe_desc:0 ""
+
+ heidelbergcastle:0 "Heidelberg Castle"
+ heidelbergcastle_desc:0 ""
+
+ corvincastle:0 "Corvin Castle"
+ corvincastle_desc:0 ""
+
+ jasnagora:0 "Jasna Góra"
+ jasnagora_desc:0 ""
+
+ jagiellonuni:0 "Jagiellon University"
+ jagiellonuni_desc:0 ""
+
+ beaune_hospices:0 "Beaune Hospice"
+ beaune_hospices_desc:0 ""
+
+ rock_of_cashel:0 "Rock of Cashel"
+ rock_of_cashel_desc:0 ""
+
+ conwy:0 "Conwy Castle"
+ conwy_desc:0 ""
+
+ pena_palace:0 "Pena Palace"
+ pena_palace_desc:0 ""
+ BM_add_legitimacy_10: "Gain §G10§! Legitimacy"
+ BM_add_legitimacy_15: "Gain §G15§! Legitimacy"
+ BM_add_legitimacy_20: "Gain §G20§! Legitimacy"
+
+ batalha_monastery:0 "Batalha Monastery"
+ batalha_monastery_desc:0 ""
+ BM_batalha_monastery_TT:0 "\n Establishing '§YLocal Organizations§!' grants Papal Influence: §G+10§!."
+
+ sumela:0 "Sumela Monastery"
+ sumela_desc:0 ""
+
+ fu_toob_benadir:0 "Toob Benadir"
+ fu_toob_benadir_desc:0 ""
+
+ fu_red_fort:0 "Red Fort"
+ fu_red_fort_desc:0 ""
+
+ itsukushima_shrine:0 "Itsukishima Shrine"
+ itsukushima_shrine_desc:0 ""
+
+ mukdenpalace:0 "Mukden Palace"
+ mukdenpalace_desc:0 ""
+
+ fu_zeeland_dike: "Middelburg Canal"
+ fu_zeeland_dike_desc: ""
+
+ konigstein: "Königstein Fortress"
+ konigstein_desc: ""
+
+ burghausen: "Burghausen Castle"
+ burghausen_desc: ""
+
+ fu_brugge_dike: "Zeebrugge"
+ fu_brugge_dike_desc: ""
+
+ iron_pagoda: "Iron Pagoda"
+ iron_pagoda_desc: ""
+
+ suntemple: "Modhera Sun Temple"
+ suntemple_desc: ""
+
+ tengwang: "Prince Teng Pavilion"
+ tengwang_desc: ""
+
+ fu_foreign_quarters: "Diaolou Quarters"
+ fu_foreign_quarters_desc: ""

@@ -1,0 +1,82 @@
+# Vicryl's Russian Flavour
+
+namespace = FEE_Russia_Events
+
+# Kronstadt Fortress.
+country_event = {
+	id = FEE_Russia_Events.1
+	title = FEE_Russia_Events.1.T
+	desc = FEE_Russia_Events.1.D
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	trigger = {
+		tag = RUS
+		has_country_flag = relocated_capital_st_petersburg
+		owns = 295
+		owns = 33
+		33 = {
+			is_capital = yes
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.1.OPT1
+		ai_chance = { factor = 0 }
+
+		add_years_of_income = -0.75
+		33 = {
+			add_or_upgrade_shipyard_building = yes
+			add_or_upgrade_naval_defense_building = yes
+			add_or_upgrade_fort_building = yes
+			# Kronstadt Fortress modifier
+			add_great_project_tier = {
+				type = peterpaul
+				tier = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.1.OPT2
+		ai_chance = { factor = 0 }
+
+		add_years_of_income = -0.5
+		# Renovated Kremlin modifier
+		295 = {
+			add_great_project_tier = {
+				type = kremlin
+				tier = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.1.OPT3
+		ai_chance = { factor = 100 }
+
+		add_years_of_income = -1.5
+		33 = {
+			add_or_upgrade_shipyard_building = yes
+			add_or_upgrade_naval_defense_building = yes
+			add_or_upgrade_fort_building = yes
+			# Kronstadt Fortress modifier
+			add_great_project_tier = {
+				type = peterpaul
+				tier = 1
+			}
+		}
+
+		# Renovated Kremlin modifier
+		295 = {
+			add_great_project_tier = {
+				type = kremlin
+				tier = 1
+			}
+		}
+	}
+}

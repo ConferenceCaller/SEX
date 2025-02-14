@@ -1,0 +1,17 @@
+spriteTypes = {
+ spriteType = {
+  name = "GFX_disaster_por_sucession_crisis"
+  texturefile = "gfx//interface//disasters//por_sucession_crisis.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ }
+}
+
+spriteTypes = {
+ spriteType = {
+  name = "GFX_disaster_por_civil_war"
+  texturefile = "gfx//interface//disasters//por_civil_war.dds"
+  noOfFrames = 3
+  loadType = "INGAME"
+ }
+}

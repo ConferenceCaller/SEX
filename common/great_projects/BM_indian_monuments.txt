@@ -1,0 +1,204 @@
+fu_red_fort = {
+	start = 522 #Delhi
+	date = 01.01.1639
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR = {
+			culture_group = western_aryan
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = central_indic
+			culture_group = dravidian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = western_aryan
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = central_indic
+			culture_group = dravidian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = western_aryan
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = central_indic
+			culture_group = dravidian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			garrison_damage = 0.25
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			infantry_cost = -0.1
+			garrison_damage = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 1.0
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			infantry_cost = -0.15
+			garrison_damage = 1
+			defensiveness = 0.25
+		}
+		on_upgraded = { }
+	}
+}
+
+
+suntemple = {
+	start = 2054 #Ahmadabad.
+	date = 01.01.1026
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			trade_value = 1
+		}
+		area_modifier = {
+		}
+		region_modifier = { }
+		country_modifiers = {
+			promote_culture_cost = -0.1
+			center_of_trade_upgrade_cost = -0.1
+		}
+		on_upgraded = { 
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_jains
+					loyalty = 5
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			trade_value = 1
+		}
+		area_modifier = {
+			trade_value_modifier = 0.1
+		}
+		region_modifier = {
+		}
+		country_modifiers = {
+			center_of_trade_upgrade_cost = -0.15
+			promote_culture_cost = -0.15
+			jains_privilege_slots = 1
+		}
+		on_upgraded = { 
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_jains
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			trade_value = 1
+		}
+		area_modifier = {
+			trade_value = 3
+			trade_value_modifier = 0.2
+		}
+		region_modifier = {
+		}
+		country_modifiers = {
+			promote_culture_cost = -0.25
+			center_of_trade_upgrade_cost = -0.25
+			jains_privilege_slots = 1
+		}
+		on_upgraded = { 
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_jains
+					loyalty = 15
+				}
+			}
+		}
+	}
+}

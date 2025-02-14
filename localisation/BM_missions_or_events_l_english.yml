@@ -1,0 +1,609 @@
+﻿l_english:
+
+
+
+ #SWEDEN
+ BM_norway_subjugated_nor: "Swedish-Norwegian Unity"
+ desc_BM_norway_subjugated_nor: ""
+
+
+ #AQ QOYUNLU
+ BM_upgraded_tribal_federation_mechanics: "All Tribal Federation Abilities will be §GUpgraded§!"
+
+ BM_aq_qoyunlu_shahanshahs_of_eranshahr_TT: "Fifteen randomly owned provinces in the §YPersia§! region will receive §G1§! bonus £adm£ development."
+
+ #MUSCOVY
+ BM_mos_rus_eliminate_the_minors_at2: "Every province in the §YRussia§! or §YUralic§! region that has nationalism will receive: \nNationalism §G-5§!"
+
+
+
+ #FLORENCE
+ BM_emp_lan_personal_diplomacy_TT: "We will gain §G5§! Favors with every ally, §GDoubled§! if they are also a §YGreat Power§!"
+
+ BM_emp_lan_reaffirm_civic_values_TT: "\nAt §T100§! Republican Tradition, its bonuses will increase by §G+50.0%§! resulting in: \nNational Unrest: §G-3.00§!\nReform Progress Growth: §G+150.0%§!\nBurghers Loyalty Equilibrium: §G+7.5%§!"
+
+ BM_emp_lan_hand_picked_bureaucrats: "Completing §YAgendas§! will now grant us §G+5.0%§! Estate Loyalty with all Estates regardless of §YAgenda§!\n"
+
+
+ BM_emp_lan_florentine_renaissance: "As long as this modifier is active §YPatronage of the Arts§! will receive the following extra buffs: \nYearly Prestige: §G+0.50§! \nPossible Advisors: §G+1§! \nGive §GDouble§! Prestige when granted"
+
+
+
+ #BRANDENBURG / PRUSSIA 
+ BM_emp_brapru_conquer_pomerania: "If either §YWolgast§! or §YStettin§! is our Subject it will form @POM §YPommerania§! and become an §TIntegrated Subject§!"
+
+
+ BM_emp_brapru_conquer_silesia: "If §YSilesia§! is our Subject it will become an §TIntegrated Subject§!"
+ BM_emp_brapru_conquer_silesia2: "If either §YGlogow§! or §YOpole§! is our Subject it will form @SIL §YSilesia§! and become an §TIntegrated Subject§!"
+
+
+ BM_emp_brapru_empower_the_junkers_NO_TT: "£no£ If we also have §G70§! Nobility Loyalty, we will also gain:"
+ BM_emp_brapru_empower_the_junkers_YES_TT: "£yes£ If we also have §G70§! Nobility Loyalty, we will also gain:"
+
+
+ BM_emp_brapru_reform_the_state: "\n§YEnacting§! or §YChanging§! government reforms will refund §G25§! Reform Progress.\n"
+
+
+ BM_emp_brapru_enlightened_absolutism: "\nHaving at least §G90§! Absolutism will now also grant: \nGoverning Capacity: §G+100§! \nYearly Legitimacy: §G+0.50§!"
+
+ BM_german_african_trade_center: "Lüderitz Bay"
+ desc_BM_german_african_trade_center: ""
+
+ BM_extra_mission_brapru_colonisation_modifier: "Colonial Ambitions"
+
+
+ BM_emp_brapru_edict_of_potsdam_YES_TT: "£yes£ If we have §G3§! Tolerance of Heretics, we will double the development gained from '§YEdict of Potsdam§!' event.\n"
+ BM_emp_brapru_edict_of_potsdam_NO_TT: "£no£ If we have §G3§! Tolerance of Heretics, we will double the development gained from '§YEdict of Potsdam§!' event.\n"
+
+ BM_emp_brapru_edict_of_potsdam_YES_TT2: "£yes£ If we have §G100.0%§! Religious Unity, we will not lose stability from '§YEdict of Potsdam§!' event.\n"
+ BM_emp_brapru_edict_of_potsdam_NO_TT2: "£no£ If we have §G100.0%§! Religious Unity, we will not lose stability from '§YEdict of Potsdam§!' event.\n"
+
+
+ BM_emp_brapru_westphalian_conquest_yes: "£yes£ This development is §Gdoubled§! if we have at least §Y140§! development in the §PHighlighted Areas§! and will build or upgrade §Y5§! £icon_manpower£ Manpower buildings or grant an §G1§! £adm£ & £mil£ development."
+ BM_emp_brapru_westphalian_conquest_no: "£no£ This development is §Gdoubled§! if we have at least §Y140§! development in the §PHighlighted Areas§! and will add or upgrade §Y5§! £icon_manpower£ buildings or grant an §G1§! £adm£ & £mil£ development."
+
+
+ BM_emp_brapru_rhineland_conquest_yes: "£yes£ If we own all provinces in the §YNorth Rine§!, §YLower Rineland§!, §YAlsace§! and §YBaden§! areas §Y15§! £adm£, £dip£ or £mil£ Development will be distributed."
+ BM_emp_brapru_rhineland_conquest_no: "£no£ If we own all provinces in the §YNorth Rine§!, §YLower Rineland§!, §YAlsace§! and §YBaden§! areas §Y15§! £adm£, £dip£ or £mil£ Development will be distributed."
+
+
+ BM_brapru_winds_of_reformation_title: "Winds of Reformation"
+ BM_brapru_winds_of_reformation_desc: "Long have we toiled under the inquisitive Roman church, sending extortionate dues in the form of tithes. Our brothers and sisters across the Empire off the shackles of Rome as we speak. It is our duty as proud Christians to take our stance in this righteous endeavour of pure faith. Let man decide the path to salvation; let him read the Good Book!"
+ BM_brapru_kirchenordnung_modifier: "Kirchenordnung"
+ desc_BM_brapru_kirchenordnung_modifier: ""
+ BM_brapru_winds_of_reformation_TT: "For every point of §YStability§! we will gain §G25§! Church Power, Fervor or Papal Influence."
+
+
+ #DENMARK
+
+ DAN_NORTH_SEA_EMPIRE: "Nordsøimperiet"
+ DAN_NORTH_SEA_EMPIRE_ADJ: "Nordsøimperiet"
+
+
+
+
+
+
+
+
+ #PAPAL STATES
+ BM_emp_pap_suppress_the_italian_cities_TT: "Reduce our §YAggressive Expansion§! by §G-5§! towards every neighbouring country."
+
+ BM_pap_po_sweep_modifier: "Po Sweep"
+ desc_BM_pap_po_sweep_modifier: ""
+
+ BM_emp_pap_island_screens: "Every owned province in Western Mediterranean Islands will §GAdd or Upgrade§! its §YDock§! / §YDockyard§! building."
+
+ BM_emp_pap_italian_supremacy: "§YItaly Region§! will lose §G-5§! Nationalism and §G-20.0§! Autonomy"
+
+ BM_emp_pap_catholic_volunteers: "Every §G10§! Army Tradition over §G50§! will grant better §GTradition§!, §YShock§! & §YSiege§! skills to our general"
+
+ BM_emp_pap_roman_navy: "Up to §Y5§! random provinces with a §YDockyard§! building will be §TUpgraded§! and receive §G+2§! £dip£ Production Development."
+
+ BM_emp_pap_catholic_alliances: "Every §YCatholic§! Ally will be granted the following modifier:"
+
+ BM_emp_pap_catholic_alliances_modifier: "Papal Alliance"
+ desc_BM_emp_pap_catholic_alliances_modifier: ""
+
+
+
+
+
+
+
+ #SAVOY / PIEDMONT
+ BM_SAV_development_of_torino_modifier: "Urbanization of Torino"
+ desc_BM_SAV_development_of_torino_modifier: ""
+ BM_emp_sav_conquer_counties_TT: "As long as this modifier is active, developing Torino has a §G25.0%§! Chance to grant §G50§! ¤."
+
+ BM_emp_sav_conquer_genoa_modifier: "Navy Focus"
+ desc_BM_emp_sav_conquer_genoa_modifier: ""
+
+ BM_emp_sav_conquer_sardinia_TT: "Forming @SPI §GSardinia-Piedmont§! will no longer have a £adm£ technology requirement."
+ BM_emp_sav_conquer_sardinia_flag: "Completed '§YUnite With Sardinia§!' mission."
+
+ BM_emp_sav_defeat_the_swiss: "Every owned §YSwiss§! province in either §YRomandie§! or §YSwitzerland§! state loses §G-10§! Separatism"
+
+ BM_emp_sav_fortify_all: "If we have also §TDefensive Ideas§!, all eligible provinces will gain:"
+
+
+
+
+
+ # PORTUGAL
+ gc_por_conquer_tangiers_alliance_yes_TT: "\n£yes£ If we are allied to @CAS/@SPA Castille or Spain, and they own [334.GetName] our ally will receive:"
+ gc_por_conquer_tangiers_alliance_no_TT: "\n£no£ If we are allied to @CAS/@SPA Castille or Spain, and they own [334.GetName] our ally will receive:"
+
+ gc_por_colonise_central_africa_yes_TT: "£yes£ If we are allied to or have any subjects in the Kongo Region:"
+gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any subjects in the Kongo Region:"
+
+ gc_por_defeat_pirates_yes_TT: "£yes£ If we or a @CAS/@SPA Castille or Spain ally own [334.GetName], we will receive:"
+ gc_por_defeat_pirates_no_TT: "£no£ If we or a @CAS/@SPA Castille or Spain ally own [334.GetName], we will receive:"
+
+ por_adding_provinces_feitoria_tt: "\nAdding provinces to Trade Companies will now also grant §G+1§! Mercantilism. \nOwning a province that has a §TCenter of Trade lvl 2§! or §TEstuary§! and a '§YFeitoria Trade Post§!' will §Gupgrade§! that province."
+
+ por_fortified_feitoria_modifier: "Fortified Feitoria"
+ desc_por_fortified_feitoria_modifier: ""
+
+ flavor_por.EVTOPTB4: "I think our current economic doctrine works best."
+
+ BM_gc_por_unlock_estate_nobles_capitanias_herditarias_TT: ""
+ jesuit_mission_rights_province_modifier: "Jesuit Mission"
+ BM_jesuit_mission_rights_country_modifier: "Jesuit Mission Rights"
+
+ asian_gun_trade: "Portugese-Asian Gun Trade"
+
+ BM_church_jesuits_mission_decision_TT: "A random owned '§YColony§!' will receive:"
+
+
+
+ #FRANCE
+ BM_fra_reform_legal_system_unlock_TT: "\nWe will unlock the '§YGeneralites§!' government reform which grants:\n"
+
+ BM_fra_burg_succession_TT: "We will gain cores on every province §YWest Burgundy§! and §YEastern Burgundy§! as well as reduce §YDevastation§! by §G-10§!."
+ BM_fra_burg_succession_TT2: "\n§G10§! £adm£, £dip£ or £mil£ Development will be distributed across §YWest Burgundy§!, §YEastern Burgundy§! and §YLorraine§!."
+
+ BM_french_port_calais: "French Calais Port"
+ desc_BM_french_port_calais: ""
+
+
+ BM_fra_musketeers_event_TT: "\n§GEvent Insight§!\nThis event will allow us to:"
+ BM_fra_musketeers_event_TT2: "\n§GAlternatively§!:"
+ BM_flavor_fra_EVTOPTA5: "A simple quarter in Paris will do."
+
+
+ BM_fra_reform_merchant_cooperation_unlock_TT: "\nWe will unlock the '§YBourgeoisie Aristocracy§!' government reform which grants:\n"
+
+ #OTTOMANS
+ BM_tur_oppose_the_janissaries_bt: "Had the §YJanissary Coup§! disaster for §Y2 year§!."
+ BM_tur_crush_the_eyalet_rebellion_at: "Had the §YEyalet Rebellion§! disaster for §Y1 year§!."
+
+
+ the_provincial_system_modifier: "The Provincial System"
+ desc_the_provincial_system_modifier: ""
+
+
+ #POLAND
+ BM_pol_random_center_of_trade_with_trade_building: "One random §YCenter of Trade§! with a §YTrade Building§! will §Gupgrade§! both the §YCenter§! and §YBuilding§!. \n"
+ BM_pol_alternatively_tt: "\n"
+
+ pol_if_mol_and_wal_is_subject_tt: "If both @MOL §YMoldavia§! and @WAL §YWallachia§! is our subjects and @RMN §YRomania§! does not exist:"
+
+ BM_pol_renaissance: "Spreading of Renaissance Ideas"
+ desc_BM_pol_renaissance: ""
+
+ # Copernicus Advisor
+ astronomer: "Astronomer"
+ astronomer_desc: "Nicolaus Copernicus is a skilled scientist, inventor and has for long studied and developed new theories of our stars and universe."
+
+
+
+
+
+
+
+
+
+
+
+
+ #ALBANIA
+ # Missions:
+ alb_ready_hinterlands_title: "Ready the Hinterlands"
+ alb_ready_hinterlands_desc: "Albania is a small but mountainous country, situated in a perfect position to ambush those who attempt to bring us under their heel. We ought to prepare these critical mountain passes for an inevitable invasion, otherwise our biggest advantage will go to waste!"
+
+ alb_pearl_adriatic_title: "Pearl of the Adriatic"
+ alb_pearl_adriatic_desc: "Durres is a natural merchant hub, located adjacent to the mouth of the Adriatic Sea. Wresting it from Venice is a natural step in asserting our dominance in Albania, and would grant us opportunities to establish ourselves as a regional trade power."
+ alb_albanian_merchants_title: "Albanian Merchants"
+ alb_albanian_merchants_desc: "With Durres captured, the logical next step would be to expand our influence in the Adriatic. Albania is relatively poor in natural resources, so it is only natural that we look outwards to find income. A strong trade presence in the Adriatic would be a boon to our economy, no matter how you look at it."
+ alb_surpass_italians_title: "Surpass the Italians"
+ alb_surpass_italians_desc: "Our navy has grown with our conquests, and now comes the time to prove ourselves the undisputed master of the Adriatic Sea. Even Venice itself will struggle to rival our traders. The Albanians will establish themselves as the foremost merchants of the Adriatic, just as our ancestors, the Illyrians, did before us."
+ 
+ alb_defense_kruje_title: "Defense of Kruje"
+ alb_defense_kruje_desc: "The mountain castle of Kruje is critical to holding out against the Turkish menace. The personal castle of Skanderbeg himself, it has withstood multiple sieges by the Ottoman Empire, but as they modernize their siege with more advanced cannon, we too must make sure the castle is capable of withstanding any possible threat."
+ alb_perfect_tactics_title: "Perfect our Tactics"
+ alb_perfect_tactics_desc: "The cavalry charge has decided the fate of Albania time and time again, so why change what already works? Rather, Skanderbeg's tactics must be perfected and expanded upon; the charge down the mountain is the one thing standing between Albania and foreign domination, so it is imperative that we execute it well."
+ alb_promote_arts_title: "Promote Albanian Arts"
+ alb_promote_arts_desc: "Albanian identity has been suppressed by other powers for years now, but that has changed with our years of independence. Now Albania can come into its own in terms of the arts. Let us nourish the arts, showing the world what the Albanian identity is all about!"
+ alb_albanian_navy_title: "The Albanian Navy"
+ alb_albanian_navy_desc: "Although not particularly a naval power, Albania does have incentive to found a strong navy. The Adriatic is a wealthy entrepot of trade, and with a navy to protect our merchants, its fruits can be reaped successfully. Perhaps, one day, we can even rival the Italians themselves!"
+ alb_illyrian_bosnia_title: "Illyrian Bosnia"
+ alb_illyrian_bosnia_desc: "Bosnia is a kingdom in crisis. They struggle from civil war, with both sides being played against eachother by larger kingdoms. Foreign influence is rampant in Bosnia, which is something that we cannot tolerate. We must send our forces in to... persuade the Bosnians that there is a much larger threat than themselves to worry about."
+ 
+ alb_league_lezhe_title: "The League of Lezhe"
+ alb_league_lezhe_desc: "Founded by Skanderbeg to resist Ottoman incursion, the League of Lezhe is the rope that binds the various principalities of Albania together, with the goal of mutual protection. We ought to strengthen this league under Skanderbeg's rule, establishing an army of Albanians worthy of fighting off a Turkish threat."
+ alb_albanians_durres_title: "Albanians of Durres"
+ alb_albanians_durres_desc: "Although the Venetians claim to protect us, one look at the political situation reveals their true intentions. The Albanians in Durres are under Venetian control, and if we sit idly and let this remain so, the Venetians may attempt to bring more of Albania under their sphere of influence. For Albania to remain independent, all foreign presences must be eliminated!"
+ alb_surpass_ottomans_title: "Surpass the Ottomans"
+ alb_surpass_ottomans_desc: "The time has come to go on the offensive against the Turks. We are in a position to turn the tables and end Ottoman dominance over the Balkan peoples once and for all! We must charge relentlessly into their ranks and ensure that the name "Albania" strikes fear into their cold hearts!"
+ alb_defense_christendom_title: "Defense of Christendom"
+ alb_defense_christendom_desc: "It is not enough to simply turn the tide against the Ottomans. We must ensure that their presence in the Balkans is diminished, by whatever means necessary. We must restore the old Balkan kingdoms - Bulgaria, Serbia, Greece, and any other nation that has been oppressed by the Turkish dogs! Liberty will come to the Balkans, by our hand!"
+ alb_expansion_beyond_title: "Expansion Beyond Albania"
+ alb_expansion_beyond_desc: "We claim heritage from the ancient Illyrians, a people which at one point in time held all the Balkans. The other nations in the Balkans are well intentioned, but incapable of defending themselves should a non-Balkan threat encroach upon them. We should begin a campaign to protect these states, even if it means getting our hands dirty."
+ alb_conquest_serbia_title: "Conquest of Serbia"
+ alb_conquest_serbia_desc: "Serbia is a kingdom that has resisted invasion after invasion by power hungry rulers, and the wear shows. It is an old kingdom, at the end of its lifespan, and even a small breeze could cause it to fall. We must intervene quickly, and annex this kingdom for its own good."
+ alb_illyrian_realization_title: "Illyrian Realization"
+ alb_illyrian_realization_desc: "Illyria is now unified once again under Albanian rule. Rejoice! This is an auspicious day for all peoples of the Balkans. Now, the Balkans can enjoy a time of peace and prosperity without worry of external threats. We have achieved what nobody has achieved before - a bright future for the Balkan peninsula."
+ 
+ alb_vengeance_vlore_title: "Vengeance for Vlore"
+ alb_vengeance_vlore_desc: "The Ottoman capture of Vlore was a severe blow to Albanian pride, and a further encroachment on our independence. Even now, the Albanians in Vlore cry for liberation from their Ottoman oppressors. We must reclaim this city, and drive out the Turkish invaders. If we do not, who knows what wrath the Turk will bring upon us..."
+ alb_vengeance_vlore_tt: "War score against [143.Owner.GetName] at least §Y15§!"
+ alb_papal_favor_title: "Papal Favor"
+ alb_papal_favor_desc: "The Pope is a driving force in our independence, having crowned our own Skanderbeg as the "Athleta Christi", the champion of Christ. We ought to establish good relations with the Papacy to further solidify our position as the sole Catholic bastion facing the Ottomans."
+ alb_subjugate_dalmatia_title: "Subjugate Dalmatia"
+ alb_subjugate_dalmatia_desc: "Dalmatia is the heart of the Adriatic, the nucleus from which all trade flows. And yet it is controlled by those foreign to the Balkans, people with no interest in the greater good of Illyria. We must seize this land so that the merchants of the Balkans are once again free to trade in this entrepot."
+ 
+ alb_secure_position_title: "Secure our Position"
+ alb_secure_position_desc: "Albania, strong as it is, does not have the manpower to fight such a wide spanning empire as the Ottomans. As much as it damages our pride to say it, we need allies. The Venetians have guaranteed our independence, but who can tell if they will be able to save us when the time comes? We must be proactive, and seek relations with strong nations who will protect us."
+ alb_organize_crusade_title: "Organize a Crusade"
+ alb_organize_crusade_desc: "It is not enough that we have allies to defend us, the truth is that even if we have alliances, we will still not be in a position to retake our rightful possessions unless our allies feel obligated to help. We ought to seek a crusade against this menace, and get whatever help we can to wrest control of rightful Albanian territory."
+ alb_organize_crusade_tta: "§Y[HUN.GetName]§!'s opinion of §Y[Root.GetName]§! is at least §Y100§!."
+ alb_organize_crusade_ttb: "§Y[ARA.GetName]§!'s opinion of §Y[Root.GetName]§! is at least §Y100§!."
+ alb_organize_crusade_ttc: "[TUR.GetName] Rival:\n	  Total Development at least §Y150§!\n	  §Y[TUR.GetName] Rival§!'s opinion of §Y[Root.GetName]§! is at least §Y100§!."
+ alb_imperial_appeal_title: "An Imperial Appeal"
+ alb_imperial_appeal_desc: "Further protection may be necessary as Ottoman power grows in the Balkans and Anatolia. For this, we turn to the Holy Roman Emperor, who also looks at the Ottomans with unease. Appealing to join the empire is at least worth trying, even if the emperor decides not to allow us in."
+ alb_greater_albania_title: "Greater Albania"
+ alb_greater_albania_desc: "Albania is an honorable nation, but it lacks size. Although we have great ambitions and heritage, we are still just a few small cities in the mountains. We must expand in any direction we can, in order to realize our ambitions and achieve glory for our kingdom."
+ alb_question_nationalism_title: "Question of Nationalism"
+ alb_question_nationalism_desc: "With the Age of Nationalism upon us, we must question our stance towards this new idea. Although we are a proud nation, we are isolated in culture and language, and therefore exerting our dominance would be hard to accept for the other peoples in our empire. But let us be damned if our culture isn't the superior one! We must take a stance: nationalism or syncretism?"
+
+ # Modifiers: 
+ alb_mountain_passes: "Perilous Mountain Passes"
+ desc_alb_mountain_passes: ""
+
+ alb_adriatic_entrepot: "Adriatic Entrepot"
+ desc_alb_adriatic_entrepot: ""
+
+ alb_competition_venice: "Competition with Venice"
+ desc_alb_competition_venice: ""
+
+ alb_traders_adriatic: "Traders of the Adriatic"
+ desc_alb_traders_adriatic: ""
+
+ alb_kruje_castle: "Kruje Castle"
+ desc_alb_kruje_castle: ""
+
+ alb_mountain_ambush: "Mountain Ambush!"
+ desc_alb_mountain_ambush: ""
+
+ alb_harbor_albania: "Harbor of Albania"
+ desc_alb_harbor_albania: ""
+
+ alb_church_bosnia: "Church of Bosnia"
+ desc_alb_church_bosnia: ""
+
+ alb_league_lezhe_mod: "League of Lezhe"
+ desc_alb_league_lezhe_mod: ""
+
+ alb_christianity_restored: "Christianity Restored"
+ desc_alb_christianity_restored: ""
+
+ alb_champion_balkans: "Champion of the Balkans"
+ desc_alb_champion_balkans: ""
+
+ alb_illyrian_heritage: "Illyrian Heritage"
+ desc_alb_illyrian_heritage: ""
+
+ alb_bastion_hungary: "Bastion Against Hungary"
+ desc_alb_bastion_hungary: ""
+
+ alb_illyrian_realized: "Illyrian Heritage Realized"
+ desc_alb_illyrian_realized: ""
+
+ alb_ottoman_offensive: "Ottoman Offensive"
+ desc_alb_ottoman_offensive: ""
+
+ alb_athleta_christi: "Athleta Christi"
+ desc_alb_athleta_christi: ""
+
+ alb_secured_routes: "Secured Shipping Routes"
+ desc_alb_secured_routes: ""
+
+ alb_seeking_protection: "Seeking Protection"
+ desc_alb_seeking_protection: ""
+
+ alb_led_crusade: "Albanian Led Crusade"
+ desc_alb_led_crusade: ""
+
+ alb_western_arms: "Western Arms"
+ desc_alb_western_arms: ""
+
+ alb_albanian_expansion: "Albanian Expansion"
+ desc_alb_albanian_expansion: ""
+
+ alb_albanian_domination: "Albanian Domination"
+ desc_alb_albanian_domination: ""
+
+ alb_cultural_harmony: "Cultural Harmony"
+ desc_alb_cultural_harmony: ""
+
+ #MISC
+ BM_durazzo_lease_tradepower_TT: "Durazzo Lease"
+
+
+
+ #EVENTS
+ FEE_Albania_Events.2.T: "Durazzo Purchase"
+ FEE_Albania_Events.2.D: "The Durazzo coastline was acquired as a means to expand our influence over the trade networks in the Balkans. It has proven very lucrative as a bargain chip over the Albanian people, but now they want it back. Seeing as the Albanians have little to offer in means of money, they instead offer to lease the Durazzo ports, granting us exclusive monopoly on trade in Durazzo."
+ FEE_Albania_Events.2.OPT1: "They can have their land back, but our merchants will stay."
+ FEE_Albania_Events.2.OPT2: "We fought hard to acquire that port and it will stay in our control!"
+
+ FEE_Albania_Events.3.T: "Venice Refuses!"
+ FEE_Albania_Events.3.D: "The Venitian merchants have refused our legal right to the Durazzo coast, it seems if we ever want to acquire it we must seize it forcefully."
+ FEE_Albania_Events.3.OPT1: "To arms!"
+
+ #new events
+ ME_Albania_Events.1.t: "Albania Defeats the Turks"
+ ME_Albania_Events.1.d: "The Turks have fallen, and with them any hint of Muslim dominance of the Balkans. For the last time, the heathen has threatened Balkan Christianity. Rejoice! We have won against all odds and all of Christendom will revere us for the victory we have won today!"
+ ME_Albania_Events.1.a: "No more anguish for the people of the Balkans!"
+ alb_defended_christianity_tt: "§YChristian Country's§! opinion of §Y[Root.GetName]§! changed by §G+50§!."
+ 
+ ME_Albania_Events.2.t: "Skanderbeg Calls for Crusade"
+ ME_Albania_Events.2.d: "The situation in Albania is grim. The Turks encroach further and further every day, and one thing is clear: Skanderbeg can only hold out on his own for so long. He has called for all those loyal to God and the Pope to raise their levies and take arms against the Turkish menace. We have been contacted among these people, and now we must decide whether or not to aid the Duke of Albania."
+ ME_Albania_Events.2.a: "The Turks must be defeated! We will align with Skanderbeg."
+ ME_Albania_Events.2.b: "Send them well wishes, but do not align with them."
+ 
+ ME_Albania_Events.3.t: "[From.GetName] Sends Their Support!"
+ ME_Albania_Events.3.d: "[From.GetName] has agreed to offer support for our cause against the Turk. We are very grateful for these much needed arms. Together we shall end the threat to Balkan tranquility, now and forever!"
+ ME_Albania_Events.3.a: "Wonderful news!"
+ 
+ ME_Albania_Events.4.t: "Albania Appeals to the Empire"
+ ME_Albania_Events.4.d: "The ruler of Albania has sent to us an envoy with a most unusual request. To join the Holy Roman Empire would put them under our protection, a sensible decision to say the least. Still, an imperial prince so far from Germany could mean trouble - especially since the Turks advance further north with each passing day. We must make a calculated decision whether or not to allow these princes into our domain."
+ ME_Albania_Events.4.a: "Albania will be under our protection from now on!"
+ ME_Albania_Events.4.b: "Send them regards, but do not make them an imperial prince."
+ 
+ ME_Albania_Events.8.t: "Albania Joins the Empire!"
+ ME_Albania_Events.8.d: "The Holy Roman Emperor has allowed us to hold the title of \"Imperial Prince\". This is an auspicious day for Albania, as it means one more hurdle the Ottomans will have to overcome in order to take our sovereignty from us. Now, with our flank secured, we can work towards building a power base strong enough to take on the Turks head on."
+ ME_Albania_Events.8.a: "Albania will be under the protection of the Emperor from now on!"
+
+ #new opinions
+ alb_defended_christianity: "Defended Christianity"
+ alb_turks_defeated: "The Turks must be defeated!"
+ alb_well_wishes: "Empty Well Wishes"
+
+
+
+
+
+ #SERBIA STRONK
+ BM_SER_kosovo_gold_mine: "Kosovo Gold Mine"
+ desc_BM_SER_kosovo_gold_mine: ""
+
+ BM_SER_serbian_empire: "Serbian Empire"
+ desc_BM_SER_serbian_empire: ""
+
+
+
+
+
+ #BULGARIA
+ bul_rebuilding_the_kreposti_title: "Rebuilding the Kreposti"
+ bul_rebuilding_the_kreposti_desc: "Under Ottoman occupation, the castles of Bulgaria were demolished, as to weaken thoughts of rebellion, if we are to continue into the future, we must rebuild them."
+ bul_theodosian_wall_title: "Theodosian Walls"
+ bul_theodosian_wall_desc: "The Theodosian Walls lasted the Romans centuries, being the strongest fortifications in Europe since their construction, unfortunately, the 4th Crusade and Orhan's Empire have since weakened these once great walls, let us rebuild them to reinforce our position on the Anatolian border."
+ bul_revenge_for_vidin_title: "Revenge for Vidin"
+ bul_revenge_for_vidin_desc: "During the 14th century, the Hungarians decided to invade and occupy the important city of Vidin, completely shattering any hope for Bulgarian stabilization. We should subjugate these filth, just like the Bulgarian Empire before us."
+
+ bul_control_mediterranean_title: "Control the Mediterranean"
+ bul_control_mediterranean_desc: "The Roman Empire was notorious for it's control over the Mediterranean. Having been the dominant force in the sea for centuries, they were the best in inland sea combat at the time."
+ bul_balkan_renaissance_title: "Balkan Renaissance"
+ bul_balkan_renaissance_desc: "If we wish to continue into the future, we must harness the artistic views and wonders of the Italian Renaissance, and put them into the Balkans, with this we could hold more power over our brothers and make them believe we are the true unifiers."
+ bul_roman_cultural_revival_title: "Roman Cultural Revival"
+ bul_roman_cultural_revival_desc: "The Roman culture was a revolutionary one, they created some of the greatest architectural feats with so much as sticks and stones, and revolutionized the way we thought, whilst a lot of this culture was borrowed from other cultures, what culture isn't great if it hasn't borrowed a few things. Let us revive these great ideas to create a new age of Roman Architecture and Ideas."
+ bul_reinvent_legionary_title: "Re-Invent the Legionary"
+ bul_reinvent_legionary_desc: "Ah, the Legionaries, the most feared collection of soldiers at the time, without these brave and powerful men, Rome would have fallen. Unfortunately, the Romans in Greece failed to keep the traditions of old and instead fell to corrupt foreign mercenaries, let us have our best historians teach the Military Commanders, Generals and Recruiters how to best re-invent these tactics of old; let us show the world, that Rome's finest men have returned, and they should be scared."
+
+ #2nd
+ bul_send_diplomats_title: "Send Diplomats"
+ bul_send_diplomats_desc: "As it stands, we are at the mercy of the Ottoman armies. This is not favourable in the wide scheme of things; We should send our diplomats to see if we can get their backing in our coming wars."
+ bul_new_capital_title: "A New Capital"
+ bul_new_capital_desc: "\"The City of the World's Desires\" is now in Bulgaria's hands, let us march our armies through the city to show them their new rulers, and let us make it our new capital"
+ bul_develop_the_balkans_title: "Develop the Balkans"
+ bul_develop_the_balkans_desc: "While moving our troops from place to place using a black mineral and a furnace isn't feasible yet, we can still improve the lives of our people so that they are more willing to do as we say, let us improve our new lands and start more projects to both aid our Soldiers, and aid our state."
+ bul_bulgarska_modernizaciya_title: "Bulgarska Modernizaciya"
+ bul_bulgarska_modernizaciya_desc: "As we continue into the coming centuries, Bulgaria needs to modernize and be ahead of it's neighbours if it is to survive, let us use the wealth we have gained through our continued development of the Balkan lands to make this happen."
+
+ bul_mare_nostrum_title: "Mare Nostrum"
+ bul_mare_nostrum_desc: "Rome, the grandest of Empires, spanning from the Northern Coast of France, to the Eastern ports of Mesopotamia, many have claimed the title of Rome's heir apparent, but through Simeon I's encrownment by the Patriarch of Constantinople as Emperor of all Romans, let us use this to our advantage to claim the fallen empire."
+ bul_anatolian_frontier_title: "Anatolian Frontier"
+ bul_anatolian_frontier_desc: "Anatolia was the greatest foothold of manpower for the East Romans, where in which they kept a Theme system. This worked with the areas in Anatolia would be divided up and handed to nobles, who would in-turn conscript local Knights to use in the Roman army. After the loss of Anatolia, the Romans started to look more towards Mercenaries and now that we have control over the area, we can move into other previously Roman-Controlled lands."
+ bul_birthplace_empire_title: "Birthplace of the Empire"
+ bul_birthplace_empire_desc: "Romulus and Remus, the brothers whose fate decided the course of history for centuries, where in Remus was killed by his brother, and Romulus declared Rome, where in after many rulers and many conquests, the Italian Peninsula had been fully conquered by the Romans and so sprung the birthplace of an empire."
+ bul_kill_mockingbird_title: "To Kill a Mockingbird"
+ bul_kill_mockingbird_desc: "To say the heathens merely took these lands from us is a vast understatement; they have spread their vile, heathen ideas and notions throughout OUR lands, they take pity on us believing that our god is theirs! Let us show these heathen scum who's righteous in the eyes of God, DEUS VULT!"
+ bul_rome_fiercest_rival_title: "Rome's Fiercest Rivals"
+ bul_rome_fiercest_rival_desc: "Gaul and Carthage, these 2 were some of the fiercest foes that Rome fought from Carthage nearly being the end of Rome and Gaul stopping Rome in it's tracks many a time, We must reconquer these territories for the glory of Rome."
+ bul_assert_simeon_claim_title: "Assert Simeon's Claim"
+ bul_assert_simeon_claim_desc: "In 913 Simeon I of Bulgaria was crowned Emperor of all Romans by the Patriarch of Constantinople, now, after centuries of humiliation and glory, we have conquered the most vital parts of the Roman Empire and we can completely declare the fulfillment of Simeon's Claimant over the Roman Empire and declare ourselves the Roman Empire. NUMQUAM RETRORSUM!"
+
+ #3rd
+ bul_fierce_bulgaria_title: "A Fierce Bulgaria"
+ bul_fierce_bulgaria_desc: "Occupied and humiliated by Empire after Empire, the Bulgarian spirit for independence never dwindled, now that we administer our own nation again, we should work on expanding it."
+ bul_armiya_svobodata_title: "Armiya na Svobodata"
+ bul_armiya_svobodata_desc: "The Bulgarska Armiya na Svobodata is a force to help us gain independence, we should import experts and weaponry from foreign nations to better understand what we are fighting"
+ bul_send_the_spies_title: "Send in the Spies"
+ bul_send_the_spies_desc: "Thanks to our connections from whilst we were a subject, we are able to use our spies to know the ins and outs of all their defenses, let us use this to quickly strike down our foes."
+ bul_seek_protection_title: "Seek Protection"
+ bul_seek_protection_desc: "The Bulgarian state is fresh on the platter for Hungary, Serbia and Greece, we should seek protection from our slavic brothers up north"
+ bul_balkan_right_title: "Our Balkan Right"
+ bul_balkan_right_desc: "With our newfound greatness, we should press our claims to be the true hegemony of the Balkans, with this we'll have full reign to declare our new state."
+ bul_militarizacija_na_naroda_title: "Militarizacija na Narod"
+ bul_militarizacija_na_naroda_desc: "In the age of gunpowder, we must be prepared to raise our troops to the frontlines as fast as possible, to have them be prepared for combat and evolve with the technologies of the rest of the world."
+ bul_legacy_of_simeon_title: "Legacy of Simeon"
+ bul_legacy_of_simeon_desc: "Since our independence, we have expanded and shown the people of the Balkans that we are the true ruler of them. Our king has decided to declare himself and all heirs apparent, to be the Tsars of the Bulgars and their minorities just as Simeon had done before us."
+
+ bul_invest_bulgaria_proper_roman_title: "Invest in Bulgaria Proper"
+ bul_invest_bulgaria_proper_roman_desc: "The Heartland of Bulgaria is important, we must use our wealth to invest into Bulgaria proper to better the lives of the people and to stabilize the front."
+ bul_expand_newfound_spoils_roman_title: "Expand Newfound Spoils"
+ bul_expand_newfound_spoils_roman_desc: "We have recently conquered some new lands, leading tomany people losing their homes and jobs. Let us rebuild these newfound lands."
+
+ bul_invest_bulgaria_proper_slavic_title: "Invest in Bulgaria Proper"
+ bul_invest_bulgaria_proper_slavic_desc: "The Heartland of Bulgaria is important, we must use our wealth to invest into Bulgaria proper to better the lives of the people and to stabilize the front."
+ bul_expand_newfound_spoils_slavic_title: "Expand Newfound Spoils"
+ bul_expand_newfound_spoils_slavic_desc: "We have recently conquered some new lands, leading tomany people losing their homes and jobs. Let us rebuild these newfound lands."
+
+ #4th
+ bul_land_greeks_title: "Land of the Greeks"
+ bul_land_greeks_desc: "Now that we have conquered the our rightful claims in the land of the Greeks, we can push our claims further to gain a loyal subject"
+
+ bul_slavic_traditions_title: "Slavic Traditions"
+ bul_slavic_traditions_desc: "The Slavs, the cause of the demise of the Golden Horde, holders of the titile "Holy Roman Empire" at some point, Byzantium's biggest enemy and heirs to the Kievan Rus, one of the wealthiest nations to live in our history, we have a legacy, let us unite these legacies to proclaim a United Slavic Empire."
+ bul_samo_legacy_title: "Samo's Legacy"
+ bul_samo_legacy_desc: "To our North lay the Western Slavs, a proud collection of peoples who put their faith into the Catholics. The first man to create am empire in this area was Samo, let us show that Bulgarian history isn't the only one that is honoured in our nation. Let us start by expanding into Moravia, Galicia and Krakow."
+ bul_victory_kiev_title: "Victory at Kiev"
+ bul_victory_kiev_desc: "With our victory at Kiev, we were able to legitimize our control over the region, now that we hold the greatest city in Slavic history, let us repair after centuries of foreign occupation."
+ bul_uniting_zapadoslavia_title: "Uniting Zapadoslavia"
+ bul_uniting_zapadoslavia_desc: "Now that we have a firm control over Ruthenia, let us finish our conquests in Zapadoslavia and unite the Western Slavs."
+ bul_ruthenian_possessions_title: "Ruthenian Possessions"
+ bul_ruthenian_possessions_desc: "Whilst we control the South of Ruthenia, we're yet to control the North, let us capture these territories to make the finishing touches of our conquests easier."
+ bul_lech_czech_rus_title: "Lech, Czech and Rus"
+ bul_lech_czech_rus_desc: "The legend of Lech, Czech and Rus is one of myth and one that gives origins to three of the Slavs greatest empires, talking about how 3 brothers, Lech Czech and Rus were hunting together when eventually, they all chased a different animal, Lech going North, Czech going West and Rus going East. \nWhilst not much is said about Rus, Lech in his trek North found an eagle which eventually sat in front of the red sun protecting it's nest, which he saw as a good omen deciding to settle in the area and to commerorate the Eagle, he made the Polish insignia the White Eagle on a red background. Czech went West to the and settled on the Rip mountain founding the Czech nation itself."
+
+ #5th
+ bul_northern_barbarians_title: "Northern Barbarians"
+ bul_northern_barbarians_desc: "The Barbarians to our north must be subjugated, tales of "Vlad the Impaler" might scare our soldiers, but we'll just have to show our soldiers that the Bulgarian's are scarier"
+ bul_state_funded_migracija_title: "State Funded Migracija"
+ bul_state_funded_migracija_desc: "The idea of forced migration would make our populace unhappy, so instead we'll give subsidies to those who move to our new conquered lands"
+ bul_benefits_from_the_countryside_title: "Benefits from the Countryside"
+ bul_benefits_from_the_countryside_desc: "Under Ottoman rule, our people fled the countryside to the big cities. If we are to feed our people, we should give benefits to those who live in the countryside"
+
+ bul_balkan_cultural_dominance_title: "Balkan Cultural Dominance"
+ bul_balkan_cultural_dominance_desc: "Slavs have a history of revolting against their overlords, whether or not that overlord was a Slav. We should establish a cultural dominance in the Balkans to ensure control over these lands."
+ bul_slavic_horde_initiative_title: "Slavic Horde Initiative"
+ bul_slavic_horde_initiative_desc: "A good leader can defend his nation, a great one can expand it. But a great leader requires a great army, let us setup an initiative, that every man has a militrary service, in order to fill up the reserves and better prepare us for future warfare, the fitter the man, the longer the service."
+ bul_slavic_language_title: "A Slavic Language"
+ bul_slavic_language_desc: "The Slavic languages, whilst similar, have too many differences to be able to perfectly understand one-another. A petition started by our greatest philosophers states that we should create a simpler language that can be used by all Slavs, not just to help with Diplomacy, but also to help unify the Slavs."
+ bul_combined_tactics_title: "Combined Tactics"
+ bul_combined_tactics_desc: "Our Slavic brethren are quite unique in how they fight, from the Russian hordes, The Polish Hussars and the Bulgarian Discipline, we have much to learn from these tactics, let us get advisors from all forms of Slavs to see what new tactics can be made."
+
+ #Events
+ ME_Bulgaria_Events.1.T: "A New Capital"
+ ME_Bulgaria_Events.1.D: "Now that we have conquered the city of the world's desires and the home of Alexander's prestigious Empire for ourselves, it's time we grant them more fitting names, names that will give our great motherland, far more legitimacy as we chase our spot at the golden books of history, and show the world that we are more than just an uncivilized nation. Let us show them that we will lead the Balkans into a new century, a century where Bulgaria is feared by all who oppose her"
+ ME_Bulgaria_Events.1.OPT1: "The old capital of Bulgaria seems fitting"
+ ME_Bulgaria_Events.1.OPT2: "It's time I proclaim myself and my apparent heirs Tsars of the Romans"
+ ME_Bulgaria_Events.1.OPT3: "We will show the world that Bulgaria is an Empire in her own right!"
+
+ ME_Bulgaria_Events.2.T: "A Slavic Alliance"
+ ME_Bulgaria_Events.2.D: "Our Slavic brothers have grown to be much bigger than us, although we're very different in most aspects, it does not change our heritage. Let us use the our connections with the Christian Churches and our siblinghood to secure a strong alliance"
+ ME_Bulgaria_Events.2.OPT1: "United, we stand stronger than ever"
+
+ ME_Bulgaria_Events.3.T: "Future of the Tsardom"
+ ME_Bulgaria_Events.3.D: "Now that we have proclaimed ourselves as the Tsardom of Bulgaria and the Balkans, we must decide what to do to secure the future and prosperity of our great empire, should we move to capture Rome and restore the glory of an Ancient Empire, or secure ourselves internally, slavicize the lands of the Balkans, and move onto a greater fate, to unify all Slavs, from the West Slavs, to the South Slavs and to the East Slavs."
+ ME_Bulgaria_Events.3.OPT1: "Let us create the Roman Tsardom"
+ ME_Bulgaria_Events.3.OPT2: "Let us work on ourselves and move towards a Slavic nation for all Slavs"
+
+ ME_Bulgaria_Events.4.T: "Send in the Spies"
+ ME_Bulgaria_Events.4.D: "Thanks to our connections from whilst we were a subject, we are able to use our spies to know the ins and outs of all their defenses, let us use this to quickly strike down our foes."
+ ME_Bulgaria_Events.4.OPT1: "We will tear their walls down!"
+
+
+ #Modifiers
+ bul_expert_diplomats: "Expert Diplomats"
+ bul_expert_diplomats_independent: "Expert Diplomats"
+ bul_kreposti_rebuilt: "Kreposti Rebuilt"
+ bul_repaired_theodosian_walls: "Repaired Theodosian Walls"
+ bul_repaired_theodosian_walls_final: "Repaired Theodosian Walls"
+
+ bul_bulgarian_navy: "Bulgarian Navy"
+ bul_revolutionary_arts: "Revolutionary Arts"
+ bul_centre_empire: "Centre of the Empire"
+ bul_roman_cultural_revival_mod: "Roman Cultura Revival"
+ desc_bul_roman_cultural_revival_mod: "Long has passed since the Roman architectural wonders, let us revive this to better sustain our buildings and improve the rates at which we build them"
+ bul_rome_finest: "Rome's Finest"
+ desc_bul_rome_finest: "Now that we have Re-Invented the doctrine of the Legions, let us make sure every soldier is trained to perfection so that we may expand without fear of being overwhelmed"
+
+ bul_challenging_elan: "Challenging Élan"
+ bul_bulgarian_roads: "Bulgarian Roads"
+ bul_modernizing_bulgaria: "Modernising Bulgaria"
+ bul_innovativeness: "Bulgarian Innovativeness"
+ bul_innovativeness_dlc: "Bulgarian Innovativeness"
+
+ bul_roman_dream: "Roman Dream"
+ _desc_bul_roman_dream: "Now that we've decided on restoring the Roman Empire, we should work towards understanding the history and tactics of the once great Empire."
+ bul_mock_theme_system: "Mock Theme System"
+ bul_seat_rome: "Seat of Rome"
+ bul_back_maroon: "Back Maroon"
+ bul_mare_nostrum_mod: "Mare Nostrum"
+
+ bul_rights_to_balkans: "Rights to the Balkans"
+ bul_bulgarian_militarization: "Bulgarian Militarization"
+ bul_growing_morale: "Growing Morale"
+ bul_simeons_dream: "Simeon's Dream"
+
+ bul_prosperity_homeland: "Prosperity in the Homeland"
+ bul_government_investments: "Government Investments"
+ bul_rebuilding_new_land: "Rebuilding the New Land"
+
+ bul_becoming_master: "Becoming the Master"
+
+ bul_projects_expansion: "Projects Expansion"
+ bul_kyi_castle: "Kyi's Castle"
+ bul_king_zapadoslavia: "King of Zapadoslavia"
+ bul_into_bear: "Into the Bear"
+ bul_the_dream: "The Dream"
+
+ bul_bulgarian_steaks: "Bulgarians Steaks"
+ bul_subsidized_the_migrants: "Subsidized the migrants"
+ bul_monetary_benefits: "Monetary Benefits"
+
+ bul_new_balkan_overlord: "New Balkan Overlord"
+ bul_slavic_hordes: "Slavic Hordes"
+ desc_bul_slavic_hordes: "The Slavs are well known for Mobilizing huge portions of their male population to defend their sacred Motherlands, let us use this tradition to effeciently mobilize all willing and able men, and if times are tough, the women too."
+ bul_one_slavic_language: "One Slavic Language for them All"
+ bul_one_slavic_language_province: "One Slavic Language for them All"
+
+ #Event Modifiers
+ bul_the_bulgarian_legacy: "The Bulgarian Legacy"
+ bul_the_last_home_of_the_romans: "The Last Home of the Romans"
+ bul_star_of_the_balkans: "Star of the Balkans"
+ bul_busted_defense: "Busted Defense"
+
+ bul_outward_look: "Romanization Efforts"
+ bul_inward_look: "Bulgarian Supremacy"
+ bul_prussia_balkans: "Prussia of the Balkans"
+ bul_russian_expertise: "Russian Expertise"
+ bul_polish_hussars: "Polish Hussars"
+ bul_mixed_doctrine: "Mixed Doctrine"
+ bul_estates_happy: "Esates Happy"
+
+ #Tooltips
+ BUL_THEODOSIAN_WALL_CANNONS: "This Bonus will last until Copper Cannons are found, then it will be reduced to §G10%§!"
+ BUL_SPIES_TT: "If we have at least §G20%§! §YSpy Network§! in the @TUR §YOttomans§! we will be able to severely damage their forts."
+ BUL_RESTORE_ROME_TT: "We will be able to reform the Roman Empire"
+ BUL_CULTURE_CONVERSION_TT: "After 15 years, the Migration will show us that we hold a majority in these areas: §Y[160.GetAreaName]§!, §Y[149.GetAreaName]§! and §Y[148.GetAreaName]§!"
+ BUL_SLAVIC_ALLIANCE_TT: "We will create a historical friendship with the slavic countries that were drawn to our side"
+ bul_slavic_language_tt: "§Y10§! random owned provinces with an accepted culture in a §YSlavic§! culture group:"
+ BM_bul_bulgarska_modernizaciya_TT: "If we have at least §T30 Innovativeness§! we will also gain:"
+ BM_bul_legacy_of_simeon_1_TT: "\nAll §YBulgarian§! specific Government Reforms will be §Gupgraded§!."
+ BM_bul_legacy_of_simeon_2_TT: "Every owned §YBulgarian§! province in the §YBalkans§! region will become §YGreek§!."
+
+ BULGARIAN_TSARDOM: "Bulgarian Tsardom"
+ BULGARIAN_TSARDOM_ADJ: "Bulgarian"
+ BULGARIA_SLAVIA: "Slavia"
+ BULGARIA_SLAVIA_ADJ: "Slavic"
+
+ #Decision
+ me_restore_roman_empire_bulgaria_title: "Restore the Roman Empire"
+ me_restore_roman_empire_bulgaria_desc: "Not since the Romans in the second century has one empire commanded the entirety of the Mediterranean and beyond. If we claim this land, we can scoff at whatever pretenders may claim in Constantinople or the Holy Roman Empire and proclaim ourselves the true successors of Rome."
+ bul_name_changes_title: "Bulgarianize the cities"
+ bul_name_changes_desc: "Let us rename these large cities in our lands to make them fit our agenda"

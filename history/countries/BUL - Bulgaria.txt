@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = bulgarian_tsardom_reform
+technology_group = eastern
+primary_culture = bulgarian
+religion = orthodox
+capital = 1765	# Sofia
+1444.11.10 = {
+	monarch = {
+		name = "Todor II"
+		dynasty = "Cometopuli"
+		birth_date = 1412.1.1
+		adm = 4
+		dip = 6
+		mil = 2
+		religion = orthodox
+		culture = bulgarian
+		leader = {
+			name = "Todor II" # Name of the leader
+			type = general
+			fire = 3
+			shock = 3
+			manuever = 4
+			siege = 0
+		}
+	}
+	define_ruler_to_general = {
+		fire = 3
+		shock = 3
+		manuever = 4
+		siege = 0
+	}
+	add_ruler_personality = righteous_personality
+}

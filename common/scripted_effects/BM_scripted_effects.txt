@@ -1,0 +1,347 @@
+add_navy_tradition_or_dip_power = {
+	[[amount]
+		tooltip = {
+			add_navy_tradition = $amount$
+		}
+		custom_tooltip = ME_ADD_NAVY_TRADITION_OR_DIP_POWER
+		hidden_effect = {
+			for = {
+				amount = $amount$
+				effect = "
+					if = {
+						limit = {
+							NOT = { navy_tradition = 99.9 }
+						}
+						add_navy_tradition = 1
+					}
+					else = {
+						add_dip_power = 3
+					}
+				"
+			}
+		}
+	]
+	
+	[[value]
+		tooltip = {
+			add_navy_tradition = $value$
+		}
+		custom_tooltip = ME_ADD_NAVY_TRADITION_OR_DIP_POWER
+		hidden_effect = {
+			for = {
+				amount = $value$
+				effect = "
+					if = {
+						limit = {
+							NOT = { navy_tradition = 99.9 }
+						}
+						add_navy_tradition = 1
+					}
+					else = {
+						add_dip_power = 3
+					}
+				"
+			}
+		}
+	]
+}
+
+add_or_extend_province_modifier_effect = {
+	if = {
+		limit = {
+			has_province_modifier = BM_admin_ideas_centralization_mechanic
+		}
+		extend_province_modifier = { name = BM_admin_ideas_centralization_mechanic duration = 9125 }
+	}
+	else = {
+		add_province_modifier = { name = BM_admin_ideas_centralization_mechanic duration = 9125 }
+	}
+}
+
+on_harmonized_effect = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+on_completed_agenda_effect_estate_nobles = {
+	if = {
+		limit = { has_government_attribute = enable_vladislavs_provincial_establishment }
+		add_stability_or_adm_power = yes
+	}
+}
+
+on_completed_agenda_effect = {
+	on_completed_agenda_effect_$estate$ = yes
+	if = {
+		limit = {
+			has_country_flag = BM_buffed_agendas_loyalty
+		}
+		add_estate_loyalty = {
+			estate = all
+			loyalty = 5
+		}
+	}
+	if = {
+		limit = { 
+			has_government_attribute = enable_diverse_estates_reform
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+					culture = hungarian
+					culture_group = germanic
+				}
+			}
+			add_random_development = 1
+		}
+	}
+	clr_auto_complete_flag = yes
+}
+
+
+BM_pru_legal_reforms_effect = {
+	if = {
+		limit = { 
+			has_country_flag = pru_legal_reforms_flag
+		}
+		change_government_reform_progress = 25
+	}
+}
+
+
+ge_country_peasant_council_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_peasant_council 
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		add_country_modifier = {
+			name = "Peasant_Council"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Peasant_Council
+	}
+}
+
+BM_batalha_monastery_bonus = {
+	if = {
+		limit = {
+			owns_core_province = 227
+			227 = {
+				has_great_project = {
+					type = batalha_monastery
+					tier = 3
+				}
+			}
+		}
+		add_papal_influence = 10
+	}
+}
+
+BM_SAV_development_of_torino_modifier_province_update = {
+	if = {
+		limit = {
+			has_province_modifier = BM_SAV_development_of_torino_modifier
+		}
+		random_list = {
+			25 = {
+				owner = {
+					add_treasury = 50
+				}
+			}
+			75 = {
+
+			}
+		}
+	}
+}
+
+BM_jesuit_mission_rights_province_update = {
+	if = {
+		limit = {
+			has_province_modifier = jesuit_mission_rights_province_modifier
+		}
+		remove_province_modifier = jesuit_mission_rights_province_modifier
+	}
+}
+
+BM_POL_hab_liberate_balkans_effect = {
+    custom_tooltip = HAB_CREATE_ROMANIA
+    hidden_effect = {
+        if = {
+            limit = {
+                WAL = {
+                    was_player = yes
+                }
+            }
+            WAL = {
+                inherit = MOL
+                change_tag = RMN
+				on_change_tag_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+				swap_non_generic_missions = yes
+				if = {
+					limit = {
+						NOT = {
+							government_rank = 2
+						}
+					}
+					set_government_rank = 2
+				}
+				random_owned_province = {
+					add_base_tax = 1
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+				add_prestige = 25
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				set_country_flag = formed_romania_flag
+				set_country_flag = boh_unlocked_order_of_the_dragon
+            }
+        }
+        else = {
+            MOL = {
+                inherit = WAL
+                change_tag = RMN
+				on_change_tag_effect = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+				swap_non_generic_missions = yes
+				complete_mission = unite_the_voivodes
+				complete_mission = order_of_the_dragon
+				if = {
+					limit = {
+						NOT = {
+							government_rank = 2
+						}
+					}
+					set_government_rank = 2
+				}
+				random_owned_province = {
+					add_base_tax = 1
+				}
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+				add_prestige = 25
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				set_country_flag = formed_romania_flag
+				set_country_flag = boh_unlocked_order_of_the_dragon
+            }
+        }
+    }
+}
+
+BM_nomadic_tribes_culture_conversion_bonus = {
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_turkic_tribes_integrate_new_tribes
+			}
+			culture = root
+		}
+		add_random_development = 1
+	}
+}
+
+remove_all_age_of_discovery_modifiers = {
+	if = {
+		limit = {
+			NOT = { current_age = age_of_discovery }
+		}
+		if = {
+			limit = { 
+				has_country_modifier = BM_MANTII_PROPOSED_THIS_DONT_KILL_ME
+			}
+			remove_country_modifier = BM_MANTII_PROPOSED_THIS_DONT_KILL_ME
+		}
+		if = {
+			limit = { 
+				has_country_modifier = BM_AQ_QOYUNLY_modifier
+			}
+			remove_country_modifier = BM_AQ_QOYUNLY_modifier
+		}
+		if = {
+			limit = { 
+				has_country_modifier = BM_the_great_struggle
+			}
+			remove_country_modifier = BM_the_great_struggle
+		}
+		if = {
+			limit = { 
+				has_country_modifier = CM_DUTCH_burgundian_support
+			}
+			remove_country_modifier = CM_DUTCH_burgundian_support
+		}
+		if = {
+			limit = { 
+				has_country_modifier = CM_dead_shah_rukh_trouble
+			}
+			remove_country_modifier = CM_dead_shah_rukh_trouble
+		}
+		if = {
+			limit = { 
+				has_country_modifier = fee_france_scots_mercenaries
+			}
+			remove_country_modifier = fee_france_scots_mercenaries
+		}
+		if = {
+			limit = { 
+				has_country_modifier = fee_por_henrique_naval_reforms
+			}
+			remove_country_modifier = fee_por_henrique_naval_reforms
+		}
+	}
+}
+
+BM_andes_riches_andean_triggered_province_modifier_province_update = {
+	if = {
+		limit = {
+			AND = {
+				superregion = andes_superregion
+				OR = {
+					trade_goods = gold
+					trade_goods = gems
+					trade_goods = iron
+					trade_goods = salt
+					trade_goods = copper
+				}
+			}
+		}
+		if = {
+			limit = { 
+				technology_group = andean
+			}
+			add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+		}
+		else = {
+			add_province_triggered_modifier = BM_andes_riches_colonial_triggered_province_modifier
+		}
+	}
+}

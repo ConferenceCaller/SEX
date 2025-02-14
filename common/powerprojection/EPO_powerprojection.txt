@@ -1,0 +1,6 @@
+control_over_indic = {
+	max = 10
+	min = 10
+	power = 1
+	decay = no
+}

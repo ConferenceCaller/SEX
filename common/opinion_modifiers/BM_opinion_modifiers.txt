@@ -1,0 +1,65 @@
+BM_is_horde = {
+	opinion = -100
+	years = 100
+	yearly_decay = 1
+}
+
+BM_pomerania_grip_dynasty = {
+	opinion = -100
+	years = 50
+	yearly_decay = 2
+}
+
+requested_cawa = {
+	opinion = -5
+	min = -5
+	max = -200
+	yearly_decay = 1
+}
+
+gifts_to_pope = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+trading_guns_japan = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+por_subsaharan_trade = {
+	opinion = 60
+	yearly_decay = 1
+}
+
+BM_FRANCE_united_provence = {
+	opinion = 100
+	years = 100
+	yearly_decay = 1
+}
+
+BM_FRANCE_united_brittany = {
+	opinion = 100
+	years = 100
+	yearly_decay = 1
+}
+
+
+CM_refused_demands = {
+	opinion = -75
+	years = 25
+	yearly_decay = 1
+}
+
+
+
+alb_defended_christianity = {
+	opinion = 50
+	yearly_decay = 3
+}
+alb_turks_defeated = {
+	opinion = 100
+}
+alb_well_wishes = {
+	opinion = -50
+}

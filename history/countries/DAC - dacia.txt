@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = apostolic_kingdom
+government_rank = 2
+primary_culture = romanian
+religion = tengri_pagan_reformed
+technology_group = eastern
+capital = 1951

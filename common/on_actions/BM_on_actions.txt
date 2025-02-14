@@ -1,0 +1,263 @@
+on_startup = {
+
+	events = {
+		BM_on_startup.1 # Startup
+		BM_on_startup.2 # Lifetime of Mahdi
+		BM_on_startup.3 # The Swedish Dilemma (Independence or Nah)
+		BM_on_startup.4 # The Safavid Order
+		BM_on_startup.6 # The Hohenzollern Brothers
+		BM_on_startup.8 # The Abbasid Caliphate Mamluks
+		BM_on_startup.9 # Aftermath of Varna (Poland)
+		BM_on_startup.11 # After the fall of the Golden Horde (Great Troubles for almost all Hordes)
+		ME_Timurid_Princes_Event.1 #
+		ME_Timurid_Princes_Event.2 #
+		ME_Timurid_Princes_Event.3 #
+		ME_Timurid_Princes_Event.4 #
+		ME_Timurid_Princes_Event.8 #
+		ME_Timurid_Princes_Event.9 #
+		ME_Timurid_Princes_Event.10 #
+		CM_moreflavour_RUS_minors.1 #
+		CM_moreflavour_RUS_minors.5 #
+		flavor_brapru.16 #
+		CM_moreflavour_DUTCH.1 #
+		CM_moreflavour_DUTCH.2 #
+		CM_moreflavour_DUTCH.3 #
+	}
+}
+
+on_expanded_infrastructure = {
+	if = {
+		limit = {
+			owner = { has_idea = BM_efficient_construction_plans }
+		}
+		random_list = {
+			15 = { add_base_tax = 1 }
+			35 = { add_base_production = 1 }
+			50 = { add_base_manpower = 1 }
+		}
+	}
+}
+
+#ROOT = province that was centralized in
+on_centralized_state = {
+	if = {
+		limit = {
+			owner = { has_idea = BM_centralization }
+		}
+		area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_or_extend_province_modifier_effect = { MODIFIER = BM_admin_ideas_centralization_mechanic DURATION = 3650 }
+		}
+	}
+}
+
+on_center_of_trade_upgrade = {
+	BM_magedburg_rights_province_update = yes
+}
+
+on_added_to_trade_company = {
+	BM_casa_de_india_province_update = yes
+}
+
+on_adm_development = {
+	ge_kreditwerk_appointments_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	BM_SAV_development_of_torino_modifier_province_update = yes
+	ge_mint_towns_province_update = yes
+}
+
+on_dip_development = {
+	ge_kreditwerk_appointments_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	BM_SAV_development_of_torino_modifier_province_update = yes
+	ge_mint_towns_province_update = yes
+}
+
+on_mil_development = {
+	ge_kreditwerk_appointments_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	BM_SAV_development_of_torino_modifier_province_update = yes
+	ge_mint_towns_province_update = yes
+}
+
+on_transfer_development = {
+	ge_kreditwerk_appointments_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+}
+
+on_raze = {
+	ge_kreditwerk_appointments_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+}
+
+on_province_owner_change = {
+	BM_immigrant_settlements_province_update = yes
+	BM_enable_slave_settlements_province_update = yes
+	ge_kreditwerk_appointments_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	BM_casa_de_india_province_update = yes
+	ge_society_of_agriculture_province_update = yes
+	ge_customs_house_province_update = yes
+	ge_fortified_settlements_province_update = yes
+	ge_caravanserai_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_enables_mountain_towns_province_update = yes
+	BM_enable_crown_of_aragon_province_update = yes
+}
+
+on_province_culture_changed = {
+}
+
+on_province_culture_converted = {
+}
+
+on_trade_good_changed = {
+	BM_immigrant_settlements_province_update = yes
+	BM_enable_slave_settlements_province_update = yes
+	ge_society_of_agriculture_province_update = yes
+	ge_customs_house_province_update = yes
+	BM_andes_riches_andean_triggered_province_modifier_province_update = yes
+}
+
+on_colony_established = {
+	BM_andes_riches_andean_triggered_province_modifier = yes
+}
+on_colony_finished = {
+	BM_andes_riches_andean_triggered_province_modifier = yes
+}
+
+on_religion_change = {
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_province_religion_changed = {
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_province_religion_converted = {
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_province_culture_converted = {
+	BM_nomadic_tribes_culture_conversion_bonus = yes
+}
+
+on_province_culture_changed = {
+}
+
+on_country_creation = {
+}
+
+on_country_released = {
+}
+
+on_diplomatic_annex = {
+	events = {
+		610
+		appanages_event.1
+		BM_scripted_effect_event.1
+	}
+	FRA = { 
+		if = {
+			limit = {
+				has_estate_privilege = estate_nobles_french_strong_duchies
+				NOT = { 
+					any_subject_country = {
+						capital_scope = { region = france_region }
+						culture_group = french
+					}
+				}
+			}
+			remove_estate_privilege = estate_nobles_french_strong_duchies
+		}
+	}
+}
+
+on_siege_won_country = {
+	if = {
+		limit = {
+			ROOT = {
+				has_government_attribute = BM_house_of_knights
+			}
+		}
+		BM_grant_manpower_from_besieging_fort = yes
+	}
+}
+
+on_new_monarch = {
+	if = {
+		limit = {
+			has_government_attribute = BM_house_of_knights
+		}
+		BM_house_of_knights_effect = yes
+	}
+}
+
+on_reform_enacted = {
+	BM_pru_legal_reforms_effect = yes
+}
+
+on_reform_changed = {
+	BM_pru_legal_reforms_effect = yes
+}
+
+on_yearly_pulse_2 = {
+	every_owned_province = { ge_fortified_settlements_province_update = yes }
+	every_owned_province = { ge_caravanserai_province_update = yes }
+}
+
+on_five_year_pulse_4 = {
+	random_events = {
+		2000 = 0
+		200 = peasants_estate_events.1 #Swedish Peasant Estate
+		300 = peasants_estate_events.2
+		200 = peasants_estate_events.3
+		100 = peasants_estate_events.4
+		100 = peasants_estate_events.5
+		100 = peasants_estate_events.6
+	}
+}
+
+on_monthly_pulse = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+	ge_on_monthly_pulse_effect = yes
+}
+
+on_post_adm_advisor_fired = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+}
+
+on_post_dip_advisor_fired = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+}
+
+on_post_mil_advisor_fired = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+}
+
+on_holy_order_established = {
+	BM_batalha_monastery_bonus = yes
+}
+
+on_colony_finished = {
+	BM_jesuit_mission_rights_province_update = yes
+}
+
+# country
+# root = winning country, from = loser country
+on_main_war_won = {
+	ge_on_main_war_won_effect = yes
+}
+
+#ROOT = converted country, FROM = country which force converts ROOT, on_action gets called on Force religion peace and Enforce Religion subject interaction
+on_force_conversion = {
+	ge_on_force_conversion_effect = yes
+}

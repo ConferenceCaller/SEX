@@ -1,0 +1,31 @@
+﻿l_english:
+
+ BM_efficient_construction_plans: "Efficient Construction Plans"
+ BM_efficient_construction_plans_desc: "Our efficient planning around construction allows us to complete orders of work without cutting any corners.\nDevelopment from Expanding Infrastructure: §G+1§!\n (15.0% for £adm£, 35.0% for £dip£, 50.0% for £mil£.)"
+
+ BM_2nd_idea_group_dev_cost: "Dev Cost Compensation"
+ desc_BM_2nd_idea_group_dev_cost: "§G-10%§! Dev Cost compensation due to removal of dev cost from Infrastructure Ideas"
+ BM_2nd_idea_group_dev_cost_TT: "We have either finished §G1§! §TFull Idea Group§! from the £adm£ Admin Category or finished §G2§! §TFull Idea Groups§! regardless of £adm£, £dip£ or £mil£ category"
+
+
+ BM_centralization: "Centralization"
+ BM_centralization_desc: "If we centralize the state then we will find it easier to advance the ideas and agenda of the center over the regions.\nCentralizing states will double the bonuses for §G25§! years."
+ BM_admin_ideas_centralization_mechanic: "Centralized State"
+ desc_BM_admin_ideas_centralization_mechanic: ""
+
+ BM_integrated_elites: "Integrated Elites"
+ BM_integrated_elites_desc: "By bringing the ruling elite of our subject nations into our government we can smoothen the process of integrating their provinces significantly.\nIntegrating Subjects now grants: §G2.5%§! Crown Land"
+
+ BM_benevolence: "Benevolence"
+ BM_benevolence_desc: "Our nation is a bastion of tolerance and enlightenment. By ensuring that all other nations know this, we can foster better relations abroad.\nHarmonizing now grants §G100§! of every Monarch Power"
+
+ BM_general_colonization_law: "General Colonization Law"
+ BM_general_colonization_law_desc: "By adopting a law allowing free movement of foreign people to our colonies we'll be sure to lure a wider range of future settlers.\nAll Colonial Subjects also gets §G+10§! Settler Increase and §G5.0%§! Settler Chance"
+ BM_general_colonization_law_subject: "Colonization Laws Instituted"
+ BM_general_colonization_law_subject_desc: ""
+
+ BM_buffed_max_republican_tradition_triggered_modifier: "Buffed Max Republican Tradition"
+ BM_buffed_max_republican_tradition_triggered_modifier_desc: ""
+
+ BM_bra_pru_buffed_absolutism_triggered_modifier: "Buffed Absolutism"
+ BM_bra_pru_buffed_absolutism_triggered_modifier_desc: ""

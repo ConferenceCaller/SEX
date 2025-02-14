@@ -1,0 +1,243 @@
+﻿l_english:
+ gc_por_portugal_discovers_south_america_title:0 "Go Westward"
+ gc_por_portugal_discovers_south_america_desc:0 "The Winds and currents favor Westward expansion. Our explorers believe that rich lands lie just over the Horizon."
+
+ gc_por_establishes_foothold_brazil_title:0 "Brazilian Dominance"
+ gc_por_establishes_foothold_brazil_desc:0 "To appease the Captains who discovered and partitioned the land, we must push forward and expand our territory in South America."
+
+ gc_por_bandeirantes_title:0 "Promote the Bandeirantes"
+ gc_por_bandeirantes_desc:0 "The Bandeirantes are private expeditionaries dedicated to exploring the Brazilian interior in search of natives to enslave. Now however there are whispers that there is gold to be found in the interior, which has caused many among the Bandeirantes to diversify their interests. We should sponsor their expeditions so that as many sources of gold are discovered as possible."
+ por_bandeirantes_tooltip:0 "§YIncreased chance of discovering Gold.§!"
+ por_bandeirantes_expeditions_tooltip:0 "\nWill upgrade the estate privilege §YGrant New Wolrd Charters§! enabling you to send Bandeirante's Expeditions to colonize the new world."
+ 
+ gc_por_ceylon_title:0 "Portuguese Ceylon"
+ gc_por_ceylon_desc:0 "Our trading links with Ceylon have yielded a rather unexpected result; a local prince has died heirless and decreed that his realm should pass into Portuguese care following his death. Alas this transfer of territory will not likely to automatic. If we want to make good on these claims, we may have to fight for them."
+
+ gc_por_surat_2_title:0 "Portuguese Surat"
+ gc_por_surat_2_desc:0 "Our merchants have watched Surat hungrily as the fortunes of its rulers waver. We must pay close attention to the political happening of this region and seize an ideal moment to launch an assault on the city."
+
+ gc_por_burma_title:0 "Portuguese Burma"
+ gc_por_burma_desc:0 "Several entrepots along the Burmese coast control a sizable portion of trade that flows through the Bay of Bengal. To secure our trade dominance in the East, we must control these ports and thus control the commerce that passes through them."
+
+ gc_por_conquer_tangiers_title:0 "Conquer Tangiers"
+ gc_por_conquer_tangiers_desc:0 "Our duty to Christendom is clear, we must conquer Tangiers to defend Christendom from the infidel."
+
+ gc_por_reconquista_title:0 "Continue the Reconquista"
+ gc_por_reconquista_desc:0 "After all the lands in Iberia being conquered by Catholic countries it is time now to march through our strongholds in Ceuta and Tangiers and push back the infidels."
+ gc_por_reconquista_at:1 "If we decide to fulfill this mission military:"
+ gc_por_reconquista_bt:1 "If we decide to fulfill this mission diplomatically:"
+
+ gc_por_tordesilhas_title:0 "Treaty of Tordesilhas"
+ gc_por_tordesilhas_desc:0 "On 7th of June, 1494 the Kings of Portugal and Spain sign a treaty, in the town of Tordesilhas, dividing the world in half. All the new foundland was promised to either crown, which would be free to lay their claims in the name of the catholic faith with his Holiness blessing."
+ gc_por_tordesilhas.tt:0 "§YPortugal§! has not violated the §YTreaty of Tordesillas§!."
+ gc_por_tordesilhas_modifier.tt:0 "By not breaking the §YTreaty of Tordesillas§!, Portugal will get §Y'Treaty of Tordesillas'§! giving the following effects:\nUnjustified Demands: §G-25.0%§!\nCan fabricate claims on any overseas province, provided it is overseas for its owner"
+
+
+ gc_por_popes_favourite_title:0 "Spread the Faith"
+ gc_por_popes_favourite_desc:0 "The Portuguese missionaries spread the Catholic faith around the world. From Brazil to Japan, China and India the one true faith has no limits. Our noteworthy efforts in spreading the Catholic faith around the world have amazed the Pope itself. Glad with our loyal serving of the Catholic faith his Holiness has blessed us with special status."
+ por_religions_missions.tt:0 "Establish at least one center for Catholicism, by having at least one owned province following §YCatholicism§! with a §YChurch§! in:\n§YSouth America§!\n§YAfrica§!\n§YIndia§!\n§YMalasia§!\n§YChina§!\n§YJapan§!"
+ gc_por_popes_favourite.tt:0 "While the @PAP §YPapal States§! has more than §G150§! opinion, Portugal will get §Y'The Pope's Favourite'§! giving the following effects:\nCuria Power Costs: §G-10.0%§!\nPapal Influence from Cardinals: §G+50.0%§!"
+
+
+ gc_por_brazil_economic_cycle_title:0 "Brazilian Economy"
+ gc_por_brazil_economic_cycle_desc:0 "With the Portuguese crown shifting their colonial focus to Brazil, the colonial state grew quite rapidly surging new economies finance by newly arrived colonials and slave labour from the Triangle Trade."
+ gc_por_brazil_economic_cycle.tt:0 "\n§GEvent Insight§!:\nThis event allows you to establish a §YProduction Cycle§! in Brazil, giving the following options:\n§YGold Cycle§! (Treasure Fleet Income: §G+30%§!)\n§RBrazil Wood Cycle§! (Monthly Splendor: §G+2§!)\n§MSugar Cycle§! (Global Goods Produce: §G+10%§!)\n§lLivestock Cycle§! (National Manpower Modifier: §G+25%§!)"
+
+ gc_por_sugar_cycle_title:0 "Brazilian Sugar Cycle"
+ gc_por_sugar_cycle_desc:0 "The Brazilian Sugar Cycle marked the increasing number of Sugar plantations. Mostly worked by slaves brought from Africa, these plantations made huge profit for the colonials in Brazil, having its center of trade in Pernambuco."  
+ 
+ gc_por_gold_cycle_title:0 "Brazilian Gold Cycle"
+ gc_por_gold_cycle_desc:0 "With the Portuguese crown shifting their colonial focus to Brazil, a increasing number of gold mines were found. This brougt a huge influx of gold towards Europe, making Portugal rich and also its allies. Specially the English, who greatly benefited from Brazilian gold to finance their economy."  
+
+ gc_por_discover_african_coast_title:0 "Beyond Cape Bojador"
+ gc_por_discover_african_coast_desc:0 "Our explorers believe that Africa extends but a short way further south and soon we will be able to swing round and find the Kingdom of Prester John. Once we have secured an alliance with the Kingdom we will be able sweep the moors out of the holy land."
+
+ gc_por_colonise_west_africa_title:0 "Colonize West Africa"
+ gc_por_colonise_west_africa_desc:0 "It appears that Africa is stretching further south than we first believed. Prester John's legendary Kingdom is surely close at hand; Africa surely can't be much bigger than this."
+
+ gc_por_colonise_central_africa_title:0 "Settle in Central Africa"
+ gc_por_colonise_central_africa_desc:0 "Only a few explorers have ventured south from the Ivory Coast, and fewer still have returned. Even so, the riches we have gathered from our exploits in Africa have been astounding. If we send enough men, some are certain to survive."
+
+ gc_por_triangle_trade_title:0 "The Triangle Trade"
+ gc_por_triangle_trade_desc:0 "Slaves from Africa are sent to work on plantations in the New World. The products of this slave labor are then shipped back to Europe and sold for an outrageous profit. This is the Atlantic triangle trade, and we must dominate it."
+
+ gc_por_zamorin_title:0 "The Zamorin of Calicute"
+ gc_por_zamorin_desc:0 "In contrast with the African kingdoms that the Portuguese explorers met in their route to India, the Zamorin's, lords of the Indian sea are mightier and richer. Bearing no match at this point what strategy should we follow?"
+
+ gc_por_battle_diu_title:0 "Battle of Diu"
+ gc_por_battle_diu_desc:0 "Facing the Gujarati and Mamluk navies, sponsored by the unhappy Venetian merchants, Portugal managed to deliver a great blow and assert its position in the Indic trade."
+
+ gc_por_conquer_goa_title:0 "Conquer Goa"
+ gc_por_conquer_goa_desc:0 "In 1510 by the hand of the skilled Dom Afonso de Albuquerque, the Portuguese managed to conquer the city port of Goa, enlarging their control in the region trade."
+
+ dom_por_dominate_trade_title:0 "System of Cartazes"
+ dom_por_dominate_trade_desc:0 "Our ships sail unmatched across the seven seas, as such it, is our right to bear peace in them and collect due payment for the prosperous trade we in made possible in these waters."
+
+ gc_por_flagship_title:0 "Shipyards of Belém"
+ gc_por_flagship_desc:0 "Our navy rises at a fast pace, with bigger and modern ships. Capable of transporting more goods and delivering devastating barrages. To overview this growing industry, the King moved its court near the river mouth and built impressive new infrastructures, to quickly feed this need of ships to an ever-growing armada."
+
+ gc_por_professional_marines_title:0 "Professionalize the Marines"
+ gc_por_professional_marines_desc:0 "Following the footsteps of our Infante, Henrique the Navigator, more men should follow a better standards of training and diverted to a professional sailors career."
+ gc_por_professional_marines.tt:0 "\nWhile having the §YAmphibious Specialization§! government reform, Portugal will get §Y'Fuzileiros Corp'§! giving the following effects:\nMonthly Marine Professionalism: §G0.2§!"
+
+ gc_por_feitoria_title:0 "Feitoria System"
+ gc_por_feitoria_desc:0 "The first Portuguese Feitoria was built in Antwerp during the XIII century. This type of fortified factory was an essential cornerstone to the Portuguese maritime control on it's overseas provinces."
+ por_adding_provinces_to_trade_c_merc_prod_tt:1 "\nAdding our provinces to a §YTrade Company§! will grant them §G1§! £dip£ Development for them as well as §G1§! Mercantilism for us"
+ por_adding_provinces_feitoria_tt:1 "Every overseas provinces owned by a §YTrade Company§! or a subject, and with a §YFort§! built will get the '§YFeitoria§!' modifier, giving the following effects:\nLocal Trade Power: §G+4§!\nLocal Goods Produce Modifier: §G+20%§!\nLocal Fort Maintenance: §G-20%§!"
+
+ gc_por_conquers_zanzibar_title:0 "Conquer Zanzibar"
+ gc_por_conquers_zanzibar_desc:0 "The Northern Swahili coast is covered in wealthy trading cities where Indian and Persian merchants come to buy gold and Ivory in exchange for their own cloth and manufactured products. These trader cities are, however, quite precariously situated for someone controlling the open seas. Let us conquer these lands and put them firmly under Portuguese control."
+
+ gc_por_african_gold_title:0 "African Gold"
+ gc_por_african_gold_desc:0 "There is gold to be found in East Africa, and the mines are within reachable distance of our colonies on the coast. We must seize these mines for the glory of Portugal!"
+
+ gc_por_conquers_hormuz_title:0 "Conquer Hormuz"
+ gc_por_conquers_hormuz_desc:0 "The straits of Hormuz are imperative to control the flow of trade between India, Iran and Arabian Iraq. By seizing control over the island of Hormuz we can dominate local trade and lay claim to the maritime empire it once created."
+
+ gc_por_oman_title:0 "Portuguese Oman"
+ gc_por_oman_desc:0 "The jewel of the former Hormuzi trading empire, Muscat is a well-protected city at the tip of the Arabian Peninsula. We must capture Muscat and fortify it against our rivals."
+
+ gc_por_control_red_sea_title:0 "Safe Heaven in Aden"
+ gc_por_control_red_sea_desc:0 "To reaffirm Portuguese dominance over the Red Sea a mighty armada, called Armada do Estreito, was sent to the Gulf of Aden in order to block any unwanted ships sailing through the Gate of Grief. By such completly locking martime trade towards the muslim countris."
+
+ dom_por_clash_ottomans_title:0 "Clash with the Ottomans"
+ dom_por_clash_ottomans_desc:0 "Our expansion into the Indian Ocean and our control over the Persian Gulf has brought to a situation where a clash with the Ottomans, the hegemon of the Middle East, is inevitable."
+
+ gc_por_indian_investment2_title:0 "Estado da India"
+ gc_por_indian_investment2_desc:0 "It is time to establish an institution that will confirm and enforce our monopolies on all maritime trade leaving India. The Casa da Índia will be the greatest commercial force in all of Asia."
+ gc_por_indian_investment2_tt:0 "\n§GEvent Insight§!:\nThis event allows you to establish the @EDI §YEstado da India§! in India as our §YCommercial Enterprise§! subject."
+
+
+ gc_por_defensive_lines_title:0 "Defensive Lines"
+ gc_por_defensive_lines_desc:0 "To curtail invasions from the Sapnish and the French the Portuguese have built powerfull fortifications in line parelel to our capital, Lisbon."
+
+ gc_por_hunters_title:0 "Enlist the Caçadores"
+ gc_por_hunters_desc:0 "The Portuguese regiment of Caçadores were groups of elite rifleman that made the vanguard of the Portuguese army. This group of skilled warriors came as a necessity to portuguese army reform itself after the peninsular war."
+
+ dom_portugal_reform_navy_title:0 "Reform the Navy"
+ dom_portugal_reform_navy_desc:0 "Dom Henrique, Duke of Viseu, the uncle of king Afonso V, is best known for promoting Portugal's exploration efforts in West Africa and reforming its Navy, sponsoring a new type of ship, the caravel."
+
+ gc_por_naval_supremacy_title:0 "Naval Supremacy"
+ gc_por_naval_supremacy_desc:0 "In order to maintain our vast global empire, a strong fit navy needs to be raised. Such efforts were not overseen and have become our pride, a powerful message of power of foreign foes."
+
+ gc_por_fith_empire_title:0 "The Fifth Empire"
+ gc_por_fith_empire_desc:0 "The idea of a 5th empire was first mentioned in the book of Revelation. Led by the hidden one, a empire based on stone would rise and unite the all world spiritually and cullturally. Who else but Portugal could take this pride? Glory to the Portuguese Empire!"
+
+ gc_por_discovers_cape_good_hope_title:0 "The Cape of Good Hope"
+ gc_por_discovers_cape_good_hope_desc:0 "Treacherous waters surround the legendary cape of Africa, but who knows what wonders lie beyond? Our expansion puts great strain on the merchant fleet, and we must be sure to provide them adequate protection."
+ gc_por_discovers_cape_good_hope_tt:0 "\n§GEvent Insight§!:\nThis event will allow the recruitment of §YCaravel§! ships.\n"
+
+ gc_por_discovers_east_africa_title:0 "Shipyards of the East"
+ gc_por_discovers_east_africa_desc:0 "No-one knew what we would find on this journey of exploration, but one thing is clear: it is not yet over. We must lay claim to sheltered natural harbors, where our fleets can resupply."
+
+ gc_por_discovers_horn_africa_title:0 "Horn of Africa"
+ gc_por_discovers_horn_africa_desc:0 "Our explorers have at last reached the other side of the Gulf of Aden, where so much spice and other valuables are imported to the Mediterranean. This area must be charted and exploited if we are to bring this wealth to Portugal."
+
+ gc_portugal_discovers_india_title:0 "Push to India "
+ gc_portugal_discovers_india_desc:0 "Although we can find no signs of the kingdom of Prester John, we can strike a blow at the Moors by wrestling the spice trade into our hands. We must find the Indies so we can do our bit to defend Christendom."
+
+ gc_por_malacca_title:0 "Portuguese Malacca"
+ gc_por_malacca_desc:0 "Malacca is the single most important city in the East Indies. Its strategic position guarding the Straits and its long-established legacy as a merchant hub make it extremely desirable; we must ensure that is falls under Portuguese control."
+
+ gc_por_trade_with_china_title:0 "Trade with Cathay"
+ gc_por_trade_with_china_desc:0 "China is a vast nation that is seemingly so abundant in resources that it needs no trade with the wider world. It will be difficult to convince Chinese rulers that our merchant ventures can be of value to them, but the potential rewards can hardly be understated."
+
+ gc_por_japanese_trade_title:0 "Trade with Japan"
+ gc_por_japanese_trade_desc:0 "Suspicious of all strangers, the feudal rulers of Japan are reluctant to allow any merchants the right trade or even land in Japanese ports. We must find a way to overcome their suspicions and become the only European power with a foothold in this exclusive market."
+
+ gc_por_english_alliance_title:0 "English Alliance"
+ gc_por_english_alliance_desc:0 "The alliance between England and Portugal has stood for generations, and must continue to do so for many generations to come."
+
+ gc_por_intervene_in_castile_title:0 "Intervene in Castile"
+ gc_por_intervene_in_castile_desc:0 "The Castilian succession has been in question on numerous occasions, and Portuguese intervention has been a deciding factor in the outcome before. Perhaps it is time that we looked to our own interests when next the matter of succession arises."
+ por_intervene_in_castile_at:1 "If we decide to ally @SPA §YSpain§!:"
+ por_intervene_in_castile_bt:1 "If we decide to rival @SPA §YSpain§!:" 
+ por_intervene_in_castile_ct:1 "If we decide to ally @CAS §YCastile§!:"
+ por_intervene_in_castile_dt:1 "If we decide to rival @CAS §YCastile§!:"
+ por_intervene_in_castile_tt:1 "Should we rival our §YCastilian§! neighbours, we will have §Y20§! years to either dismantle their Kingdom or own the majority of development in §YIberia§!. Falling to do so will result on losing all our claims in §YIberia§!."
+
+ gc_por_eclipse_spain_title:0 "Eclipse the Spaniards"
+ gc_por_eclipse_spain_desc:0 "After asserting our independence and continuing growing our empire we can proudly say that we surpased our Castilian rivals and assert ourselfs as the true powerhouse of Iberia."
+ gc_por_eclipse_spain.tooltip:0 "Has completed the §YPortuguese Sucession Crisis§! disaster."
+
+ gc_por_national_pride_title:0 "National Pride"
+ gc_por_national_pride_desc:0 "After many disaster struck, from outside foes and rebelious subjects, from the shaking grounds beneath or feet and tremendous wrath of the Ocean, we have rebuilt our capital again as a pearl to the world."
+
+ dom_portugal_exploration_ideas_title:0 "Sails of Exploration"
+ dom_portugal_exploration_ideas_desc:0 "Our explorations along the African coast are opening new routes and perspectives for the future of our country. It is up to us to take advantage of this opportunity for the expansion of [Root.GetName] overseas."
+
+ dom_portugal_circumnavigation_title:0 "Charter the Seas"
+ dom_portugal_circumnavigation_desc:0 "The explorations that we have promoted in the last decades have proven that the scientific theories about the rounded shape of the world were correct. Now we have the opportunity to become the first country to lead an expedition to circumnavigate the world, bringing great prestige to [Root.GetName]."
+
+ gc_por_prester_john_title:0 "Legends of Prester John"
+ gc_por_prester_john_desc:0 "For long we have heard histories of a long lost Christian kingdom far to the east. Could these brothers in faith be useful allies in our ovesear expansions. Should follow our dreams and retake the Holly Land?"
+
+ gc_por_discovers_indonesia2_title:0 "Settle the Spice Islands"
+ gc_por_discovers_indonesia2_desc:0 "We have heard tales that the Spice islands lie somewhere to the east. Already daring men are ready to voyage there, all they need is some support from the crown."
+ miss_discover_spiceislands:0 "Portugal has discovered any province in the Moluccas region."
+ miss_colonize_spiceislands:0 "Portugal owns at least one fully colonized province in the Moluccas region."
+
+ gc_por_indonesia_dominance2_title:0 "Secure the Spice Trade"
+ gc_por_indonesia_dominance2_desc:0 "We must move to establish our primacy in the markets of the East. With control over the flow of exotic wares, those who do business with us in the West will be at our mercy."
+ por_spice_trade_dominance.tt:0 "While being the production leader or having the trading bonus for §YSpices§! or §YCloves§!, Portugal will get §Y'Spice Trade Dominance'§! giving the following effects:\nGobal Trade Power: §G+10.0%§!\nTrade Efficiency: §G+5.0%§!\nGoods Produce Modifier: §G+5.0%§!"
+
+ gc_por_wine_monopolies_title:0 "Wine Monopolies"
+ gc_por_wine_monopolies_desc:0 "The import and export of wine is tightly controlled in many Atlantic ports. We should do everything in our power to secure trade agreements that grant us monopolies on the wine trade in as many ports as possible."
+ por_wine_monopolies.tt:0 "While being the production leader or having the trading bonus for §YWine§!, Portugal will get §Y'Wine Monopolies'§! giving the following effects:\nTrade Steering: §G+20.0%§!"
+
+ gc_por_trading_houses_title:0 "Great Trading Houses"
+ gc_por_trading_houses_desc:0 "Our decentralized methods of organizing our global trade must be reined in, formalized, and fully accounted for. By establishing centralized Houses of Trade we can ensure that commercial revenues from our merchant ventures are collected efficiently."
+ por_trading_houses.tt:0 "While having control over the highest value trade node, Portugal will get §Y'Houses of Trade'§! giving the following effects:\nGlobal Trade Power: §G+10.0%§!\nTrade Efficiency: §G+5.0%§!"
+
+ gc_por_universities_title:0 "Arts and Letters"
+ gc_por_universities_desc:0 "Portugal must be at the forefront of literary and academic culture in Europe. We must create and expand universities to bring abut a new intellectual golden age in our nation."
+ por_universities.tt:0 "While being technologically ahead of time, Portugal will get §Y'Arts and Letters'§! giving the following effects:\nAdvisor Cost: §G-10.0%§!\nTechnology Cost: §G-10.0%§!"
+
+
+ dom_por_culture_exchange_title:0 "Cultural Exchange"
+ dom_por_culture_exchange_desc:0 "By trade, conquest or marriage the Portuguese cultural as spread around the world and is known recognized in every corner that one travels to."
+
+ gc_por_defeat_pirates_title:0 "Victory of the Portuguese Nau"
+ gc_por_defeat_pirates_desc:0 "Piracy has devastated the portuguese coast bringing the need to develop an armada that can protect our cities from the pillaging fleets of the Moorish Pirates."
+
+ dom_castile_exploration_ideas_title:0 "Sails of Exploration"
+ dom_castile_exploration_ideas_desc:0 "Our explorations along the African coast are opening new routes and perspectives for the future of our country. It is up to us to take advantage of this opportunity for the expansion of [Root.GetName] overseas."
+ dom_castile_circumnavigation_title:0 "Charter the Seas"
+ dom_castile_circumnavigation_desc:0 "The explorations that we have promoted in the last decades have proven that the scientific theories about the rounded shape of the world were correct. Now we have the opportunity to become the first country to lead an expedition to circumnavigate the world, bringing great prestige to [Root.GetName]."
+ 
+ gc_conquer_the_north_african_coast_title:0 "Expand the Buffer Zone"
+ gc_conquer_the_north_african_coast_desc:0 "Our foothold in North Africa is proving useful in the defense of Christendom, but to ensure that it can be held, we must expand the area we hold."
+ gc_por_establish_south_african_trade_company_title:0 "Control the Shipping Lanes"
+ gc_por_establish_south_african_trade_company_desc:0 "There are few left to challenge our mercantile authority in this region. Nevertheless, we must be seen to exert total control over our own affairs before we continue our journey of exploration Eastwards."
+ gc_por_discover_indian_coast_tooltip:0 "Enables new Events"
+ 
+ gc_por_jesuits_title:0 "Establish Jesuit Missions"
+ gc_por_jesuits_desc:0 "We must not ignore the spiritual goals of our conquest of the New World; we are here not only for profit, but for the sake of enlightening the heathen peoples who call this land home. To that end we should invite Jesuit priests to establish missions in Brazil, educating the natives in the way of God so that they will abandon their savage customs."
+ port_jesuits_tooltip:0 "§Y7§! states in §YColonial Brazil§! owned by you or your non-tributary subjects have been assigned to the §YJesuit§! Holy Order."
+ port_jesuits_alternative_tooltip:0 "§Y20§! provinces in §YColonial Brazil§! owned by you or your non-tributary subjects are §Y[Root.Religion.GetName]§!."
+ por_jesuits_missions_tooltip:0 "Will upgrade the estate privilege §YEstablish New World Missions§! enabling you to send Jesuit Missions to colonize the new world."
+
+ por_wine_tooltip:0 "Own or have a subject own at least §Y10§! provinces producing §YWine§! with a §YWorkshop§! or §YCounting House§!."
+ burmese_trade:0 "Portuguese-Burmese Trade"
+ gc_por_caribbean_title:0 "Colonize the Caribbean"
+ gc_por_caribbean_desc:0 "The Caribbean islands are prime locations for new colonies. We must ensure that as many as possible fall under Portuguese rule."
+ portuguese_carib_tooltip:0 "Colonial subjects in the §YColonial Caribbean§! colonial region get '§YThriving Caribbean Colony§!' for §Y20 years§!, giving the following effects:\nTrade Efficiency: §G+10%§!"
+ 
+ gc_por_malabar_title:0 "Portuguese Malabar"
+ gc_por_malabar_desc:0 "We must establish a series of feitorias along the Malabar coast to produce and market the spices that are native and abundant in the region. While we may be able to purchase some of the land, it may ultimately be necessary to seize it by force where we cannot reach an arrangement with the Indian princes."
+ gc_por_malabar_tooltip:0 "Cannanore will get §YFort of Santo Angelo§!"
+
+ gc_por_surat_title:0 "Control Surat"
+ gc_por_surat_desc:0 "Our merchants have watched Surat hungrily as the fortunes of its rulers waver. We must pay close attention to the political happening of this region and seize an ideal moment to launch an assault on the city."
+ gc_por_lusitanian_empire_title:0 "Lusitanian Empire"
+ gc_por_lusitanian_empire_desc:0 "While the kings of Castile have occasionally had the arrogance to declare themselves Emperor of all Spain, we will create a true union of the Iberian crowns."
+ por_japan_mission_tooltip:0 "If [Root.GetName] has good relations with the owner of §YHizen§!, the §YPortuguese Nagasaki§! event happens\nElse Gain §G3.00§! Mercantilism"
+ macau_event_tooltip:0 "If [Root.GetName] has good relations with the owner of §YMacau§!, the event §Y'The Purchase of Macau'§! happens\nElse Gain §G3.00§! Mercantilism"
+ por_triangle_trade_mission_tooltip:0 "Every owned province in §YAfrica§! producing §YSlaves§! gets '§YTriangle Trade§!' for §Y100 years§!, giving the following effects:\nGoods Produced: §G+10.0%§!"
+ por_indian_investment_tooltip:0 " States owned in the §YIndia§! superregion have at least one Trade Company Investment"
+ gc_portugal_discovers_the_far_east_title:0 "Onward to Cathay"
+ gc_portugal_discovers_the_far_east_desc:0 "Ever since the return of Marco Polo we have heard of the wondrous wealth of Cathay. We must establish exactly where this is."
+
+ epo_por_terra_nova_title:0 "Terra Nova and Labrador"
+ epo_por_terra_nova_desc:0 "New land in the west Indies was found, however the land seems barren and lifeless while the sea is full of nothing but fish."
+

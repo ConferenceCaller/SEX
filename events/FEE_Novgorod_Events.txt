@@ -1,0 +1,421 @@
+namespace = FEE_Novgorod_Events
+
+#The great famine
+country_event = {
+	id = FEE_Novgorod_Events.1
+	title = FEE_Novgorod_Events.1.T
+	desc = FEE_Novgorod_Events.1.D
+	picture = FAMINE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOV
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.1.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_years_of_income = -1.5
+		add_dip_power = -15
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.1.OPT2
+		ai_chance = {
+			factor = 100
+		}
+
+		add_manpower = -6
+		set_country_flag = fee_nov_novgorodian_famine
+		custom_tooltip = fee_nov_famine_tt
+	}
+}
+
+#Famine Causes Internal Disruption
+country_event = {
+	id = FEE_Novgorod_Events.2
+	title = FEE_Novgorod_Events.2.T
+	desc = FEE_Novgorod_Events.2.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		tag = MOS
+	}
+
+	trigger = {
+		tag = NOV
+		has_country_flag = fee_nov_novgorodian_famine
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.2.OPT3
+		trigger = {
+			MOS = {
+				is_free_or_tributary_trigger = yes
+			}
+		}
+
+		ai_chance = {
+			factor = 0
+		}
+
+		MOS = {
+			#Gives MOS the option to vassalize NOV
+			country_event = { id = FEE_Novgorod_Events.6 days = 10 }
+		}
+		clr_country_flag = fee_nov_novgorodian_famine
+		custom_tooltip = fee_nov_vassalization_tt
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.2.OPT4
+
+		ai_chance = {
+			factor = 100
+		}
+
+		MOS = {
+			#Gives MOS the option to vassalize NOV
+			country_event = { id = FEE_Novgorod_Events.5 days = 10 }
+		}
+
+		add_country_modifier = {
+			name = fee_nov_great_famine
+			duration = 1825
+		}
+	}
+}
+
+#The Novgorodian Veche
+country_event = {
+	id = FEE_Novgorod_Events.4
+	title = FEE_Novgorod_Events.4.T
+	desc = FEE_Novgorod_Events.4.D
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOV
+		NOT = { adm_tech = 16 }
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.4.OPT1
+
+		add_country_modifier = {
+			name = fee_nov_administrative_focus_veche
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.4.OPT2
+
+		add_country_modifier = {
+			name = fee_nov_diplomatic_focus_veche
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.4.OPT3
+
+		add_country_modifier = {
+			name = fee_nov_military_focus_veche
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.4.OPT4
+
+		add_country_modifier = {
+			name = fee_nov_no_focus_veche
+			duration = 3650
+		}
+	}
+}
+
+#Novgorod gets massive famine, Muscovy declares war
+country_event = {
+	id = FEE_Novgorod_Events.5
+	title = FEE_Novgorod_Events.5.T
+	desc = FEE_Novgorod_Events.5.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Novgorod_Events.5.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_vassalize_mission
+			who = NOV
+		}
+
+		custom_tooltip = BM_FEE_NOV_subjugation_war_TT
+
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.5.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+
+	}
+}
+
+#$FROM$ Asks to Become Our Vassal
+country_event = {
+	id = FEE_Novgorod_Events.6
+	title = FEE_Novgorod_Events.6.T
+	desc = FEE_Novgorod_Events.6.D
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Novgorod_Events.6.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		vassalize = NOV
+		NOV = {
+			change_subject_type = {
+				subject_type = incorporated_vassal
+			}
+			add_liberty_desire = -100
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.6.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		NOV = {
+			add_casus_belli = {
+				target = MOS
+				type = cb_insult
+				months = 30
+			}
+		}
+	}
+}
+
+#Conclusion of Novgorod subjugation war in 
+country_event = {
+	id = FEE_Novgorod_Events.7
+	title = FEE_Novgorod_Events.7.T
+	desc = FEE_Novgorod_Events.7.D
+	picture = PRINCE_AND_BOYARS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOS
+		war_with = NOV
+		war_score_against = {
+			who = NOV
+			value = 50
+		}
+		OR = {
+			war_score_against = {
+				who = NOV
+				value = 75
+			}
+			NOV = {
+				capital_scope = {
+					controlled_by = MOS
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.7.OPT1
+
+		hidden_effect = {
+			MOS = {
+				white_peace = NOV
+			}
+			add_prestige = 25
+			add_power_projection = {
+				type = humiliation_of_a_rival 
+				amount = 30
+			}
+		}
+		vassalize = NOV
+		NOV = {
+			change_subject_type = {
+				subject_type = incorporated_vassal
+			}
+			add_liberty_desire = -100
+		}
+		custom_tooltip = BM_FEE_NOV_subjugation_war_TT2
+		hidden_effect = {
+			if = {
+				limit = { 
+					NOV = {
+						owns = 1959
+					}
+				}
+				1959 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			if = {
+				limit = { 
+					NOV = {
+						owns = 4260
+					}
+				}
+				4260 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			if = {
+				limit = { 
+					NOV = {
+						owns = 311
+					}
+				}
+				311 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			if = {
+				limit = { 
+					NOV = {
+						owns = 4148
+					}
+				}
+				4148 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			if = {
+				limit = { 
+					NOV = {
+						owns = 4259
+					}
+				}
+				4259 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			if = {
+				limit = { 
+					NOV = {
+						owns = 4122
+					}
+				}
+				4122 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			if = {
+				limit = { 
+					NOV = {
+						owns = 4256
+					}
+				}
+				4256 = {
+					cede_province = root
+					add_core = root
+				}
+			}
+			310 = {
+				add_core = root
+			}
+			33 = {
+				add_core = root
+			}
+			2749 = {
+				add_core = root
+			}
+			country_event = {
+				id = FEE_Novgorod_Events.8
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.7.OPT2
+
+		add_country_modifier = {
+			name = BM_FEE_NOV_conquest
+			duration = 365
+		}
+
+	}
+}
+
+#Makes Novgorod into a Incorporated Vassal
+country_event = {
+	id = FEE_Novgorod_Events.8
+	title = FEE_Novgorod_Events.8.T
+	desc = FEE_Novgorod_Events.8.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				NOV = {
+					is_subject_of = root
+				}
+			}
+			NOV = {
+				change_subject_type = {
+					subject_type = incorporated_vassal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.8.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+
+}

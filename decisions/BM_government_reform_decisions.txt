@@ -1,0 +1,31 @@
+country_decisions = {
+
+	BM_modernize_hesse_monarchy = {
+		color = {
+			0 170 255
+		}
+		potential = {
+			OR = {
+				tag = HES
+				has_reform = hessian_militarized_monarchy_reform
+			}
+		}
+		allow = {
+			OR = {
+				mil = 5
+				monthly_mil = 14
+			}
+			OR = {
+				army_professionalism = 0.5
+				army_tradition = 100
+			}
+			mil_tech = 10
+			mil_power = 300
+		}
+		effect = {
+			add_mil_power = -300
+			add_government_reform = hessian_modern_militarized_monarchy_reform
+		}
+	}	
+
+}

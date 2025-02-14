@@ -1,0 +1,36 @@
+﻿l_english:
+ high_american_tech_mod:0 "High American civilization"
+ eastern_tech_mod:0 "Eastern European civilization"
+ ottoman_tech_mod:0 "Anatolian civilization"
+ muslim_tech_mod:0 "Muslim civilization"
+ indian_tech_mod:0 "Indian civilization"
+ east_african_tech_mod:0 "East African civilization"
+ chinese_tech_mod:0 "Chinese civilization"
+ sub_saharan_tech_mod:0 "West African civilization"
+ central_african_tech_mod:0 "Central African civilization"
+ nomad_group_tech_mod:0 "Nomad civilization"
+ mesoamerican_tech_mod:0 "Mesoamerican civilization"
+ andean_tech_mod:0 "Andean civilization"
+ north_american_tech_mod:0 "North American civilization"
+ south_american_tech_mod:0 "South American civilization"
+ aboriginal_tech_tech_mod:0 "Aboriginal civilization"
+ polynesian_tech_tech_mod:0 "Polynesian civilization"
+
+ social_conservatism_title:0 "Social conservatism"
+ desc_social_conservatism:0 "In this emerging modern world new ideas are still not so easily accepted"
+
+
+ BM_reduced_diplomatic_travel_time_1:0 "Invention of the Flute"
+ desc_BM_reduced_diplomatic_travel_time_1:0 "Popularized in the Dutch Republic in the 16th century, the Flute has been used as a dedicated vessel to transport cargo across the North Sea and later the Atlantic Ocean ever since the 14th century. Being able to carry twice the cargo compared to other vessels as well as being efficiently crewed by a much smaller crew made the Flute a very lucrative and manpower efficient vessel."
+
+ BM_reduced_diplomatic_travel_time_2:0 "Invention of the Brig"
+ desc_BM_reduced_diplomatic_travel_time_2:0 "A Brig is a type of sailing vessel defined by its rig: two masts which are both squar-rigged and became a popular merchant vessel for traversing the Transatlantic Ocean due to its speed and durability. The Royal Navy used Brigs for combat training and in 1759 conducted 4395 voyages transporting coal to London alone."
+
+ BM_reduced_diplomatic_travel_time_3:0 "Invention of the Merchantman"
+ desc_BM_reduced_diplomatic_travel_time_3:0 "The Merchantman doesn't refer to a single type of ship, but rather the standardization of merchant vessels that came due to the ever expanding networks of trade across the world. This, in part with growing military navies, made it so merchant ships no longer needed to be able to convert freely from civilian to military use, and could solely be dedicated towards trade and cargo transport."
+
+ BM_reduced_diplomatic_travel_time_4:0 "Invention of the Trabakul"
+ desc_BM_reduced_diplomatic_travel_time_4:0 "The Trabàccolo or Trabakul, depending on whether you speak Italian or Croatian, was a type of Adriatic Sea sailing 'coaster'. Though this ship was both smaller and therefore less able to carry goods and conduct trade, it was an important stepping stone to the popularization of 'coasters', civilian ships designed to travel fast and lightly across small bodies of water such as lakes and along coastlines. Many diplomats, philantrophists and entreprenaurs as well as the growing middle-class along the Adriatic opted for this type of ship."
+
+ BM_reduced_diplomatic_travel_time_5:0 "Invention of the East Indiaman"
+ desc_BM_reduced_diplomatic_travel_time_5:0 "The East Indiaman was a general name given to any merchant ship operating under the charter or licence of the East India Companies of the European trading powers such as the EIC or VOC. The East Indiaman wast the culmination of hundreds of years of refinement in shipbuilding in the pursuit of profit and colonization."

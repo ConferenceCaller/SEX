@@ -1,0 +1,165 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 57  160  101 }
+
+revolutionary_colors = { 2  0  10 }
+
+preferred_religion = catholic
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	economic_ideas
+	quality_ideas
+	maritime_ideas
+	administrative_ideas
+	exploration_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Afonso #0" = 20
+	"Pedro #0" = 20
+	"João #0" = 15
+	"Miguel #0" = 10
+	"MONARCH_NAME_ANTONIO" = 0
+	"Artur #0" = 0
+	"Augusto #0" = 0
+	"Aurélio #0" = 0
+	"Bento #0" = 0
+	"Carlos #0" = 0
+	"Deodoro #0" = 0
+	"Emilio #0" = 0
+	"Ernesto #0" = 0
+	"Fernando #0" = 0
+	"Floriano #0" = 0
+	"Francisco #0" = 0
+	"Francisco José #0" = 0
+	"Gaspar #0" = 0
+	"Rodrigo #0" = 0
+	"Hermes #0" = 0
+	"Joaquim #0" = 0
+	"João Baptista #0" = 0
+	"José #0" = 0
+	"Luís #0" = 0
+	"Manuel #0" = 0
+	"Nereu #0" = 0
+	"Nilo #0" = 0
+	"Paschoal #0" = 0
+	"Paulino #0" = 0
+	"Prudente #0" = 0
+	"Venceslau #0" = 0
+	"Zeferino #0" = 0
+	
+	"Isabel #0" = -15
+	"Maria #0" = -10
+	"Silvia #0" = -1
+}
+
+leader_names = {
+	"Borges do Canto"
+	"da Costa" "da Silva" "de Amorim" "de Melo"
+	"de Mendonça" "dos Reis" "dos Santos"
+	"Freire de Andrade"
+	Gonzaga
+	Lopes
+	Maciel Melo
+	Nascimento "Nunes Viana"
+	Peixoto
+	Rolim
+	"Santos Pedroso"
+	Tavares Torres
+	Veiga Vieira
+	Xavier
+	
+	"de Anchieta"
+	Medeiros
+	Rodrigues
+	Coelho
+	Pereira
+	Barbosa
+	Maria
+	Raposo
+	"de Camargo"
+	Almeida
+	Machado
+	"de Assis"
+	Pinheiro
+	Gonzaga
+	"de Azevedo"
+	Coutinho
+	Gato
+	Leite
+	Negreiros
+	Furtado
+	"de Deus"
+	Silvestre
+}
+
+ship_names = {
+	Anunciada
+	"Boa Viagem" "Bom Jesus" "Bom Jesus do Carmo"
+	"Bom Jesus de Marzagão" "Bom Jesus da Vidigueira" Bretão
+	Cambaia Chagas "Correio d'Asia"
+	El-Rei Enxobregas "Espírito Santo" Estrela
+	"Flor do Mar"
+	"Imaculada Conceição"
+	"Monte Carvalho"
+	"Nazaré" "Nossa Senhora" "N. Sra. da Aparecida"
+	"N. Sra. da Atalaia" "N. Sra. da Batalha" "N. Sra. da Boa Hora"
+	"N. Sra. da Boa Memória" "N. Sra. da Boa Viagem" "N. Sra. da Candalaria"
+	"N. Sra. da Caridade" "N.Sra. da Conceição" "N. Sra. da Consolação"
+	"N. Sra. da Esperança" "N. Sra. da Glória" "N. Sra. da Graça" "N. Sra. da Guia"
+	"N. Sra. d'Ajuda Lusitana" "N. Sra. da Luz" "N. Sra. da Nazaré"
+	"N. Sra. da Oliveira" "N. Sra. da Palma" "N. Sra. da Penha de França"
+	"N. Sra. da Salvação" "N. Sra. da Saúde"
+	"N. Sra. da Vitória" "N. Sra. das Ondas"
+	"N. Sra. das Portas do Céu" "N. Sra. das Relíquias" "N. Sra. de Belém"
+	"N. Sra. de Guadalupe" "N. Sra. do Castelo" "N. Sra. do Livramento"
+	"N. Sra. do Loreto" "N. Sra do Paraíso" "N. Sra. do Pilar" "N. Sra. do Rosário"
+	"N. Sra. dos Prazeres" "N. Sra. dos Ramos"
+	"Princesa do Céu"
+	"Reis Magos"
+	"Sacramento" "Santa Ana" "Santa Catarina" "Santa Cruz" "Santa Fé"
+	"Santa Helena" "Santa Joana" "Santa Madre de Deus" "S. Maria de Saboia"
+	"Santo Milagre" "Santiago Maior" "Santíssima Trindade" "Santíssimo Sacramento"
+	"Santo Alberto" "Santo António" "Santo Espírito" "Santo Inácio" "São Bartolomeu"
+	"São Bento" "São Bernardo" "São Carlos" "São Cristovão" "São Domingos"
+	"São Filipe" "São Francisco" "São Francisco de Borja" "São Gabriel" "São Gonçalo"
+	"São João" "São João de Deus" "São Jorge" "S. José" "São Julio" "São Lourenço"
+	"São Lucas" "São Luís" "São Mateus" "São Paulo" "São Pedro" "São Rafael"
+	"São Roque" "São Salvador" "São Tomé" "São Valentim" "S. António de Lisboa"
+	"S. Catarina de Ribamar" "S. Francisco de Assis" "S. Francisco Xavier"
+	"S. João Baptista" "S. João Evangelista" "S. Pedro de Rates" "S. Pedro da Ribeira"
+	"S. Salvador do Mundo" "S. Teresa de Jesus" "S. Tomé"
+	Taforeia Trindade
+}
+
+army_names = {
+	"Exercito da India" "Bando de Diu" "Bando de Goa"
+}
+
+fleet_names = {
+	"Armada da India" "Esquadra de Diu" "Esquadra de Goa" "Esquadra de Chaul" "Esquadra de Calicute" "Esquadra de Cochim"
+}

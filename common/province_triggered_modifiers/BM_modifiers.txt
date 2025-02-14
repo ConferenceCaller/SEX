@@ -1,0 +1,101 @@
+BM_abbasid_caliph_triggered_province_modifier = {
+	potential = {
+		owner = {
+			religion_group = muslim
+		}
+	}
+
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = BM_abbasid_caliph_triggered_province_modifier_TT
+		}
+		owner = {
+			religion_group = muslim
+		}
+	}
+
+	diplomatic_reputation = 1
+	tolerance_own = 1
+	monthly_piety_accelerator = 0.001
+
+	#Province scope
+	on_activation = {
+		
+	}
+	
+	on_deactivation = {
+		remove_province_triggered_modifier = BM_abbasid_caliph_triggered_province_modifier
+	}
+	
+}
+
+
+BM_andes_riches_andean_triggered_province_modifier = {
+	potential = {
+		owner = {
+			OR = {
+				technology_group = andean
+				technology_group = south_american
+			}
+		}
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				technology_group = andean
+				technology_group = south_american
+			}
+		}
+	}
+
+	trade_goods_size_modifier = -0.5
+	tax_income = 20
+
+	#Province scope
+	on_activation = {
+		add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+		remove_province_triggered_modifier = BM_andes_riches_colonial_triggered_province_modifier
+	}
+	
+	on_deactivation = {
+		remove_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+		add_province_triggered_modifier = BM_andes_riches_colonial_triggered_province_modifier
+	}
+	
+}
+
+BM_andes_riches_colonial_triggered_province_modifier = {
+	potential = {
+		owner = {
+			OR = {
+				is_colonial_nation = yes
+				is_former_colonial_nation = yes
+			}
+		}
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				is_colonial_nation = yes
+				is_former_colonial_nation = yes
+			}
+		}
+	}
+
+	trade_goods_size_modifier = 0.15
+	inflation_reduction_local = 0.01
+
+	#Province scope
+	on_activation = {
+		remove_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+		add_province_triggered_modifier = BM_andes_riches_colonial_triggered_province_modifier
+	}
+	
+	on_deactivation = {
+		remove_province_triggered_modifier = BM_andes_riches_colonial_triggered_province_modifier
+		add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+	}
+	
+}

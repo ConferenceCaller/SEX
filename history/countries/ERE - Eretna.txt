@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = beylik_government
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 329	# Sivas
+religious_school = hanafi_school
+
+1444.11.10 = {
+	monarch = {
+		name = "Yakub II"
+		dynasty = Germiyan
+		birth_date = 1399.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = martial_educator_personality
+	heir = {
+		name = "Kasim"
+		birth_date = 1443.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

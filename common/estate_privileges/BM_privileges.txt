@@ -1,0 +1,846 @@
+estate_nobles_kreditwerk_appointment = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -10
+	conditional_modifier = { 
+		trigger = { 
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = { 
+				has_country_flag = BM_estate_nobles_kreditwerk_appointment_revoked
+			} 
+		} 
+		modifier = { 
+			max_absolutism = 2 
+		} 
+	}
+	conditional_modifier = { 
+		trigger = { 
+			has_country_flag = BM_estate_nobles_kreditwerk_appointment_revoked 
+		}
+		modifier = { 
+			max_absolutism = 10
+			nobles_influence_modifier = -0.1
+		} 
+	}
+	loyalty = 0.05
+	influence = 0.10
+	is_valid = {
+		has_government_attribute = enables_kreditwerk_appointment_deals
+	}
+	can_select = {
+		has_government_attribute = enables_kreditwerk_appointment_deals
+	}
+	on_granted = {
+	}
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = 0.4
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	penalties = {
+	}
+	benefits = {
+		global_autonomy = -0.05
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = BM_estate_nobles_kreditwerk_appointment_reformed
+		}
+		modifier = {
+			governing_cost = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = BM_estate_nobles_kreditwerk_appointment_revoked
+		}
+		modifier = {
+			reform_progress_growth = 0.1
+		}
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_nobles_muscovite_strong_duchies = {
+	icon = privilege_royal_authority
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	check_valid_when_tag_switching = no
+	is_valid = {
+		OR = {
+			has_estate_privilege = estate_nobles_muscovite_strong_duchies
+			AND = {
+				OR = {
+					culture_group = east_slavic
+					culture_group = slavic
+				}
+				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
+			}
+		}
+		any_subject_country = {
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = march
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = client_march
+				is_subject_of_type = client_vassal
+				is_subject_of_type = personal_union
+			}
+			OR = {
+				capital_scope = { region = russia_region }
+				capital_scope = { region = ural_region }
+				capital_scope = { region = baltic_region }
+				capital_scope = { region = ruthenia_region }
+				capital_scope = { region = crimea_region }
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_strong_duchies_trigger_tooltip
+			calc_true_if = {
+				amount = 2
+				all_subject_country = {
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = march
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = client_march
+						is_subject_of_type = client_vassal
+						is_subject_of_type = personal_union
+					}
+				}
+			}
+		}
+		NOT = { has_estate_privilege = estate_eunuchs_delegate_subject_diplomacy_privilege }
+	}
+	penalties = {
+	}
+	benefits = {
+		diplomatic_upkeep = 3
+		reduced_liberty_desire = 10
+		annexation_relations_impact = -0.25
+	}
+	conditional_modifier = {
+		trigger = { has_government_attribute = buffed_strong_duchies }
+		modifier = {
+			nobles_loyalty_modifier = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.05 }
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 3
+			calc_true_if = {
+				amount = 1
+				all_subject_country = {
+					OR = {
+						is_march = yes
+						is_vassal = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount = 2
+				all_subject_country = {
+					OR = {
+						is_march = yes
+						is_vassal = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+
+estate_nobles_capitanias_herditarias = {
+	icon = privilege_capitanias_herditarias
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		OR = {
+			tag = POR
+			was_tag = POR
+		}
+		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_capitanias_herditarias }
+	}
+	penalties = {
+	}
+	benefits = {
+		leader_land_manuever = 1
+		reduced_liberty_desire_on_other_continent = 15
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			colonial_subject_type_upgrade_cost_modifier = -0.25
+		}
+	}
+	on_granted = {
+	}
+	on_invalid = {
+	}
+	on_revoked = {
+	}
+	
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 3
+			calc_true_if = {
+				amount = 1
+				all_subject_country = {
+					is_colonial_nation = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount = 2
+				all_subject_country = {
+					all_subject_country = {
+						is_colonial_nation = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+estate_burghers_bandeirantes = {
+	icon = privilege_bandeirantes
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		tag = POR
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_burghers_bandeirantes
+		}
+		OR = {
+			num_of_colonists = 1
+			num_of_colonies = 1
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		colonist_placement_chance = 0.1
+		global_colonial_growth = 20
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_bandeirantes_granted_tooltip
+	}
+	on_invalid = {
+		custom_tooltip = estate_burghers_bandeirantes_revoked_tooltip
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_bandeirantes_revoked_tooltip
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+				tag = ENG
+				tag = GBR
+				tag = SCO
+				tag = FRA
+			}
+		}
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_church_jesuits_mission = {
+	icon = privilege_jesuits_missions
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		OR = {
+			num_of_colonists = 1
+			num_of_colonies = 1
+		}
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_church_jesuits_mission
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		native_uprising_chance = -0.5
+		native_assimilation = 0.5
+		papal_influence = 0.5
+	}
+	on_granted = {
+		custom_tooltip = estate_church_jesuit_granted_tooltip
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_jesuit_revoked_tooltip
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_jesuit_revoked_tooltip
+	}
+	conditional_modifier = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_burghers_sagres_naval_school = {
+	icon = privilege_sagres
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		tag = POR
+	}
+	benefits = {
+		range = 0.15
+		navy_tradition_decay = -0.005
+	}
+	can_select = {
+		tag = POR
+		230 = {
+			owned_by = root
+		}
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+estate_nobles_magnate_law_privilege = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_magnate_law
+	}
+	can_select = {
+		has_government_attribute = enables_magnate_law
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+		global_unrest = -5
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	penalties = {
+	}
+	benefits = {
+		war_taxes_cost_modifier = -0.5
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+estate_nobles_establish_serfdom = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_serfdom
+	}
+	can_select = {
+		has_government_attribute = enables_serfdom
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = -0.5
+	}
+	conditional_modifier = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity_modifier = 0.15
+	}
+	conditional_modifier = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_ghulams_governor_positions = {
+	icon = privilege_royal_authority
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_government_attribute = enables_ghulam_governors
+	}
+	can_select = {
+
+		has_government_attribute = enables_ghulam_governors
+	}
+	benefits = {
+		global_autonomy = -0.05
+	}
+	modifier_by_land_ownership = {
+		governing_capacity_modifier = 0.25
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_ghulams_trade_privileges = {
+	icon = privilege_monopoly_of_goods_cloth
+	conditional_modifier = { 
+		trigger = { 
+			has_absolutism_reduction_for_estate_privileges = yes
+			NOT = { has_government_attribute = enables_silk_traders }
+		}
+		modifier = {
+			max_absolutism = 1 
+		} 
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_government_attribute = enables_silk_traders }
+		}
+		modifier = {
+			burghers_loyalty_modifier = -0.10
+			burghers_influence_modifier = -0.10
+			max_absolutism = -5
+		}
+		is_bad = yes
+	}
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	is_valid = {
+	}
+	benefits = {
+		merchants = 1
+	}
+	influence_scaled_conditional_modifier = {
+		modifier = { 
+			placed_merchant_power_modifier = 0.15
+		}
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+
+estate_church_muslim_turuq = {
+	icon = privilege_recruit_minister
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = -0.05
+	is_valid = {
+		religion_group = muslim
+	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_church_clerical_ministers 
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_church_muslim_turuq_tt
+		hidden_effect = {
+			
+		}
+	}
+	on_revoked = {
+		hidden_effect = {
+			
+		}
+	}
+	benefits = {
+		monthly_piety = -0.002
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { piety = -0.5 }
+		}
+		modifier = {
+			morale_damage = 0.1
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+estate_burghers_promote_mercantilism = {
+	icon = privilege_mercantilism
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.10
+	loyalty = -0.05
+	is_valid = {
+	}
+	on_granted = {
+		custom_tooltip = show_mercantile_bonuses
+	}
+
+	benefits = {
+		mercantilism_cost = -0.1
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 20
+			has_dlc = "Dharma"
+		}
+		modifier = {
+			center_of_trade_upgrade_cost = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 20
+			NOT = { has_dlc = "Dharma" }
+		}
+		modifier = {
+			production_efficiency = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 40
+		}
+		modifier = {
+			development_cost = -0.05 
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 60
+		}
+		modifier = {
+			colonists = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 80
+		}
+		modifier = {
+			global_trade_goods_size_modifier = 0.1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 2
+			mercantilism = 20
+		}
+		modifier = {
+			factor = 2
+			mercantilism = 40
+		}
+		modifier = {
+			factor = 2
+			mercantilism = 60
+		}
+		modifier = {
+			factor = 2
+			mercantilism = 80
+		}
+		modifier = {
+			factor = 0
+			estate_influence = {
+				estate = estate_burghers
+				influence = 70
+			}
+		}
+	}
+}
+
+estate_turkic_tribes_recruit_tribes = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		OR = {
+			tag = QAR
+			tag = AKK
+		}
+	}
+	
+	can_select = {
+		estate_turkic_tribes_is_valid = yes
+	}
+
+	modifier_by_land_ownership = {
+		manpower_in_own_culture_provinces = 0.5
+	}
+
+	benefits = {
+		cavalry_cost = -0.1
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_nomadic_tolerance = {
+	icon = privilege_nomadic_tolerance
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = -0.05
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		OR = {
+			tag = QAR
+			tag = AKK
+		}
+	}
+
+	benefits = {
+		religious_unity = 0.25
+		dhimmi_loyalty_modifier = 0.1
+	}
+	
+	can_select = {
+		estate_turkic_tribes_is_valid = yes
+		NOT = {
+			has_estate_privilege = estate_dhimmi_guaranteed_autonomy
+		}
+	}
+	
+	on_granted = {
+		custom_tooltip = estate_dhimmi_guaranteed_autonomy_effect_tooltip
+		hidden_effect = {
+			set_country_flag = dhimmi_tolerates_wrong_religion
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				NOT = { religion_group = root }
+			}
+			add_province_modifier = {
+				name = estate_dhimmi_guaranteed_autonomy_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_dhimmi_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			clr_country_flag = dhimmi_tolerates_wrong_religion
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_dhimmi_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			clr_country_flag = dhimmi_tolerates_wrong_religion
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+		}
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+estate_turkic_tribes_integrate_new_tribes = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.1
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	on_granted = {
+		custom_tooltip = BM_estate_turkic_tribes_integrate_new_tribes_effect_TT
+	}
+	on_revoked = {
+		custom_tooltip = BM_estate_turkic_tribes_integrate_new_tribes_effect_TT
+	}
+	can_select = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	penalties = {
+	}
+	benefits = {
+		years_of_nationalism = -5
+	}
+	influence_scaled_conditional_modifier = {
+		modifier = { 
+			culture_conversion_time = -0.33
+		}
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_demand_new_oaths = {
+	icon = horse
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = -0.1
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		has_dlc = "Cradle of Civilization"
+		has_government_mechanic = tribal_federation_mechanic
+	}
+	
+	can_select = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	
+	on_granted = {
+		add_government_power = {
+			mechanic_type = tribal_federation_mechanic
+			power_type = tribal_allegiance
+			value = 5
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		yearly_government_power = 0.5
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

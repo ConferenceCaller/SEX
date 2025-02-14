@@ -1,0 +1,27 @@
+#EPO_portugal_sprite_pack = {
+#	# Tests against every tag in game
+#	country_trigger = {
+#		tag = POR
+#	}
+#
+#	sprite_infantry = {
+#		0 = POR_NEW_INFANTRY_1
+#		1 = SHL_INFANTRY_2
+#		2 = north_america_POR_INFANTRY_4
+#		3 = ITA_INFANTRY_4
+#	}
+#
+#	sprite_cavalry = {
+#		0 = POR_NEW_CAVALRY_1
+#		1 = SHL_CAVALRY_2
+#		2 = north_america_POR_INFANTRY_4
+#		3 = ITA_INFANTRY_4
+#	}
+#
+#	sprite_artillery = {
+#		0 = POR_NEW_ARTILLERY_1
+#		1 = SHL_ARTILLERY_2
+#		2 = north_america_POR_INFANTRY_4
+#		3 = ITA_ARTILLERY_4
+#	}
+#}

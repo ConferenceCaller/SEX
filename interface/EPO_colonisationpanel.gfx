@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_bandeirante_mechanic_button"
+		texturefile = "gfx/interface/bandeirante_mechanic_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jesuit_mechanic_button"
+		texturefile = "gfx/interface/jesuit_mechanic_button.dds"
+	}	
+}

@@ -1,0 +1,1479 @@
+namespace = BM_on_startup
+country_event = {
+	id = BM_on_startup.1
+	title = BM_on_startup.1.t # 
+	desc = BM_on_startup.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = HDA
+	}
+	
+	immediate = {
+		every_country_including_inactive = {
+			limit = {
+				ai = yes
+			}
+			set_estate_privilege = estate_church_religious_state
+			set_estate_privilege = estate_church_independent_inquisition
+			set_estate_privilege = estate_nobles_nobility_primacy
+			set_estate_privilege = estate_nobles_advisors
+			set_estate_privilege = estate_burghers_land_of_commerce
+			set_estate_privilege = estate_burghers_commercial_board_of_advice
+			change_estate_land_share = {
+				estate = all
+				share = -30
+			}
+		}
+		if = {
+			limit = { 
+				TUR = {
+					ai = yes
+				}
+			}
+			TUR = {
+				set_estate_privilege = estate_dhimmi_lighter_dhimmi_taxes
+				set_estate_privilege = estate_dhimmi_development_of_communities
+				set_estate_privilege = estate_dhimmi_dhimmi_education
+				set_estate_privilege = estate_janissary_sultans_aghas
+				set_estate_privilege = estate_janissary_celibacy
+				set_estate_privilege = estate_janissary_minimal_payment
+				set_estate_privilege = estate_janissary_rough_discipline
+				set_estate_privilege = estate_janissary_loyalty_to_the_sultan
+				set_estate_privilege = estate_burghers_promote_burgher_bookkeeping
+				set_estate_privilege = estate_burghers_financial_demand
+				set_estate_privilege = estate_burghers_economical_boost
+				set_estate_privilege = estate_burghers_admirals
+				set_estate_privilege = estate_nobles_royal_court_tasks
+				set_estate_privilege = estate_nobles_development_of_castles
+				set_estate_privilege = estate_nobles_land_rights
+				set_estate_privilege = estate_church_development_of_temples
+				set_estate_privilege = estate_church_clerical_ministers
+				set_estate_privilege = estate_church_religious_diplomats
+				set_estate_privilege = estate_church_for_the_faith
+				add_estate_loyalty = {
+					estate = all
+					loyalty = 100
+				}
+				change_estate_land_share = {
+					estate = estate_burghers
+					share = -5
+				}
+				add_manpower = 10
+				capital_scope = {
+					create_units_of_type_in_province = {
+						amount = 10
+						unit_type = janissary_infantry
+						who = TUR
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			add_country_modifier = {
+				name = BM_free_cav_delete
+				duration = 1
+			}
+		}
+		FRA = {
+			create_units_of_type = {
+				amount = 5
+				province = 180
+				unit_type = western_medieval_infantry
+			}
+			create_units_of_type = {
+				amount = 2
+				province = 180
+				unit_type = chevauchee
+			}
+		}
+			# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+			# REMOVES SEVERAL NATIVE NATIONS IN SOUTH + NORTH AMERICA + OCEANIA + AFRICA#
+			# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+			south_america = {
+				limit = {
+					owner = {
+						technology_group = south_american
+						NOT = { 
+							OR = {
+								tag = MPC
+								tag = GUA
+								tag = ARW
+								tag = CAB
+							}
+						}
+					}
+				}
+				cede_province = ---
+				change_trade_goods = unknown
+				change_native_size = 3
+			}
+			north_america = {
+				limit = {
+					owner = {
+						technology_group = north_american
+						NOT = { 
+							OR = {
+								tag = WCR
+								tag = FOX
+								tag = STA
+								tag = OTT
+								tag = SIO
+								tag = BLA
+								tag = COM
+								tag = SHO
+								tag = CAO
+								tag = MMI
+								tag = ONO
+								tag = ABE
+								tag = KIO
+								tag = APA
+								tag = HDA
+								tag = WIC
+								tag = CAD
+								tag = ERI
+								tag = CHI
+								tag = POW
+								tag = TSC
+								tag = LAK
+								tag = CHY
+								tag = SAT
+							}
+						}
+					}
+				}
+				cede_province = ---
+				change_trade_goods = unknown
+				change_native_size = 3
+			}
+			oceania = {
+				limit = {
+					owner = {
+						NOT = { 
+							OR = {
+								tag = HAW
+								tag = TOG
+								tag = PLW
+								tag = TAN
+								tag = SAM
+								tag = TIW
+								tag = GMI
+							}
+						}
+						OR = { technology_group = aboriginal_tech technology_group = polynesian_tech }
+					}
+				}
+				cede_province = ---
+				change_native_size = 3
+			}
+			# # # # # # # # # # # # # # # 
+			# # # # # # # # # # # # # # # 
+			# UNITES THE MOSSI KINGDOMS #
+			# # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # #
+			YAT = { #(G)YAT
+				inherit = WGD
+				inherit = GUR
+			}
+			# # # # # # # # # # # # # # # 
+			# # # # # # # # # # # # # # # 
+			# MAKES KANEM BORNU BIGGER  #
+			# # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # #
+			1158 = {
+				cede_province = KBO
+			}
+			2287 = {
+				cede_province = KBO
+			}
+			2286 = {
+				cede_province = KBO
+			}
+			1159 = {
+				cede_province = KBO
+				add_core = KBO
+			}
+			2288 = {
+				cede_province = KBO
+				add_core = KBO
+			}
+			# # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # #
+			# FIX CENTRAL AFRICA BORDERS  #
+			# # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # #
+			# KONGO
+			KON = {
+				vassalize = TYO
+				inherit = YAK
+			}
+			NDO = {
+				inherit = KSJ
+			}
+			LUB = {
+				inherit = KIK
+				inherit = KZB
+			}
+			# GREAT LAKES
+			BUU = {
+				inherit = UBH
+			}
+			RWA = {
+				inherit = NKO
+			}
+			BUG = {
+				inherit = BSH
+				inherit = BSG
+				inherit = BNY
+				inherit = KRW
+				vassalize = RWA
+				vassalize = UBH
+			}
+			# # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # 
+			# FIX EAST AFRICA BORDERS #
+			# # # # # # # # # # # # # #
+			# # # # # # # # # # # # # #
+			#EAST AFRICA
+			1188 = {
+				cede_province = RZW
+				add_core = RZW
+			}
+			1190 = {
+				cede_province = RZW
+				add_core = RZW
+			}
+			MRA = {
+				vassalize = TBK
+				inherit = MKU
+			}
+			MBA = {
+				inherit = MLI
+			}
+			# MADAGASCAR
+			1194 = {
+				cede_province = ---
+				change_trade_goods = unknown
+				change_native_size = 5
+			}
+			4022 = {
+				cede_province = ---
+				change_trade_goods = unknown
+				change_native_size = 5
+			}
+			4021 = {
+				cede_province = ---
+				change_trade_goods = unknown
+				change_native_size = 4
+			}
+			# SOMALIA
+			AJU = {
+				inherit = PTE
+				inherit = OGD
+			}
+			WAR = {
+				inherit = MRE
+			}
+			# ETHIOPIA
+			WLY = {
+				inherit = JJI
+			}
+			KAF = {
+				vassalize = ENA
+			}
+			ETH = {
+				inherit = MED
+			}
+			# NUBIA
+			BEJ = {
+				inherit = MAK
+			}
+			BEJ = {
+				inherit = MAK
+			}
+			ABB = {
+				inherit = ALO
+			}
+			# # # # # # # # # # # #
+			# # # # # # # # # # # #
+			# FIX ARABIAN BORDERS #
+			# # # # # # # # # # # #
+			# # # # # # # # # # # #
+			RAS = {
+				inherit = NJR
+				inherit = MFL
+			}
+			YEM = {
+				inherit = ADE
+			}
+			NAJ = {
+				inherit = DAW
+			}
+			SHM = {
+				inherit = ANZ
+			}
+			ORM = {
+				inherit = YAS
+			}
+			2341 = {
+				cede_province = OMA
+				add_core = OMA
+			}
+			4286 = {
+				cede_province = OMA
+				add_core = OMA
+			}
+			# # # # # # # # # # #
+			# # # # # # # # # # #
+			# FIX Asian Borders #
+			# # # # # # # # # # #
+			# # # # # # # # # # #
+			ATJ = {
+				inherit = PSA
+				inherit = BRS
+			}
+			PGR = {
+				inherit = IND
+			}
+			SAK = {
+				inherit = DLI
+			}
+			PLB = {
+				inherit = JMB
+			}
+			MLC = {
+				inherit = PAH
+				inherit = KEL
+				vassalize = KED
+				vassalize = PAT
+			}
+			CHA = {
+				vassalize = JAR
+				vassalize = RHA
+				vassalize = KOH
+			}
+			ASS = {
+				vassalize = SDY
+			}
+			KAC = {
+				vassalize = TPR
+				vassalize = MLB
+			}
+			BEI = {
+				inherit = SMB
+				inherit = SUL
+			}
+			KUT = {
+				inherit = BEU
+				inherit = BNJ
+			}
+			TDO = {
+				vassalize = MNA
+				vassalize = PGS
+			}
+			MAS = {
+				inherit = CEB
+			}
+			MGD = {
+				inherit = BTU
+			}
+			MHX = {
+				inherit = MYR
+			}
+			MJZ = {
+				inherit = EJZ
+			}
+			NHX = {
+				inherit = NVK
+			}
+			KRC = {
+				inherit = SOL
+			}
+			KSH = {
+				inherit = LDK
+				inherit = KGR
+			}
+			GHR = {
+				inherit = SRM
+				inherit = KMN
+				inherit = DTI
+				inherit = JML
+			}
+			GRK = {
+				inherit = DNG
+				inherit = KTU
+				inherit = LWA
+				inherit = JML
+			}
+			4482 = {
+				cede_province = SKK
+			}
+			565 = {
+				cede_province = BHU
+			}
+			4481 = {
+				cede_province = BHU
+			}
+			UTS = {
+				inherit = PHA
+			}
+			# # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # #
+			# Fix South American Borders  #
+			# # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # #
+			4602 = {
+				cede_province = MCA
+				add_core = MCA
+			}
+			4600 = {
+				cede_province = MCA
+				add_core = MCA
+			}
+			827 = {
+				cede_province = MCA
+				add_core = MCA
+			}
+			824 = {
+				cede_province = MCA
+				add_core = MCA
+			}
+			4607 = {
+				cede_province = MCA
+				add_core = MCA
+			}
+			2817 = {
+				cede_province = MCA
+				add_core = MCA
+			}
+			CSU = {
+				inherit = CLA
+				inherit = PCJ
+				inherit = CRA
+				inherit = CCQ
+				inherit = WKA
+				inherit = ICM
+				inherit = HJA
+				inherit = CHM
+				inherit = CYA
+				inherit = CJA
+				inherit = QTO
+			}
+			XIU = {
+				inherit = CNP
+			}
+			KAQ = {
+				inherit = KIC
+				inherit = CHT
+			}
+			ZAP = {
+				inherit = LAC
+			}
+			TLX = {
+				inherit = TOT
+			}
+			AZT = {
+				inherit = MAT
+			}
+			TEO = {
+				inherit = COI
+			}
+			TLA = {
+				inherit = MIX
+			}
+			XAL = {
+				inherit = CLM
+			}
+			TON = {
+				inherit = TAR
+			}
+			OTO = {
+				inherit = HST
+				inherit = GAM
+			}
+			# # # # # # # # # # # # # # # 
+			# # # # # # # # # # # # # # # 
+			# DELETES NORWEGIAN HEAVIES #
+			# # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # #
+			17 = {
+				kill_units = {
+					who = owner
+					type = heavy_ship
+					amount = 4
+				}
+				light_ship = owner
+				light_ship = owner
+				light_ship = owner
+				light_ship = owner
+			}
+			every_province = {
+				limit = {
+					is_empty = yes
+					has_building = fort_15th 
+				}
+				remove_building = fort_15th
+			}
+			# # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # #
+			# ADDS EVERY PROVINCE MODIFIER
+			# # # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # # #
+			219  = {
+				add_permanent_province_modifier = {
+					name = bm_toledo_steel
+					duration = -1
+				}
+			}
+			2935  = {
+				add_permanent_province_modifier = {
+					name = bm_amazon_estuary_modifier
+					duration = -1
+				}
+			}
+			1147  = {
+				add_permanent_province_modifier = {
+					name = bm_bronze_of_benin
+					duration = -1
+				}
+			}
+			808  = {
+				add_permanent_province_modifier = {
+					name = bm_city_of_gold
+					duration = -1
+				}
+			}
+			343  = {
+				add_permanent_province_modifier = {
+					name = bm_moroccan_rug
+					duration = -1
+				}
+			}
+			2954  = {
+				add_permanent_province_modifier = {
+					name = bm_djerban_jewish_community
+					duration = -1
+				}
+			}
+			2002  = {
+				add_permanent_province_modifier = {
+					name = bm_galapagos_natural_selection
+					duration = -1
+				}
+			}
+			1060  = {
+				add_permanent_province_modifier = {
+					name = bm_lake_baikal
+					duration = -1
+				}
+			}
+			1055  = {
+				add_permanent_province_modifier = {
+					name = bm_lake_baikal
+					duration = -1
+				}
+			}
+			1056  = {
+				add_permanent_province_modifier = {
+					name = bm_lake_baikal
+					duration = -1
+				}
+			}
+			1057  = {
+			add_permanent_province_modifier = {
+				name = bm_lake_baikal
+				duration = -1
+				}
+			}
+			2732  = {
+				add_permanent_province_modifier = {
+					name = bm_great_barrier_reef
+					duration = -1
+				}
+			}
+			1981  = {
+				add_permanent_province_modifier = {
+					name = bm_epstein_island
+					duration = -1
+				}
+			}
+			987  = {
+				add_permanent_province_modifier = {
+					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+			958  = {
+				add_permanent_province_modifier = {
+					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+			4872  = {
+				add_permanent_province_modifier = {
+					name = bm_niagara_falls
+					duration = -1
+				}
+			}
+			810  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			808  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			804  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			2941  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			795  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			2946  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			2940  = {
+				add_province_triggered_modifier = BM_andes_riches_andean_triggered_province_modifier
+			}
+			2935  = {
+				add_permanent_province_modifier = {
+					name = amazon_rainforest
+					duration = -1
+				}
+			}
+			2934  = {
+				add_permanent_province_modifier = {
+					name = amazon_rainforest
+					duration = -1
+				}
+			}
+			2933  = {
+				add_permanent_province_modifier = {
+					name = amazon_rainforest
+					duration = -1
+				}
+			}
+			2889  = {
+				add_permanent_province_modifier = {
+					name = amazon_rainforest
+					duration = -1
+				}
+			}
+			2741  = {
+				add_permanent_province_modifier = {
+					name = jeju_island
+					duration = -1
+				}
+			}
+			633  = {
+				add_permanent_province_modifier = {
+					name = komodo_island
+					duration = -1
+				}
+			}
+			72  = {
+				add_permanent_province_modifier = {
+					name = black_forest
+					duration = -1
+				}
+			}
+			74  = {
+				add_permanent_province_modifier = {
+					name = black_forest
+					duration = -1
+				}
+			}
+			375  = {
+				add_permanent_province_modifier = {
+					name = cliffs_of_moher
+					duration = -1
+				}
+			}
+			1246  = {
+				add_permanent_province_modifier = {
+					name = milford_sound
+					duration = -1
+				}
+			}
+			2155  = {
+				add_permanent_province_modifier = {
+					name = jade_mountain
+					duration = -1
+				}
+			}
+			875  = {
+				add_permanent_province_modifier = {
+					name = grand_canyon
+					duration = -1
+				}
+			}
+			1113  = {
+				add_permanent_province_modifier = {
+					name = lake_retba
+					duration = -1
+				}
+			}
+			# # # # # # # # # # # # # # # 
+			# # # # # # # # # # # # # # # 
+			# SETUP FOR AQ QOYNLU RULER #
+			# # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # #
+			AKK = {
+				set_ruler_flag = BM_UZUN_HASAN_ASCENSION_FLAG
+			}
+			# # # # # # # # # # # # # # # 
+			# # # # # # # # # # # # # # # 
+			# Muscovite Privilege # # # #
+			# # # # # # # # # # # # # # #
+			# # # # # # # # # # # # # # #
+			DAN = {
+				add_opinion = {
+					who = WOL
+					modifier = BM_pomerania_grip_dynasty
+				}
+				add_opinion = {
+					who = STE
+					modifier = BM_pomerania_grip_dynasty
+				}
+			}
+			WOL = {
+				add_opinion = {
+					who = DAN
+					modifier = BM_pomerania_grip_dynasty
+				}
+			}
+			STE = {
+				add_opinion = {
+					who = DAN
+					modifier = BM_pomerania_grip_dynasty
+				}
+			}
+			ALB = {
+				add_claim = 1766
+			}
+		}
+		
+	
+	option = {
+	}
+}
+
+
+country_event = {
+	id = BM_on_startup.2
+	title = BM_on_startup.2.t # Lifetime of Mahdi
+	desc = BM_on_startup.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		religion_group = muslim
+	}
+	
+	trigger = {
+		tag = MSY
+	}
+	
+	option = {
+		name = BM_on_startup.2.a #Forever may he reign
+		
+		add_ruler_modifier = {
+			name = BM_mushasha_ibn_faluh_modifier
+			duration = -1
+		}
+		add_ruler_personality = inspiring_leader_personality
+		add_ruler_personality = bold_fighter_personality
+		define_ruler_to_general = {
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 1
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}
+
+country_event = {
+	id = BM_on_startup.3 # The Swedish Dilemma (Independence or Nah)
+	title = BM_on_startup.3.t
+	desc = BM_on_startup.3.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SWE
+		has_game_started = yes
+	}
+
+	
+	option = {
+		name = BM_on_startup.3.a # I would like to start independent please (noob)
+		grant_independence = yes
+
+		trigger = {
+			ai = no
+		}
+
+		hidden_effect = {
+			define_ruler = {
+				name = "Bengt Jansson"
+				dynasty = "Oxenstierna"
+				age = 51
+				adm = 3
+				dip = 0
+				mil = 4
+			} 
+			define_consort = {
+				name = "Kristina"
+				dynasty = "Kristiernsdotter"
+				age = 52
+				female = yes
+				adm = 4
+				dip = 4
+				mil = 2
+			}
+			define_heir = {
+				name = "Jans"
+				dynasty = "Oxenstierna"
+				age = 27
+				adm = 3
+				dip = 3
+				mil = 2
+			}
+			complete_mission = swe_engelbrekt_rebellion
+			complete_mission = swe_swedish_allies
+			complete_mission = swe_military_advisor
+			complete_mission = swe_gain_support_from_estates
+			add_truce_with = DAN
+			DAN = {
+				add_truce_with = SWE
+			}
+		}
+		
+		ai_chance = { factor = 0 }
+		
+	}
+
+	option = { # I'd like the "historical" route
+		name = BM_on_startup.3.b
+
+		trigger = {
+			ai = no
+		}
+
+		add_stability = 1
+		custom_tooltip = BM_on_startup_3_tt
+		add_country_modifier = {
+			name = BM_dreams_of_independence
+			duration = 3650
+		}
+
+	ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = BM_on_startup.3.c # I AM AI :D
+
+		trigger = {
+			ai = yes
+		}
+
+		add_liberty_desire = -25
+
+	ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = BM_on_startup.4 # The Safavid Order
+	title = BM_on_startup.4.t
+	desc = BM_on_startup.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major_trigger = {
+		capital_scope = {
+			OR = {
+				region = caucasia_region
+				region = persia_region
+				region = anatolia_region
+			}
+		}
+	}
+
+	trigger = {
+		tag = ARL
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				alliance_with = SRV
+			}
+			break_alliance = SRV
+		}
+	}
+
+	option = {
+		name = BM_on_startup.4.a #The Order Shall Rise
+		add_prestige = 25
+		add_ruler_modifier = {
+			name = BM_Jafar_Safavid_ruler_modifier
+			duration = -1
+		}
+		add_country_modifier = {
+			name = BM_safavid_order_modifier
+			duration = 9125
+		}
+		add_manpower = 10
+		capital_scope = {
+			infantry = root
+			infantry = root
+			infantry = root
+			infantry = root
+			infantry = root
+			infantry = root
+			infantry = root
+			infantry = root
+			qizilbash_cavalry = root
+			qizilbash_cavalry = root
+			qizilbash_cavalry = root
+		}
+
+		hidden_effect = {
+			every_country = {
+				limit = {
+					alliance_with = SRV
+				}
+				break_alliance = SRV
+			}
+			if = {
+				limit = { 
+					ai = yes
+				}
+				add_treasury = 1500
+				add_manpower = 35
+				add_adm_power = 100
+				add_mil_power = 100
+				add_country_modifier_for_age = {
+					name = BM_MANTII_PROPOSED_THIS_DONT_KILL_ME
+					age = age_of_discovery
+				}
+			}
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_spread_the_true_faith
+			who = SRV
+		}
+
+		ai_chance = { factor = 0 }
+		
+	}
+}
+
+country_event = {
+	id = BM_on_startup.5
+	title = BM_on_startup.5.t # Rise of Uzun Hasan
+	desc = BM_on_startup.5.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	major_trigger = {
+		tag = QAR
+	}
+	
+	trigger = {
+		tag = AKK
+		OR = {
+			is_year = 1451
+			NOT = {
+				has_ruler_flag = BM_UZUN_HASAN_ASCENSION_FLAG
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { 
+				NOT = {
+					has_ruler = "Uzun Hasan"
+				}
+			}
+			define_ruler = {
+				name = "Uzun Hasan"
+				dynasty = "Aq Qoyunlu"
+				adm = 4
+				dip = 5
+				mil = 6
+				age = 25
+				claim = 100
+			}
+			add_ruler_personality = bold_fighter_personality
+			add_ruler_personality = just_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+			add_ruler_modifier = {
+				name = BM_AQ_uzun_hasan_modifier
+				duration = -1
+			}
+			root = {
+				kill_heir = {
+					allow_new_heir = yes
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				has_ruler = "Uzun Hasan"
+			}
+			add_ruler_personality = bold_fighter_personality
+			add_ruler_personality = just_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+			add_ruler_modifier = {
+				name = BM_AQ_uzun_hasan_modifier
+				duration = -1
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Uzun Hasan"
+				dynasty = "Aq Qoyunlu"
+				adm = 4
+				dip = 5
+				mil = 6
+				age = 25
+				claim = 100
+			}
+			add_ruler_personality = bold_fighter_personality
+			add_ruler_personality = just_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+			add_ruler_modifier = {
+				name = BM_AQ_uzun_hasan_modifier
+				duration = -1
+			}
+			root = {
+				kill_heir = {
+					allow_new_heir = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = BM_on_startup.5.a #
+		if = {
+			limit = { 
+				NOT = {
+					has_ruler = "Uzun Hasan"
+				}
+			}
+			define_ruler = {
+				name = "Uzun Hasan"
+				dynasty = "Aq Qoyunlu"
+				adm = 4
+				dip = 5
+				mil = 6
+				age = 25
+				claim = 100
+			}
+			add_ruler_personality = bold_fighter_personality
+			add_ruler_personality = just_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+			add_ruler_modifier = {
+				name = BM_AQ_uzun_hasan_modifier
+				duration = -1
+			}
+			hidden_effect = {
+				root = {
+					kill_heir = {
+						allow_new_heir = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				has_ruler = "Uzun Hasan"
+			}
+			add_ruler_personality = bold_fighter_personality
+			add_ruler_personality = just_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+			add_ruler_modifier = {
+				name = BM_AQ_uzun_hasan_modifier
+				duration = -1
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Uzun Hasan"
+				dynasty = "Aq Qoyunlu"
+				adm = 4
+				dip = 5
+				mil = 6
+				age = 25
+				claim = 100
+			}
+			add_ruler_personality = bold_fighter_personality
+			add_ruler_personality = just_personality
+			add_ruler_personality = legendary_conqueror_personality
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+			add_ruler_modifier = {
+				name = BM_AQ_uzun_hasan_modifier
+				duration = -1
+			}
+			hidden_effect = {
+				root = {
+					kill_heir = {
+						allow_new_heir = yes
+					}
+				}
+			}
+		}
+		add_country_modifier_for_age = {
+			name = BM_AQ_QOYUNLY_modifier
+			age = age_of_discovery
+		}
+		add_tribal_allegiance = 20
+		capital_scope = {
+			cavalry = root
+			cavalry = root
+			cavalry = root
+		}
+		add_manpower = 6
+		add_casus_belli = {
+			target = QAR
+			type = cb_aq_ambition
+			months = -1
+		}
+	}
+}
+
+country_event = {
+	id = BM_on_startup.6
+	title = BM_on_startup.6.t # The Hohenzollern Brothers
+	desc = BM_on_startup.6.d
+	picture = KINGS_CHOICE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BRA
+	}
+	
+	option = {
+		name = BM_on_startup.6.a #Forever may he reign
+		add_adm_power = 50
+		add_ruler_modifier = {
+			name = BM_irontooth_ruler_modifier
+			duration = -1
+		}
+		change_ruler_stat = {
+			type = adm
+			amount = 1
+		}
+		add_ruler_personality = lawgiver_personality
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -2.5
+		}
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = -2.5
+		}
+	}
+}
+
+country_event = {
+	id = BM_on_startup.7
+	title = BM_on_startup.7.t # The succession of Albrecht II or John 'The Alchemist'
+	desc = BM_on_startup.7.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		NOT = {
+			has_ruler_modifier = BM_irontooth_ruler_modifier
+		}
+		is_free_or_tributary_trigger = yes
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = BM_on_startup.7.a #Albrecht II
+		trigger = {
+			has_ruler = "Albrecht III Achilles"
+		}
+		add_mil_power = 50
+		add_ruler_modifier = {
+			name = BM_order_of_the_swan_knight_ruler_modifier
+		}
+		change_ruler_stat = {
+			type = mil
+			amount = 2
+		}
+	}
+
+	option = {
+		name = BM_on_startup.7.b #John 'The Alchemist'
+		define_ruler = {
+			name = "Johann 'the Alchemist'"
+			dynasty = "Hohenzollern"
+			adm = 3
+			dip = 5
+			mil = 1
+			age = 40
+			claim = 80
+		}
+		add_dip_power = 50
+		add_ruler_modifier = {
+			name = BM_johann_the_alchemist_ruler_modifier
+		}
+		add_ruler_personality = patron_of_arts_personality
+		add_country_modifier = {
+			name = BM_johann_faulty_governance_ruler_modifier
+			duration = 365
+		}
+	}
+
+	option = {
+		name = BM_on_startup.7.c #Keep current ruler (whoever that is)
+		trigger = {
+			NOT = {
+				has_ruler = "Albrecht III Achilles"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BM_on_startup.8
+	title = BM_on_startup.8.t # The Abbasid Caliphate
+	desc = BM_on_startup.8.d
+	picture = muslimgfx_GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MAM
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = BM_mamluks_troubles_FLAG
+		}
+	}
+	
+	option = {
+		name = BM_on_startup.8.a #
+		add_splendor = 50
+		361 = {
+			add_province_triggered_modifier = BM_abbasid_caliph_triggered_province_modifier
+		}
+	}
+}
+
+country_event = {
+	id = BM_on_startup.9
+	title = BM_on_startup.9.t # Aftermath of Varna
+	desc = BM_on_startup.9.d
+	picture = IMPALED_SOLDIERS_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = POL
+	}
+	
+	option = {
+		name = BM_on_startup.9.a #
+		add_army_tradition = 10
+		add_manpower = 3
+		add_war_exhaustion = 2
+		add_stability = -1
+		281 = {
+			cavalry = root
+			infantry = root
+		}
+
+		country_event = {
+			id = BM_on_startup.10
+			days = 30
+		}
+	}
+}
+
+country_event = {
+	id = BM_on_startup.10
+	title = BM_on_startup.10.t # Interregnum takes charge of matters
+	desc = BM_on_startup.10.d
+	picture = ROYAL_STRESS_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = POL
+	}
+	
+	option = {
+		name = BM_on_startup.10.a #
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = {
+			name = BM_POL_emergency_interregnum
+			duration = -1
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}
+
+country_event = {
+	id = BM_on_startup.11
+	title = BM_on_startup.11.t # After the fall of the Golden Horde
+	desc = BM_on_startup.11.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_reform = steppe_horde
+		NOT = {
+			has_country_modifier = BM_the_great_struggle
+		}
+		current_age = age_of_discovery
+	}
+
+	immediate = {
+		every_country_including_inactive = {
+			limit = {
+				OR = {
+					has_reform = steppe_horde
+					is_neighbor_of = root
+				}
+			}
+			add_opinion = {
+				who = root
+				modifier = BM_is_horde
+			}
+		}
+	}
+	
+	option = {
+		name = BM_on_startup.11.a #
+		add_country_modifier_for_age = {
+			name = BM_the_great_struggle
+			age = age_of_discovery
+		}
+	}
+}
+
+
+country_event = {
+	id = BM_on_startup.12
+	title = BM_on_startup.12.t # Alfonsos Cannons
+	desc = BM_on_startup.12.d
+	picture = PORT_BLOCKADED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ARA
+	}
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				create_units_of_type_in_province = {
+					amount = 3
+					unit_type = artillery
+					who = ARA
+				}
+			}
+			add_ruler_modifier = {
+				name = BM_ARA_alfonso_artillery_arsenal
+				duration = -1
+			}
+			change_adm = 1
+		}
+	}
+	
+	option = {
+		name = BM_on_startup.12.a #
+		tooltip = {
+			add_ruler_modifier = {
+				name = BM_ARA_alfonso_artillery_arsenal
+				duration = -1
+			}
+			change_adm = 1
+			create_units_of_type_in_province = {
+				amount = 3
+				unit_type = artillery
+				who = ARA
+			}
+		}
+	}
+}

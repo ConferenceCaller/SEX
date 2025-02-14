@@ -1,0 +1,30 @@
+﻿l_english:
+#Estates 
+ estate_nobles_capitanias_herditarias:0 "Capitanias Hereditárias"
+ estate_nobles_capitanias_herditarias_desc:0 ""
+ unlock_privilege_estate_nobles_capitanias_herditarias_tt:0 "Unlocks burghers estate privilege §YCapitanias Hereditárias§!." 
+ estate_burghers_sagres_naval_school:0 "Naval School of Sagres"
+ estate_burghers_sagres_naval_school_desc:0 ""
+
+ portuguese_spice_trade:0 "Portuguese Spice Trade"
+ estate_nobles_feitorias:0 "System of Feitorias"
+ estate_nobles_feitorias_desc:0 ""
+ estate_nobles_feitorias_tt:0 "Every owned province belonging to a §YTrade Company§! with a §YFort§! gains the following bonus:"
+ estate_nobles_feitorias_rt:0 "The modifier '§YFeitoria§!' is removed from all provinces in a §YTrade Company§! with a §YFort§!."
+
+#Bandeirantes Burgher Privilege
+ estate_burghers_bandeirantes:0 "Bandeirante's Exploration Contracts"
+ estate_burghers_bandeirantes_desc:0 ""
+ unlock_privilege_estate_burghers_bandeirantes_tt:0 "Unlocks Burghers estate privilege §YBandeirante's Exploration Contracts§!."
+ por_bandeirante_frontier:0 "Bandeirante's Expedition"
+ estate_burghers_bandeirantes_granted_tooltip:0 "Enables the estate decision: §YBurghers: Bandeirante's Exploration Contracts§!."
+ estate_burghers_bandeirantes_revoked_tooltip:0 "Disables the estate decision: §YBurghers: Bandeirante's Exploration Contracts§!."
+
+
+#Jesuit Church Privilege
+ estate_church_jesuits_mission:0 "Jesuit Mission Rights"
+ estate_church_jesuits_mission_desc:0 ""
+ unlock_privilege_estate_church_jesuits_mission_tt:0 "Unlocks Church estate privilege §YJesuit Mission Rights§!." 
+ por_jessuit_frontier:0 "Jesuit Mission"
+ estate_church_jesuit_granted_tooltip:0 "Enables the estate decision: §YChurch: Jesuit's Mission Rights§!.\nThis §YEstate Action§! will have the following effects when enacted:\n Allows sending §YJesuit Mission§! of §G100§! settlers in colonial provinces, giving the following effects:\nChurch Land Share: §R+1§!\nBurghers Loyalty: §R-2§!\nLocal Colony Cost: §G-100%§!\nNative Assimilation: §G+100%§!\nNative Uprising Chance: §G-50%§!\nLocal Province's religion and culture is converted to our own."
+ estate_church_jesuit_revoked_tooltip:0 "Disables the estate decision: §YChurch: Jesuit's Mission Rights§!."

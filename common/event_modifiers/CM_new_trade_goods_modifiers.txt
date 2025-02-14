@@ -1,0 +1,21 @@
+CM_new_trade_good_whaling_mod = {
+	trade_value_modifier = 0.5
+	trade_goods_size_modifier = 0.1
+}
+
+CM_new_trade_good_beer_mod = {
+	trade_value_modifier = 0.2
+	local_unrest = -1
+}
+
+CM_new_trade_good_potato_mod = {
+	local_manpower_modifier = 0.1
+}
+
+CM_new_trade_good_cheese_mod = {
+	local_tax_modifier = 0.2
+}
+
+CM_new_trade_good_tomato_mod = {
+	trade_value_modifier = 0.15
+}

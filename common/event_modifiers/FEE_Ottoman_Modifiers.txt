@@ -1,0 +1,12 @@
+#Ottoman Conquest of Vienna
+fee_tur_european_stronghold = {
+	local_unrest = 1
+	local_defensiveness = 0.15
+}
+#Muhrad II seffects
+fee_tur_jannisariescalmed = {
+	global_unrest = -1
+}
+fee_tur_jannisariesagainst_ruler = {
+	global_unrest = 1
+}

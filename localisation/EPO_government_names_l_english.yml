@@ -1,0 +1,13 @@
+﻿l_english:
+ COLONY_STATE:0 "Colonial State"
+ portuguese_liberal_monarchy:0 "Portuguese Liberal Monarchy"
+ desc_portuguese_liberal_monarchy:0 ""
+ portuguese_absolut_monarchy:0 "Portuguese Absolute Monarchy"
+ desc_portuguese_absolut_monarchy:0 ""
+ viceroyalty_government_reform:0 "Viceroyalty"
+ desc_viceroyalty_government_reform:0 ""
+###Government Reforms
+ portuguese_overseas_administration_reform:0 "Captaincies and Viceroyalties"
+ portuguese_overseas_administration_reform_desc:0 "Through close contact with power structures overseas, which aim to replicate and safeguard our rule in these lands, we must maintain a balance. By delegating people of trust, regardless of their upbringing, a careful balance between our estates and their endeavours overseas we strive to keep our homeland and King relevant within our vast empire."
+ casa_da_india_reform:0 "Casa da India"
+ casa_da_india_reform_desc:0 "In order to overrun our colonial holdings, we have built a strict bureaucratic system which controls all affairs abroad and the goods traded into Europe. This system, run by the crown will ensure our absolute rule in faraway lands."

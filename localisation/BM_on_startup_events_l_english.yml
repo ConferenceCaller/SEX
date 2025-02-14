@@ -1,0 +1,202 @@
+﻿l_english:
+ # Province Modifiers:
+ bm_toledo_steel:0 "Toledo Steel"
+ bm_toledo_steel_desc:0 "Toledo has since ancient Hispania been famous for its forging, production and uniqueness of swords. Around the 15th and 16th century, Toledo became the centre of high-quality smithmaking and swordsmanship in Europe, the Greater Middle East, and after the re-conquista, the greatest in the world. And while Toledo steel set the standard for excellence in quality of European swords, there were also very few locales that surpassed Toledo in terms of production volume. As armies began to replace swords with firearms, the blacksmithing tradition at large began its decline. In an attempt to preserve the techniques, methods and quality of the Toledo Steel production, the Spanish King Carlo III ordered the creation of the Royal Sword Factory in Toledo, further continuing the value of Toledo Steel."
+
+ bm_moroccan_rug:0 "Moroccan Carpets"
+ bm_moroccan_rug_desc:0 "The tradition of carpets & rug-making in Morocco is just about as old as it is anywhere in the world. Most major cities have a unique style or design characteristic that distinguishes their carpets from others. Though many cities are home to many skilled embroidery studios and dye workers, perhaps the most important carpet- and rug-producing city in Morocco is Fez. The City reached its golden age during the 13th centry, at that point, the city was home to over one hundred dye workers and thousands of artisan embroidery studios located in the city's medina, city centres and old-town markets."
+
+ bm_granary_of_the_mediterranean:0 "Granary of the Mediterranean"
+ bm_granary_of_the_mediterranean_desc:0 ""
+
+ bm_city_of_gold:0 "The City of Gold"
+ bm_city_of_gold_desc:0 "The Andes Mountains host large deposits of salt, silver, gold, and other ores. Cuzco, the cultural and administrative centre of the Incas, has become fabled to be built out of the gold extracted from the mountain. This fable, whilst not technically true, still holds some value to it as Cuzco is home to one of the larger gold deposits of the Andes Mountains."
+
+ bm_bronze_of_benin:0 "The Bronze-Making of Benin"
+ bm_bronze_of_benin_desc:0 "The Kingdom of Benin is rich in materials, such as iron, copper, and tin, and has cultivated a large bronze-making tradition of creating sculptures out of the materials. Many of these sculptures are used to decorate the royal palaces, bringin awe to our neighbours. The technique of our bronze-making is in fact so advanced that none of our neighbours are able to replicate it. Even if a foreign power more advanced than us, were to conquer us, burning down our city and stripping our royal palace of our bronze sculptures, they will be perplexed hundreds of years later over our masterful skills in bronze-making."
+
+ bm_djerban_jewish_community:0 "Djerban Jewish Community"
+ bm_djerban_jewish_community_desc:0 "The island of Jerba, or Jarbah depending on pronounciation, is the largest island in North Africa, located off the coast of Tunis. Despite North Africa being a Muslim dominated region, the island of Djerba has housed for at least a millenium a large Jewish population. Historical conflicts between the Djerban Jews and Muslims have been largely absent due to the fact that all Djerbans were at some point Jewish and either converted to Islam or stayed Jewish, therefore many share a similar tradition, culture and practice in life. This community of Jews increased in size during the re-conquista and the subsequent expelling of Jews in Iberia and from Sicily."
+
+ bm_epstein_island:0 "Epsteiner Island"
+ bm_epstein_island_desc:0 "Epsteiner Island, also known as Bornholm, is a small private island in the south Baltic Sea. The island was owned by Danish nobles who often used it as a summer estate. In recent years however, the island has seen a large influx of Priests, Cardinals, and sometimes even the Pope himself, vacationing and often bringing their youth pastors with them. There are some heretical thinkers and conspiracy theorists who say that the private island is used to cover up indecent and sinful acts of the Vatican Church, but we all know that is just silly."
+
+ bm_the_sulfur_of_iceland:0 "The Sulfur of Iceland"
+ bm_the_sulfur_of_iceland_desc:0 "Iceland has always been rich in sulfur from its lakes and volcanoes. Though the smell is horrid, with the technological development of machines and more advanced weaponry, the demand of sulfur has increased. Already, mines are being set up to excavate the sulfur from Iceland."
+
+ bm_galapagos_natural_selection:0 "Natural Selection"
+ bm_galapagos_natural_selection_desc:0 "The Galápagos Islands are an archipelago of volcanic islands distributed on either side of the Equator in the Pacific Ocean surrounding the centre of the Western Hemisphere. The islands are known for their vast number of endemic species and were studied by Charles Darwin, as his observations and collections contributed to the inception of Darwin's theory of evolution by means of natural selection."
+
+ bm_lake_baikal:0 "Lake Baikal"
+ bm_lake_baikal_desc:0 "Lake Baikal is the largest freshwater lake by volume in the world, containing more water than the North American Great Lakes combined. Being one of the few sources of freshwater apart from rivers, Baikal offers an excellent opportunity for any nation willing to exploit it."
+
+ bm_niagara_falls:0 "Niagara Falls"
+ bm_niagara_falls_desc:0 "Niagara Falls os the collective name for the three waterfalls that form the southern end of the Niagara Gorge. It has been a hotbed for trade and exchange between the various north american tribes. Canoe is an often used transport when it comes to traversing the dangerous waters."
+
+ bm_amazon_estuary_modifier:0 "Amazon Estuary"
+ bm_amazon_estuary_modifier_desc:0 "The streams of several rivers in the Amazon all converging into the Amazon Estuary"
+
+ BM_andes_riches_andean_triggered_province_modifier:0 "Andes Riches"
+ desc_BM_andes_riches_andean_triggered_province_modifier:0 "The Andes Mountains host large ore and salt deposits, but most importantly, massive sources of gold and silver. The civilization of the Andes used the gold to trade and decorate their constructions and ornate their clothing and accessories, but not as currency. A foreign empire who conquers and uses this gold and silver as a means of exchange will become very rich, though the large quantity might have an inflationary effect on its economy."
+
+ BM_andes_riches_colonial_triggered_province_modifier:0 "Andes Riches"
+ desc_BM_andes_riches_colonial_triggered_province_modifier:0 "The Andes Mountains host large ore and salt deposits, but most importantly, massive sources of gold and silver. The civilization of the Andes used the gold to trade and decorate their constructions and ornate their clothing and accessories, but not as currency. A foreign empire who conquers and uses this gold and silver as a means of exchange will become very rich, though the large quantity might have an inflationary effect on its economy."
+
+ amazon_rainforest:0 "Amazon Rainforest"
+ desc_amazon_rainforest:0 "The Amazon Rainforest is amongst the most species-rich biome in the world. With thick and hummid forests and dangerous diseases and floods, the Amazon is a dangerous place to traverse. However, if one were to be able to traverse the rainforest safely, it provides tropical wood that rivals any that can be harvested elsewhere."
+
+ jeju_island:0 "Jeju Island"
+ desc_jeju_island:0 "THe island was formed by volcanic eruptions approximately 2 million years ago. It has a unique ecology and its forests combined with its excellent position between Korea, Japan and China creates a perfect location for naval bases and activities."
+
+ komodo_island:0 "Komodo Island"
+ desc_komodo_island:0 "The island of 'Flores' is particularly notable as the only place that naturally habitates the Komodo Dragon, the largest lizard on earth. Though a unique and interesting lizard, it has proven very dangerous and territorial to any who tries to settle it."
+
+ black_forest:0 "Black Forest"
+ desc_black_forest:0 "The Black Forest is a large forested mountain range. Its resources could boost the economy of any city with its excellent ability to provide good wood for mining, forestry and lumber, glass making and charcoal burning. It is also the highest part of the South German Scarplands and much of it is densely wooded, providing great defensive positions."
+
+ cliffs_of_moher:0 "Cliffs of Moher"
+ desc_cliffs_of_moher:0 "The cliffs consists mainly ofbeds of Namurian shale and sandstone, with the oldest rocks being found at the bottom of the cliffs. It is possible to see 300 million year-old river channels cutting throughm forming unconformities at the base of the cliffs. A wide rane of sea life such as grey seals, dolphins, mink, whale as well as sunfish. On land, feral goats, foxes, badgers and the Irish hare are found along with various breeds of farm cattle."
+
+ milford_sound:0 "Milford Sound"
+ desc_milford_sound:0 "Milford Sound, named after Milford Haven in Wales or Piopiotahi after the trush-like piopio bird by the Maui. The sound has proven to be a popular spot to set up naval bases and fishing villages across history."
+
+ jade_mountain:0 "Yushan"
+ desc_jade_mountain:0 "Yushan, also known as 'Jade Mountain', is the highest mountain in Taiwan, making it one of the highest elevations on an island in the world."
+
+ grand_canyon:0 "Grand Canyon"
+ desc_grand_canyon:0 "Nearly two billion years of earth's geological history has been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock while the Colorado Plateau was lifted up."
+
+ lake_retba:0 "Lake Retba"
+ desc_lake_retba:0 "Lake Retba, or Lace Rose meaning Pink Lake, named after its pink waters caused by the Dunaliella salina algae and its high salt content. The salt has been used by senegambian fisherman to preserve their fish and my salt excavators to mine large quantities of salt. The fish in the lake has adapted to its high salt content through evolution to pump out the extra salt and keep their water levels balanced."
+
+
+
+ #Free Cav Delete:
+ BM_free_cav_delete:0 "Free Cav Delete"
+ desc_BM_free_cav_delete:0 ""
+
+
+ #Mushasha
+ BM_on_startup.2.t: "Muhammad ibn Falah the Mahdi"
+ BM_on_startup.2.d: "Our spiritual and de-facto leader is Muhammad ibn Falah, a Wasit born theologian who studied in al-Hillah, who is yet so different to all of his peers. It was there, in Hillah, that he recognized that he is the embodiment of the prophesied representative of Imam Ali, the Mahdi. As such, in fervor of his grand quest to fulfill the prophecies, he founded the Musha'sha', an order where Mahdi's followers were to rid the world of evil. It has been a few yers since the founding of the order, and by Allah, we will fulfill our greater purpose."
+ BM_on_startup.2.a: "Forever may he reign!"
+
+ #MODIFIERS
+ BM_mushasha_ibn_faluh_modifier: "Life of Ibn Falah"
+
+ #SWEDEN
+ BM_on_startup.3.t: "The Swedish Dilemma"
+ BM_on_startup.3.d: "Sweden at the start of the 15th century was securely placed within the confines of the Kalmar Union, with the Danish Arch-King Christopher III as its formal regent. But to help with the management of the Kingdom of Sweden and Norway, both were informally managed by the "Lord regent", a head governor who was tasked with representing the interests of the Kalmar Union at the local level. In Norway this would be a succesful project and bring Norway and Denmark closer together, but in Sweden it would have the opposite effect. As the Lord Regent was intertwined with the interests of the Swedish nobles, who themselves grew more and more furious at Danish rule, the Lord Regent would often actively work against the Kalmar Union and the Danish Kings. \nNow, in the second half of the 15th century, the Lord Regent Bengt Jönsson Oxenstierna has ruled as regent of Sweden in Christopher III's stead during the conflict between Erik of Pommerania and Christopher III, and has been able to leverage a considerable amount of autonomous rule for Sweden. \nAs the threat of Swedish revolt grows bigger, Christopher III now ponders whether or not another Engelbrekt is around the corner, or even worse, outright rebellion of the entirety of Sweden itself."
+ BM_on_startup.3.a: "We must not risk another costly war..."
+ BM_on_startup.3.b: "Swedish independence? Unthinkable!"
+ BM_on_startup_3_tt: "\n§Y*Sweden will remember this...§!\n"
+
+ #MODIFIERS
+ BM_dreams_of_independence: "Gathering Strength"
+ BM_SWE_spirit_of_engelbrekt_mod: "Spirit of Engelbrekt"
+
+ #ARDABIL
+ BM_on_startup.4.t: "The Safavid Order"
+ BM_on_startup.4.d: "In the mountains of Ardabil, the shiite turkmen tribes have united under the Safavid banner, a religious extremist order under the rule of Jafar 'the Righteous' Safavid. His skirmishes against the Shirvani Shahdom has increased tensions in the already chaotic region and the turkmen tribes are eager to be let loose in full-scale war against the Sunni Shirvani."
+ BM_on_startup.4.a: "Rise of the Order!"
+
+ #MODIFIERS
+ BM_Jafar_Safavid_ruler_modifier: "Jafar 'the Righteous' Safavid"
+ BM_safavid_order_modifier: "The Safavid Order"
+
+
+
+ #AQ QOYUNLU
+ BM_on_startup.5.t: "Ascension of Uzun Hasan"
+ BM_on_startup.5.d: "Uzun 'the Tall' Hasan is a formidable warrior, a cunning diplomat, and considered the strongest and tallest out of all the Turkoman tribesmen. Being appointed by the 'Great Conqueror' Timur as governor of Diyarbekir and the surrounding regions, Uzun Hasan has built his powerbase and gained many sworn loyalties from the Turkoman tribes. With his ascension as the ruler of Aq Qoyunlu, Hasan now swears to fully unite the Turkomans under one banner."
+ BM_on_startup.5.a: "Turn the tribesmen east, towards the 'Black Sheep'"
+
+
+ cb_aq_ambition: "Aq Qoyunlu Ambition"
+ cb_aq_ambition_desc: "It is time for the tribal feuds to cease. We will defeat our opponents and make sure no two lambs graze these lands."
+
+ take_capital_cb_aq_ambition: "Aq Qoyunlu Ambition"
+ take_capital_cb_aq_ambition_desc: "Take Capital [QAR.Capital.GetCapitalName]"
+ CB_AQ_AMBITION: "War Goal is to the the capital province of Qara Qoyunly"
+
+ BM_AQ_uzun_hasan_modifier: "Uzun 'the Tall' Hasan Aq Qoyunlu"
+ desc_BM_AQ_uzun_hasan_modifier: ""
+
+ BM_AQ_QOYUNLY_modifier: "Federation of Turkoman Tribes"
+ desc_BM_AQ_QOYUNLY_modifier: ""
+
+
+
+ #BRANDENBURG
+ BM_on_startup.6.t: "The Hohenzollern Brothers"
+ BM_on_startup.6.d: "The Margraviate of Brandenburg is home to the House of Hohenzollern, a prestigious dynasty who's influence is dotted across the Holy Roman Empire. With the retirement of Friedrich I in 1437, his son, Friedrich II, has been ruling the Margraviate. In many ways Friedrich II, 'the Irontooth', has proven to be his father's son, resuming many of his policies. But he is not the only son nor the only one with experience of ruling Brandenburg. Friedrich II's brother Albrecht III, 'Achilles', has been ruling in the Franconian principalities since 1440 and is the heir to the throne of Brandenburg should Friedrich II retire or, god forbid, pass away. A third brother, Johann, 'the Alchemist', has also helped managed the governmental affairs in Brandenburg from 1424 though retiring early in 1425 to pursue alchemy, and also due to his administrative faults. \nNow, with the concentrating power in the hands of Friedrich II and his brothers, the Hohenzollern dynasty shall overcome its obstacles."
+ BM_on_startup.6.a: "'Irontooth'? I like the sound of that."
+ BM_irontooth_ruler_modifier: "Irontooth"
+ desc_BM_irontooth_ruler_modifier: ""
+
+ BM_on_startup.7.t: "The Passing of the Crown"
+ BM_on_startup.7.d: "With Friedrich II no longer able to continue his reign of Brandenburg, the crown of the Margraviate must pass on to the next in line. Albrecht III is the clear successor to Friedrich II, but some argue that Johann deserves a second attempt of governance and that his ingenuity could be of use to Brandenburg."
+ BM_on_startup.7.a: "Albrecht III will serve best!"
+ BM_order_of_the_swan_knight_ruler_modifier: "'Order of the Swan'"
+ desc_BM_order_of_the_swan_knight_ruler_modifier: ""
+
+ BM_on_startup.7.b: "Johann deserves a second try"
+ BM_johann_the_alchemist_ruler_modifier: "'Alchemist'"
+ desc_BM_johann_the_alchemist_ruler_modifier: ""
+ BM_johann_faulty_governance_ruler_modifier: "Faulty governance"
+ desc_BM_johann_faulty_governance_ruler_modifier: ""
+
+ BM_on_startup.7.c: "I think the current one is fine"
+
+
+
+
+ #MAMLUKS
+ BM_on_startup.8.t: "The Abbasid Caliphate"
+ BM_on_startup.8.d: "The Abbasid Caliphate, influential from the 8th century to 13th century, was the third successive caliphate, based mostly in Baghdad. Unfortunately, after the sack of Baghdad in 1258 by the wretched Mongols, the prestige and authority of the Caliphate practically ceased to exist. In time, the Caliphate was recreated once more, this time in the Mamluk controlled Cairo in 1261. Altough the Caliph continued to formally hold ultimate religious authority, the Caliph was effectively held in permanent house-arrest with his influence reduced as an advisorly role pertaining to religious matters."
+
+ BM_on_startup.8.a: "We are in control."
+ BM_abbasid_caliph_triggered_province_modifier: "Abbasid Caliph"
+ desc_BM_abbasid_caliph_triggered_province_modifier: ""
+ BM_abbasid_caliph_triggered_province_modifier_TT: "Being Caliph allows us to enact £muslim_school_button£ §YIslamic Fatwas§! decisions \n \nBeing Caliph allows us to take the following Diplomatic Actions: \n§YDenounce Actions§! \n§YCall Jihad§! \n§YGive Praise§! \n \nIf any Non-Muslim country were to gain control of this province, the life of the Caliph could be in grave danger."
+
+
+ #POLAND 
+ BM_on_startup.9.t: "Defeat At Varna"
+ BM_on_startup.9.d: "The battle of Varna has ended in a disaster for the Varna Crusaders. Not only has a total defeat been inflicted on the combined forces of our alliance, but King Władysław III who commanded the Christian armies has also been slain, leaving not only our kingdom but also the Hungarian kingdom without a king. The few returning men are battered and badly wounded and the late Władysławs most trusted advisors has been assembled to rule in an emergency Interregnum until a successor can be appointed."
+ BM_on_startup.9.a: "Is this all that returned...?"
+
+ BM_on_startup.10.t: "The Władysław Interregnum"
+ BM_on_startup.10.d: "Now that an Interregnum has been declared and a provisionary council has been assembled, tasked with governing the Kingdom of Poland, the 'Interregnum Awaryjne' can begin to resolve domestic matters as well as prepare for changes in foreign diplomacy."
+ BM_on_startup.10.a: "We should begin by stabilising the realm."
+
+ BM_POL_emergency_interregnum: "Interregnum Awaryjne"
+ desc_BM_POL_emergency_interregnum: ""
+
+ cb_pol_ambition: "Prussian Confederation Conflict"
+ cb_pol_ambition_desc: "The Teutonic Order has found itself facing a conspiracy of a organization known as the 'Prussian Confederation' that challenges Teutonic rule. The invitation of the Polish kingdom into this war threatens the very existence of the Teutonic Order."
+ take_capital_cb_pol_ambition: "War of the Prussian Confederation"
+ take_capital_cb_pol_ambition_desc: "The War Goal is to take Capital [DNZ.Capital.GetCapitalName]."
+
+
+ # HORDE
+ BM_on_startup.11.t: "The Great Troubles"
+ BM_on_startup.11.d: "Ever since the fall of the Golden Horde, the disunity and crumble of the Yuan Empire, as well as the conquest of the Ilkhanate by Timurlane, many of the Mongol and Turkicized Khanates established in the 13th century has been subject to internal political disorder. This steady decline in power has been named the 'Great Troubles'. If the Hordes are ever able to continue their existence and keep to their traditions and nomadic ways, they must first overcome this challenge."
+ BM_on_startup.11.a: "Maybe our nomadic ways are truly over?"
+ BM_the_great_struggle: "Decline of the Hordes"
+ desc_BM_the_great_struggle: ""
+
+
+
+ #ARAGON
+ BM_on_startup.12.t: "Reign of Alfons V"
+ BM_on_startup.12.d: "The 'Magnanimous' King of Aragon, Alfonso V, has ruled over the Crown of Aragon for more than 3 decades. A capable and educated ruler as well as an early adopter of cannons as siege weapons, Alfons has managed to secure the Aragonese Crown as a strong presence across the western Mediterranean. With good relations in Bosnia, an ally to Skanderbeg's rebellion in Albania and leading diplomatic contacts with the Ethiopian Empire, Aragon remains a strong presence in the Eastern Mediterranean as well. Alfons wasn't only just a diplomat and strong militaristic ruler, he is considered by many to also be influential in the Renaissance movement in Italy, helping it spread to Iberia. However, with ailing health and age, it is not long before the most preeminent King of Aragon might pass, leaving the throne before the internal disputes of Aragon are solved."
+ BM_on_startup.12.a: "Let us hope the last years of Alfons remain stable."
+
+
+
+
+
+
+ BM_ARA_alfonso_artillery_arsenal: "Alfonso's Artillery Arsenal"
+ desc_BM_ARA_alfonso_artillery_arsenal: ""

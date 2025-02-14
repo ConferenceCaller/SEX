@@ -1,0 +1,5 @@
+BM_admin_ideas_centralization_mechanic = {
+	statewide_governing_cost = -0.25
+	local_prosperity_growth = 0.25
+	local_state_maintenance_modifier = -0.2
+}

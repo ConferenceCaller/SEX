@@ -1,0 +1,1378 @@
+nuremberg_church = { #Frauenkirche of Nurnberg.
+	start = 67 #Nurnberg/Nuremberg/Namberch.
+	date = 01.01.1352 #1352-1362.
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {	}
+	}
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			imperial_authority = 0.05
+			imperial_mercenary_cost = -0.1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = theologian
+							cost_multiplier = 0.75
+							skill = 2
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = theologian
+						cost_multiplier = 0.75
+						skill = 2
+					}
+				}
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			imperial_authority = 0.05
+			imperial_mercenary_cost = -0.2
+			reasons_to_elect = 5
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = theologian
+							cost_multiplier = 0.5
+							skill = 2
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = theologian
+						cost_multiplier = 0.5
+						skill = 2
+					}
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			imperial_authority = 0.1
+			imperial_mercenary_cost = -0.33
+			reasons_to_elect = 10
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = theologian
+							cost_multiplier = 0.25
+							skill = 3
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = theologian
+						cost_multiplier = 0.25
+						skill = 3
+					}
+				}
+			}
+		}
+	}
+}
+
+holstentor = {
+	start = 45 #Lubeck.
+	date = 01.01.1464
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.05
+			trade_value = 1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			transfer_trade_power_reasons = 5
+			justify_trade_conflict_cost = -0.1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							ruler_has_personality = entrepreneur_personality
+						}
+					}
+				}
+				owner = {
+					overlord = {
+						change_dip = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							NOT = {
+								ruler_has_personality = entrepreneur_personality
+							}
+						}
+					}
+				}
+				owner = {
+					overlord = {
+						add_ruler_personality = entrepreneur_personality
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						ruler_has_personality = entrepreneur_personality
+					}
+				}
+				owner = {
+					change_dip = 1
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						NOT = {
+							ruler_has_personality = entrepreneur_personality
+						}
+					}
+				}
+				owner = {
+					add_ruler_personality = entrepreneur_personality
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = trader
+						cost_multiplier = 0.25
+						skill = 2
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.1
+			trade_value = 2
+		}
+		area_modifier = { 
+			trade_value_modifier = 0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			transfer_trade_power_reasons = 10
+			justify_trade_conflict_cost = -0.2
+			diplomatic_upkeep = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							ruler_has_personality = entrepreneur_personality
+						}
+					}
+				}
+				owner = {
+					overlord = {
+						change_dip = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							NOT = {
+								ruler_has_personality = entrepreneur_personality
+							}
+						}
+					}
+				}
+				owner = {
+					overlord = {
+						add_ruler_personality = entrepreneur_personality
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						ruler_has_personality = entrepreneur_personality
+					}
+				}
+				owner = {
+					change_dip = 1
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						NOT = {
+							ruler_has_personality = entrepreneur_personality
+						}
+					}
+				}
+				owner = {
+					add_ruler_personality = entrepreneur_personality
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = trader
+						cost_multiplier = 0.25
+						skill = 2
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.2
+			trade_value = 3
+		}
+		area_modifier = {
+			trade_value_modifier = 0.2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			transfer_trade_power_reasons = 15
+			justify_trade_conflict_cost = -0.3
+			diplomatic_upkeep = 2
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							ruler_has_personality = entrepreneur_personality
+						}
+					}
+				}
+				owner = {
+					overlord = {
+						change_dip = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						is_subject = yes
+						overlord = {
+							NOT = {
+								ruler_has_personality = entrepreneur_personality
+							}
+						}
+					}
+				}
+				owner = {
+					overlord = {
+						add_ruler_personality = entrepreneur_personality
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						ruler_has_personality = entrepreneur_personality
+					}
+				}
+				owner = {
+					change_dip = 1
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						NOT = {
+							ruler_has_personality = entrepreneur_personality
+						}
+					}
+				}
+				owner = {
+					add_ruler_personality = entrepreneur_personality
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = trader
+						cost_multiplier = 0.25
+						skill = 2
+					}
+				}
+			}
+		}
+	}
+}
+
+mainz_cathedral = {
+	start = 78
+	date = 01.01.975
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 2
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	keep_trigger = { }
+
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {	}
+	}
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			reform_progress_growth = 0.05
+			papal_influence = 0.25
+			war_exhaustion = -0.01
+		}
+		on_upgraded = { 
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						add_stability_or_adm_power = yes
+					}
+				}
+			}
+			else = {
+				owner = {
+					add_stability_or_adm_power = yes
+				}
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			reform_progress_growth = 0.15
+			papal_influence = 0.5
+			war_exhaustion = -0.03
+		}
+		on_upgraded = { 
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						add_stability_or_adm_power = yes
+					}
+				}
+			}
+			else = {
+				owner = {
+					add_stability_or_adm_power = yes
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = {
+			reform_progress_growth = 0.25
+			papal_influence = 1
+			war_exhaustion = -0.05
+			missionaries = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						add_stability_or_adm_power = yes
+					}
+				}
+			}
+			else = {
+				owner = {
+					add_stability_or_adm_power = yes
+				}
+			}
+		}
+	}
+}
+
+
+herrenhausen_gardens = {
+	start = 1758 #Hanover/Hannover.
+	date = 01.01.1683
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			legitimacy = 0.25
+			dip_advisor_cost = -0.05
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = natural_scientist
+							skill = 2
+							culture = lower_saxon
+							religion = ROOT
+							cost_multiplier = 0.75
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = natural_scientist
+						skill = 2
+						culture = lower_saxon
+						religion = ROOT
+						cost_multiplier = 0.75
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			legitimacy = 0.5
+			dip_advisor_cost = -0.1
+			monthly_splendor = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = natural_scientist
+							skill = 3
+							culture = lower_saxon
+							religion = ROOT
+							cost_multiplier = 0.5
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = natural_scientist
+						skill = 3
+						culture = lower_saxon
+						religion = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			legitimacy = 1
+			dip_advisor_cost = -0.2
+			monthly_splendor = 2
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = natural_scientist
+							skill = 3
+							culture = lower_saxon
+							religion = ROOT
+							cost_multiplier = 0.25
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = natural_scientist
+						skill = 3
+						culture = lower_saxon
+						religion = ROOT
+						cost_multiplier = 0.25
+					}
+				}
+			}
+		}
+	}
+}
+
+
+marburg_university_monument = {
+	start = 81 #Marburg in Oberhessen.
+	date = 01.01.1527
+	time = { months = 0	}
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 0
+	type = monument
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { 
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { 
+		}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_governing_cost = -0.25
+		}
+		area_modifier = { }
+		country_modifiers = {
+			adm_tech_cost_modifier = -0.05
+			innovativeness_gain = 0.25
+		}
+		on_upgraded = { 
+			add_innovativeness_small_effect = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			local_governing_cost = -0.5
+		}
+		area_modifier = { }
+		country_modifiers = {
+			adm_tech_cost_modifier = -0.05
+			innovativeness_gain = 0.5
+		}
+		on_upgraded = { 
+			add_innovativeness_small_effect = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			local_governing_cost = -0.75
+		}
+		area_modifier = { }
+		country_modifiers = {
+			adm_tech_cost_modifier = -0.1
+			innovativeness_gain = 0.5
+			yearly_innovativeness = 0.1
+		}
+		on_upgraded = { 
+			add_innovativeness_big_effect = yes
+		}
+	}
+}
+
+
+sanktgallabbey = {
+	start = 1870
+	date = 612.01.01 #W
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			church_power_modifier = 0.1
+			monthly_fervor_increase = 0.5
+			papal_influence = 0.5
+			mercenary_discipline = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 3
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			church_power_modifier = 0.2
+			monthly_fervor_increase = 1
+			papal_influence = 1
+			mercenary_discipline = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 5
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.33
+		}
+		country_modifiers = {
+			church_power_modifier = 0.33
+			monthly_fervor_increase = 2
+			papal_influence = 2
+			mercenary_discipline = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_innovativeness = 10
+			}
+		}
+	}
+}
+
+
+heidelbergcastle = {
+	# province it starts in
+	start = 77
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1225.01.01 #W
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 1
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		#anyone
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		#anyone
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		#anyone
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			diplomatic_upkeep = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			fort_level = 1
+			local_defensiveness = 0.3
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			diplomatic_upkeep = 1
+			diplomatic_reputation = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			fort_level = 1
+			local_defensiveness = 0.5
+			garrison_growth = 0.5
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.2
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			diplomatic_upkeep = 2
+			diplomatic_reputation = 2
+			country_diplomatic_power = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+
+konigstein = {
+	start = 61 #Dresden.
+	date = 01.01.1200 #Exact date unknown it seems.
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 2
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_garrison_damage = 0.25
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			power_projection_from_insults = 0.5
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = grand_captain
+							skill = 2
+							culture = saxon
+							religion = ROOT
+							cost_multiplier = 0.5
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = grand_captain
+						skill = 2
+						culture = saxon
+						religion = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_garrison_damage = 0.33
+		}
+		area_modifier = {
+			local_defensiveness = 0.33
+		}
+		country_modifiers = {
+			power_projection_from_insults = 1
+			mil_advisor_cost = -0.1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = grand_captain
+							skill = 3
+							culture = saxon
+							religion = ROOT
+							cost_multiplier = 0.5
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = grand_captain
+						skill = 3
+						culture = saxon
+						religion = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_garrison_damage = 0.5
+		}
+		area_modifier = {
+			local_defensiveness = 0.5
+		}
+		country_modifiers = {
+			power_projection_from_insults = 1
+			mil_advisor_cost = -0.2
+			reasons_to_elect = 10
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = grand_captain
+							skill = 3
+							culture = saxon
+							religion = ROOT
+							cost_multiplier = 0.25
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = grand_captain
+						skill = 3
+						culture = saxon
+						religion = ROOT
+						cost_multiplier = 0.25
+					}
+				}
+			}
+		}
+	}
+}
+
+
+burghausen = {
+	start = 64 #Landshut.
+	date = 01.01.1025
+	time = { months = 120 }
+	build_cost = 800
+	starting_tier = 2
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = germanic
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		country_modifiers = {
+			imperial_authority = 0.05
+			dip_tech_cost_modifier = -0.05
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 10
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		country_modifiers = {
+			imperial_authority = 0.1
+			dip_tech_cost_modifier = -0.05
+			monarch_diplomatic_power = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 15
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.75
+		}
+		area_modifier = { }
+		country_modifiers = {
+			monarch_diplomatic_power = 1
+			imperial_authority = 0.1
+			dip_tech_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 25
+					}
+				}
+			}
+		}
+	}
+}

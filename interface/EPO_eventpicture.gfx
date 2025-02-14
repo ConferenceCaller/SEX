@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "AFRICAN_KING_MEDIATING_eventPicture"
+		texturefile = "gfx/event_pictures/AFRICAN_KING_MEDIATING_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "NEW_FEITORIA_eventPicture"
+		texturefile = "gfx/event_pictures/NEW_FEITORIA_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "BATTLE_OF_DIU_eventPicture"
+		texturefile = "gfx/event_pictures/BATTLE_OF_DIU_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "CASA_INDIA_eventPicture"
+		texturefile = "gfx/event_pictures/CASA_INDIA_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ELMINA_eventPicture"
+		texturefile = "gfx/event_pictures/ELMINA_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "NEGOTIATIONS_WITH_ZAMORIN_eventPicture"
+		texturefile = "gfx/event_pictures/NEGOTIATIONS_WITH_ZAMORIN_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "NEW_BEGINING_eventPicture"
+		texturefile = "gfx/event_pictures/NEW_BEGINING_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "PENA_PALACE_eventPicture"
+		texturefile = "gfx/event_pictures/PENA_PALACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "VISTA_ALEGRE_eventPicture"
+		texturefile = "gfx/event_pictures/VISTA_ALEGRE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "EPOPEIA_eventPicture"
+		texturefile = "gfx/event_pictures/EPOPEIA_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}
+	

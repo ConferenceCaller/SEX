@@ -1,0 +1,197 @@
+namespace = CM_moreflavour_RUS_minors
+
+country_event = {
+	id = CM_moreflavour_RUS_minors.1
+	title = CM_moreflavour_RUS_minors.1.t # Boris the Bear
+	desc = CM_moreflavour_RUS_minors.1.d
+	picture = east_slavic_WESTERNISATION_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = TVE
+	}
+	
+	option = {
+		name = CM_moreflavour_RUS_minors.1.a # 
+
+		ai_chance = { factor = 1 }
+
+		add_ruler_modifier = {
+			name = CM_TVER_boris_bear
+			duration = -1
+		}
+		change_ruler_stat = {
+			adm = 1
+			dip = 1
+			mil = 1
+		}
+
+		RYA = {
+			country_event = {
+				id = CM_moreflavour_RUS_minors.2
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CM_moreflavour_RUS_minors.2
+	title = CM_moreflavour_RUS_minors.2.t # Alliance with Tver
+	desc = CM_moreflavour_RUS_minors.2.d
+	picture = east_slavic_DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = RYA
+	}
+	
+	option = {
+		name = CM_moreflavour_RUS_minors.2.a # An alliance and hopefully a free Annex
+
+		ai_chance = { factor = 1 }
+
+		create_alliance = TVE
+		create_marriage = TVE
+
+	}
+}
+
+country_event = {
+	id = CM_moreflavour_RUS_minors.3
+	title = CM_moreflavour_RUS_minors.3.t # Tver and Ryazan swears allegiance to Muscovy
+	desc = CM_moreflavour_RUS_minors.3.d
+	picture = east_slavic_DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = YES
+
+	trigger = {
+		tag = MOS
+	}
+	
+	option = {
+		name = CM_moreflavour_RUS_minors.3.a # Free Subjects
+
+		ai_chance = { factor = 1 }
+
+		add_dip_power = 50
+		vassalize = TVE
+		vassalize = RYA
+
+		custom_tooltip = CM_RUSSIAN_MINORS_TT2
+		hidden_effect = {
+			TVE = {
+				add_liberty_desire = -100
+				remove_core = 1752
+			}
+			RYA = {
+				add_liberty_desire = -100
+			}
+			create_marriage = TVE
+			create_marriage = RYA
+			country_event = {
+				id = CM_moreflavour_RUS_minors.4
+				days = 1
+			}
+		}
+
+
+	}
+
+	option = {
+		name = CM_moreflavour_RUS_minors.3.b # i fucking hate free stuff
+
+		ai_chance = { factor = 1 }
+
+		add_adm_power = 75
+
+	}
+
+}
+
+
+country_event = {
+	id = CM_moreflavour_RUS_minors.4
+	title = CM_moreflavour_RUS_minors.4.t # Tver and Ryazan swears allegiance to Muscovy
+	desc = CM_moreflavour_RUS_minors.4.d
+	picture = east_slavic_DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = YES
+	hidden = yes
+
+	trigger = {
+		tag = MOS
+	}
+
+	immediate = {
+		TVE = {
+			change_subject_type = {
+				subject_type = incorporated_vassal
+			}
+		}
+		RYA = {
+			change_subject_type = {
+				subject_type = incorporated_vassal
+			}
+		}
+	}
+	
+	option = {
+		name = CM_moreflavour_RUS_minors.4.a # Free Subjects
+
+		ai_chance = { factor = 1 }
+
+	}
+
+}
+
+
+country_event = {
+	id = CM_moreflavour_RUS_minors.5
+	title = CM_moreflavour_RUS_minors.5.t #
+	desc = CM_moreflavour_RUS_minors.5.d
+	picture = east_slavic_CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = PRM
+	}
+
+	option = {
+		name = CM_moreflavour_RUS_minors.5.a #
+
+		ai_chance = { factor = 1 }
+
+		add_ruler_personality = inspiring_leader_personality
+		add_heir_personality = industrious_personality
+
+		add_country_modifier = {
+			name = CM_PERM_great_perm
+			duration = 18250
+		}
+
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+
+		1963 = { 
+			add_base_production = 1
+		}
+		1077 = { 
+			add_base_production = 1
+		}
+		kama_area = {
+			add_core = root
+		}
+
+	}
+
+}

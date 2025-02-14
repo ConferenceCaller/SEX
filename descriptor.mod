@@ -1,0 +1,15 @@
+version="0.1"
+tags={
+	"Balance"
+	"Fixes"
+	"Map"
+	"Missions And Decisions"
+	"New Nations"
+	"Religion"
+	"National Ideas"
+	"Military"
+	"Gameplay"
+	"Alternative History"
+}
+name="SEX"
+supported_version="v1.37.5.0"

@@ -1,0 +1,8 @@
+GAG = "countries/GranAragon.txt"
+LML = "countries/LombardLeague.txt"
+REN = "countries/Rhineland.txt"
+EDI = "countries/EstadodaIndia.txt"
+ELB = "countries/ElbianConfederation.txt"
+NGF	= "countries/NorthGermanFederation.txt"
+SGF = "countries/SouthGermanFederation.txt"
+DAC = "countries/Dacia.txt"

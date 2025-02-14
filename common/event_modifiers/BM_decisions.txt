@@ -1,0 +1,83 @@
+BM_hired_explorer = {
+}
+
+BM_hired_conquistador = {
+}
+
+BM_free_colonist = {
+	range = 0.15
+	global_colonial_growth = 15
+}
+
+BM_in_economic_golden_era = {
+	all_power_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+	max_absolutism = 10
+	max_revolutionary_zeal = 10
+	monthly_arabic_trade_influence_power = 0.25
+}
+
+BM_permit_taqiyya_modifier = {
+	local_missionary_strength = -0.02
+}
+
+BM_promote_our_maddhab_hanafi = {
+	adm_tech_cost_modifier = -0.025
+}
+BM_promote_our_maddhab_hanbali = {
+	ae_impact = -0.05
+}
+BM_promote_our_maddhab_maliki = {
+	development_cost = -0.05
+}
+BM_promote_our_maddhab_shafii = {
+	trade_efficiency = 0.05
+}
+BM_promote_our_maddhab_ismaili_school = {
+	horde_unity = 0.5
+	legitimacy = 0.5
+	republican_tradition = 0.1
+	devotion = 0.5
+}
+BM_promote_our_maddhab_ismaili_jafari = {
+	shock_damage = 0.05
+}
+BM_promote_our_maddhab_ismaili_zaidi = {
+	shock_damage_received = -0.05
+}
+
+BM_promote_religious_exchange_modifier = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+}
+
+BM_inspire_religious_fervor_modifier = {
+	land_morale = 0.05
+}
+
+BM_permit_sufi_teachings_modifier = {
+	technology_cost = -0.05
+	monthly_piety = -0.001
+}
+BM_permit_sufi_teachings_clerical_education_modifier = {
+}
+
+BM_relax_sharia_modifier = {
+	tolerance_heathen = 1
+	dhimmi_loyalty_modifier = 0.05
+}
+
+BM_endorse_literature_modifier = {
+	prestige = 0.5
+	church_loyalty_modifier = 0.05
+}
+
+BM_selected_caliphal_action = {
+}
+
+
+BM_reformed_the_dacian_kingdom = {
+	missionaries = 2
+	cav_to_inf_ratio = 0.25
+	allowed_cossack_fraction = 0.2
+}

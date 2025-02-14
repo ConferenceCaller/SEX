@@ -1,0 +1,108 @@
+namespace = FEE_Italian_Wars_Events
+
+ # Italian Wars brings military innovation
+country_event = {
+	id = FEE_Italian_Wars_Events.1
+	title = FEE_Italian_Wars_Events.1.T
+	desc = FEE_Italian_Wars_Events.1.D
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		current_age = age_of_discovery
+		is_year = 1480
+		is_at_war = no
+		has_mil_advisor_of_level = { 
+			skill = 2
+		}
+		mil_power = 100
+		mil_tech = 7
+		NOT = { 
+			has_country_flag = BM_FEE_Italian_Wars_flag
+		}
+		technology_group = western
+		OR = { 
+			capital_scope = {
+				region = italy_region
+			}
+			any_war_enemy_country = {
+				has_country_flag = BM_FEE_Italian_Wars_flag
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = BM_FEE_Italian_Wars_flag
+	}
+
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Italian_Wars_Events.1.OPT1
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mil_power = -100
+		add_country_modifier = {
+			name = fee_italian_wars_infantry
+			duration = 9125
+		}
+
+	}
+
+	option = {
+		name = FEE_Italian_Wars_Events.1.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mil_power = -100
+		add_country_modifier = {
+			name = fee_italian_wars_cavalry
+			duration = 9125
+		}
+
+	}
+
+	option = {
+		name = FEE_Italian_Wars_Events.1.OPT3
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mil_power = -100
+		add_country_modifier = {
+			name = fee_italian_wars_artillery
+			duration = 9125
+		}
+
+	}
+
+	option = {
+		name = FEE_Italian_Wars_Events.1.OPT4
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mil_power = -100
+		add_country_modifier = {
+			name = fee_italian_wars_forts
+			duration = 9125
+		}
+
+	}
+
+	option = {
+		name = FEE_Italian_Wars_Events.1.OPT5
+		ai_chance = {
+			factor = 0
+		}
+
+		add_mil_power = 100
+		add_army_tradition_or_mil_power = { amount = 10 }
+
+	}
+}

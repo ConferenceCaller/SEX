@@ -1,0 +1,13 @@
+guelders_wars = {
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+		}
+	}
+	trigger = {
+		war_with = GEL
+	}
+	mercenary_cost = -0.33
+	available_province_loot = 0.75
+}

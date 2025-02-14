@@ -1,0 +1,56 @@
+﻿l_english:
+ FEE_Novgorod_Events.1.T: "The great famine"
+ FEE_Novgorod_Events.1.D: "Following wars over our eastern territories, our armies have depleted our stocks of grain, and food is becoming scarce. This winter has been particularly harsh, and our people are starving. \nOur old enemy Muscovy is looking at us with eyes as hungry as our peasants.\n\nIf we do not put in every effort to ease the famine, our country might be facing great peril."
+ FEE_Novgorod_Events.1.OPT1: "The people of $COUNTRY$ will persevere, whatever the cost!"
+ FEE_Novgorod_Events.1.OPT2: "There is nothing to be done, for now."
+
+ FEE_Novgorod_Events.2.T: "Famine Causes Internal Disruption"
+ FEE_Novgorod_Events.2.D: "The great famine has weakened $COUNTRY$, both economically and militarily. Looking abroad for solutions, many argue that perhaps all hope is lost, and the best way of preserving $COUNTRY$ would be to submit diplomatically, rather than being taken by conquest."
+
+ FEE_Novgorod_Events.2.OPT3: "Offer our country as a vassal to the ruler of Muscovy."
+ FEE_Novgorod_Events.2.OPT4: "$COUNTRY$ will live through this famine, alone!"
+
+ FEE_Novgorod_Events.4.T: "The Novgorodian Veche"
+ FEE_Novgorod_Events.4.D: "The Veche was a council of the most prominent people in the city of Novgorod, and served as the highest legislative and judicial body in the state. They would discuss matters publicly, and any citizen could call the Veche by ringing the Veche Bell placed in the city square."
+ FEE_Novgorod_Events.4.OPT1: "Call upon the Veche to improve our tax collection."
+ FEE_Novgorod_Events.4.OPT2: "Call upon the Veche to aid our merchants."
+ FEE_Novgorod_Events.4.OPT3: "Call upon the Veche to prepare our military."
+ FEE_Novgorod_Events.4.OPT4: "Allow the Veche to guide $COUNTRY$ as it sees fit."
+
+ FEE_Novgorod_Events.5.T: "$Novgorodian Famine"
+ FEE_Novgorod_Events.5.D: "With wars in their eastern territories, their armies becoming thinner as their stocks of grain are depleted, and food for the people becoming scarce, Novgorod has entered into a state of collapse. This is a perfect moment for us to strike and put down this rebellious Veche."
+ FEE_Novgorod_Events.5.OPT1: "A famine? Let's help them out shall we..."
+ FEE_Novgorod_Events.5.OPT2: "We can afford to wait a little."
+
+ FEE_Novgorod_Events.6.T: "$FROM$ Asks to Become Our Vassal"
+ FEE_Novgorod_Events.6.D: "Recognising our great superiority in military discipline and way of life, $FROM$ has finally realized that there is no future but subjugation to our throne. Now they come before us, humbled, begging to be brought into the Muscovite fold."
+ FEE_Novgorod_Events.6.OPT1: "Of course, I will let you serve me, brother."
+ FEE_Novgorod_Events.6.OPT2: "Your groveling does not interest us. Leave us, until we come for you."
+
+ FEE_Novgorod_Events.7.T: "The peace of Shelon"
+ FEE_Novgorod_Events.7.D: "With our decisive victory seeming imminent, the Novgorod Veche has sent a formal capitulation offering their vassalage and border territories. In return, all they want is some aid in their current ongoing famine. Though the deal seems to favor us completely, some within our close circle argue that we have a perfect opportunity to conquer them outright. Regardless our choice in the matter, the war is all but settled."
+ FEE_Novgorod_Events.7.OPT1: "Novgorod is placed firmly within our grasp."
+ FEE_Novgorod_Events.7.OPT2: "All your cities are belong to us!"
+
+# Modifiers
+ fee_nov_great_famine: "Great Famine"
+ desc_fee_nov_great_famine: "Our country is struggling alone with the effects of a great famine across our lands."
+ fee_nov_administrative_focus_veche: "Administrative Focus for Veche"
+ desc_fee_nov_administrative_focus_veche: "We have requested that the Veche focuses on administrative issues."
+ fee_nov_diplomatic_focus_veche: "Diplomatic Focus for Veche"
+ desc_fee_nov_diplomatic_focus_veche: "We have requested that the Veche focuses on diplomatic issues."
+ fee_nov_military_focus_veche: "Military Focus for Veche"
+ desc_fee_nov_military_focus_veche: "We have requested that the Veche focuses on military issues."
+ fee_nov_no_focus_veche: "No Focus for Veche"
+ desc_fee_nov_no_focus_veche: "We have requested no specific focuses for the Veche."
+ BM_FEE_NOV_conquest: "Rightful Conquest"
+ desc_BM_FEE_NOV_conquest: ""
+
+# Opinion Modifiers
+ FEE_Novgorod_Events_gift: "Gift of Friendship"
+
+# Tooltips
+ fee_nov_famine_tt: "This choice will send your country down a path of disaster, which Muscovy surely will react to."
+ fee_nov_vassalization_tt: "This might lead to our vassalization."
+ BM_FEE_NOV_subjugation_war_TT: "\nSubjugating §YNovgorod§! in this war will allow us to convert them into a §TIncorporated Vassal§! which is cheaper to integrate and does not cost a diplomatic slot and will grant us their border territories."
+ BM_FEE_NOV_subjugation_war_TT2: "\n§YNovgorod§! will grant us their border territories."

@@ -1,0 +1,228 @@
+country_decisions = {
+	CM_DUTCH_factional_strife = {	
+		color = {
+			235 204 10
+		}
+		potential = {
+			has_country_modifier = CM_DUTCH_factional_strife
+		}
+		allow = {
+			stability = 2
+			OR = {
+				has_reform_on_level = 3
+				AND = { 
+					estate_influence = {
+						estate = estate_nobles
+						influence = 60
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 40
+						}
+					}
+				}
+				AND = { 
+					estate_influence = {
+						estate = estate_burghers
+						influence = 60
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 40
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			remove_country_modifier = CM_DUTCH_factional_strife
+			add_stability_or_adm_power = yes
+			if = {
+				limit = { 
+					has_reform_on_level = 3
+				}
+				custom_tooltip = CM_moreflavour_DUTCH_decision_yes_TT1
+				tooltip = {
+					add_country_modifier = {
+						name = CM_DUTCH_mended_schism
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 10
+					}
+				}
+			}
+			else = {
+				custom_tooltip = CM_moreflavour_DUTCH_decision_no_TT1
+				tooltip = {
+					add_country_modifier = {
+						name = CM_DUTCH_mended_schism
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 10
+					}
+				}
+			}
+			if = {
+				limit = { 
+					AND = { 
+						estate_influence = {
+							estate = estate_nobles
+							influence = 60
+						}
+						NOT = {
+							estate_influence = {
+								estate = estate_burghers
+								influence = 40
+							}
+						}
+					}
+				}
+				custom_tooltip = CM_moreflavour_DUTCH_decision_yes_TT2
+				tooltip = {
+					add_country_modifier = {
+						name = CM_DUTCH_hook_victory
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 20
+					}
+				}
+			}
+			else = {
+				custom_tooltip = CM_moreflavour_DUTCH_decision_no_TT3
+				tooltip = {
+					add_country_modifier = {
+						name = CM_DUTCH_hook_victory
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 20
+					}
+				}
+			}
+			if = {
+				limit = { 
+					AND = { 
+						estate_influence = {
+							estate = estate_burghers
+							influence = 60
+						}
+						NOT = {
+							estate_influence = {
+								estate = estate_nobles
+								influence = 40
+							}
+						}
+					}
+				}
+				custom_tooltip = CM_moreflavour_DUTCH_decision_yes_TT3
+				tooltip = {
+					add_country_modifier = {
+						name = CM_DUTCH_cod_victory
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 20
+					}
+				}
+			}
+			else = {
+				custom_tooltip = CM_moreflavour_DUTCH_decision_no_TT3
+				tooltip = {
+					add_country_modifier = {
+						name = CM_DUTCH_cod_victory
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 20
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_reform_on_level = 3
+					}
+					add_country_modifier = {
+						name = CM_DUTCH_mended_schism
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 10
+					}
+				}
+				else_if = {
+					limit = { 
+						AND = { 
+							estate_influence = {
+								estate = estate_nobles
+								influence = 60
+							}
+							NOT = {
+								estate_influence = {
+									estate = estate_burghers
+									influence = 40
+								}
+							}
+						}
+					}
+					add_country_modifier = {
+						name = CM_DUTCH_hook_victory
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 20
+					}
+				}
+				else_if = {
+					limit = { 
+						AND = { 
+							estate_influence = {
+								estate = estate_burghers
+								influence = 60
+							}
+							NOT = {
+								estate_influence = {
+									estate = estate_nobles
+									influence = 40
+								}
+							}
+						}
+					}
+					add_country_modifier = {
+						name = CM_DUTCH_cod_victory
+						duration = 14600
+					}
+					add_estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 20
+					}
+				}
+			}
+		}
+	}
+}

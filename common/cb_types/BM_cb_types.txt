@@ -1,0 +1,19 @@
+cb_aq_ambition = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+	
+
+	war_goal = take_capital_cb_aq_ambition
+}
+
+cb_pol_ambition = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+	
+
+	war_goal = take_capital_cb_pol_ambition
+}

@@ -1,0 +1,1653 @@
+##Reserving a namespace
+
+namespace = epo_flav
+normal_or_historical_nations = yes
+
+##Battle of Diu
+country_event = {
+	id = epo_flav.1
+	title = epo_flav.1.t
+	desc = epo_flav.1.d
+	picture = BARBARY_PIRATES_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "epo_flav.1.a"
+		define_admiral = {
+			name = "Afonso de Albuquerque"
+			fire = 4
+			shock = 4
+			manuever = 6
+			siege = 6
+		}
+		4455 = {
+			owner = {
+				white_peace = POR
+			}
+		}
+		4455 = {
+			cede_province = POR
+			add_core = POR
+			center_of_trade = 1
+		}
+
+	}
+	option = {
+		name = "epo_flav.1.b"
+		define_admiral = {
+			name = "Francisco de Almeida"
+			fire = 6
+			shock = 6
+			manuever = 4
+			siege = 4
+		}		
+		4455 = {
+			add_trade_modifier = {
+				who = POR
+				duration = 14600
+				power = 50
+				key = control_gujarat_trade
+			}
+		}
+	}	
+}
+
+##NEGOTIATIONS WITH THE SAMORIM
+country_event = {
+	id = epo_flav.2
+	title = "epo_flav.2.t"
+	desc = "epo_flav.2.d"
+	picture = CENTRAL_AFRICAN_PORTUGUESE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "epo_flav.2.a"
+		trigger = {
+			534 = {
+				owner = {
+					defensive_war_with = POR
+				}
+			}
+		}
+		534 = {
+			owner = {
+				white_peace = POR
+			}
+		}
+		535 = {
+			cede_province = POR
+			add_core = POR
+		}
+		add_prestige = 10
+	}
+
+	option = {
+		name = "epo_flav.2.b"
+		trigger = {
+			534 = {
+				owner = {
+					has_opinion = {
+						who = POR
+						value = 100
+					}
+				}
+			}
+		}
+		534 = {
+			cede_province = POR
+			add_core = POR
+		}
+		add_treasury = -300
+	}
+
+	option = {
+		name = "epo_flav.2.c"
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				area = malabar_area
+				is_city = yes
+			}
+		}
+		add_years_of_income = 1
+	}
+}
+
+###GIFT TO THE POPE
+country_event = {
+	id = epo_flav.3
+	title = "epo_flav.3.t"
+	desc = "epo_flav.3.d"
+	picture = PRINCE_BISHOP_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "epo_flav.3.a"
+		add_splendor = 100
+		add_reform_desire = -0.1
+		PAP = {
+			add_opinion = {
+				who = root
+				modifier = gifts_to_pope
+			}
+		}
+	}
+}
+
+##Vista Alegre
+country_event = {
+	id = epo_flav.4
+	title = "epo_flav.4.t"
+	desc = "epo_flav.4.d"
+	picture = PRINCELY_PALACE_TRANSYLVANIA_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		any_owned_province = {
+			trade_goods = chinaware
+			is_city = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 40 
+	}
+
+	option = {
+		name = "epo_flav.4.a"
+		4556 = {
+			add_base_production = 2
+			change_trade_goods = chinaware
+		}	
+	}
+}
+
+##CASA DA INDIA
+country_event = {
+	id = epo_flav.5
+	title = "epo_flav.5.t"
+	desc = "epo_flav.5.d"
+	picture = 16_Trade_Company_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "epo_flav.5.a"
+		add_mercantilism = 5
+		add_corruption = 2
+		add_country_modifier = {
+			name = por_master_india
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "epo_flav.5.b"
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				add_core = EDI
+				if = {
+					limit = { is_core = POR }
+					remove_core = POR
+				}
+			}
+			every_owned_province = {
+				limit = {
+					superregion = persia_superregion
+				}
+				add_core = EDI
+				if = {
+					limit = { is_core = POR }
+					remove_core = POR
+				}
+			}
+			every_owned_province = {
+				limit = {
+					region = arabia_region
+				}
+				add_core = EDI
+				if = {
+					limit = { is_core = POR }
+					remove_core = POR
+				}
+			}
+			every_owned_province = {
+				limit = {
+					region = malaya_region
+				}
+				add_core = EDI
+				if = {
+					limit = { is_core = POR }
+					remove_core = POR
+				}
+			}
+		}
+		release = EDI	
+		create_subject = {
+			subject_type = commercial_enterprise
+			who = EDI
+		}
+		hidden_effect = {
+			EDI = {
+				change_government = republic
+				add_government_reform = viceroyalty_government_reform
+				change_religion = ROOT
+				change_primary_culture = ROOT
+				define_ruler = {
+					name = "Afonso de Albuquerque"
+					dynasty = "de Albuquerque"
+					change_adm = 5
+					change_dip = 5
+					change_mil = 5
+					max_age = 50
+					min_age = 30
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 1000
+				set_prestige_to_zero = yes
+				add_republican_tradition = 100
+			}
+		}	
+	}	
+}
+
+##KEYS TO ADEN
+country_event = {
+	id = epo_flav.6
+	title = "epo_flav.6.t"
+	desc = "epo_flav.6.d"
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "epo_flav.6.a"
+		if = {
+			limit = {
+				exists = EDI
+			}
+			388 = {
+				cede_province = EDI
+			}
+		}
+		else = {
+			388 = {
+				cede_province = POR
+			}
+		}
+		add_prestige = 5
+	}		
+}
+
+##PALACIO DA PENA
+country_event = {
+	id = epo_flav.7
+	title = "epo_flav.7.t"
+	desc = "epo_flav.7.d"
+	picture = CASTLE_eventPicture
+	goto = 227
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		POR = {
+			consort_culture = saxon
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	immediate = {
+		set_global_flag = por_consort_experiments
+	}
+
+	option = {
+		name = "epo_flav.7.a"
+		custom_tooltip = "A new palace will be built in Lisbon."
+		227 = {
+			add_great_project = {
+    			type = pena_palace
+    			instant = yes
+			}
+		}	
+		add_treasury = -400
+	}
+
+	option = {
+		name = "epo_flav.7.b"
+		add_prestige = -15
+	}			
+}
+
+##NEW FEITORIA
+country_event = {
+	id = epo_flav.8
+	title = "epo_flav.8.t"
+	desc = "epo_flav.8.d"
+	picture = muslimgfx_FORT_eventPicture
+	goto = new_feitoria_province
+
+	fire_only_once = no
+
+
+	trigger = {
+		tag = POR
+		
+		any_province = {
+			or = {
+				and = {
+					owned_by = POR
+					is_owned_by_trade_company = yes
+				}
+				owner = {
+					is_subject_of = POR
+					is_overseas_subject = yes
+				}
+			}
+			not = { region = iberia_region }
+			has_port = yes
+			or = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+			NOT = { has_province_modifier = por_feitoria_modifier }
+		}
+		mission_completed = gc_por_feitoria
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					or = {
+						and = {
+							owned_by = POR
+							is_owned_by_trade_company = yes
+						}
+						owner = {
+							is_subject_of = POR
+							is_overseas_subject = yes
+						}
+					}
+					or = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
+					NOT = { region = iberia_region }
+					NOT = { has_province_modifier = por_feitoria_modifier }
+					has_port = yes
+				}
+				save_event_target_as = new_feitoria_province
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "epo_flav.8.a"
+		event_target:new_feitoria_province = {
+			add_province_modifier = {
+				name = por_feitoria_modifier
+				duration = -1
+			}
+		}
+	}	
+}
+
+##MINA NEVES CORVO
+country_event = {
+	id = epo_flav.9
+	title = "epo_flav.9.t"
+	desc = "epo_flav.9.d"
+	picture = FALUN_COPPER_MINE_eventPicture
+	goto = 229
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		POR = {
+			navy_size = 60
+			num_of_artillery = 4
+		}
+		229 = {
+			development = 10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+		
+	option = {
+		name = "epo_flav.9.a"
+
+		hidden_effect = {
+			set_country_flag = mina_neves_corvo_rebuilt
+		}
+		229 = {
+			change_trade_goods = copper
+			add_base_production = 3
+			add_province_modifier = {
+				name = neves_corvo_mine
+				duration = 7300
+			}
+		}
+		add_adm_power = -70
+		add_treasury = -50
+		change_innovativeness = 3
+	}
+
+	option = {
+		name = "epo_flav.9.b"
+		add_mercantilism = 2
+		add_prestige = -10
+	}
+}
+
+##GUN TRADE WITH JAPAN
+country_event = {
+	id = epo_flav.10
+	title = "epo_flav.10.t"
+	desc = "epo_flav.10.d"
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		POR = {
+			has_country_flag = mina_neves_corvo_rebuilt
+			has_discovered = 4182
+			any_owned_province = {
+				has_building = weapons
+			}
+		}
+	}
+		
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "epo_flav.10.a"
+		
+		4182 = {
+			owner = {
+				add_opinion = {
+					who = POR
+					modifier = trading_guns_japan
+				}
+			}
+		}
+		add_years_of_income = 0.5
+		add_dip_power = -60
+	}
+
+	option = {
+		name = "epo_flav.10.b"
+
+		add_mercantilism = 2
+		add_prestige = 10
+	}
+}
+
+##SUGAR FROM MADEIRA
+country_event = {
+	id = epo_flav.11
+	title = "epo_flav.11.t"
+	desc = "epo_flav.11.d"
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		is_year = 1445
+		368 = {
+			development = 10
+		}
+	}
+
+	immediate = {
+		set_country_flag = madeira_sugar_production
+	}
+	
+	option = {
+		name = "epo_flav.11.a"
+		368 = {
+			add_province_modifier = {
+				name = sugar_production_growth
+				duration = -1
+			}
+		}
+		add_prestige = 10
+	}
+}
+
+##DECLINE ON SUGAR PRODUCTION IN MADEIRA
+country_event = {
+	id = epo_flav.12
+	title = "epo_flav.12.t"
+	desc = "epo_flav.12.d"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		POR = {
+			has_country_flag = madeira_sugar_production
+		}
+		is_year = 1550
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = "epo_flav.12.a"
+
+		368 = {
+			remove_province_modifier = sugar_production_growth
+			add_base_production = -4
+			change_trade_goods = wine
+			center_of_trade = 1
+		}
+		add_adm_power = -100
+		add_treasury = -200
+	}
+
+	option = {
+		name = "epo_flav.12.b"
+
+		368 = {
+			add_base_production = -2
+		}
+		add_mercantilism = 3
+	}
+}
+
+##FEITORIA DESTROYED
+country_event = {
+	id = epo_flav.13
+	title = "epo_flav.13.t"
+	desc = "epo_flav.13.d"
+	picture = muslimgfx_FORT_eventPicture
+	goto = new_feitoria_province
+
+	fire_only_once = no
+
+
+	trigger = {
+		tag = POR
+		is_year = 1900
+		any_province = {
+			or = {
+				NOT = {has_building = fort_15th}
+				NOT = {has_building = fort_16th}
+				NOT = {has_building = fort_17th}
+				NOT = {has_building = fort_18th}				
+			}
+			has_province_modifier = por_feitoria_modifier
+		}
+		mission_completed = gc_por_feitoria
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					or = {
+						NOT = {has_building = fort_15th}
+						NOT = {has_building = fort_16th}
+						NOT = {has_building = fort_17th}
+						NOT = {has_building = fort_18th}	
+					}
+					has_province_modifier = por_feitoria_modifier
+				}
+				save_event_target_as = remove_feitoria_province
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "epo_flav.13.a"
+		event_target:remove_feitoria_province = {
+			remove_province_modifier = por_feitoria_modifier
+		}
+		add_prestige = -5
+	}	
+}
+
+##BANKRUPCY OF THE ANTWERPEN FACTORY
+country_event = {
+	id = epo_flav.14
+	title = epo_flav.14.t
+	desc = epo_flav.14.d
+	picture = BANKRUPTCY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		is_year = 1544
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = epo_flav.14.a
+
+		add_years_of_income = -1
+	}
+
+	option = {
+		name = epo_flav.14.b
+
+		add_mercantilism = 3
+		1269 = {
+			remove_trade_modifier = {
+				who = root
+				key = antwerpen_factory
+			}
+		}
+	}
+
+	option = {
+		name = epo_flav.14.c
+		trigger = {
+			or = {
+				ruler_has_personality = entrepreneur_personality
+				ruler_has_personality = industrious_personality
+				ruler_has_personality = reformist_personality
+			}
+		}
+
+		add_mercantilism = 5
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+			}
+			add_province_modifier = {
+				name = por_invest_local
+				duration = 21900
+			}
+		}
+	}
+}
+
+##PALACIO DA AJUDA
+country_event = {
+	id = epo_flav.15
+	title = "epo_flav.15.t"
+	desc = "epo_flav.15.d"
+	picture = CASTLE_eventPicture
+	goto = 227
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "epo_flav.15.a"
+		hidden_effect = {
+			set_global_flag = por_ajuda_palace
+		}
+		custom_tooltip = "A new palace will be built in Lisbon."
+		227 = {
+			add_great_project_tier = {
+    			type = pena_palace
+    			tier = 1
+			}
+		}	
+	}		
+}
+
+##UNIVERSIDADE DE COIMBRA
+country_event = {
+	id = epo_flav.16
+	title = epo_flav.16.t
+	desc = epo_flav.16.d
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		227 = {
+			has_building = university
+		}
+		is_year = 1535
+	}
+
+	mean_time_to_happen = {
+		months = 15
+	}
+	
+	option = {
+		name = epo_flav.16.a
+
+		1851 = {
+			add_building_construction = {
+				building = university
+				cost = 0
+			}
+		}
+		227 = {
+			remove_building = university
+		}
+		
+		add_country_modifier = {
+			name = por_eclesiastical_leanring
+			duration = 7300
+		}
+
+		remove_estate_privilege = estate_burghers_patronage_of_the_arts
+
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 20
+		}
+	}
+
+	option = {
+		name = epo_flav.16.b
+
+		add_country_modifier = {
+			name = por_centralized_learning
+			duration = 7300
+		}
+
+		remove_estate_privilege = estate_church_clerical_education
+
+		add_absolutism = 5
+	}
+}
+
+##ANTWERPEN FACTORY
+country_event = {
+	id = epo_flav.17
+	title = epo_flav.17.t
+	desc = epo_flav.17.d
+	picture = BANKRUPTCY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		1269 = {
+			has_trader = POR
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = epo_flav.17.a
+
+		add_adm_power = -30
+		add_dip_power = -10
+		1269 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 20
+				key = antwerpen_factory
+			}
+		}
+	}
+
+	option = {
+		name = epo_flav.17.b
+
+		add_mercantilism = 3
+	}
+}
+
+##New Wolrd Missions
+country_event = {
+	id = epo_flav.18
+	title = "epo_flav.18.t"
+	desc = "epo_flav.18.d"
+	picture = MERCHANTS_TALKING_eventPicture
+
+	trigger = {
+		has_estate_privilege = estate_church_jesuits_mission
+		has_estate_privilege = estate_burghers_bandeirantes
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 32
+	}
+	
+	immediate = {
+		set_country_flag = new_world_missions
+	}
+
+	option = {
+		name = "epo_flav.18.a"
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}		
+	}
+
+	option = {
+		name = "epo_flav.18.b"
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -20
+		}
+	}
+
+	option = {
+		name = "epo_flav.18.c"
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+
+	option = {
+		name = "epo_flav.18.c"
+		trigger = {
+			ruler_has_personality = silver_tongue_personality
+		}		
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+		add_dip_power = 100
+	}
+}
+
+##AN EMISSARY FROM THE SOUTH
+country_event = {
+	id = epo_flav.19
+	title = "epo_flav.19.t"
+	desc = "epo_flav.19.d"
+	picture = THREE_HEIRS_eventPicture
+
+	trigger = {
+		tag = POR
+		not = { truce_with = MOR }
+		any_country = {
+			is_subject_of = MOR
+			has_opinion = {
+				who = POR
+				value = 100
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					is_subject_of = MOR
+					has_opinion = {
+						who = POR
+						value = 100
+					}
+				}
+				save_event_target_as = african_ally
+			}
+		}
+	}
+
+	option = {
+		name = "epo_flav.19.a"
+		event_target:african_ally = {
+			change_religion = catholic
+			set_ruler_religion = catholic
+			capital_scope = {
+				change_religion = catholic
+			}
+			declare_war_with_cb = {
+				who = MOR
+				casus_belli = cb_independence_war
+			}
+			create_alliance = POR
+		}
+		add_dip_power = -40
+	}
+
+	option = {
+		name = "epo_flav.19.b"
+		add_casus_belli = {
+			target = MOR
+			type = cb_crusade
+			months = 480
+		}
+		add_mil_power = -40
+	}
+
+	option = {
+		name = "epo_flav.19.c"
+		maghreb_region = {
+    		remove_claim = POR
+		}
+		add_prestige = -10
+		every_owned_province = {
+			add_unrest = 3
+		}
+	}
+}
+
+#Infante Dom Pedro
+country_event = {
+	id = epo_flav.20
+	title = "epo_flav.20.t"
+	desc = "epo_flav.20.d"
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+	immediate = {
+	}
+
+	option = {
+		name = "epo_flav.20.a"
+		ARA = {
+			define_heir = {
+				male = yes
+				dynasty = ROOT
+				name = "Pedro"
+				claim = 60
+			}
+			remove_rival = POR
+		}
+	}
+}
+
+#Development of the Nau Bartolomeu Dias
+country_event = {
+	id = epo_flav.21
+	title = "epo_flav.21.t"
+	desc = "epo_flav.21.d"
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+	immediate = {
+	}
+
+	option = {
+		name = "epo_flav.21.a"
+		define_advisor = {
+			name = "Bartolomeu Dias"
+			type = naval_reformer
+			skill = 2
+			cost_multiplier = 0.5
+		}		
+		add_country_modifier = {
+			name = por_development_caravel
+			duration = -1
+		}
+	}
+}
+
+#FAILURE TO CONQUER IBERIA
+country_event = {
+	id = epo_flav.22
+	title = "epo_flav.22.t"
+	desc = "epo_flav.22.d"
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = POR
+		had_country_flag = {
+			flag = conquest_of_iberia
+			days = 7300
+		}
+		if = {
+			limit = {
+				exists = CAS
+			}
+			or = {
+				iberia_region = {
+					total_own_and_non_tributary_subject_development = CAS
+				}
+				CAS = {
+					is_subject_of = POR
+				}
+			}
+		}
+		else = {
+			or = {
+				iberia_region = {
+					total_own_and_non_tributary_subject_development = SPA
+				}
+				SPA = {
+					is_subject_of = POR
+				}
+			}
+		}
+	}
+
+	immediate = {
+		remove_country_modifier = por_struggle_for_iberia_modifier
+		clr_country_flag = conquest_of_iberia
+	}
+
+	option = {
+		name = "epo_flav.22.a"
+
+		custom_tooltip = "Each owned province in Iberia outside of Portugal, will be realeased into their respective Duchies."
+
+		add_prestige = -30
+		add_legitimacy = -10
+
+		hidden_effect = {
+			leon_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = LON
+				remove_core = ROOT 
+			}
+			extremadura_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = LON
+				remove_core = ROOT 
+			}
+			release = LON
+			if = { 
+				limit = { 
+					LON = { is_subject_of = ROOT }
+				}
+				free_vassal = LON 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = leon_area
+						area = extremadura_area
+					}
+				}
+				add_core = LON
+				cede_province = LON
+			}
+			galicia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = GAL
+				remove_core = ROOT 
+			}
+			release = GAL
+			if = { 
+				limit = { 
+					GAL = { is_subject_of = ROOT }
+				}
+				free_vassal = GAL 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = galicia_area
+					}
+				}
+				add_core = GAL
+				cede_province = GAL
+			}
+			basque_country = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = NAV
+				remove_core = ROOT 
+			}
+			release = NAV
+			if = { 
+				limit = { 
+					NAV = { is_subject_of = ROOT }
+				}
+				free_vassal = NAV 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = basque_country
+					}
+				}
+				add_core = NAV
+				cede_province = NAV
+			}
+			asturias_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = CAS
+				remove_core = ROOT 
+			}
+			castille_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = CAS
+				remove_core = ROOT 
+			}
+			release = CAS
+			if = { 
+				limit = { 
+					CAS = { is_subject_of = ROOT }
+				}
+				free_vassal = CAS 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = asturias_area
+						area = castille_area
+					}
+				}
+				add_core = CAS
+				cede_province = CAS
+			}
+			catalonia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = CAT
+				remove_core = ROOT 
+			}
+			aragon_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = CAT
+				remove_core = ROOT 
+			}
+			release = CAT
+			if = { 
+				limit = { 
+					CAT = { is_subject_of = ROOT }
+				}
+				free_vassal = CAT 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = catalonia_area
+						area = aragon_area
+					}
+				}
+				add_core = CAT
+				cede_province = CAT
+			}
+			valencia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = VAL
+				remove_core = ROOT 
+			}
+			toledo_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = VAL
+				remove_core = ROOT 
+			}			
+			release = VAL
+			if = { 
+				limit = { 
+					VAL = { is_subject_of = ROOT }
+				}
+				free_vassal = VAL 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = valencia_area
+						area = toledo_area
+					}
+				}
+				add_core = VAL
+				cede_province = VAL
+			}
+			lower_andalucia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = ADU
+				remove_core = ROOT 
+			}
+			upper_andalucia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_core = ADU
+				remove_core = ROOT 
+			}
+			release = ADU
+			if = { 
+				limit = { 
+					ADU = { is_subject_of = ROOT }
+				}
+				free_vassal = ADU 
+			}
+			every_province = {
+				limit = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = { 
+						area = lower_andalucia_area
+						area = upper_andalucia_area
+					}
+				}
+				add_core = ADU
+				cede_province = ADU
+			}
+		}
+	}
+}
+
+#Miguel da Paz
+country_event = {
+	id = epo_flav.23
+	title = "epo_flav.23.t"
+	desc = "epo_flav.23.d"
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	trigger = {
+		tag = POR
+		is_year = 1500
+		has_disaster = fee_portuguese_succession_crisis
+		or = {
+			and = {
+				exists = CAS
+				or = {
+					AND = {
+						CAS = {
+							marriage_with = ARA
+							marriage_with = POR
+						}
+					}
+					AND = {
+						POR = {
+							marriage_with = CAS
+						}
+						ARA = {	is_subject_of = CAS }
+					}
+				}
+			}
+			AND = {
+				exists = SPA
+				POR = {
+					marriage_with = SPA
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_global_flag = miguel_da_paz
+	}
+
+	option = {
+		name = "epo_flav.23.a"
+		trigger = {
+			exists = CAS
+			NOT = { ARA = { is_subject_of = CAS }}
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = CAS
+		}
+
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = ARA
+		}
+
+		define_heir = {
+			name = "Miguel"
+			dynasty = ROOT
+			age = 0
+			culture = portugese
+			adm = 3
+			dip = 6
+			mil = 3
+			claim = 100
+		}
+	}
+
+	option = {
+		name = "epo_flav.23.a"
+		trigger = {
+			exists = CAS
+			ARA = { is_subject_of = CAS }
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = CAS
+		}
+		
+		define_heir = {
+			name = "Miguel"
+			dynasty = ROOT
+			age = 0
+			culture = portugese
+			adm = 3
+			dip = 6
+			mil = 3
+			claim = 100
+		}
+	}
+
+	option = {
+		name = "epo_flav.23.c"
+		trigger = {
+			exists = SPA
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 1200
+			target = SPA
+		}
+		define_heir = {
+			name = "Miguel"
+			dynasty = ROOT
+			age = 0
+			culture = portugese
+			adm = 3
+			dip = 6
+			mil = 3
+			claim = 100
+		}		
+	}
+
+	option = {
+		name = "epo_flav.23.d"
+		add_prestige = -10
+		add_legitimacy = -5
+		hidden_effect = {
+			clr_global_flag = miguel_da_paz
+		}	
+	}	
+}
+
+#Miguel da Paz Killed
+country_event = {
+	id = epo_flav.24
+	title = "epo_flav.24.t"
+	desc = "epo_flav.24.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	trigger = {
+		has_global_flag = miguel_da_paz
+		or = {
+			tag = CAS
+			tag = SPA
+		}
+		or = {
+			POR = {
+				has_casus_belli = {
+					type = cb_restore_personal_union
+					target = CAS
+				}
+			}
+			POR = {
+				has_casus_belli = {
+					type = cb_restore_personal_union
+					target = SPA
+				}
+			}
+		}
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = "epo_flav.24.a"
+		trigger = {
+			POR = {
+				has_casus_belli = {
+					type = cb_restore_personal_union
+					target = CAS
+				}
+			}
+		}
+		POR = {
+			kill_heir = { allow_new_heir = yes }
+			remove_casus_belli = {
+				target = CAS
+				type = cb_restore_personal_union
+			}
+			remove_casus_belli = {
+				target = ARA
+				type = cb_restore_personal_union
+			}
+			add_rival = CAS				
+		}
+	}
+
+	option = {
+		name = "epo_flav.24.b"
+		trigger = {
+			POR = {
+				has_casus_belli = {
+					type = cb_restore_personal_union
+					target = SPA
+				}
+			}
+		}
+		POR = {
+			kill_heir = { allow_new_heir = yes }
+			remove_casus_belli = {
+				target = SPA
+				type = cb_restore_personal_union
+			}
+			add_rival = SPA			
+		}		
+	}
+
+	option = {
+		name = "epo_flav.24.c"
+		trigger = {
+			or = {
+				CAS = {
+					has_opinion = {
+						who = POR
+						value = 190
+					}
+				}
+				SPA = {
+					has_opinion = {
+						who = POR
+						value = 190
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = CAS
+			}
+			POR = {
+				create_union = CAS
+				create_union = ARA
+			}
+			else = {
+				POR = {
+					create_union = SPA
+				}
+			}
+		}
+		ai_chance = { factor = 100 }
+		add_prestige = -5
+		add_legitimacy = -10
+	}
+}
+
+#Silk Capital Lisbon
+country_event = {
+	id = epo_flav.25
+	title = "epo_flav.25.t"
+	desc = "epo_flav.25.d"
+	picture = TEXTILE_INDUSTRY_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	trigger = {
+		is_year = 1720
+		227 = {
+			province_has_center_of_trade_of_level = 3
+		}
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = "epo_flav.25.a"
+		227 = {
+			change_trade_goods = silk
+		}
+		add_prestige = 10
+		add_adm_power = -40
+	}
+
+	option = {
+		name = "epo_flav.25.b"
+		227 = {
+			change_trade_goods = cloth
+		}
+		add_legitimacy = 5
+		add_dip_power = -40
+	}
+}
+
+#Brazil Economic Cycles
+country_event = {
+	id = epo_flav.26
+	title = epo_flav.26.t
+	desc = epo_flav.26.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = "epo_flav.26.a"
+		755 = {
+			change_trade_goods = gold
+		}			
+		add_country_modifier = {
+			name = gold_cycle
+			duration = 5475
+		}
+	}
+	option = {
+		name = "epo_flav.26.b"
+		755 = {
+			change_trade_goods = tropical_wood
+		}			
+		add_country_modifier = {
+			name = tropical_wood_cycle
+			duration = 5475
+		}
+	}
+	option = {
+		name = "epo_flav.26.c"
+		755 = {
+			change_trade_goods = sugar
+		}		
+		add_country_modifier = {
+			name = sugar_cycle
+			duration = 5475
+		}
+	}
+	option = {
+		name = "epo_flav.26.e"
+		755 = {
+			change_trade_goods = livestock
+		}
+		add_country_modifier = {
+			name = Livestock_cycle
+			duration = 5475
+		}
+	}
+}

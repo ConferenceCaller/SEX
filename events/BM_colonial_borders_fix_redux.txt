@@ -1,0 +1,557 @@
+namespace = h_colonial_borders_fix_redux
+
+# EVENT 1: CEDE "UNLAWFUL" PROVINCES TO OVERLORD
+# Returns provinces to overlord which are not in same colonial region as colonial nation capital
+#
+# Logic:
+# 	If a loyal AI colonial nation has any full province (not in-construction colony) outside of the colonial region its capital is located
+#	Then cede all full provinces (not in-construction colonies) outside of the colonial region its capital is located to its colonial overlord and remove colonial nation cores from these provinces
+
+country_event = {
+	id = h_colonial_borders_fix_redux.1
+	title = "h_colonial_borders_fix_redux.1.t"
+	desc = "h_colonial_borders_fix_redux.1.d"
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		ai = yes
+		is_colonial_nation = yes
+		NOT = { liberty_desire = 50 }
+		# If it owns any province which is not in the colonial region of the capital
+		OR = {
+			# Colonial Cascadia (colonial_alaska)
+			AND = {
+				capital_scope = { colonial_region = colonial_alaska }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_alaska }
+					is_colony = no
+				}
+			}
+			# Colonial Canada (colonial_canada)
+			AND = {
+				capital_scope = { colonial_region = colonial_canada }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_canada }
+					is_colony = no
+				}
+			}
+			# Colonial Eastern America (colonial_eastern_america)
+			AND = {
+				capital_scope = { colonial_region = colonial_eastern_america }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_eastern_america }
+					is_colony = no
+				}
+			}
+			# Colonial Louisiana (colonial_louisiana)
+			AND = {
+				capital_scope = { colonial_region = colonial_louisiana }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_louisiana }
+					is_colony = no
+				}
+			}
+			# Colonial California (colonial_california)
+			AND = {
+				capital_scope = { colonial_region = colonial_california }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_california }
+					is_colony = no
+				}
+			}
+			# Colonial Mexico (colonial_mexico)
+			AND = {
+				capital_scope = { colonial_region = colonial_mexico }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_mexico }
+					is_colony = no
+				}
+			}
+			# Colonial Caribbean (colonial_the_carribean)
+			AND = {
+				capital_scope = { colonial_region = colonial_the_carribean }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_the_carribean }
+					is_colony = no
+				}
+			}
+			# Colonial Colombia (colonial_colombia)
+			AND = {
+				capital_scope = { colonial_region = colonial_colombia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_colombia }
+					is_colony = no
+				}
+			}
+			# Colonial Peru (colonial_peru)
+			AND = {
+				capital_scope = { colonial_region = colonial_peru }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_peru }
+					is_colony = no
+				}
+			}
+			# Colonial La Plata (colonial_la_plata)
+			AND = {
+				capital_scope = { colonial_region = colonial_la_plata }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_la_plata }
+					is_colony = no
+				}
+			}
+			# Colonial Brazil (colonial_brazil)
+			AND = {
+				capital_scope = { colonial_region = colonial_brazil }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_brazil }
+					is_colony = no
+				}
+			}
+			# Colonial Australia (colonial_australia)
+			AND = {
+				capital_scope = { colonial_region = colonial_australia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_australia }
+					is_colony = no
+				}
+			}
+			AND = {
+				capital_scope = { region = south_africa_region }
+				any_owned_province = {
+					NOT = { region = south_africa_region }
+					is_colony = no
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "h_colonial_borders_fix_redux.1.a"
+		colonial_parent = {
+			save_event_target_as = this_colonial_parent
+		}
+		# Return all not in Colonial Cascadia (colonial_alaska)
+		if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_alaska }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_alaska }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_alaska }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Canada (colonial_canada)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_canada }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_canada }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_canada }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Eastern America (colonial_eastern_america)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_eastern_america }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_eastern_america }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_eastern_america }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Louisiana (colonial_louisiana)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_louisiana }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_louisiana }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_louisiana }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial California (colonial_california)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_california }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_california }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_california }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Mexico (colonial_mexico)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_mexico }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_mexico }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_mexico }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Caribbean (colonial_the_carribean)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_the_carribean }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_the_carribean }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_the_carribean }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Colombia (colonial_colombia)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_colombia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_colombia }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_colombia }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Peru (colonial_peru)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_peru }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_peru }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_peru }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial La Plata (colonial_la_plata)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_la_plata }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_la_plata }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_la_plata }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Brazil (colonial_brazil)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_brazil }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_brazil }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_brazil }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		# Return all not in Colonial Australia (colonial_australia)
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_australia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_australia }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = colonial_australia }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+		else_if = {
+			limit = {
+				capital_scope = { region = south_africa_region }
+				any_owned_province = {
+					NOT = { region = south_africa_region }
+					is_colony = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { region = south_africa_region }
+					is_colony = no
+				}
+				remove_core = ROOT
+				cede_province = event_target:this_colonial_parent
+			}
+		}
+	}
+}
+
+# EVENT 2: CHANGE CAPITAL EVENT
+# Changes capital of colonial nation to defined province if they own that provice
+#
+# Colonial Cascadia:		873 Tsinuk (Fort Astoria in Oregon, added)
+# Colonial Canada: 			993 Osheaga (Montreal)
+# Colonial Eastern America:	965 Manahahttan (New York)
+# Colonial Louisiana:		893 Chitimacha (New Orleans)
+# Colonial California:		4637 Ohlone (San Francisco, changed from 2021 Miwok)
+# Colonial Mexico: 			852 Mexico
+# Colonial Caribbean: 		488 Zui (Port-Au-Prince)
+# Colonial Colombia: 		825 Bogota (changed from 828 Cartagena)
+# Colonial Peru:			809 Lima
+# Colonial La Plata:		778 Rio de la Plata 
+# Colonial Brazil:			763 Rio de Janeiro 
+# Colonial Australia:		1090 Eora (Sydney, added)
+#
+# Logic:
+# 	If an AI colonial nation owns a particular province (which is not its capital) in the same colonial region as its current capital (see list above)
+# 	Then change capital of the colonial region to the specified province
+
+country_event = {
+	id = h_colonial_borders_fix_redux.2
+	title = "h_colonial_borders_fix_redux.2.t"
+	desc = "h_colonial_borders_fix_redux.2.d"
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		ai = yes
+		is_colonial_nation = yes
+		OR = {
+			AND = {
+				capital_scope = { colonial_region = colonial_alaska}
+				owns_core_province = 873
+				NOT = { capital = 873 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_canada}
+				owns_core_province = 993
+				NOT = { capital = 993 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_eastern_america}
+				owns_core_province = 965
+				NOT = { capital = 965 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_louisiana}
+				owns_core_province = 893
+				NOT = { capital = 893 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_california}
+				owns_core_province = 4637
+				NOT = { capital = 4637 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_mexico}
+				owns_core_province = 852
+				NOT = { capital = 852 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_the_carribean}
+				owns_core_province = 488
+				NOT = { capital = 488 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_colombia}
+				owns_core_province = 825
+				NOT = { capital = 825 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_peru}
+				owns_core_province = 809
+				NOT = { capital = 809 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_la_plata}
+				owns_core_province = 778
+				NOT = { capital = 778 }
+			}		
+			AND = {
+				capital_scope = { colonial_region = colonial_brazil}
+				owns_core_province = 763
+				NOT = { capital = 763 }
+			}
+			AND = {
+				capital_scope = { colonial_region = colonial_australia}
+				owns_core_province = 1090
+				NOT = { capital = 1090 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "h_colonial_borders_fix_redux.2.a"
+		if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_alaska }
+				owns_core_province = 873
+			}
+			set_capital = 873
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_canada }
+				owns_core_province = 993
+			}
+			set_capital = 993
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_eastern_america}
+				owns_core_province = 965
+			}
+			set_capital = 965
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_louisiana}
+				owns_core_province = 893
+			}
+			set_capital = 893
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_california}
+				owns_core_province = 4637
+			}
+			set_capital = 4637
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_mexico}
+				owns_core_province = 852
+			}
+			set_capital = 852
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_the_carribean}
+				owns_core_province = 488
+			}
+			set_capital = 488
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_colombia}
+				owns_core_province = 825
+			}
+			set_capital = 825
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_peru}
+				owns_core_province = 809
+			}
+			set_capital = 809
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_la_plata}
+				owns_core_province = 778
+			}
+			set_capital = 778
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_brazil}
+				owns_core_province = 763
+			}
+			set_capital = 763
+		}
+		else_if = {
+			limit = {
+				capital_scope = { colonial_region = colonial_australia}
+				owns_core_province = 1090
+			}
+			set_capital = 1090
+		}
+	}
+}
