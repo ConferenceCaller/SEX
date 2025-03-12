@@ -1,0 +1,157 @@
+# General building deletion
+
+country_event = {
+	id = building.1
+    title = building.1.t
+    desc = building.1.d
+	is_triggered_only = yes
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	option = {
+		name = building.1.remove_all_unnecessary
+		trigger = { ROOT = { OR = { temple = 1 cathedral = 1 coastal_defence = 1 naval_battery = 1 dock = 1 drydock = 1 shipyard = 1 grand_shipyard = 1 } } }
+        custom_tooltip = building_remove_all_unnecessary_TT
+	}
+
+	option = {
+		name = building.1.manufactories
+        ROOT = {
+            country_event = { 
+                id = building.1.1
+                days = 0
+            } 
+        }
+	}
+
+	# Temple chain
+	option = {
+		name = building_tax_all
+		trigger = { ROOT = { OR = { temple = 1 cathedral = 1 } } }
+		tooltip = { custom_tooltip = building_tax_all_TT }
+		delete_building_and_call_event_effect = { BUILDING = temple BUILDING = cathedral }
+	}
+	option = {
+		name = building_tax_efficient
+		trigger = { ROOT = { OR = { temple = 1 cathedral = 1 } } }
+		tooltip = { custom_tooltip = building_tax_efficient_TT }
+		delete_building_and_call_event_effect_efficient = yes
+	}
+
+	# Coastal defence chain
+	option = {
+		name = building_coastal_defence_all
+		trigger = { ROOT = { OR = { coastal_defence = 1 naval_battery = 1 } } }
+		tooltip = { custom_tooltip = building_coastal_defence_all_TT }
+		delete_building_and_call_event_effect = { BUILDING = coastal_defence BUILDING = naval_battery }
+	}
+	
+	# Shipyard chain
+	option = {
+		name = building_shipyard_all
+		trigger = { ROOT = {  OR = { shipyard = 1 grand_shipyard = 1 } } }
+		tooltip = { custom_tooltip = building_shipyard_all_TT }
+		delete_building_and_call_event_effect = { BUILDING = shipyard BUILDING = grand_shipyard }
+	}
+
+	# Dock chain
+	option = {
+		name = building_dock_all
+		trigger = { ROOT = { OR = { dock = 1 drydock = 1 } } }
+		tooltip = { custom_tooltip = building_dock_all_TT }
+		delete_building_and_call_event_effect = { BUILDING = dock BUILDING = drydock }
+	}
+
+	option = {
+		name = building.1.exit
+	}
+}
+
+# Manufactory removal
+
+country_event = {
+	id = building.1.1
+    title = building.1.1.t
+    desc = building.1.1.d
+	is_triggered_only = yes
+	picture = CITY_DEVELOPMENT_eventPicture
+    
+	option = {
+		name = building_tradecompany
+		trigger = { ROOT = { tradecompany = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = tradecompany }
+	}
+    
+	option = {
+		name = building_textile
+		trigger = { ROOT = { textile = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = textile }
+	}
+    
+	option = {
+		name = building_wharf
+		trigger = { ROOT = { wharf = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = wharf }
+	}
+    
+	option = {
+		name = building_plantations
+		trigger = { ROOT = { plantations = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = plantations }
+	}
+    
+	option = {
+		name = building_farm_estate
+		trigger = { ROOT = { farm_estate = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = farm_estate }
+	}
+    
+	option = {
+		name = building_mills
+		trigger = { ROOT = { mills = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = mills }
+	}
+    
+	option = {
+		name = building_furnace
+		trigger = { ROOT = { furnace = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = furnace }
+	}
+    
+	option = {
+		name = building_soldier_households
+		trigger = { ROOT = { soldier_households = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = soldier_households }
+	}
+    
+	option = {
+		name = building_impressment_offices
+		trigger = { ROOT = { impressment_offices = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = impressment_offices }
+	}
+    
+	option = {
+		name = building_ramparts
+		trigger = { ROOT = { ramparts = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = ramparts }
+	}
+    
+	option = {
+		name = building_state_house
+		trigger = { ROOT = { state_house = 1 } }
+		delete_building_and_call_event_effect = { BUILDING = state_house }
+	}
+
+	option = {
+		name = building.1.general_buildings
+        ROOT = {
+            country_event = { 
+                id = building.1
+                days = 0
+            } 
+        }
+	}
+
+	option = {
+		name = building.1.exit
+	}
+}

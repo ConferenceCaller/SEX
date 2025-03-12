@@ -26,6 +26,10 @@ NDefines.NCountry.ABDICATE_RULING_LENGTH_THRESHOLD = 10
 NDefines.NCountry.ABDICATE_PRESTIGE_HIT = -25
 NDefines.NCountry.DISINHERIT_PRESTIGE_HIT = -25
 
+--For Country BS
+NDefines.NCountry.MINIMUM_POLICY_TIME = 5
+NDefines.NCountry.NAT_FOCUS_YEARS = 15
+NDefines.NCountry.CONVERSION_COOLDOWN_SECONDARY = 60
 
 --Ncountry for upgrading gov rank
 NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 0
@@ -47,10 +51,13 @@ NDefines.NDiplomacy.ANNUL_TREATIES_YEARS = 15
 NDefines.NDiplomacy.DISHONORABLE_PEACE_WARSCORE = 0
 NDefines.NDiplomacy.MAX_ASKED_TRADE_POWER = 100
 NDefines.NDiplomacy.MIN_RELATIONS_TO_ALLY = -200
+NDefines.NDiplomacy.DISHONORABLE_PEACE_MONTHS = 0
 
 
 --Fixes for stupid AI
 NDefines.NAI.CALL_IN_ALLIES_POWER_RATIO = 3
+NDefines.NAI.AGGRESSIVENESS = 300 -- Vanilla 200
+NDefines.NAI.AGGRESSIVENESS_BONUS_EASY_WAR = 400 -- Vanilla 300
 
 --Fixes for High Libery Desire Subjects
 NDefines.NDiplomacy.LIBERTY_DESIRE_RELATIVE_POWER = 55 --VANILLA 75

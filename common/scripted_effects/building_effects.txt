@@ -1,0 +1,27 @@
+delete_building_and_call_event_effect = {
+	every_owned_province = {
+		remove_building	= $BUILDING$
+	}
+	ROOT = {
+		country_event = { 
+			id = building.1 
+			days = 0
+		} 
+	}
+}
+
+delete_building_and_call_event_effect_efficient = {
+	every_owned_province = {
+		limit = {
+			base_manpower = 11
+		}
+		remove_building	= temple
+		remove_building = cathedral
+	}
+	ROOT = {
+		country_event = { 
+			id = building.1 
+			days = 0
+		} 
+	}
+}

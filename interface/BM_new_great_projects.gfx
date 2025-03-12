@@ -295,5 +295,24 @@ spriteTypes = {
 		name = "GFX_great_project_fu_foreign_quarters"	
 		texturefile = "gfx//interface//great_projects//great_project_fu_foreign_quarters.dds"
 	}
-	great_project_fu_foreign_quarters
+
+	spriteType = {
+		name = "GFX_great_project_hasankeyf"	
+		texturefile = "gfx//interface//great_projects//great_project_hasankeyf.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_umayyad_mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_umayyad_mosque.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_pfeffingen"	
+		texturefile = "gfx//interface//great_projects//great_project_pfeffingen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sigmaringen"	
+		texturefile = "gfx//interface//great_projects//great_project_sigmaringen.dds"
+	}
 }

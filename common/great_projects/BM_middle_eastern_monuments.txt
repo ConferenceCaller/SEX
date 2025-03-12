@@ -124,3 +124,280 @@ sumela = {
 		}
 	}
 }
+
+
+hasankeyf = {
+	start = 4295 #Hisn Kayfa.
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 500
+	starting_tier = 2
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owner = {
+			OR = {
+				dynasty = "Ayyubid"
+				tag = HSN
+			}
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			OR = {
+				dynasty = "Ayyubid"
+				tag = HSN
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			OR = {
+				dynasty = "Ayyubid"
+				tag = HSN
+			}
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 500 }
+		province_modifiers = {
+			local_manpower_modifier = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition_from_battle = 0.25
+			siege_ability = 0.05
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					OR = {
+						dynasty = "Ayyubid"
+						tag = HSN
+					}
+				}
+			}
+			modifier = {
+				discipline = 0.05
+			}
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_manpower_modifier = 1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition_from_battle = 0.5
+			siege_ability = 0.1
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					OR = {
+						dynasty = "Ayyubid"
+						tag = HSN
+					}
+				}
+			}
+			modifier = {
+				discipline = 0.05
+			}
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 2000 }
+		province_modifiers = {
+			local_manpower_modifier = 1.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition_from_battle = 1
+			siege_ability = 0.15
+			shock_damage = 0.1
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					OR = {
+						dynasty = "Ayyubid"
+						tag = HSN
+					}
+				}
+			}
+			modifier = {
+				discipline = 0.05
+			}
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 2
+				}
+			}
+		}
+	}
+}
+
+
+umayyad_mosque = {
+	start = 382 #Damascus/Dimashq in Syria.
+	date = 01.01.715
+	time = { months = 0 }
+	build_cost = 900
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 900 }
+		province_modifiers = {
+			local_tax_modifier = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			monthly_piety_accelerator = 0.001
+			manpower_in_true_faith_provinces = 0.05
+		}
+		on_upgraded = { 
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 10
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1800 }
+		province_modifiers = { }
+		area_modifier = {
+			local_tax_modifier = 0.5
+		}
+		region_modifier = { }
+		country_modifiers = {
+			monthly_piety_accelerator = 0.002
+			manpower_in_true_faith_provinces = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 10
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 3600 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_tax_modifier = 1
+		}
+		region_modifier = {
+		}
+		country_modifiers = {
+			monthly_piety_accelerator = 0.003
+			manpower_in_true_faith_provinces = 0.1
+			manpower_recovery_speed = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 15
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 15
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 15
+				}
+			}
+		}
+	}
+}

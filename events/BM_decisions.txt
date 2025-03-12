@@ -1,4 +1,5 @@
 namespace = sealand_events
+namespace = sea_advisor_event
 
 country_event = { # state edicts
 	id = sealand_events.28

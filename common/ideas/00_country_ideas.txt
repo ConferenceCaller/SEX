@@ -3356,7 +3356,7 @@ PAL_ideas = {
 		imperial_authority = 0.1
 	}
 	heidelberg_university = {
-		advisor_cost = -0.1
+		advisor_cost = -0.2
 	}
 	center_of_reformation_in_southern_germany = {
 		rebel_support_efficiency = 1
@@ -3367,6 +3367,9 @@ PAL_ideas = {
 	}
 	heidelberg_catechism = {
 		global_missionary_strength = 0.02
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 2
+		papal_influence = 2
 	}
 	hortus_palatinus = {
 		prestige_decay = -0.01	
@@ -7600,7 +7603,7 @@ JNP_ideas = {
 HAM_ideas = {
 	start = {
 		light_ship_power = 0.2
-		global_tax_modifier = 0.1
+		light_ship_hull_size = 0.2
 	}
 
 	bonus = {
@@ -7621,6 +7624,7 @@ HAM_ideas = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
+		global_tax_modifier = 0.15
 	}
 	walls_of_hamburg = {
 		defensiveness = 0.25
@@ -7639,6 +7643,7 @@ HAM_ideas = {
 	}
 	elbe_shipyards = {
 		global_ship_cost = -0.15
+		global_ship_recruit_speed = -0.15
 	}
 }
 
@@ -8307,11 +8312,11 @@ SHL_ideas = {
 
 HES_ideas = {
 	start = {
-		global_tax_modifier = 0.15
+		army_tradition_decay = -0.001
 		diplomatic_reputation = 1
 	}
 	bonus = {
-		embracement_cost = -0.15
+		army_tradition = 1
 	}
 	trigger = {
 		tag = HES
@@ -8320,23 +8325,29 @@ HES_ideas = {
 	free = yes
 	
 	break_the_hessian_estates = {
+		global_tax_modifier = 0.15
 		stability_cost_modifier = -0.1
 	}
 	marburg_university = {
 		idea_cost = -0.1
+		tolerance_own = 1
 	}
 	welcome_reformers = {
 		religious_unity = 0.25
-		church_power_modifier = 0.05
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		papal_influence = 1
 	}
 	let_in_religious_emigrants = {
-		development_cost = -0.05
+		development_cost = -0.1
+		tolerance_heretic = 1
 	}
 	modernization_of_the_hessian_army = {
 		discipline = 0.05
 	}
 	hessian_mercenaries_idea = {
-		land_forcelimit_modifier = 0.1
+		land_forcelimit_modifier = 0.2
+		possible_condottieri = 0.5
 	}
 	hessian_economic_reforms = {
 		production_efficiency = 0.1
@@ -8428,9 +8439,10 @@ NOL_ideas = {
 
 MUN_ideas = {
 	start = {
-		papal_influence = 1
-		church_power_modifier = 0.05
-		global_trade_power = 0.1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 2
+		papal_influence = 2
+		global_trade_power = 0.15
 	}
 	bonus = {
 		global_heretic_missionary_strength = 0.02
@@ -8443,12 +8455,16 @@ MUN_ideas = {
 	
 	mun_great_procession = {
 		tolerance_own = 2
+		recover_army_morale_speed = 0.1
 	}
 	mun_erbmanner = {
-		stability_cost_modifier = -0.10
+		stability_cost_modifier = -0.1
+		nobles_influence_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
 	}
 	mun_founding_of_monestaries = {
 		missionaries = 1
+		land_morale = 0.1
 	}
 	mun_cities_of_peace = {
 		diplomatic_reputation = 1
@@ -8457,10 +8473,11 @@ MUN_ideas = {
 		discipline = 0.05
 	}
 	mun_bommen_berend = {
-		fire_damage = 0.1
+		fire_damage = 0.15
 	}
 	mun_support_of_schools = {
-		global_institution_spread = 0.1
+		global_institution_spread = 0.15
+		technology_cost = -0.05
 	}
 }
 
@@ -12216,14 +12233,14 @@ HAN_ideas = {
 	
 	han_niedersachsicher_reichskreis = {
 		state_maintenance_modifier = -0.15
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.15
 	}
 	han_weser_renaissance = {
 		development_cost = -0.1
 	}
 	han_shutzenfest = {
-		land_maintenance_modifier = -0.05
-		fire_damage = 0.05
+		land_maintenance_modifier = -0.1
+		fire_damage = 0.1
 	}
 	han_herrenhausen_gardens = {
 		prestige = 1
@@ -12254,6 +12271,7 @@ BRU_ideas = {
 	
 	bru_welfian_dynasty = {
 		diplomatic_reputation = 1
+		monthly_splendor = 0.5
 	}
 	han_niedersachsicher_reichskreis = {
 		#state_maintenance_modifier = -0.15 #in HAN_ideas
@@ -12277,8 +12295,8 @@ BRU_ideas = {
 
 LUN_ideas = {
 	start = {
-		land_maintenance_modifier = -0.05
-		war_exhaustion_cost = -0.1
+		land_maintenance_modifier = -0.1
+		war_exhaustion_cost = -0.2
 	}
 	bonus = {
 		discipline = 0.05
@@ -12298,7 +12316,7 @@ LUN_ideas = {
 		#diplomatic_reputation = 1 #in BRU_ideas
 	}
 	lun_staple_rights = {
-		trade_efficiency = 0.05
+		trade_efficiency = 0.15
 	}
 	lun_dynastic_play = {
 		heir_chance = 0.5
@@ -12308,6 +12326,7 @@ LUN_ideas = {
 	}
 	lun_adroit_diplomacy = {
 		diplomatic_upkeep = 1
+		diplomats = 1
 	}
 	lun_lionhearted = {
 		land_morale = 0.1
@@ -12480,7 +12499,7 @@ GOS_ideas = {
 		development_cost = -0.1
 	}
 	bonus = {
-		vassal_income = 0.25
+		vassal_income = 0.33
 	}
 	trigger = {
 		tag = GOS
@@ -12496,7 +12515,7 @@ GOS_ideas = {
 	}
 	GOS_city_rights = {
 		burghers_influence_modifier = 0.1
-		burghers_loyalty_modifier = 0.05
+		burghers_loyalty_modifier = 0.1
 	}
 	GOS_hanseatic_league = {
 		global_prov_trade_power_modifier = 0.1
@@ -12504,12 +12523,14 @@ GOS_ideas = {
 	}
 	GOS_hunting_robber_barons = {
 		land_forcelimit_modifier = 0.2
+		global_autonomy = -0.05
 	}
 	GOS_resisting_welfs = {
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 	GOS_the_leagues = {
 		diplomatic_upkeep = 1
+		diplomats = 1
 	}
 }
 
@@ -12559,7 +12580,7 @@ ROT_ideas = {
 ANH_ideas = {
 	start = {
 		land_morale = 0.1
-		technology_cost = -0.05
+		technology_cost = -0.1
 	}
 	bonus = {
 		legitimacy = 1
@@ -12575,12 +12596,14 @@ ANH_ideas = {
 	
 	ANH_mittelgebirge = {
 		global_trade_power = 0.1
+		global_prosperity_growth = 0.25
 	}
 	ANH_branches = {
 		global_autonomy = -0.075
 	}
 	ANH_incorporating_the_bishopric = {
 		tolerance_own = 2
+		church_loyalty_modifier = 0.1
 	}
 	ANH_castle = {
 		build_cost = -0.1
@@ -12591,11 +12614,13 @@ ANH_ideas = {
 	}
 	ANH_schultheiss = {
 		yearly_corruption = -0.1
+		same_culture_advisor_cost = -0.1
 	}
 	ANH_confessor = {
 		global_heretic_missionary_strength = 0.02
-		monthly_fervor_increase = 0.25
-		church_power_modifier = 0.1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 2
+		papal_influence = 2
 	}
 }
 
@@ -14731,12 +14756,14 @@ BRB_ideas = {
 
 LIE_ideas = {
 	start = {
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 2
 		papal_influence = 2
 		land_morale = 0.10
 	}
 	
 	bonus = {
-		build_cost = -0.1
+		build_cost = -0.15
 	}
 	
 	trigger = {
@@ -14746,9 +14773,11 @@ LIE_ideas = {
 	
 	lie_guild_democracy = {
 		stability_cost_modifier = -0.1
+		monthly_reform_progress = 0.2
 	}
 	wars_of_liege = {
 		manpower_recovery_speed = 0.2
+		morale_damage_received = -0.1
 	}
 	lie_religious_devotion = {
 		legitimacy = 1
@@ -14759,15 +14788,18 @@ LIE_ideas = {
 	}
 	lie_wittelsbach_bishops = {
 		improve_relation_modifier = 0.3
+		prestige = 1
 	}
 	lie_prince_bishop_palace = {
 		diplomatic_reputation = 1
 	}
 	lie_literary_society = {
-		global_institution_spread = 0.1
+		global_institution_spread = 0.15
+		technology_cost = -0.05
 	}
 	lie_rights_of_man = {
 		global_unrest = -1
+		reform_progress_growth = 0.15
 	}	
 }
 
@@ -14865,6 +14897,7 @@ AAC_ideas = {
 	free = yes
 	aac_charlemagne_capital = {
 		prestige_decay = -0.01
+		development_cost = -0.1
 	}
 	aac_free_city = {
 		legitimacy = 1
@@ -14875,18 +14908,25 @@ AAC_ideas = {
 	}
 	aac_spa = {
 		stability_cost_modifier = -0.10
+		manpower_recovery_speed = 0.1
 	}
 	aac_guilds = {
 		production_efficiency = 0.1
+		burghers_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.1
 	}
 	aac_expel_heretics = {
 		global_heretic_missionary_strength = 0.02
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 2
+		papal_influence = 2
 	}
 	aac_baroque = {
-		build_cost = -0.1
+		build_cost = -0.15
 	}
 	aac_congresses = {
 		diplomatic_reputation = 2
+		diplomatic_upkeep = 2
 	}
 }
 KLE_ideas = {

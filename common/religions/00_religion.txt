@@ -155,7 +155,7 @@ christian = {
 				ai_will_do = {
 					factor = 1
 				}				
-			}			
+			}
 			bless_monarch = {
 				cost = 0
 				potential = {

@@ -1,0 +1,21 @@
+country_decisions = {
+	buildings_decision = {
+		color = {
+			220 255 100
+		}
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+			ai = no
+			is_at_war = no
+		}
+		effect = {
+			country_event = { id = building.1 } 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
