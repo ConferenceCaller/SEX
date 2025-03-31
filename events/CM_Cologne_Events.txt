@@ -1,0 +1,91 @@
+namespace = CM_moreflavour_COLOGNE
+
+country_event = {
+	id = CM_moreflavour_COLOGNE.1
+	title = CM_moreflavour_COLOGNE.1.t # The Soest Feud
+	desc = CM_moreflavour_COLOGNE.1.d
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = COL
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+
+	}
+	
+	option = {
+		name = CM_moreflavour_COLOGNE.1.a # The Rebellion must be put down
+
+		add_yearly_manpower = -0.3
+
+		82 = {
+			add_devastation = 50
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+				win = yes
+			}
+		}
+
+		ai_chance = {
+			factor = 0.8
+		}
+	}
+
+	option = {
+		name = CM_moreflavour_COLOGNE.1.a # We will have to give up our land in Westphalia
+
+		add_stability = 1
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+
+		custom_tooltip = GENERIC_SKIP_ONE_LINE_TT
+
+		north_rhine_area = {
+			limit = {
+				NOT = {
+					OR = {
+						is_core = root
+						is_permanent_claim = root
+					}
+				}
+			}
+			add_permanent_claim = ROOT
+		}
+		lower_rhineland_area = {
+			limit = {
+				NOT = {
+					OR = {
+						is_core = root
+						is_permanent_claim = root
+					}
+				}
+			}
+			add_permanent_claim = ROOT
+		}
+
+		custom_tooltip = GENERIC_SKIP_ONE_LINE_TT
+
+		82 = {
+			add_core = KLE
+			cede_province = KLE
+		}
+		2972 = {
+			add_core =  PAD
+			cede_province = PAD
+		}
+
+		ai_chance = {
+			factor = 0.2
+		}
+	}
+	
+}

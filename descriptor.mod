@@ -11,5 +11,6 @@ tags={
 	"Gameplay"
 	"Alternative History"
 }
-name="SEX"
+name="Bm Mod 3.5"
 supported_version="v1.37.5.0"
+remote_file_id="3451343246"

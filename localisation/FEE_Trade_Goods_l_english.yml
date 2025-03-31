@@ -173,6 +173,25 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  FEE_Trade_Goods_Events.5000.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
  FEE_Trade_Goods_Events.5000.OPT1: "Sweet!"
 
+### Coffee
+ FEE_Trade_Goods_Events.6000.T: "Coffee Plant smuggled into Italy"
+ FEE_Trade_Goods_Events.6000.D: "The Coffee bean has once been a coveted secret of Yemen and Ethiopia with live plants being guarded better than the lives of some Kings. However when the Dutch managed to steal one it set in motion an industry that would fuel the scholars for centuries to come, and one of those plants has reached our court."
+ FEE_Trade_Goods_Events.6000.OPT1: "Sell it! We have no other use for it."
+ FEE_Trade_Goods_Events.6000.OPT2: "This would be a fine way to start an exotic garden."
+
+ FEE_Trade_Goods_Events.6001.T: "The Birth of the Coffee Italica"
+ FEE_Trade_Goods_Events.6001.D: "Coffee has become a staple export of southern Italy, but with this new strain of coffee identified we are approaching unmatched prosperity and we have to make a decision on how to proceed from our position."
+ FEE_Trade_Goods_Events.6001.OPT1: "As the Arabs before we should guard the secret closely."
+ FEE_Trade_Goods_Events.6001.OPT2: "We should share our Secrets for the sake of Coffee."
+
+ FEE_Trade_Goods_Events.6001.tt.1: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+3.00§!\n"
+ FEE_Trade_Goods_Events.6001.tt.2: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+1.00§!\n"
+
+### Wool
+ FEE_Trade_Goods_Events.7000.T: "Cashmere Wool"
+ FEE_Trade_Goods_Events.7000.D: "Our wool provinces in the Kashmir region have long been renowned for their quality, but recent events have brought even greater prosperity. A wave of Turkistani weavers has settled in the area, bringing with them advanced techniques in wool processing. Their expertise promises to enhance our production significantly. With this newfound knowledge, our wool industry is poised for growth, and the wealth of our nation will surely increase. Let us celebrate this fortuitous development and ensure that our prosperity continues to rise."
+ FEE_Trade_Goods_Events.7000.OPT1: "Invite the Turkistani weavers."
+
 # Modifiers
  fee_trade_goods_cocoa_trade: "Cocoa trade"
  desc_fee_trade_goods_cocoa_trade: ""

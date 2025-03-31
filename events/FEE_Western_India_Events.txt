@@ -343,7 +343,7 @@ country_event = {
 			name = "Mujahid Khan"
 			dynasty = "Dandani"
 		}
-		add_legitimacy_equivalent = { amount = 10 }
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 
 		ai_chance = {
 			factor = 0
@@ -357,7 +357,7 @@ country_event = {
 			who = MER
 		}
 		add_stability_or_adm_power = yes
-		add_legitimacy_equivalent = { amount = 25 }
+		add_legitimacy_equivalent = { amount = 25 republican_tradition = 13 }
 		if = {
 			limit = {
 				OR = {
@@ -687,15 +687,9 @@ country_event = {
 	trigger = {
 		owns = 519
 		ADM = 4
-		natural_scientist = 3
 		OR = {
 			has_idea_group = innovativeness_ideas
-			AND = {
-				is_expanded_mod_active = { mod = historical_ideas }
-				tag = DHU
-				has_idea_group = HIE_DHU_ideas
-				HIE_DHU_ideas = 3
-			}
+			natural_scientist = 3
 		}
 	}
 
