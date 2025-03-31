@@ -1419,7 +1419,7 @@ sigmaringen = {
 			local_governing_cost = -0.25
 		}
 		country_modifiers = {
-			manpower_against_imperial_enemies = 5
+			manpower_against_imperial_enemies = 5000
 			heir_chance = 0.5
 		}
 		on_upgraded = { }
@@ -1434,7 +1434,7 @@ sigmaringen = {
 			local_governing_cost = -0.33
 		}
 		country_modifiers = {
-			manpower_against_imperial_enemies = 10
+			manpower_against_imperial_enemies = 10000
 			heir_chance = 0.5
 			free_land_leader_pool = 1
 		}
@@ -1450,7 +1450,7 @@ sigmaringen = {
 			local_governing_cost = -0.5
 		}
 		country_modifiers = {
-			manpower_against_imperial_enemies = 20
+			manpower_against_imperial_enemies = 30000
 			heir_chance = 1
 			free_land_leader_pool = 2
 		}

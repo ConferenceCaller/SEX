@@ -315,4 +315,15 @@ spriteTypes = {
 		name = "GFX_great_project_sigmaringen"	
 		texturefile = "gfx//interface//great_projects//great_project_sigmaringen.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_fu_den_haag_dike"	
+		texturefile = "gfx//interface//great_projects//great_project_fu_den_haag_dike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_brussels_town_hall"	
+		texturefile = "gfx//interface//great_projects//great_project_brussels_town_hall.dds"
+	}
+	great_project_brussels_town_hall
 }

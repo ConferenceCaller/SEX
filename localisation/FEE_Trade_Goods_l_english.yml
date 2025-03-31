@@ -256,6 +256,8 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
 
  fee_trade_goods_sugar_rush: "Sugar Rush"
 
+ fee_trade_goods_cashmere_wool: "Cashmere"
+
 # Tooltips
  FEE_TRADE_GOODS_SILK_FOREIGN_CRAFTSMAN_PALERMO_TUSCAN_TT: "Every §YTuscan§! country will be welcomed to hear about our mutal help!"
  FEE_TRADE_GOODS_SILK_FOREIGN_CRAFTSMAN_PALERMO_MOORISH_TT: "§YMoors§! from North Africa will be back in Sicily!"

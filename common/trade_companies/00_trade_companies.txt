@@ -485,7 +485,7 @@ trade_company_english_channel = {
 		92 95 98 99 2974 #netherlands & brabant_area
 		96 97 4383 #holland_area
 		100 4381 4382 4980 #frisia_area
-		90 1744 1865 #flanders_area
+		90 1744 1865 91 #flanders_area
 		4769 4770 1742
 	}
 	
@@ -609,7 +609,7 @@ trade_company_champagne = {
 		181 186 4390 4968 #champagne_area
 		187 188 189 #lorraine_area
 		165 1867 1871 #romandie_area
-		91 93 94 1866 4963 #wallonia_area
+		93 94 1866 4963 #wallonia_area
 		191 192 193 1877 4392 4997 #bourgogne_area
 		203 204 205 4719 #savoy_dauphine_area
 		4720 4721 4764 4766 
@@ -845,10 +845,10 @@ trade_company_alexandria = {
 		365 2315 2320 2321 #gulf_of_arabia_area
 		1233 2318 4323 #al_wahat_area
 		358 362 363 #delta_area
-		361 2316 4316 4317 #bahari_area
-		359 2317 4318 #vostani_area
-		360 1231 2319 4319 4320 #said_area
-		356 357 2325 2326 #cyrenaica_area
+		361 2316 4316 4317 5014 #bahari_area
+		359 2317 4318 5012 #vostani_area
+		360 1231 2319 4319 4320 5013 #said_area
+		356 357 2325 2326 5011 #cyrenaica_area
 	}
 	
 	# Specific
