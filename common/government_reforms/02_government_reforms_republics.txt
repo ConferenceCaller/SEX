@@ -1386,6 +1386,7 @@ colonial_government = {
 		embracement_cost = -0.1
 		governing_capacity = 100
 		may_explore = yes
+		no_religion_penalty = yes
 	}
 
 	custom_attributes = {
@@ -1451,6 +1452,7 @@ crown_colony_government = {
 		embracement_cost = -0.1
 		governing_capacity = 100
 		may_explore = yes
+		no_religion_penalty = yes
 	}
 	effect = {
 		hidden_effect = {
@@ -1509,6 +1511,7 @@ private_enterprise_colony_government = {
 		merchants = 1
 		production_efficiency = 0.05
 		may_explore = yes
+		no_religion_penalty = yes
 	}
 
 	custom_attributes = {
@@ -1567,6 +1570,7 @@ self_governing_colony_government = {
 		embracement_cost = -0.1
 		state_maintenance_modifier = -0.25
 		may_explore = yes
+		no_religion_penalty = yes
 	}
 
 	custom_attributes = {
@@ -1620,6 +1624,7 @@ trade_company_government = {
 		governing_capacity = 50
 		global_manpower_modifier = 0.1
 		naval_forcelimit_modifier = 0.1
+		no_religion_penalty = yes
 	}
 	nation_designer_cost = 60
 	valid_for_nation_designer = yes

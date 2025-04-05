@@ -7603,7 +7603,7 @@ JNP_ideas = {
 HAM_ideas = {
 	start = {
 		light_ship_power = 0.2
-		light_ship_hull_size = 0.2
+		burghers_loyalty_modifier = 0.1
 	}
 
 	bonus = {
@@ -10871,6 +10871,7 @@ DTT_ideas = {
 	free = yes
 	dtt_resistance_against_feudalism = {
 		infantry_power = 0.1
+		peasants_loyalty_modifier = 0.1
 	}
 	dtt_kirchspiele = {
 		tolerance_own = 2
@@ -14604,7 +14605,7 @@ FRI_ideas = {
 	free = yes
 	
 	fri_coastal_industry = {
-		global_ship_trade_power = 0.1
+		global_ship_trade_power = 0.2
 	}
 	fri_upstalsboom_league = {
 		state_maintenance_modifier = -0.25
@@ -14620,8 +14621,8 @@ FRI_ideas = {
 		defensiveness = 0.15
 	}
 	fri_mennonism = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
+		tolerance_heretic = 2
+		tolerance_heathen = 2
 	}
 	fri_brothers_arms = {
 		num_accepted_cultures = 1
@@ -14847,7 +14848,7 @@ GEL_ideas = {
 EFR_ideas = {
 	start = {
 		privateer_efficiency = 0.15
-		heir_chance = 0.5
+		embargo_efficiency = 0.5
 	}
 	
 	bonus = {
@@ -14860,21 +14861,26 @@ EFR_ideas = {
 	free = yes
 	efr_chiefs = {
 		global_unrest = -1
+		peasants_loyalty_modifier = 0.1
 	}
 	efr_saxon_feud = {
 		army_tradition_decay = -0.01
 	}
 	efr_religious_thought = {
 		religious_unity = 0.2
+		tolerance_heretic = 2
 	}
 	efr_dutch_migrants = {
 		advisor_pool = 1
+		advisor_cost = -0.1
 	}
 	efr_mennonism = {
-		tolerance_heretic = 2
+		idea_cost = -0.1
 	}
 	efr_city_autonomy = {
 		trade_efficiency = 0.1
+		burghers_loyalty_modifier = 0.05
+		burghers_influence_modifier = 0.1
 	}
 	efr_emden_company = {
 		trade_steering = 0.2
