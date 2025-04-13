@@ -136,7 +136,7 @@
  gc_por_conquer_tangiers_alliance_no_TT: "\n£no£ If we are allied to @CAS/@SPA Castille or Spain, and they own [334.GetName] our ally will receive:"
 
  gc_por_colonise_central_africa_yes_TT: "£yes£ If we are allied to or have any subjects in the Kongo Region:"
-gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any subjects in the Kongo Region:"
+ gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any subjects in the Kongo Region:"
 
  gc_por_defeat_pirates_yes_TT: "£yes£ If we or a @CAS/@SPA Castille or Spain ally own [334.GetName], we will receive:"
  gc_por_defeat_pirates_no_TT: "£no£ If we or a @CAS/@SPA Castille or Spain ally own [334.GetName], we will receive:"
@@ -250,7 +250,7 @@ gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any su
  alb_vengeance_vlore_desc: "The Ottoman capture of Vlore was a severe blow to Albanian pride, and a further encroachment on our independence. Even now, the Albanians in Vlore cry for liberation from their Ottoman oppressors. We must reclaim this city, and drive out the Turkish invaders. If we do not, who knows what wrath the Turk will bring upon us..."
  alb_vengeance_vlore_tt: "War score against [143.Owner.GetName] at least §Y15§!"
  alb_papal_favor_title: "Papal Favor"
- alb_papal_favor_desc: "The Pope is a driving force in our independence, having crowned our own Skanderbeg as the "Athleta Christi", the champion of Christ. We ought to establish good relations with the Papacy to further solidify our position as the sole Catholic bastion facing the Ottomans."
+ alb_papal_favor_desc: "The Pope is a driving force in our independence, having crowned our own Skanderbeg as the 'Athleta Christi', the champion of Christ. We ought to establish good relations with the Papacy to further solidify our position as the sole Catholic bastion facing the Ottomans."
  alb_subjugate_dalmatia_title: "Subjugate Dalmatia"
  alb_subjugate_dalmatia_desc: "Dalmatia is the heart of the Adriatic, the nucleus from which all trade flows. And yet it is controlled by those foreign to the Balkans, people with no interest in the greater good of Illyria. We must seize this land so that the merchants of the Balkans are once again free to trade in this entrepot."
  
@@ -468,7 +468,7 @@ gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any su
  bul_land_greeks_desc: "Now that we have conquered the our rightful claims in the land of the Greeks, we can push our claims further to gain a loyal subject"
 
  bul_slavic_traditions_title: "Slavic Traditions"
- bul_slavic_traditions_desc: "The Slavs, the cause of the demise of the Golden Horde, holders of the titile "Holy Roman Empire" at some point, Byzantium's biggest enemy and heirs to the Kievan Rus, one of the wealthiest nations to live in our history, we have a legacy, let us unite these legacies to proclaim a United Slavic Empire."
+ bul_slavic_traditions_desc: "The Slavs, the cause of the demise of the Golden Horde, holders of the title 'Holy Roman Empire' at some point, Byzantium's biggest enemy and heirs to the Kievan Rus, one of the wealthiest nations to live in our history, we have a legacy, let us unite these legacies to proclaim a United Slavic Empire."
  bul_samo_legacy_title: "Samo's Legacy"
  bul_samo_legacy_desc: "To our North lay the Western Slavs, a proud collection of peoples who put their faith into the Catholics. The first man to create am empire in this area was Samo, let us show that Bulgarian history isn't the only one that is honoured in our nation. Let us start by expanding into Moravia, Galicia and Krakow."
  bul_victory_kiev_title: "Victory at Kiev"
@@ -482,7 +482,7 @@ gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any su
 
  #5th
  bul_northern_barbarians_title: "Northern Barbarians"
- bul_northern_barbarians_desc: "The Barbarians to our north must be subjugated, tales of "Vlad the Impaler" might scare our soldiers, but we'll just have to show our soldiers that the Bulgarian's are scarier"
+ bul_northern_barbarians_desc: "The Barbarians to our north must be subjugated, tales of 'Vlad the Impaler' might scare our soldiers, but we'll just have to show our soldiers that the Bulgarian's are scarier"
  bul_state_funded_migracija_title: "State Funded Migracija"
  bul_state_funded_migracija_desc: "The idea of forced migration would make our populace unhappy, so instead we'll give subsidies to those who move to our new conquered lands"
  bul_benefits_from_the_countryside_title: "Benefits from the Countryside"
@@ -608,3 +608,15 @@ gc_por_colonise_central_africa_no_TT: "£no£ If we are allied to or have any su
  me_restore_roman_empire_bulgaria_desc: "Not since the Romans in the second century has one empire commanded the entirety of the Mediterranean and beyond. If we claim this land, we can scoff at whatever pretenders may claim in Constantinople or the Holy Roman Empire and proclaim ourselves the true successors of Rome."
  bul_name_changes_title: "Bulgarianize the cities"
  bul_name_changes_desc: "Let us rename these large cities in our lands to make them fit our agenda"
+
+
+ #AYYUBIDS / HISN KAYFA
+ hsn_support_kurdish_resistance_title: "Support our Brethren"
+ hsn_support_kurdish_resistance_desc: "The Kurds are separated, forcefully by warring states who rule over their lands. Though our ambitions lie further than just the lands of the Kurds, we must lend our support to our brothers and sisters who are suppressed. Supplying them arms and inciting revolts, promising that we come to their end, we can destabilize our neighbours."
+ hsn_spy_network_akk_yes: "£yes£ If we complete this mission by having §Y40.00§! Spy Network Size in @AKK §YAq Qoyunlu§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @AKK §YAq Qoyunlu§!."
+ hsn_spy_network_akk_no: "£no£ If we complete this mission by having §Y40.00§! Spy Network Size in Aq Qoyunlu, we will receive: \n@REB Rebels who are allied to our cause will rise up against @AKK §YAq Qoyunlu§!."
+ hsn_spy_network_qar_yes: "£yes£ If we complete this mission by having §Y40.00§! Spy Network Size in @QAR §YQara Qoyunly§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @QAR §YQara Qoyunly§!."
+ hsn_spy_network_qar_no: "£no£ If we complete this mission by having §Y40.00§! Spy Network Size in @QAR §YQara Qoyunly§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @QAR §YQara Qoyunly§!."
+
+ BM_HISN_KAYFA_kurdish_support: "Kurdish Separatism"
+ BM_HISN_KAYFA_kurdish_support_desc: ""
