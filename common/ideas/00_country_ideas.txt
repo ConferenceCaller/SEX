@@ -13605,8 +13605,8 @@ HDR_ideas = {
 
 HSN_ideas = {
 	start = {
-		shock_damage_received = -0.1
-		global_tax_modifier = 0.1
+		shock_damage_received = -0.15
+		recover_army_morale_speed = 0.1
 	}
 	bonus = {
 		discipline = 0.05
@@ -13618,6 +13618,7 @@ HSN_ideas = {
 	
 	hsn_citadels_and_fortesses = {
 		defensiveness = 0.2
+		fort_maintenance_modifier = -0.2
 	}
 	hsn_ayyubid_heritage = {
 		global_manpower_modifier = 0.15
@@ -18486,8 +18487,8 @@ EGY_ideas = {
 
 AYB_ideas = {
 	start = {
-		shock_damage_received = -0.1
-		global_tax_modifier = 0.2
+		shock_damage_received = -0.15
+		recover_army_morale_speed = 0.1
 	}
 	bonus = {
 		discipline = 0.05
@@ -18500,6 +18501,7 @@ AYB_ideas = {
 	
 	hsn2_citadels_and_fortesses = {
 		defensiveness = 0.2
+		fort_maintenance_modifier = -0.2
 	}
 	hsn2_ayyubid_heritage = {
 		global_manpower_modifier = 0.25
@@ -18508,7 +18510,7 @@ AYB_ideas = {
 		land_morale = 0.1
 	}
 	hsn2_elite_warriors = {
-		cavalry_power = 0.1
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 0.25
 	}
 	hsn2_rise_of_the_eagle = {

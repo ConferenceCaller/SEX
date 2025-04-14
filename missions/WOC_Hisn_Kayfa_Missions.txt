@@ -42,21 +42,21 @@ hsn_first_branch = {
 				}
 				custom_tooltip = hsn_alliance_ajam_yes
 				tooltip = {
+					add_army_tradition_or_mil_power = { amount = 20 }
 					add_country_modifier = {
 						name = hsn_persian_support
 						duration = 3650
 					}
-					add_army_tradition_or_mil_power = { amount = 20 }
 				}
 			}
 			else = {
 				custom_tooltip = hsn_alliance_ajam_no
 				tooltip = {
+					add_army_tradition_or_mil_power = { amount = 20 }
 					add_country_modifier = {
 						name = hsn_persian_support
 						duration = 3650
 					}
-					add_army_tradition_or_mil_power = { amount = 20 }
 				}
 			}
 			if = {
@@ -65,21 +65,21 @@ hsn_first_branch = {
 				}
 				custom_tooltip = hsn_alliance_ottoman_yes
 				tooltip = {
+					add_army_professionalism = 0.1
 					add_country_modifier = {
 						name = hsn_ottoman_janissaries
 						duration = 3650
 					}
-					add_army_professionalism = 0.1
 				}
 			}
 			else = {
 				custom_tooltip = hsn_alliance_ottoman_no
 				tooltip = {
+					add_army_professionalism = 0.1
 					add_country_modifier = {
 						name = hsn_ottoman_janissaries
 						duration = 3650
 					}
-					add_army_professionalism = 0.1
 				}
 			}
 			if = {
@@ -88,21 +88,21 @@ hsn_first_branch = {
 				}
 				custom_tooltip = hsn_alliance_mamluks_yes
 				tooltip = {
+					add_mil_power = 100
 					add_country_modifier = {
 						name = hsn_mamluk_reinforcements
 						duration = 3650
 					}
-					add_mil_power = 100
 				}
 			}
 			else = {
 				custom_tooltip = hsn_alliance_mamluks_no
 				tooltip = {
+					add_mil_power = 100
 					add_country_modifier = {
 						name = hsn_mamluk_reinforcements
 						duration = 3650
 					}
-					add_mil_power = 100
 				}
 			}
 			hidden_effect = {
@@ -1569,6 +1569,10 @@ hsn_third_branch = {
 		
 		trigger = {
 			or = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 5
+					culture = kurdish
+				}
 				if = {
 					limit = { 
 						AKK = {
@@ -1577,7 +1581,7 @@ hsn_third_branch = {
 					}
 					has_spy_network_from = {
 						who = AKK
-						value = 40
+						value = 20
 					}
 				}
 				if = {
@@ -1588,12 +1592,8 @@ hsn_third_branch = {
 					}
 					has_spy_network_from = {
 						who = QAR
-						value = 40
+						value = 20
 					}
-				}
-				num_of_provinces_owned_or_owned_by_subjects_with = {
-					value = 5
-					culture = kurdish
 				}
 			}
 		}
@@ -1607,11 +1607,12 @@ hsn_third_branch = {
 				limit = {
 					has_spy_network_from = {
 						who = AKK
-						value = 40
+						value = 20
 					}
 				}
 				custom_tooltip = hsn_spy_network_akk_yes
 				tooltip = {
+					add_manpower = 3
 					AKK = {
 						every_owned_province = {
 							limit = {
@@ -1621,10 +1622,12 @@ hsn_third_branch = {
 						}
 					}
 				}
+				custom_tooltip = GENERIC_SKIP_ONE_LINE_TT
 			}
 			else = {
 				custom_tooltip = hsn_spy_network_akk_no
 				tooltip = {
+					add_manpower = 3
 					AKK = {
 						every_owned_province = {
 							limit = {
@@ -1634,16 +1637,18 @@ hsn_third_branch = {
 						}
 					}
 				}
+				custom_tooltip = GENERIC_SKIP_ONE_LINE_TT
 			}
 			if = {
 				limit = {
 					has_spy_network_from = {
 						who = QAR
-						value = 40
+						value = 20
 					}
 				}
 				custom_tooltip = hsn_spy_network_qar_yes
 				tooltip = {
+					add_manpower = 3
 					QAR = {
 						every_owned_province = {
 							limit = {
@@ -1653,10 +1658,12 @@ hsn_third_branch = {
 						}
 					}
 				}
+
 			}
 			else = {
 				custom_tooltip = hsn_spy_network_qar_no
 				tooltip = {
+					add_manpower = 3
 					QAR = {
 						every_owned_province = {
 							limit = {
@@ -1673,9 +1680,10 @@ hsn_third_branch = {
 					limit = { 
 						has_spy_network_from = {
 							who = AKK
-							value = 40
+							value = 20
 						}
 					}
+					add_manpower = 3
 					AKK = {
 						every_owned_province = {
 							limit = {
@@ -1701,9 +1709,10 @@ hsn_third_branch = {
 					limit = { 
 						has_spy_network_from = {
 							who = QAR
-							value = 40
+							value = 20
 						}
 					}
+					add_manpower = 3
 					QAR = {
 						every_owned_province = {
 							limit = {

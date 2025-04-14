@@ -583,7 +583,7 @@ bul_estates_happy = {
 
 #AYYUBIDS
 BM_HISN_KAYFA_kurdish_support = {
-	army_tradition_decay = -0.001
+	army_tradition_decay = -0.01
 	rebel_support_efficiency = 0.5
 	manpower_in_own_culture_provinces = 0.2
 }
