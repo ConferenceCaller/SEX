@@ -1579,7 +1579,7 @@ hsn_third_branch = {
 							exists = yes
 						}
 					}
-					has_spy_network_from = {
+					has_spy_network_in = {
 						who = AKK
 						value = 20
 					}
@@ -1590,7 +1590,7 @@ hsn_third_branch = {
 							exists = yes
 						}
 					}
-					has_spy_network_from = {
+					has_spy_network_in = {
 						who = QAR
 						value = 20
 					}
@@ -1605,7 +1605,7 @@ hsn_third_branch = {
 			}
 			if = {
 				limit = {
-					has_spy_network_from = {
+					has_spy_network_in = {
 						who = AKK
 						value = 20
 					}
@@ -1641,7 +1641,7 @@ hsn_third_branch = {
 			}
 			if = {
 				limit = {
-					has_spy_network_from = {
+					has_spy_network_in = {
 						who = QAR
 						value = 20
 					}
@@ -1678,7 +1678,7 @@ hsn_third_branch = {
 			hidden_effect = {
 				if = {
 					limit = { 
-						has_spy_network_from = {
+						has_spy_network_in = {
 							who = AKK
 							value = 20
 						}
@@ -1707,7 +1707,7 @@ hsn_third_branch = {
 				}
 				if = {
 					limit = { 
-						has_spy_network_from = {
+						has_spy_network_in = {
 							who = QAR
 							value = 20
 						}
