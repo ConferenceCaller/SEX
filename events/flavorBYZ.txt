@@ -3155,9 +3155,11 @@ country_event = {
 					is_free_or_tributary_trigger = yes
 				}
 			}
-			country_event = {
-				id = CM_moreflavour_TUR.1
-				days = 10
+			TUR = {
+				country_event = {
+					id = CM_moreflavour_TUR.1
+					days = 10
+				}
 			}
 		}
 	}

@@ -34,7 +34,7 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		add_corruption = 0.5
+		add_corruption = 3
 		capital_scope = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -105,6 +105,19 @@ country_event = {
 				duration = 3650
 			}
 		}
+		random_owned_province = {
+			limit = {
+				area = delta_area
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+			add_province_modifier = {
+				name = CM_MAMLUKS_seized_grain
+				duration = 3650
+			}
+		}
 	}
 
 	option = {
@@ -156,6 +169,10 @@ country_event = {
 			limit = {
 				is_in_capital_area = no
 			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
 			add_province_modifier = {
 				name = CM_MAMLUKS_rooting_out_rebellious_amirs
 				duration = 3650
@@ -201,10 +218,21 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				area = capital
+				is_capital = no
 			}
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 3
+			}
+		}
+		random_owned_province = {
+			limit = {
+				area = capital
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
 			}
 		}
 	}

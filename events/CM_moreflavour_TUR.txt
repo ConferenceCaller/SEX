@@ -21,9 +21,6 @@ country_event = {
 
 		vassalize = ATH
 		ATH = {
-			change_subject_type = {
-				subject_type = incorporated_vassal
-			}
 			add_liberty_desire = -50
 			add_country_modifier = {
 				name = BM_TUR_higher_vassal_dues
