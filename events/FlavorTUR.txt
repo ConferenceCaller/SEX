@@ -2976,7 +2976,7 @@ country_event = {
 	
 	option = {	# 
 		name = flavor_tur.208.a
-		add_mil_power = 30
+		add_mil_power = 100
 		add_country_modifier = {
 			name = tur_janissary_loyalty
 			duration = 36500

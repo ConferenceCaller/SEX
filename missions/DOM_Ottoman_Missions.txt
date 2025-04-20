@@ -28,6 +28,7 @@ tur_conquest_of_europe = {
 			create_admiral = {
 				tradition = 50
 			}
+			add_navy_tradition_or_dip_power = { amount = 20 }
 		}
 
 		ai_weight = {
@@ -252,7 +253,7 @@ tur_conquest_of_europe = {
 			}
 		}
 		effect = {
-			add_navy_tradition = 15
+			add_navy_tradition_or_dip_power = { amount = 20 }
 			if = {
 				limit = {
 					exists = VEN
@@ -294,7 +295,7 @@ tur_conquest_of_europe = {
 				}
 				else = { custom_tooltip = BONUS_REWARD_NO }
 				tooltip = {
-					add_mercantilism = 3
+					add_mercantilism_or_monarch_power = { amount = 3 }
 					add_country_modifier = {
 						name = tur_preperation_for_naval_war
 						duration = 7300
@@ -309,7 +310,7 @@ tur_conquest_of_europe = {
 						}
 					}
 					else = {
-						add_mercantilism = 3
+						add_mercantilism_or_monarch_power = { amount = 3 }
 						add_country_modifier = {
 							name = tur_preperation_for_naval_war
 							duration = 7300
@@ -318,7 +319,7 @@ tur_conquest_of_europe = {
 				}
 			}
 			else = {
-				add_mercantilism = 3
+				add_mercantilism_or_monarch_power = { amount = 3 }
 				add_country_modifier = {
 					name = tur_preperation_for_naval_war
 					duration = 7300
@@ -3030,6 +3031,7 @@ tur_arabian_conquest = {
 				name = tur_janissary_example
 				duration = 9125
 			}
+			add_manpower = 10
 			if = {
 				limit = { has_estate = estate_janissaries }
 				add_estate_loyalty = {
@@ -3051,7 +3053,7 @@ tur_arabian_conquest = {
 				limit = { 
 					ai = yes	#Because I don't trust the AI to be competent
 				}
-				add_manpower = 10
+				add_manpower = 20
 			}
 		}
 
@@ -3095,7 +3097,7 @@ tur_arabian_conquest = {
 				id = flavor_tur.208
 				insight_tooltip = INSIGHT_JUST_TOOLTIP
 				effect_tooltip = "
-				add_mil_power = 30
+				add_mil_power = 100
 				add_country_modifier = {
 					name = tur_janissary_loyalty
 					duration = 36500
