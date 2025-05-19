@@ -1515,11 +1515,14 @@ country_event = { #Administrating the Northern Territories
 		set_country_flag = mam_intervened_syria
 		hidden_effect = {
 			SYR = {
-				add_manpower = 5 
+				add_manpower = 10
 				add_adm_power = 100
 				add_dip_power = 100
 				add_mil_power = 100
-				add_treasury = 50
+				add_treasury = 150
+				country_event = {
+					id = flavor_tim.21
+				}
 			}
 		}
 	}
@@ -1529,6 +1532,15 @@ country_event = { #Administrating the Northern Territories
 
 		add_legitimacy = -10
 		add_prestige = -10
+		hidden_effect = {
+			SYR = {
+				add_manpower = 10
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_treasury = 150
+			}
+		}
 		set_country_flag = mam_had_administration_syria_event_flag
 	}
 }

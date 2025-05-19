@@ -1,0 +1,76 @@
+namespace = CM_moreflavour_SYR_minors
+
+country_event = {
+	id = CM_moreflavour_SYR_minors.1
+	title = CM_moreflavour_SYR_minors.1.t # Syria Military Emir
+	desc = CM_moreflavour_SYR_minors.1.d
+	picture = muslim_LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+	
+	option = {
+		name = CM_moreflavour_SYR_minors.1.a # 
+
+		ai_chance = { factor = 1 }
+
+
+		add_ruler_modifier = {
+			name = CM_SYRIA_military_emir
+			duration = -1
+		}
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.8
+				cavalry = 0.2
+			}
+		}
+		change_ruler_stat = {
+			mil = 1
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = CM_moreflavour_SYR_minors.2
+				days = 365
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CM_moreflavour_SYR_minors.2
+	title = CM_moreflavour_SYR_minors.2.t # Shiite Lebanon
+	desc = CM_moreflavour_SYR_minors.2.d
+	picture = muslim_DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SYR
+	}
+	
+	option = {
+		name = CM_moreflavour_SYR_minors.2.a # 
+
+		ai_chance = { factor = 1 }
+
+		378 = {
+			add_province_modifier = {
+				name = CM_SYRIA_lebanon_prov_modif
+				duration = -1
+			}
+		}
+		1855 = {
+			add_province_modifier = {
+				name = CM_SYRIA_lebanon_prov_modif
+				duration = -1
+			}
+		}
+	}
+}

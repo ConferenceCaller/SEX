@@ -325,5 +325,34 @@ spriteTypes = {
 		name = "GFX_great_project_brussels_town_hall"	
 		texturefile = "gfx//interface//great_projects//great_project_brussels_town_hall.dds"
 	}
-	great_project_brussels_town_hall
+
+	spriteType = {
+		name = "GFX_great_project_klingentorturm"	
+		texturefile = "gfx//interface//great_projects//great_project_klingentorturm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_ulugh_beg_observatory"	
+		texturefile = "gfx//interface//great_projects//great_project_ulugh_beg_observatory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_fu_port_havana"	
+		texturefile = "gfx//interface//great_projects//great_project_fu_port_havana.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_great_project_kasteel_batavia"	
+		texturefile = "gfx//interface//great_projects//great_project_kasteel_batavia.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_great_project_nakhonluang"	
+		texturefile = "gfx//interface//great_projects//great_project_nakhonluang.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_great_project_charles_bridge"	
+		texturefile = "gfx//interface//great_projects//great_project_charles_bridge.dds"
+	}
 }

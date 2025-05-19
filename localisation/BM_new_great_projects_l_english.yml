@@ -121,38 +121,56 @@
  mukdenpalace:0 "Mukden Palace"
  mukdenpalace_desc:0 ""
 
- fu_zeeland_dike: "Middelburg Canal"
- fu_zeeland_dike_desc: ""
+ fu_zeeland_dike:0 "Middelburg Canal"
+ fu_zeeland_dike_desc:0 ""
 
- konigstein: "Königstein Fortress"
- konigstein_desc: ""
+ konigstein:0 "Königstein Fortress"
+ konigstein_desc:0 ""
 
- burghausen: "Burghausen Castle"
- burghausen_desc: ""
+ burghausen:0 "Burghausen Castle"
+ burghausen_desc:0 ""
 
- fu_brugge_dike: "Zeebrugge"
- fu_brugge_dike_desc: ""
+ fu_brugge_dike:0 "Zeebrugge"
+ fu_brugge_dike_desc:0 ""
 
- iron_pagoda: "Iron Pagoda"
- iron_pagoda_desc: ""
+ iron_pagoda:0 "Iron Pagoda"
+ iron_pagoda_desc:0 ""
 
- suntemple: "Modhera Sun Temple"
- suntemple_desc: ""
+ suntemple:0 "Modhera Sun Temple"
+ suntemple_desc:0 ""
 
- tengwang: "Prince Teng Pavilion"
- tengwang_desc: ""
+ tengwang:0 "Prince Teng Pavilion"
+ tengwang_desc:0 ""
 
- fu_foreign_quarters: "Diaolou Quarters"
- fu_foreign_quarters_desc: ""
+ fu_foreign_quarters:0 "Diaolou Quarters"
+ fu_foreign_quarters_desc:0 ""
 
- hasankeyf: "Citadel of Hisn Kayfa"
- hasankeyf_desc: ""
+ hasankeyf:0 "Citadel of Hisn Kayfa"
+ hasankeyf_desc:0 ""
 
- umayyad_mosque: "Umayyad Mosque"
- umayyad_mosque_desc: ""
+ umayyad_mosque:0 "Umayyad Mosque"
+ umayyad_mosque_desc:0 ""
 
- pfeffingen: "Pfeffingen Castle"
- pfeffingen_desc: ""
+ pfeffingen:0 "Pfeffingen Castle"
+ pfeffingen_desc:0 ""
 
- sigmaringen: "Sigmaringen Castle"
- sigmaringen_desc: ""
+ sigmaringen:0 "Sigmaringen Castle"
+ sigmaringen_desc:0 ""
+
+ klingentorturm:0 "Klingentortum"
+ klingentorturm_desc:0 ""
+
+ me_ulugh_beg_observatory:0 "Ulugh Beg Observatory"
+ me_ulugh_beg_observatory_desc:0 ""
+
+ fu_port_havana:0 "Port of Havana"
+ fu_port_havana_desc:0 ""
+
+ kasteel_batavia:0 "Kasteel Batavia"
+ kasteel_batavia_desc:0 ""
+
+ nakhonluang:0 "Nakhon Luang"
+ nakhonluang_desc:0 ""
+
+ charles_bridge:0 "Charles Bridge"
+ charles_bridge_desc:0 ""

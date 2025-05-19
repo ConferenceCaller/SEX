@@ -314,3 +314,17 @@
 
  CM_moreflavour_COLOGNE.1.a: "This Rebellion must be put down!"
  CM_moreflavour_COLOGNE.1.b: "We will have to give up our lands in Westphalia"
+
+
+ #SYRIA
+ CM_moreflavour_SYR_minors.1.t: "The Military Emire"
+ CM_moreflavour_SYR_minors.1.d: "The Emirate of Syria has since the establishment of the Mamluk Sultanate remained as a strong military presence in Syria and Lebanon. With the recent inaguration of Izz al-Din Buhtur as Emir, he has continued to fund and expand the army of the Emirate."
+ CM_moreflavour_SYR_minors.1.a: "Perfect!"
+ CM_SYRIA_military_emir: "Military Emirate"
+ desc_CM_SYRIA_military_emir: ""
+
+ CM_moreflavour_SYR_minors.2.t: "The Minorities of Lebanon"
+ CM_moreflavour_SYR_minors.2.d: "The Lebanese that reside within the Emirate of Syria has for long remained largely Shiite with smaller minorities of both Christians, Sunni Muslims and other religious minorities. The Syrian authorities in Lebanon has for long allowed for these minorities to practice their faith in exchange for Jizaya taxation and further privileges in the cities."
+ CM_moreflavour_SYR_minors.2.a: "We should continue this."
+ CM_SYRIA_lebanon_prov_modif: "Lebanese Minority Protection"
+ desc_CM_SYRIA_lebanon_prov_modif: ""

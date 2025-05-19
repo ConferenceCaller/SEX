@@ -415,6 +415,10 @@ NOR_ideas = {
 	}
 	free = yes
 	
+	natural_seamanship = {
+		naval_morale = 0.2
+		allowed_marine_fraction = 0.2
+	}
 	call_of_our_forefathers = {
 		range = 0.33
 		may_explore = yes
@@ -424,20 +428,15 @@ NOR_ideas = {
 		effect = { remove_temporary_colonist = yes }
 		colonist_placement_chance = 0.05
 	}
-	natural_seamanship = {
-		naval_morale = 0.2
-		allowed_marine_fraction = 0.2
-	}
-	nor_shipbuilding = {
-		global_ship_cost = -0.15
-		global_sailors_modifier = 0.25
-	}
-	seize_the_opportunity = {
- 		global_trade_power = 0.15
-	}
 	nor_fishing = {
 		production_efficiency = 0.15
 		global_trade_goods_size_modifier = 0.05
+	}
+	nor_shipbuilding = {
+		global_ship_cost = -0.15
+	}
+	seize_the_opportunity = {
+ 		global_trade_power = 0.15
 	}
 	write_new_sagas = {
 		prestige = 1

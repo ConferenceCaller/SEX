@@ -401,3 +401,161 @@ umayyad_mosque = {
 		}
 	}
 }
+
+me_ulugh_beg_observatory = {
+	start = 454
+	date = 01.01.1420 #Destroyed in 1449. Yikes.
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = canal
+	build_trigger = {
+		AND = {
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = {
+		AND = {
+			OR = {
+				culture_group = altaic
+				culture_group = iranian
+				}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		
+		}
+		area_modifier = { }
+		country_modifiers = {
+			innovativeness_gain = 0.25
+			institution_spread_from_true_faith = 0.1
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						ruler_has_personality = scholar_personality
+						full_idea_group = innovativeness_ideas
+					}
+				}
+			}
+			
+			modifier = {
+				embracement_cost = -0.1
+			}
+		}
+		on_upgraded = {
+			owner = {
+				add_innovativeness_or_monarch_power = { amount = 5 }
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = { }
+		country_modifiers = {
+			innovativeness_gain = 0.33
+			institution_spread_from_true_faith = 0.15
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						ruler_has_personality = scholar_personality
+						full_idea_group = innovativeness_ideas
+					}
+				}
+			}
+			
+			modifier = {
+				advisor_cost = -0.1
+				embracement_cost = -0.1
+			}
+		}
+		on_upgraded = {
+			owner = {
+				add_innovativeness_or_monarch_power = { amount = 10 }
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 360
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = { }
+		
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			institution_spread_from_true_faith = 0.25
+			technology_cost = -0.05
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						ruler_has_personality = scholar_personality
+						full_idea_group = innovativeness_ideas
+					}
+				}
+			}
+			
+			modifier = {
+				advisor_cost = -0.15
+				embracement_cost = -0.1
+			}
+		}
+		
+		on_upgraded = {
+			owner = {
+				add_innovativeness_or_monarch_power = { amount = 15 }
+			}
+		}
+	}
+}
