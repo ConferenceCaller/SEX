@@ -402,7 +402,7 @@ umayyad_mosque = {
 	}
 }
 
-me_ulugh_beg_observatory = {
+ulugh_beg_observatory = {
 	start = 454
 	date = 01.01.1420 #Destroyed in 1449. Yikes.
 	time = { months = 0 }

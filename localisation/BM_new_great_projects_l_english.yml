@@ -160,8 +160,8 @@
  klingentorturm:0 "Klingentortum"
  klingentorturm_desc:0 ""
 
- me_ulugh_beg_observatory:0 "Ulugh Beg Observatory"
- me_ulugh_beg_observatory_desc:0 ""
+ ulugh_beg_observatory:0 "Ulugh Beg Observatory"
+ ulugh_beg_observatory_desc:0 ""
 
  fu_port_havana:0 "Port of Havana"
  fu_port_havana_desc:0 ""
@@ -174,3 +174,9 @@
 
  charles_bridge:0 "Charles Bridge"
  charles_bridge_desc:0 ""
+
+ fu_den_haag_dike:0 "Binnenhof"
+ fu_den_haag_dike_desc:0 ""
+
+ brussels_town_hall:0 "Brussels City Center"
+ fu_den_haag_dike_desc:0 ""
