@@ -613,10 +613,10 @@
  #AYYUBIDS / HISN KAYFA
  hsn_support_kurdish_resistance_title: "Support our Brethren"
  hsn_support_kurdish_resistance_desc: "The Kurds are separated, forcefully by warring states who rule over their lands. Though our ambitions lie further than just the lands of the Kurds, we must lend our support to our brothers and sisters who are suppressed. Supplying them arms and inciting revolts, promising that we come to their end, we can destabilize our neighbours."
- hsn_spy_network_akk_yes: "£yes£ If we complete this mission by having §Y40.00§! Spy Network Size in @AKK §YAq Qoyunlu§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @AKK §YAq Qoyunlu§!."
- hsn_spy_network_akk_no: "£no£ If we complete this mission by having §Y40.00§! Spy Network Size in Aq Qoyunlu, we will receive: \n@REB Rebels who are allied to our cause will rise up against @AKK §YAq Qoyunlu§!."
- hsn_spy_network_qar_yes: "£yes£ If we complete this mission by having §Y40.00§! Spy Network Size in @QAR §YQara Qoyunly§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @QAR §YQara Qoyunly§!."
- hsn_spy_network_qar_no: "£no£ If we complete this mission by having §Y40.00§! Spy Network Size in @QAR §YQara Qoyunly§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @QAR §YQara Qoyunly§!."
+ hsn_spy_network_akk_yes: "£yes£ If we complete this mission by having §Y20.00§! Spy Network Size in @AKK §YAq Qoyunlu§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @AKK §YAq Qoyunlu§!."
+ hsn_spy_network_akk_no: "£no£ If we complete this mission by having §Y20.00§! Spy Network Size in Aq Qoyunlu, we will receive: \n@REB Rebels who are allied to our cause will rise up against @AKK §YAq Qoyunlu§!."
+ hsn_spy_network_qar_yes: "£yes£ If we complete this mission by having §Y20.00§! Spy Network Size in @QAR §YQara Qoyunly§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @QAR §YQara Qoyunly§!."
+ hsn_spy_network_qar_no: "£no£ If we complete this mission by having §Y20.00§! Spy Network Size in @QAR §YQara Qoyunly§!, we will receive: \n@REB Rebels who are allied to our cause will rise up against @QAR §YQara Qoyunly§!."
 
  BM_HISN_KAYFA_kurdish_support: "Kurdish Separatism"
  BM_HISN_KAYFA_kurdish_support_desc: ""

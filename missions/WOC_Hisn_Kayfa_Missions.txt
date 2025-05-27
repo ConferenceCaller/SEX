@@ -36,6 +36,7 @@ hsn_first_branch = {
 				name = hsn_political_security
 				duration = 7300 
 			}
+			add_treasury = 100
 			if = {
 				limit = {
 					alliance_with = QOM
@@ -178,8 +179,10 @@ hsn_first_branch = {
 		}
 		
 		effect = {
-			add_yearly_manpower = 2.5
+			add_yearly_manpower = 4
 			4295 = {
+				add_base_production = 1
+				add_base_manpower = 1
 				add_province_modifier = {
 					name = "hsn_rock_fortress"
 					duration = 7300
