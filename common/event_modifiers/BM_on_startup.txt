@@ -48,11 +48,13 @@ BM_AQ_uzun_hasan_modifier = {
 	army_tradition_from_battle = 1
 	monthly_tribal_allegiance = 0.25
 	warscore_from_battles_modifier = 0.25
+	nomadic_tribes_loyalty_modifier = 0.25
 }
 
 BM_AQ_QOYUNLY_modifier = {
-	core_creation = -0.1
-	manpower_in_own_culture_provinces = 0.1
+	cavalry_cost = -0.25
+	core_creation = -0.25
+	manpower_in_own_culture_provinces = 0.25
 	diplomatic_reputation = 1
 }
 

@@ -223,7 +223,7 @@ country_event = { #The Demands of the Princes
 			every_subject_country = {
 				add_trust = {
 					who = root
-					value = -35
+					value = -100
 				}
 			}
 		}
@@ -310,7 +310,7 @@ country_event = { #The Demands of Transoxiana
 					who = root
 					modifier = CM_refused_demands
 				}
-				add_liberty_desire = 20
+				add_liberty_desire = 30
 				add_manpower = 5
 				add_years_of_income = 0.8
 			}
@@ -400,7 +400,7 @@ country_event = { #The Demands of Transoxiana
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 100
 		}
 	}
 }
@@ -582,7 +582,7 @@ country_event = { #The Demands of Afghanistan
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 100
 		}
 	}
 }
@@ -739,7 +739,7 @@ country_event = { #The Demands of Khorasan
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 100
 		}
 	}
 }
@@ -856,7 +856,7 @@ country_event = { #The Demands of Fars
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 100
 		}
 	}
 }
@@ -927,7 +927,7 @@ country_event = { #The Demands of the Nobles
 		add_estate_influence_modifier = {
 			estate = estate_nobles
 			desc = EST_VAL_FURTHERED_SPOUSES_FAMILY_NOBLES
-			influence = 15
+			influence = 20
 			duration = 7300
 		}
 		change_estate_land_share = {
@@ -945,7 +945,7 @@ country_event = { #The Demands of the Nobles
 		}
 
 		ai_chance = {
-			factor = 1
+			factor = 100
 		}
 	}
 }
@@ -971,11 +971,11 @@ country_event = { #The Timurid Crisis over
 			}
 		}
 		has_country_modifier = CM_dead_shah_rukh_trouble
-		total_development = 300
+		total_development = 400
 	}
 
 	option = {
-		name = ME_Timurid_Princes_EventOPTION.17.a # NO! Our heir is the correct one!
+		name = ME_Timurid_Princes_EventOPTION.17.a
 
 		add_legitimacy = 100
 		remove_country_modifier = CM_dead_shah_rukh_trouble

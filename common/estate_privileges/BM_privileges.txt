@@ -449,14 +449,26 @@ estate_ghulams_governor_positions = {
 		has_government_attribute = enables_ghulam_governors
 	}
 	can_select = {
-
 		has_government_attribute = enables_ghulam_governors
 	}
 	benefits = {
 		global_autonomy = -0.05
 	}
-	modifier_by_land_ownership = {
-		governing_capacity_modifier = 0.25
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_ghulams
+				loyalty = 60
+			}
+		}
+		modifier = { 
+			governing_capacity_modifier = 0.25
+		}
+	}
+	influence_scaled_conditional_modifier = {
+		modifier = { 
+			yearly_corruption = -0.1
+		}
 	}
 	mechanics = {
 		exempt_from_seize_land

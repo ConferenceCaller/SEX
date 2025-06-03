@@ -21,6 +21,8 @@ turkic_qasilbash_heirs_reform = {
 		global_heretic_missionary_strength = 0.01
 		manpower_in_true_faith_provinces = 0.1
 		cav_to_inf_ratio = 0.1
+		qizilbash_loyalty_modifier = 0.1
+		qizilbash_influence_modifier = 0.1
 	}
 	custom_attributes = {
 		enables_qizilbash_company = yes #unlocks qizilbash mercenaries
@@ -143,6 +145,7 @@ foreign_ghulams_reform = {
 	}
 	modifiers = {
 		advisor_pool = 1
+		
 		ghulams_influence_modifier = 0.1
 		ghulams_loyalty_modifier = 0.05
 	}
@@ -170,7 +173,7 @@ principle_of_fiqh_reform = {
 		}
 	}
 	modifiers = {
-		all_estate_influence_modifier = -0.1
+		all_estate_influence_modifier = 0.1
 		global_unrest = -1
 		tolerance_own = 1
 		max_absolutism = 10
