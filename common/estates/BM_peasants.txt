@@ -10,6 +10,7 @@ estate_peasants = {
 	}
 
 	country_modifier_happy = {
+		state_maintenance_modifier = -0.2
 		global_unrest = -1
 		production_efficiency = 0.2
 	}
@@ -17,7 +18,6 @@ estate_peasants = {
 		production_efficiency = 0.2
 	}	
 	country_modifier_angry = {
-		global_unrest = 1
 		production_efficiency = -0.1
 		global_unrest = 2
 	}
@@ -68,6 +68,9 @@ estate_peasants = {
 		estate_peasants_guild_assembly
 		estate_peasants_manpower_drive
 		estate_peasants_voting_rights
+		estate_peasants_allow_peasant_freedoms
+		estate_peasants_fight_the_elite
+		estate_peasants_bear_arms
 	}
 
 	agendas = {

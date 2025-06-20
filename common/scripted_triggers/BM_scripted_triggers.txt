@@ -48,6 +48,7 @@ has_2_idea__or_1_adm_groups = {
 			full_idea_group = innovativeness_ideas
 		}
 		calc_true_if = {
+			has_any_idea_group = yes
 			OR = {
 				full_idea_group = administrative_ideas
 				full_idea_group = economic_ideas

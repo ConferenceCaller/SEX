@@ -828,6 +828,7 @@ republic = {
 				support_borghese_reform
 				guild_dominance_reform
 				independence_reform
+				peasant_council_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -967,6 +968,7 @@ republic = {
 				#BM
 				milizia_nationale_reform
 				tatar_mercenaries_reform
+				peasant_militia_reform
 			}
 		}
 		parliamentary_vs_presidential = {

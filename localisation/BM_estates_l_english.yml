@@ -119,9 +119,16 @@
  estate_peasants_manpower_drive_desc: "The Peasantry can serve in our armies, no matter how rough the nobility might think it is."
  estate_peasants_voting_rights: "Peasant Voting Rights"
  estate_peasants_voting_rights_desc: "Peasant having a say in the republic is sure to increase the fervor of republicanism and spread political discourse over the country."
- estate_peasants_conscription: "Peasant Conscription"
- estate_peasants_conscription_desc: "In times of need the peasantry can be called to arms, although this leaves the farms unattended."
-
+ estate_peasants_allow_peasant_freedoms: "Allow Peasant Communes"
+ estate_peasants_allow_peasant_freedoms_desc: "The Peasantry will be granted the freedom to organize and collectivise their own farming communities, increasing efficiency and reducing our administrative needs."
+ BM_estate_peasants_guild_assemblies: "Collectivised Community"
+ desc_BM_estate_peasants_guild_assemblies: ""
+ BM_estate_peasants_guild_assembly_grant_tooltip: "All fish, livestock or grain provinces gains:" 
+ BM_estate_peasants_guild_assembly_revoke_tooltip: "Removes "Collectivised Community" modifier from all affected provinces"
+ estate_peasants_fight_the_elite: "Fight The Elite"
+ estate_peasants_fight_the_elite_desc: "Fear the peasantry who in their righteous fury will overthrow the oppressive nobility."
+ BM_fight_the_elite_Tooltip: "Being at war with Monarchies will grant us: \n §G-10.0%§! Morale Damage Received \n §G+10.0%§! Peasants Loyalty"
+ 
  #AGENDAS
  estate_peasants_develop_grain: "Increase Grain Production in [agenda_province.GetName]."
  estate_peasants_develop_grain_desc: "The Peasantry asks us to clear some land for extra farming lands on the outskirts of [agenda_province.GetName]."

@@ -32,8 +32,8 @@ estate_peasants_guild_assembly = {
 		
 	}
 	modifier_by_land_ownership = {
-		global_trade_goods_size_modifier = 0.25
-		global_tax_modifier = -0.25
+		global_trade_goods_size_modifier = 0.33
+		global_tax_modifier = -0.33
 	}
 	mechanics = {
 		exempt_from_seize_land
@@ -141,7 +141,15 @@ estate_peasants_allow_peasant_freedoms = {
 		}
 	}
 	on_granted = {
-		every_owned_province = {
+		custom_tooltip = BM_estate_peasants_guild_assembly_grant_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = BM_estate_peasants_guild_assemblies
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
 			limit = {
 				OR = {
 					trade_goods = fish
@@ -154,10 +162,16 @@ estate_peasants_allow_peasant_freedoms = {
 				duration = -1
 			}
 		}
+		}
 	}
 	on_revoked = {
-		custom_tooltip = estate_burghers_exclusive_trade_rights_revoke_tooltip
 		custom_tooltip = BM_estate_peasants_guild_assembly_revoke_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = BM_estate_peasants_guild_assemblies
+				duration = -1
+			}
+		}
 	}
 	on_revoked_province = {
 		if = {
@@ -191,6 +205,85 @@ estate_peasants_allow_peasant_freedoms = {
 	penalties = {
 	}
 	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_fight_the_elite = {
+	icon = privilege_supply_arms
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes  } modifier = { max_absolutism = 1 } }
+	can_select = {
+		government = republic
+	}
+	on_granted = {
+		custom_tooltip = BM_fight_the_elite_Tooltip
+	}
+	on_revoked = {
+	}
+	conditional_modifier = {
+		trigger = {
+			any_known_country = {
+				government = monarchy
+				war_with = root
+			}
+		}
+		modifier = {
+			peasants_loyalty_modifier = 0.1
+			morale_damage_received = -0.1
+		}
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_bear_arms = {
+	icon = privilege_spawn_rajput_regiments
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes  } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_government_attribute = enables_bear_arms
+	}
+	can_select = {
+		has_reform = peasant_militia_reform
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = { 
+			infantry_power = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			global_unrest = 2
+		}
+	}
+	on_granted = {
+		custom_tooltip = GE_bear_arms_Tooltip
+	}
+	on_revoked = {
+	}
+	penalties = {
 	}
 	ai_will_do = {
 		factor = 0

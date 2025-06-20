@@ -28,3 +28,8 @@ GE_Peasant_Estate_Stabilized = {
 Peasant_Council = {
 	candidate_random_bonus = 2
 }
+
+BM_estate_peasants_guild_assemblies = {
+	local_production_efficiency = 0.15
+	local_governing_cost_increase = -5
+}
