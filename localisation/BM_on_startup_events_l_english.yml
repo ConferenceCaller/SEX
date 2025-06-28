@@ -130,7 +130,7 @@
  #BRANDENBURG
  BM_on_startup.6.t: "The Hohenzollern Brothers"
  BM_on_startup.6.d: "The Margraviate of Brandenburg is home to the House of Hohenzollern, a prestigious dynasty who's influence is dotted across the Holy Roman Empire. With the retirement of Friedrich I in 1437, his son, Friedrich II, has been ruling the Margraviate. In many ways Friedrich II, 'the Irontooth', has proven to be his father's son, resuming many of his policies. But he is not the only son nor the only one with experience of ruling Brandenburg. Friedrich II's brother Albrecht III, 'Achilles', has been ruling in the Franconian principalities since 1440 and is the heir to the throne of Brandenburg should Friedrich II retire or, god forbid, pass away. A third brother, Johann, 'the Alchemist', has also helped managed the governmental affairs in Brandenburg from 1424 though retiring early in 1425 to pursue alchemy, and also due to his administrative faults. \nNow, with the concentrating power in the hands of Friedrich II and his brothers, the Hohenzollern dynasty shall overcome its obstacles."
- BM_on_startup.6.a: "'Irontooth'? I like the sound of that."
+ BM_on_startup.6.a: "Irontooth, I like the sound of that."
  BM_irontooth_ruler_modifier: "Irontooth"
  desc_BM_irontooth_ruler_modifier: ""
 

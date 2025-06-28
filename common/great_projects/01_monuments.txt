@@ -12633,7 +12633,7 @@ etchimiadzin_cathedral = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_monthly_devastation = -0.05
+			local_monthly_devastation = -0.5
 		}
 		country_modifiers = {
 			tolerance_own = 0.5
@@ -12654,7 +12654,7 @@ etchimiadzin_cathedral = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_monthly_devastation = -0.1
+			local_monthly_devastation = -0.5
 		}
 		country_modifiers = {
 			tolerance_own = 1
@@ -12675,7 +12675,7 @@ etchimiadzin_cathedral = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_monthly_devastation = -0.25
+			local_monthly_devastation = -1
 		}
 		country_modifiers = {
 			tolerance_own = 2

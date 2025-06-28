@@ -355,4 +355,79 @@ spriteTypes = {
 		name = "GFX_great_project_charles_bridge"	
 		texturefile = "gfx//interface//great_projects//great_project_charles_bridge.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_uffizi"	
+		texturefile = "gfx//interface//great_projects//great_project_uffizi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_charlottenburg"	
+		texturefile = "gfx//interface//great_projects//great_project_charlottenburg.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_great_project_dannevirke"	
+		texturefile = "gfx//interface//great_projects//great_project_dannevirke.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_great_project_graz_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_graz_castle.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_great_project_osun_osogbo"	
+		texturefile = "gfx//interface//great_projects//great_project_osun_osogbo.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_great_project_koutammakou"	
+		texturefile = "gfx//interface//great_projects//great_project_koutammakou.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_great_project_mary_zion"	
+		texturefile = "gfx//interface//great_projects//great_project_mary_zion.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_great_project_stanne"	
+		texturefile = "gfx//interface//great_projects//great_project_stanne.dds"
+	}
+				
+	spriteType = {
+		name = "GFX_great_project_luxor"	
+		texturefile = "gfx//interface//great_projects//great_project_luxor.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_great_project_rotunda"	
+		texturefile = "gfx//interface//great_projects//great_project_rotunda.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_great_project_mt_athos"	
+		texturefile = "gfx//interface//great_projects//great_project_mt_athos.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_great_project_painted_churches"	
+		texturefile = "gfx//interface//great_projects//great_project_painted_churches.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_great_project_stanthony"	
+		texturefile = "gfx//interface//great_projects//great_project_stanthony.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_great_project_saint_thaddeus"	
+		texturefile = "gfx//interface//great_projects//great_project_saint_thaddeus.dds"
+	}
+					
+	spriteType = {
+		name = "GFX_great_project_vardzia"	
+		texturefile = "gfx//interface//great_projects//great_project_vardzia.dds"
+	}
 }

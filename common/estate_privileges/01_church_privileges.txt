@@ -2063,6 +2063,22 @@ estate_church_one_faith_one_culture = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+
+	conditional_modifier = {
+		trigger = {
+			owns_core_province = 1227
+			1227 = {
+				has_great_project = {
+					type = mary_zion
+					tier = 3
+				}
+			}
+		}
+		modifier = {
+			discipline = 0.025
+		}
+	}
+
 	cooldown_years = 15
 	ai_will_do = {
 		factor = 10
@@ -2653,6 +2669,21 @@ estate_church_development_of_temples = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
+	conditional_modifier = {
+		trigger = {
+			owns_core_province = 2315
+			2315 = {
+				has_great_project = {
+					type = stanthony
+					tier = 3
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = 5
+			global_tax_modifier = 0.2
+		}
+	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3157,7 +3188,7 @@ estate_church_fund_dar_al_hadith = {
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.25
-		global_prosperity_growth = 1
+		technology_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -3474,7 +3505,7 @@ estate_church_TIM_promote_ijazah = {
 			always = yes
 		}
 		modifier = {
-			yearly_innovativeness = 0.25
+			yearly_innovativeness = 0.5
 		}
 	}
 	on_granted = {
@@ -3498,7 +3529,7 @@ estate_church_MUG_promote_divine_religion = {
 		religious_unity = -0.1
 	}
 	benefits = {
-		yearly_absolutism = 0.5
+		yearly_absolutism = 1
 	}
 	
 	ai_will_do = {

@@ -92,7 +92,7 @@
  BM_selected_caliphal_action_TT: "Has not selected a £muslim_school_button£ §YFatwa§! in the last §Y15§! Years."
 
  sea_remove_state_edicts_flag_tt: "Wait for a month tick to enact State Edict."
- sea_state_edicts_decision_title: "£sea_edict_logo£State Edict: §Y[SeaStateEdictName]§!"
+ sea_state_edicts_decision_title: "£sea_edict_logo£State Edict: §YSeaStateEdictName§!"
  sea_state_edicts_decision_desc: "Choose which edict to set for all states."
  sea_state_edicts_decision_ttt: "Always\nHighlights all the provinces with State Edicts."
  sea_state_edicts_decision_tt: "Selected State Edict will be shown in Decision's name."

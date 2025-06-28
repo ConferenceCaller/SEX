@@ -215,3 +215,338 @@ meroe_pyramids = {
 		}
 	}
 }
+
+mary_zion = {
+	start = 1227
+	date = 01.01.350
+	time = { months = 120 }
+	build_cost = 550
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			church_loyalty_modifier = 0.1
+			relation_with_same_religion = 10
+			reverse_relation_with_same_religion = 10
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = theologian
+							skill = 3
+							culture = root
+							religion = ROOT
+							cost_multiplier = 0.75
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = theologian
+						skill = 3
+						culture = root
+						religion = ROOT
+						cost_multiplier = 0.75
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1100 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			church_privilege_slots = 1
+			church_loyalty_modifier = 0.1
+			relation_with_same_religion = 20
+			reverse_relation_with_same_religion = 20
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = theologian
+							skill = 3
+							culture = root
+							religion = ROOT
+							cost_multiplier = 0.5
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = theologian
+						skill = 3
+						culture = root
+						religion = ROOT
+						cost_multiplier = 0.5
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 2200 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			church_privilege_slots = 1
+			church_loyalty_modifier = 0.15
+			relation_with_same_religion = 50
+			reverse_relation_with_same_religion = 50
+		}
+		on_upgraded = {
+			custom_tooltip = BM_mary_zion_great_project_TT
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = theologian
+							skill = 3
+							culture = root
+							religion = ROOT
+							cost_multiplier = 0.25
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = theologian
+						skill = 3
+						culture = root
+						religion = ROOT
+						cost_multiplier = 0.25
+					}
+				}
+			}
+		}
+	}
+}
+
+stanne = {
+	start = 1234 #Faras.
+	date = 01.01.650
+	time = { months = 120 }
+	build_cost = 500
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.1
+			global_spy_defence = 0.25
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = spymaster
+							culture = nubian
+							skill = 3
+							cost_multiplier = 0.75
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = spymaster
+						culture = nubian
+						skill = 3
+						cost_multiplier = 0.75
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.2
+			global_spy_defence = 0.33
+			siege_ability = 0.1
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = spymaster
+							culture = nubian
+							skill = 3
+							cost_multiplier = 0.75
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = spymaster
+						culture = nubian
+						skill = 3
+						cost_multiplier = 0.75
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_defender_dice_roll_bonus = 1
+		}
+		region_modifier = {
+		}
+		country_modifiers = {
+			spy_offence = 0.33
+			global_spy_defence = 0.5
+			siege_ability = 0.15
+		}
+		on_upgraded = {
+			if = {
+				limit = {
+					owner = {
+						is_subject = yes
+					}
+				}
+				owner = {
+					overlord = {
+						define_advisor = {
+							type = spymaster
+							culture = nubian
+							skill = 3
+							cost_multiplier = 0.75
+						}
+					}
+				}
+			}
+			else = {
+				owner = {
+					define_advisor = {
+						type = spymaster
+						culture = nubian
+						skill = 3
+						cost_multiplier = 0.75
+					}
+				}
+			}
+		}
+	}
+}

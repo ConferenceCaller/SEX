@@ -425,3 +425,94 @@ sphinx = {
 		}
 	}
 }
+
+luxor = {
+	start = 4319
+	date = 01.01.1 #1400 BC. Damn.
+	time = { months = 120 }
+	build_cost = 2500
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_development_cost = -0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			monthly_splendor = 0.5
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			local_development_cost = -0.25
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 0.5
+			monthly_splendor = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 10
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			local_development_cost = -0.5
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 1
+			monthly_splendor = 2
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 20
+					}
+				}
+			}
+		}
+	}
+}

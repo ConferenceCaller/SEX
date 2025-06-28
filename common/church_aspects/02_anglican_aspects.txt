@@ -169,10 +169,6 @@ dissolve_monasteries_aspect = {
 			estate = estate_church
 			share = -3
 	    }
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = -15
-		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -339,6 +335,7 @@ diplomats_of_the_reformation_aspect = {
 						religion = protestant
 						religion = reformed
 						religion = anglican
+						religion = hussite
 					}
 				}
 				add_opinion = {
