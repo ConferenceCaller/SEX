@@ -6914,19 +6914,23 @@ BUL_ideas = {
 	free = yes
 	
 	bul_idea_1 = {
-		stability_cost_modifier = -0.1
+		global_manpower_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
 	}
 	bul_idea_2 = {
-		global_heretic_missionary_strength = 0.02		
+		global_missionary_strength = 0.01
+		prestige_per_development_from_conversion = 0.15
 	}
 	bul_idea_3 = {
  		global_unrest = -1
+		stability_cost_modifier = -0.1
 	}
 	bul_idea_4 = {
 		infantry_cost = -0.15
 	}
 	bul_idea_5 = {
 		prestige = 1
+		missionaries = 1
 	}
 	bul_idea_6 = {
 		land_morale = 0.1

@@ -1743,11 +1743,7 @@ country_event = {
 			owned_by = ROOT
 		}
 		167 = {
-			OR = {
-				has_trade_building_trigger = yes
-				has_shipyard_building_trigger = yes
-				has_dock_building_trigger = yes
-			}
+			has_trade_building_trigger = yes
 		}
 	}
 
@@ -1765,7 +1761,6 @@ country_event = {
 
 		167 = {
 			rename_capital = "La Havre"
-			create_or_add_center_of_trade_level_fee = { level = 1 }
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1

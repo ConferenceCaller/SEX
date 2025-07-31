@@ -481,10 +481,17 @@ absolutism = {
 	monthly_ottoman_decadence = -0.5
 }
 
+low_army_professionalism = {
+	mercenary_cost = -0.2
+	mercenary_manpower = 0.25
+}
 
 high_army_professionalism = {
-	fire_damage = 0.15							#VANILLA 10%
-	shock_damage = 0.15							#VANILLA 10%
+	fire_damage = 0.1							#VANILLA 10%
+	shock_damage = 0.1							#VANILLA 10%
+	morale_damage_received = -0.1
+	shock_damage_received = -0.1
+	fire_damage_received = -0.1
 	siege_ability = 0.2
 	drill_decay_modifier = -0.5
 	allowed_samurai_fraction = 0.2

@@ -1920,15 +1920,7 @@ country_event = {
 				key = opinion_export_bad
 			}
 			remove_province_modifier = fee_trade_goods_foreign_craftsman_palermo
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				change_trade_goods = olive_oil
-			}
-			else = {
-				change_trade_goods = fish
-			}
+			change_trade_goods = fish
 		}
 	}
 
@@ -2045,15 +2037,7 @@ country_event = {
 				duration = 3650
 			}
 			remove_province_modifier = fee_trade_goods_foreign_craftsman_palermo
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				change_trade_goods = olive_oil
-			}
-			else = {
-				change_trade_goods = fish
-			}
+			change_trade_goods = fish
 		}
 	}
 }

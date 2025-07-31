@@ -373,6 +373,7 @@ bul_expert_diplomats_independent = {
 }
 bul_kreposti_rebuilt = {
 	local_defensiveness = 0.2
+	local_manpower_modifier = 0.33
 	local_fort_maintenance_modifier = -0.9
 }
 bul_repaired_theodosian_walls = {
@@ -453,7 +454,8 @@ bul_mare_nostrum_mod = {
 
 #3rd
 bul_rights_to_balkans = {
-	province_warscore_cost = -0.05
+	province_warscore_cost = -0.1
+	core_creation = -0.1
 }
 bul_bulgarian_militarization = {
 	discipline = 0.025
@@ -508,8 +510,8 @@ bul_the_dream = {
 
 #5th
 bul_bulgarian_steaks = {
-	land_morale = 0.05
-	shock_damage = 0.1
+	land_morale = 0.1
+	shock_damage = 0.15
 }
 bul_subsidized_the_migrants = {
 	culture_conversion_cost = -0.15
