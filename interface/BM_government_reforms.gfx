@@ -365,4 +365,10 @@ spriteTypes = {
 		name = "government_reform_legitimation_through_representation"
 		texturefile = "gfx//interface//government_reform_icons//legitimation_through_representation.dds"
 	}
+		
+	spriteType = {
+		name = "government_reform_economy_industry"
+		texturefile = "gfx//interface//government_reform_icons//economy_industry.dds"
+	}
 }
+economy_industry

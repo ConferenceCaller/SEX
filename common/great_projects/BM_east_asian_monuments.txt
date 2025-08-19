@@ -436,8 +436,7 @@ fu_foreign_quarters = { #Diaolou.
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			trade_steering = 0.05
-			diplomatic_upkeep = 1
+			trade_steering = 0.1
 		}
 		on_upgraded = { 
 			1365 = {
@@ -474,14 +473,13 @@ fu_foreign_quarters = { #Diaolou.
 		region_modifier = { }
 		country_modifiers = {
 			trade_steering = 0.1
-			diplomatic_upkeep = 1
 			trade_company_investment_cost = -0.1
 		}
 		on_upgraded = { 
 			1365 = {
 				add_trade_modifier = {
 					who = root
-					duration = 5475
+					duration = 10950
 					power = 10
 					key = gbr_influence_of_the_trade_company
 				}
@@ -489,7 +487,7 @@ fu_foreign_quarters = { #Diaolou.
 			1361 = {
 				add_trade_modifier = {
 					who = root
-					duration = 5475
+					duration = 10950
 					power = 10
 					key = gbr_influence_of_the_trade_company
 				}
@@ -497,7 +495,7 @@ fu_foreign_quarters = { #Diaolou.
 			4358 = {
 				add_trade_modifier = {
 					who = root
-					duration = 5475
+					duration = 10950
 					power = 10
 					key = gbr_influence_of_the_trade_company
 				}
@@ -512,31 +510,31 @@ fu_foreign_quarters = { #Diaolou.
 		region_modifier = { }
 		country_modifiers = {
 			trade_steering = 0.15
-			diplomatic_upkeep = 1
 			trade_company_investment_cost = -0.2
+			trade_company_governing_cost = -0.2
 		}
 		on_upgraded = { 
 			1365 = {
 				add_trade_modifier = {
 					who = root
-					duration = 5475
-					power = 25
+					duration = 21900
+					power = 20
 					key = gbr_influence_of_the_trade_company
 				}
 			}
 			1361 = {
 				add_trade_modifier = {
 					who = root
-					duration = 5475
-					power = 25
+					duration = 21900
+					power = 20
 					key = gbr_influence_of_the_trade_company
 				}
 			}
-			4358 = {
+			2699 = {
 				add_trade_modifier = {
 					who = root
-					duration = 5475
-					power = 25
+					duration = 21900
+					power = 20
 					key = gbr_influence_of_the_trade_company
 				}
 			}
@@ -694,6 +692,754 @@ nakhonluang = {
 		}
 		on_upgraded = { 
 			add_stability_or_adm_power = yes
+		}
+	}
+}
+
+daming_palace = {
+	start = 700 #Xi'an in Shaanxi.
+	date = 01.01.663
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_governing_cost = -0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			power_projection_from_insults = 0.5
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { 
+			local_governing_cost = -0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			power_projection_from_insults = 1
+			diplomatic_upkeep = 1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { 
+			local_governing_cost = -0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			power_projection_from_insults = 1
+			diplomatic_upkeep = 2
+			monthly_reform_progress = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+city_god = {
+	start = 1822 #Shanghai in South Jiangsu.
+	date = 01.01.1403
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_trade_power = 0.025
+		}
+		on_upgraded = {
+			add_base_production = 1
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_trade_power = 0.05
+			trade_efficiency = 0.025
+		}
+		on_upgraded = {
+			add_base_production = 2
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_trade_power = 0.1
+			trade_efficiency = 0.05
+			merchants = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = { 
+					province_has_center_of_trade_of_level = 1
+				}
+				add_or_upgrade_trade_building = yes
+			}
+			else = {
+				center_of_trade = 1
+			}
+		}
+	}
+}
+
+xichan = {
+	start = 669 #Fuzhou.
+	date = 01.01.867
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_buddhist_or_accepts_buddhism = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_buddhist_or_accepts_buddhism = yes
+	}
+	can_upgrade_trigger = {
+		province_is_buddhist_or_accepts_buddhism = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			reduced_trade_penalty_on_non_main_tradenode = 0.05
+			tolerance_heathen = 0.25
+			tolerance_heretic = 0.25
+		}
+		on_upgraded = { 
+			add_stability_or_adm_power = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+		}
+		region_modifier = { }
+		country_modifiers = {
+			reduced_trade_penalty_on_non_main_tradenode = 0.15
+			tolerance_heathen = 0.5
+			tolerance_heretic = 0.5
+		}
+		on_upgraded = { 
+			add_stability_or_adm_power = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = {
+		}
+		country_modifiers = {
+			reduced_trade_penalty_on_non_main_tradenode = 0.25
+			advisor_pool = 1
+			tolerance_heathen = 1
+			tolerance_heretic = 1
+		}
+		on_upgraded = {
+			add_stability_or_adm_power = yes
+		}
+	}
+}
+
+qiao = { #Zaizhong Hall.
+	start = 693 #Taiyuan.
+	date = 01.01.1756
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.05
+		}
+		region_modifier = { }
+		country_modifiers = {
+			envoy_travel_time = -0.1
+			embargo_efficiency = 0.25
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			trade_goods_size = 2
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			envoy_travel_time = -0.15
+			embargo_efficiency = 0.33
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			trade_goods_size = 3
+		}
+		area_modifier = {
+			trade_goods_size_modifier = 0.15
+		 }
+		region_modifier = { }
+		country_modifiers = {
+			envoy_travel_time = -0.25
+			embargo_efficiency = 0.5
+		}
+		on_upgraded = { 
+			custom_tooltip = BM_qiao_great_project_TT
+		}
+	}
+}
+
+six_harmonies_pagoda = {
+	start = 684 #Hangzhou in Zhejiang.
+	date = 01.01.970
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			naval_attrition = -0.1
+		}
+		on_upgraded = {
+			add_navy_tradition_or_dip_power = { amount = 10 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			naval_attrition = -0.15
+			navy_tradition_decay = -0.005
+		}
+		on_upgraded = { 
+			add_navy_tradition_or_dip_power = { amount = 20 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			naval_attrition = -0.25
+			range = 0.25
+			navy_tradition_decay = -0.01
+		}
+		on_upgraded = { 
+			add_navy_tradition_or_dip_power = { amount = 30 }
+		}
+	}
+}
+
+yuelu = {
+	start = 671 #Changsha.
+	date = 01.01.976
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			has_reform = celestial_empire
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			eunuchs_loyalty_modifier = 0.05
+			meritocracy = 0.1
+		}
+		on_upgraded = { 
+			add_reform_progress_small_effect = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			eunuchs_loyalty_modifier = 0.1
+			meritocracy = 0.25
+		}
+		on_upgraded = { 
+			add_reform_progress_medium_effect = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			eunuchs_loyalty_modifier = 0.15
+			meritocracy = 0.5
+			eunuchs_privilege_slots = 1
+		}
+		on_upgraded = {
+			add_reform_progress_big_effect = yes
+			custom_tooltip = BM_yuelu_TT
+		}
+	}
+}
+
+fu_lingyin_temple = {
+	start = 684 #Hangzhou in Zhejiang.
+	date = 01.01.328
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = east_asian
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_prosperity_growth = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			tolerance_own = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				add_harmonization_progress = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_prosperity_growth = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			harmonization_speed = 0.05
+			tolerance_own = 0.5
+		}
+		on_upgraded = {
+			owner = {
+				add_harmonization_progress = 10
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			local_prosperity_growth = 1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			harmonization_speed = 0.1
+			tolerance_own = 1
+			promote_culture_cost = -0.5
+		}
+		on_upgraded = {
+			owner = {
+				add_harmonization_progress = 15
+			}
+		}
+	}
+}
+
+tripitaka_koreana = { #Haensa Temple.
+	start = 4227 #Jinju.
+	date = 01.01.950 #Early 10th century AD.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR = {
+			culture = korean
+			culture = korean_new
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = korean
+			culture = korean_new
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture = korean
+			culture = korean_new
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_monthly_devastation = -0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			embracement_cost = -0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_monthly_devastation = -0.15
+		}
+		region_modifier = {
+		}
+		country_modifiers = {
+			idea_cost = -0.05
+			embracement_cost = -0.15
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = {
+			local_monthly_devastation = -0.25
+		}
+		country_modifiers = {
+			idea_cost = -0.1
+			embracement_cost = -0.25
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+banaue = {
+	start = 4348 #Ifugao.
+	date = 01.01.1 #?
+	time = { months = 0 }
+	build_cost = 500
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 500 }
+		province_modifiers = {
+			trade_goods_size_modifier = 0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			manpower_recovery_speed = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.2
+			local_manpower_modifier = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			manpower_recovery_speed = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 2000 }
+		province_modifiers = {
+			trade_goods_size = 2
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.3
+			local_manpower_modifier = 0.3
+		}
+		region_modifier = { }
+		country_modifiers = {
+			manpower_recovery_speed = 0.15
+		}
+		on_upgraded = {
 		}
 	}
 }

@@ -150,6 +150,21 @@ estate_eunuchs_imperial_council_privilege = {
 			yearly_corruption = -0.1
 		}
 	}
+	conditional_modifier = {
+		trigger = {
+			owns_core_province = 671
+				671 = {
+					has_great_project = {
+					type = yuelu
+					tier = 3
+				}
+			}
+		}
+		modifier = {
+			global_unrest = -1
+			max_absolutism = 10
+		}
+	}
 	ai_will_do = {
 		factor = 1
 		modifier = {

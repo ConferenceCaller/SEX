@@ -748,11 +748,18 @@ estate_nobles_monopoly_of_metals = {
 					iron = 1
 					copper = 1
 				}
+				owns_core_province = 693
+				693 = {
+					has_great_project = {
+						type = qiao
+						tier = 3
+					}
+				}
 			}
 			add_mercantilism = 1
 		}
 		add_years_of_owned_provinces_production_income = {
-			years = 8
+			years = 16
 			trigger = {
 				OR = {
 					trade_goods = iron
@@ -760,6 +767,25 @@ estate_nobles_monopoly_of_metals = {
 				}
 			}
 			custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+		}
+		else_if = {
+			limit = {
+				OR = {
+					iron = 1
+					copper = 1
+				}
+			}
+			add_mercantilism = 1
+			add_years_of_owned_provinces_production_income = {
+				years = 8
+				trigger = {
+					OR = {
+						trade_goods = iron
+						trade_goods = copper
+					}
+				}
+				custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+			}
 		}
 		custom_tooltip = estate_nobles_monopoly_of_metals_effect_tooltip
 	}
@@ -818,6 +844,21 @@ estate_nobles_monopoly_of_metals = {
 		modifier = {
 			max_absolutism = 10
 			nobles_privilege_slots = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			owns_core_province = 693
+			693 = {
+				has_great_project = {
+					type = qiao
+					tier = 3
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = 10
+			production_efficiency = 0.05
 		}
 	}
 	on_cooldown_expires = {

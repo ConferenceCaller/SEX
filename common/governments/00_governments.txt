@@ -285,6 +285,7 @@ monarchy = {
 				mint_towns_reform
 				kyoho_reforms_reform
 				metsuke_system_reform
+				elevated_land_gentry
 			}
 		}
 		state_and_religion = {
@@ -454,6 +455,7 @@ monarchy = {
 				diamond_of_the_earth_reform
 				bourgeoisie_aristocracy_reform
 				ghulam_governates_reform
+				grand_secretariat_reform
 			}
 		}
 		growth_of_administration = {
@@ -527,6 +529,8 @@ monarchy = {
 				society_of_agriculture_reform
 				customs_house_of_apena_sheep_reform
 				armenian_silk_traders_reform
+				industrialized_farming_practices_reform
+				tariffs_and_trading_reform
 			}
 		}
 		legitimation_of_power = {

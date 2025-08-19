@@ -544,6 +544,12 @@
 
  #UNSPECIFIED / COMMON
 
+ industrialized_farming_practices_reform: "Industrialized Farming Practices"
+ industrialized_farming_practices_reform_desc: "With the help of state subsidies and the employment of Imperial Surveyors across our Empire, we can most efficiently reorganize our farmlands into Imperial Farm Estates. These Estates will be owned directly by our Heavenly Emperor, governed by our most trusted vassals, and further industrialized to achieve agricultural outputs enough to feed our Empire."
+
+ tariffs_and_trading_reform: "Closed Haijin Economy"
+ tariffs_and_trading_reform_desc: "Foreign merchants cannot be trusted to not destabilising our markets to further enrichen themselves. By completely closing our ports and towns off from foreign leeches and instead focusing on internal trade we can further embolden our own production and economy."
+
  magnate_law_reform: "Magnate Law"
  magnate_law_reform_desc: "By granting the magnates privileges for their domains, we can leverage the burden of keeping the peasants in check to the nobles."
  mechanic_enables_magnate_law_yes: "Magnate Law: Unlock the '§YMagnate Law§!' privilege for the Nobility, granting up to §G-3.0§! National Unrest based on Nobility Land Ownership as well as §G-50.0%§! War Taxes Cost."
@@ -768,3 +774,5 @@
  desc_Peasant_Council: ""
 
  mechanic_enables_bear_arms_yes: "Right to Bear Arms: Unlocks the '§YRight to Bear Arms§!' Privilege for the Peasants, which allows us to increase our Infantry Combat Ability."
+
+ 

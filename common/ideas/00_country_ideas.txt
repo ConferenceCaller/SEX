@@ -2003,7 +2003,7 @@ HAB_ideas = {
 
 CHI_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.2
+		advisor_cost = -0.1
 		harsh_treatment_cost = -0.25
 	}
 	
@@ -2017,20 +2017,21 @@ CHI_ideas = {
 	free = yes		#will be added at load.
 	
 	nine_garrisons_of_the_great_wall = {
-		defensiveness = 0.05
+		fort_maintenance_modifier = -0.2
 		garrison_size = 0.25
-	}
-	revived_three_grand_divisions = {
-		army_tradition = 1
-	}
-	inward_perfection = {
-		idea_cost = -0.10
 	}
 	yellow_river_dykes = {
 		production_efficiency = 0.1
 	}
+	inward_perfection = {
+		idea_cost = -0.10
+		num_accepted_cultures = 1
+	}
 	salt_monopoly = {
 		trade_efficiency = 0.1
+	}
+	revived_three_grand_divisions = {
+		army_tradition = 1
 	}
 	single_whip_law = {
 		global_tax_modifier = 0.1
@@ -3831,7 +3832,7 @@ AVA_ideas = {
 GRA_ideas = {
 	start = {
 		global_tax_modifier = 0.15
-		religious_unity = 0.25
+		shock_damage = 0.15
 	}
 	
 	bonus = {
@@ -3845,22 +3846,26 @@ GRA_ideas = {
 	
 	people_of_the_book = {
 		tolerance_heathen = 3
+		religious_unity = 0.25
 	}
 	recover_al_andalus = {
 		core_creation = -0.15
+		land_morale = 0.1
 	}
 	beacon_of_learning = {
 		global_institution_spread = 0.1
+		technology_cost = -0.05
 	}
 	strait_of_gibraltar = {
-		global_own_trade_power = 0.1
-		trade_steering = 0.1
+		global_own_trade_power = 0.15
+		trade_steering = 0.15
 	}
 	alhambra = {
 		build_cost = -0.1
+		great_project_upgrade_cost = -0.1
 	}
 	moors = {
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.2
 	}
 	successor_caliphate_cordoba = {
 		prestige = 1
@@ -4564,8 +4569,8 @@ KNI_ideas = {
 
 KON_ideas = {
 	start = {
-		trade_efficiency = 0.1
-		land_attrition = -0.2
+		infantry_cost = -0.2
+		land_forcelimit_modifier = 0.2
 	}
 
 	bonus = {
@@ -4582,10 +4587,11 @@ KON_ideas = {
 	free = yes		#will be added at load.
 	
 	kongolese_tax_exchange = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.15
 	}
 	election_of_manikongos = {
-		heir_chance = 0.5
+		heir_chance = 1
+		same_culture_advisor_cost = -0.1
 	}
 	imported_european_weaponry = {
 		mil_tech_cost_modifier  = -0.1
@@ -11459,12 +11465,12 @@ UTN_ideas = {
 
 ASK_ideas = {
 	start = {
-		heir_chance = 0.5
-		war_exhaustion = -0.02
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1
 	}
 	
 	bonus = {
-		army_tradition = 0.5
+		army_tradition = 1
 	}
 
 	trigger = {
@@ -11474,6 +11480,7 @@ ASK_ideas = {
 	
 	ask_head_of_the_genji = {
 		prestige_from_land = 1
+		diplomatic_reputation = 1
 	}
 	
 	ask_defender_of_the_imperial_court = {
@@ -11486,14 +11493,16 @@ ASK_ideas = {
 
 	higashiyama_culture = {
 		prestige = 1
+		advisor_pool = 1
 	}
 	
 	tosen_bugyo = {
 		global_own_trade_power = 0.25
+		trade_range_modifier = 0.25
 	}
 	
 	ask_bugyoshu_and_hokushu = {
-		advisor_cost = -0.15
+		global_unrest = -1
 	}
 	
 	bakufu_chokkatsuchi = {
@@ -11501,8 +11510,8 @@ ASK_ideas = {
 	}
 	
 	ask_reform_shogun_shugo_system = {
-		vassal_forcelimit_bonus = 1
-		vassal_income = 0.25
+		vassal_manpower_bonus = 0.25
+		discipline = 0.05
 	}
 }
 
@@ -17102,7 +17111,7 @@ GMI_ideas = {
 DAI_ideas = {
 	start = {
 		hostile_attrition = 1.0
-		culture_conversion_cost = -0.15
+		morale_damage_received = -0.1
 	}
 	
 	bonus = {
@@ -17120,35 +17129,41 @@ DAI_ideas = {
 	
 	the_great_proclamation = {
 		infantry_power = 0.1
-	}
-	confucian_revival = {
-		prestige = 1
-	}
-	autonomous_villages = {
-		defensiveness = 0.2
-	}
-	village_militia = {
-		global_manpower_modifier = 0.25
-	}
-	don_dien = {
-		core_creation = -0.10
-	}
-	thuan_thien = {
 		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
+	}
+	confucian_revival = {
+		prestige = 1
+		advisor_cost = -0.1
+	}
+	autonomous_villages = {
+		defensiveness = 0.2
+		movement_speed = 0.1
+	}
+	village_militia = {
+		global_manpower_modifier = 0.25
+		recover_army_morale_speed = 0.1
+	}
+	don_dien = {
+		core_creation = -0.10
+		development_cost_in_primary_culture = -0.1
+	}
+	thuan_thien = {
+		possible_policy = 1
 		imperial_mandate = 0.05
 	}
 	literary_reform = {
 		technology_cost = -0.05
+		idea_cost = -0.05
 	}
 }
 
 MAJ_ideas = {
 	start = {
-		ae_impact = -0.15
+		naval_forcelimit_modifier = 0.25
 		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.3
@@ -17166,24 +17181,28 @@ MAJ_ideas = {
 		tag = MAJ
 	}
 	maj_nusantara_tributaries = {
-		vassal_forcelimit_bonus = 1
+		monarch_power_tribute = 1
 		reduced_liberty_desire = 10
 	}
 	maj_restore_candi = {
 		global_missionary_strength = 0.02
+		church_loyalty_modifier = 0.1
 	}
 	maj_maritime_silk_road = {
 		trade_efficiency = 0.1
+		global_trade_power = 0.1
 	}
 	maj_nusa_tenggara = {
 		colonists = 1
+		global_colonial_growth = 10
 		effect = { remove_temporary_colonist = yes }
 	}
 	maj_gajah_madas_oath = {
 		land_morale = 0.1
+		landing_penalty = -1
 	}
 	maj_majapahit_armada = {
-		heavy_ship_power = 0.1
+		heavy_ship_power = 0.15
 		navy_tradition = 1
 	}
 	maj_reformed_bhattara_saptaprabhu = {
@@ -17193,7 +17212,7 @@ MAJ_ideas = {
 
 ATJ_ideas = {
 	start = {
-		global_ship_cost = -0.1
+		trade_efficiency = 0.15
 		global_missionary_strength = 0.02
 	}
 	bonus = {
@@ -17208,12 +17227,15 @@ ATJ_ideas = {
 	free = yes
 	export_economy = {
 		global_trade_power = 0.1
+		ship_power_propagation = 0.1
 	}
 	islamise_sumatra = {
 		missionary_maintenance_cost = -0.25
+		years_of_nationalism = -5
 	}
 	rise_of_aceh = {
 		province_warscore_cost = -0.1
+		land_forcelimit_modifier = 0.1
 	}
 	military_adventures = {
 		naval_morale = 0.15

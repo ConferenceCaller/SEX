@@ -1019,6 +1019,27 @@ mint_towns_reform = {
 	}
 }
 
+elevated_land_gentry = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = elevated_land_gentry
+			religion = confucianism
+		}
+	}
+	modifiers = {
+		idea_cost = -0.05
+		global_unrest = -1
+		yearly_harmony = 0.1
+		nobles_influence_modifier = 0.05
+		eunuchs_influence_modifier = -0.05
+	}
+	ai = {
+		factor = 5
+	}
+}
+
 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 
 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 
 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 # TIER 4 
@@ -1089,9 +1110,38 @@ shakti_the_supreme_deity_reform = {
 	}
 }
 
-
-
-
+shakti_the_supreme_deity_reform = {
+	icon = "shakti_the_supreme_deity"
+	allow_normal_conversion = yes
+	potential = {
+		religion = hinduism
+		capital_scope = {
+			OR = {
+				region = hindusthan_region
+				region = bengal_region
+			}
+		}
+	}
+	trigger = {
+		religion = hinduism
+		capital_scope = {
+			OR = {
+				region = hindusthan_region
+				region = bengal_region
+			}
+		}
+	}
+	modifiers = {
+		brahmins_privilege_slots = 1
+		brahmins_hindu_loyalty_modifier = 0.15
+		manpower_in_true_faith_provinces = 0.05
+		mercenary_cost = -0.1
+		merc_maintenance_modifier = -0.1
+	}
+	ai = {
+		factor = 3
+	}
+}
 
 
 
@@ -1247,6 +1297,25 @@ diamond_of_the_earth_reform = {
 }
 
 
+grand_secretariat_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	potential = {
+		tag = MNG
+	}
+	trigger = {
+		tag = MNG
+	}
+	modifiers = {
+		monarch_diplomatic_power = 1
+		yearly_corruption = 0.05
+		advisor_cost = -0.1
+		diplomats = 1
+	}
+	ai = {
+		factor = 100
+	}
+}
 
 
 
@@ -1352,21 +1421,64 @@ confederation_of_cantons_reform = {
 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 
 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 
 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 # TIER 8 
+industrialized_farming_practices_reform = {
+	icon = economy_industry
+	allow_normal_conversion = yes
+	potential = {
+		is_emperor_of_china = yes
+	}
+	modifiers = {
+		max_absolutism = 5
+		global_trade_goods_size_modifier = 0.05
+		global_unrest = 1
+	}
+	custom_attributes = {
+		chinampa_farms_mechanic = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+tariffs_and_trading_reform = {
+	icon = merchant_aristocracy_reform
+	allow_normal_conversion = yes
+	potential = {
+		is_emperor_of_china = yes
+	}
+	modifiers = {
+		mercantilism_cost = -0.1
+		embargo_efficiency = 0.25
+		ship_power_propagation = 0.1
+	}
+	custom_attributes = {
+		enable_danish_mercantilism = yes
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { 
+				id = BM_government_reforms.6
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
 
 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 
 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 # TIER 9 

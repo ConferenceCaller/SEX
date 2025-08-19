@@ -381,6 +381,7 @@ BM_AI_collapse_of_ming = {
 		NOT = {
 			is_year = 1750
 		}
+		ai = yes
 	}	
 	
 	trigger = {
@@ -402,11 +403,17 @@ BM_AI_collapse_of_ming = {
 			tag = QNG
 		}
 	}
-
+	manpower_recovery_speed = 0.75
+	army_tradition_decay = 0.002
+	navy_tradition_decay = 0.002
+	imperial_mandate = -0.05
+	meritocracy = -0.5
 	global_spy_defence = -1
 	global_rebel_suppression_efficiency = -1
-	global_unrest = 10
-	years_of_nationalism = 20
+	global_unrest = 5
+	years_of_nationalism = 10
+	all_estate_loyalty_equilibrium = -0.1
+	all_estate_influence_modifier = 0.1
 }
 
 BM_swiss_fighting_defensive_wars = {

@@ -430,4 +430,60 @@ spriteTypes = {
 		name = "GFX_great_project_vardzia"	
 		texturefile = "gfx//interface//great_projects//great_project_vardzia.dds"
 	}
+						
+	spriteType = {
+		name = "GFX_great_project_yazd_windcatchers"	
+		texturefile = "gfx//interface//great_projects//great_project_yazd_windcatchers.dds"
+	}
+							
+	spriteType = {
+		name = "GFX_great_project_fu_hormuz_toll"	
+		texturefile = "gfx//interface//great_projects//great_project_fu_hormuz_toll.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_daming_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_daming_palace.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_city_god"	
+		texturefile = "gfx//interface//great_projects//great_project_city_god.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_xichan"	
+		texturefile = "gfx//interface//great_projects//great_project_xichan.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_qiao"	
+		texturefile = "gfx//interface//great_projects//great_project_qiao.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_six_harmonies_pagoda"	
+		texturefile = "gfx//interface//great_projects//great_project_six_harmonies_pagoda.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_yuelu"	
+		texturefile = "gfx//interface//great_projects//great_project_yuelu.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_fu_lingyin_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_fu_lingyin_temple.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_tripitaka_koreana"	
+		texturefile = "gfx//interface//great_projects//great_project_tripitaka_koreana.dds"
+	}
+								
+	spriteType = {
+		name = "GFX_great_project_banaue"	
+		texturefile = "gfx//interface//great_projects//great_project_banaue.dds"
+	}
+	
 }
