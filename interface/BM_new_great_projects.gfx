@@ -485,5 +485,77 @@ spriteTypes = {
 		name = "GFX_great_project_banaue"	
 		texturefile = "gfx//interface//great_projects//great_project_banaue.dds"
 	}
-	
+									
+	spriteType = {
+		name = "GFX_great_project_ise_shrine"	
+		texturefile = "gfx//interface//great_projects//great_project_ise_shrine.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_hongan_ji"	
+		texturefile = "gfx//interface//great_projects//great_project_hongan_ji.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_nishi"	
+		texturefile = "gfx//interface//great_projects//great_project_nishi.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_shuri"	
+		texturefile = "gfx//interface//great_projects//great_project_shuri.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_azuchi_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_azuchi_castle.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_edo_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_edo_castle.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_kotokuin"	
+		texturefile = "gfx//interface//great_projects//great_project_kotokuin.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_seigantoji"	
+		texturefile = "gfx//interface//great_projects//great_project_seigantoji.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_kumamoto"	
+		texturefile = "gfx//interface//great_projects//great_project_kumamoto.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_fu_kinkaku_ji"	
+		texturefile = "gfx//interface//great_projects//great_project_kinkakuji.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_ki_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_ki_castle.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_hagi_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_hagi_castle.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_hokkaido_shrine"	
+		texturefile = "gfx//interface//great_projects//great_project_hokkaido_shrine.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_takeda"	
+		texturefile = "gfx//interface//great_projects//great_project_takeda.dds"
+	}								
+	spriteType = {
+		name = "GFX_great_project_kotohira"	
+		texturefile = "gfx//interface//great_projects//great_project_kotohira.dds"
+	}
+	spriteType = {
+	name = "GFX_great_project_warwick"	
+	texturefile = "gfx//interface//great_projects//great_project_warwick.dds"
+	}
+	spriteType = {
+	name = "GFX_great_project_escola_de_marina"	
+	texturefile = "gfx//interface//great_projects//great_project_escola_de_marina.dds"
+	}
+	spriteType = {
+	name = "GFX_great_project_duomo_di_ancona"	
+	texturefile = "gfx//interface//great_projects//great_project_duomo_di_ancona.dds"
+	}
 }

@@ -375,3 +375,17 @@ superintendent_office = {
 	stability_cost_modifier = 0.1
 	religion = yes
 }
+
+jap_sengoku_jidai = {
+	global_tax_income = 6
+	army_tradition_decay = -0.001
+	unjustified_demands = -0.1
+	warscore_from_battles_modifier = 0.25
+}
+
+jap_sengoku_jidai_shogun = {
+	vassal_manpower_bonus = -0.2
+	vassal_forcelimit_bonus = -0.2
+	vassal_income = -0.25
+	army_tradition_decay = -0.001
+}

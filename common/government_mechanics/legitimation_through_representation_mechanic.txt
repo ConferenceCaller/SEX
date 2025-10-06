@@ -31,12 +31,14 @@ legitimation_through_representation_mechanic = {
 			icon = GFX_legitimation_through_representation_mechanic_obtain_new_paintings_button
 			trigger = {
 				years_of_income = 0.25
-				adm_power_cost = 100
+				adm_power_cost = 50
+				dip_power_cost = 50
 			}
 			effect = {
 				add_years_of_income = -0.25
-				adm_power_cost = -100
-				add_prestige_or_monarch_power = { amount = 10 }
+				adm_power_cost = -50
+				dip_power_cost = -50
+				add_prestige_or_monarch_power = { amount = 20 }
 				add_government_power = {
 					mechanic_type = legitimation_through_representation_mechanic
 					power_type = legitimation_through_representation_power
@@ -61,12 +63,14 @@ legitimation_through_representation_mechanic = {
 			icon = GFX_legitimation_through_representation_mechanic_host_a_court_festival_button
 			trigger = {
 				years_of_income = 0.25
-				dip_power_cost = 100
+				adm_power_cost = 100
 			}
 			effect = {
 				add_years_of_income = -0.25
-				dip_power_cost = -100
-				add_splendor = 50
+				adm_power_cost = -100
+				add_legitimacy_or_mil_power = {
+					amount = 20
+				}
 				add_government_power = {
 					mechanic_type = legitimation_through_representation_mechanic
 					power_type = legitimation_through_representation_power
@@ -91,15 +95,16 @@ legitimation_through_representation_mechanic = {
 			icon = GFX_legitimation_through_representation_mechanic_perform_an_opera_button
 			trigger = {
 				years_of_income = 0.25
-				mil_power_cost = 100
+				dip_power_cost = 100
 			}
 			effect = {
 				add_years_of_income = -0.25
-				mil_power_cost = -100
+				dip_power_cost = -100
+				add_splendor = 50
 				define_advisor = {
 					type = statesman
 					skill = 2
-					cost_multiplier = -0.33
+					cost_multiplier = 0.33
 				}
 				add_government_power = {
 					mechanic_type = legitimation_through_representation_mechanic
@@ -124,28 +129,18 @@ legitimation_through_representation_mechanic = {
 			gui = legitimation_through_representation_mechanic_interaction2
 			icon = GFX_legitimation_through_representation_mechanic_renovate_the_palace_button
 			trigger = {
-				years_of_income = 1.5
+				years_of_income = 1
 				adm_power_cost = 50
 				dip_power_cost = 50
 				mil_power_cost = 50
 			}
 			effect = {
-				add_years_of_income = -1.5
+				add_years_of_income = -1
 				adm_power_cost = -50
 				dip_power_cost = -50
 				mil_power_cost = -50
 				capital_scope = {
-					random_list = {
-						33 = {
-							add_base_tax = 1
-						}
-						33 = {
-							add_base_production = 1
-						}
-						33 = {
-							add_base_manpower = 1
-						}
-					}
+					add_random_development = 2
 				}
 				add_country_modifier = {
 					name = legitimation_through_representation_mechanic_renovate_the_palace_modifier

@@ -1847,9 +1847,11 @@ country_event = {
 			1110 = {
 				every_trade_node_member_province = { discover_country = ROOT }
 			}
-			country_event = {
-				id = FEE_Genoa_Events.31
-				days = 180
+			POR = {
+				country_event = {
+					id = FEE_Genoa_Events.31
+					days = 180
+				}
 			}
 		}
 	}

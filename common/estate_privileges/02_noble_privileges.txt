@@ -308,6 +308,18 @@ estate_nobles_officer_corp = {
 			add_army_tradition = -5
 		}
 		if = {
+			limit = { 
+				owns_core_province = 4181
+				2315 = {
+					has_great_project = {
+						type = kumamoto
+						tier = 3
+					}
+				}
+			}
+			add_army_tradition = 15
+		}
+		if = {
 			limit = {
 				has_country_flag = hab_military_reform_flag
 			}
@@ -348,6 +360,21 @@ estate_nobles_officer_corp = {
 			is_at_war = yes 
 		}
 		modifier = { land_morale = 0.1 }
+	}
+	conditional_modifier = {
+		trigger = {
+			owns_core_province = 4181
+			2315 = {
+				has_great_project = {
+					type = kumamoto
+					tier = 3
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = 5
+			reinforce_speed = 0.1
+		}
 	}
 	ai_will_do = {
 		factor = 0

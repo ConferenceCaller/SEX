@@ -328,3 +328,10 @@
  CM_moreflavour_SYR_minors.2.a: "We should continue this."
  CM_SYRIA_lebanon_prov_modif: "Lebanese Minority Protection"
  desc_CM_SYRIA_lebanon_prov_modif: ""
+
+
+ #MANCHURIA
+ CM_moreflavour_MANCHU.1.t: "A Simple Fishing Village"
+ CM_moreflavour_MANCHU.1.d: "In the forested river valleys and rugged coastlines of south-eastern Manchuria, the modest fishing village of Furdan has grown into a vital outpost of economic life. Unlike the nomadic herders and mountain raiders of the forested and mountaineous interior, the eastern coasts of Manchuria has developed a semi-sedentary lifestyle. Fish has provided vital sustenance through the harsh Manchurian winters, and sturgeon in particular yielded valuable roe that became a delicacy in trade networks spreading to Korea, Japan and Ming China. \n \nThough often overshadowed by the pastoralist and warrior image of the Jurchen tribes, the fishing villages and towns like Furdan represent that, despite in their fragmented state, the Jurchens utilized the varied landscapes of Manchuria - plains, forests, rivers, and seas - to sustain their people."
+ CM_moreflavour_MANCHU_better_fish: "Manchurian Fishing"
+ cesc_CM_moreflavour_MANCHU_better_fish: ""

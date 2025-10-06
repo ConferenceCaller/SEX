@@ -265,3 +265,57 @@
 
  banaue:0 "Banaue Rice Terraces"
  banaue_desc:0 ""
+
+ ise_shrine:0 "Amaterasu Shrine of Ise"
+ ise_shrine_desc:0 ""
+
+ hongan_ji:0 "Ishiyama Hongan-Ji"
+ hongan_ji_desc:0 ""
+
+ nishi:0 "Nishi-Higashi Dual Temples"
+ nishi_desc:0 ""
+
+ shuri:0 "Royal Palace of Shuri"
+ shuri_desc:0 ""
+
+ edo_castle:0 "Edo Castle Complex"
+ edo_castle_desc:0 ""
+
+ kotokuin:0 "Kótoku-in"
+ kotokuin_desc:0 ""
+ kotokuin_TT:0 "The '§YDevelopment of Temples§!' Church Privilege will no longer cost Max Absolutism and also grant: \n £sea_global_unrest£ National Unrest: §G-1.00§! \n"
+
+ seigantoji:0 "Seiganto-Ji"
+ seigantoji_desc:0 ""
+
+ kumamoto:0 "Kumamoto Castle"
+ kumamoto_desc:0 ""
+ kumamoto_TT:0 "The '§YBushi in Officer Corps§!' Bushi Privilege will no longer cost Max Absolutism, will instead grant §G+10.0§! Army Tradition, and also grant: \n £sea_reinforce_speed£ Reinforce Speed: §G+10.0%§! \n"
+
+ fu_kinkaku_ji:0 "Kinkaku-Ji"
+ fu_kinkaku_ji_desc:0 ""
+
+ ki_castle:0 "Ki-no-Jó"
+ ki_castle_desc:0 ""
+ ki_castle_TT:0 "The '§YClerical Inward Focus§!' Kannushi Privilege will no longer cost Max Absolutism and grant the scaling modifier depending on influence: \n Morale Damage Received: §G-10.0%§! \n"
+
+ hagi_castle:0 "Hagi Seaside Castle"
+ hagi_castle_desc:0 ""
+ BM_hagi_castle_province_modifier:0 "Hagi Seafortifications"
+ desc_BM_hagi_castle_province_modifier:0 ""
+
+ hokkaido_shrine:0 "Sapporo Jinja"
+ hokkaido_shrine_desc:0 ""
+
+ takeda:0 "Takeda Mountain Castle"
+ takeda_desc:0 ""
+
+ kotohira:0 "Konpira Dai-Gongen"
+ kotohira_desc:0 ""
+
+ duomo_di_ancona:0 "Duomo di Ancona"
+ duomo_di_ancona_desc:0 ""
+ duomo_di_ancona_TT:0 "The '§YChurch Sanctuaries§!' Clergy Privilege available for §Yatholics§! will no longer cost Max Absolutism and grant the scaling modifier depending on influence: \n Construction Cost: §G-10.0%§! \n"
+
+ warwick:0 "Warwick Castle"
+ warwick_desc:0 ""

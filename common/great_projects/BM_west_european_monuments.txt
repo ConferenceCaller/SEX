@@ -2080,3 +2080,218 @@ dannevirke = {
 		}
 	}
 }
+
+fu_escola_de_marina = {
+	start = 213 #Barcelona.
+	date = 01.01.1775
+	time = { months = 120 }
+	build_cost = 600
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR = {
+			culture = roman
+			culture_group = latin
+			culture_group = byzantine
+			culture_group = iberian
+			culture_group = french
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = roman
+			culture_group = latin
+			culture_group = byzantine
+			culture_group = iberian
+			culture_group = french
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture = roman
+			culture_group = latin
+			culture_group = byzantine
+			culture_group = iberian
+			culture_group = french
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+
+	tier_0 = {
+		upgrade_time = { months = 60 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+	}
+
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_sailors_modifier = 0.5
+			block_slave_raid = yes
+		}
+		area_modifier = {
+		}
+		region_modifier = { }
+		country_modifiers = {
+			galley_power = 0.05
+			sailor_maintenance_modifer = -0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+		}
+		area_modifier = {
+			block_slave_raid = yes
+			local_sailors_modifier = 0.5
+		}
+		region_modifier = { }
+		country_modifiers = {
+			navy_tradition = 0.5
+			galley_power = 0.05
+			sailor_maintenance_modifer = -0.15
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_sailors_modifier = 1
+			block_slave_raid = yes
+			local_has_galleass = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			navy_tradition = 1
+			galley_power = 0.1
+			sailor_maintenance_modifer = -0.25
+			allowed_galleass_fraction = 0.1
+			has_galleass = yes
+		}
+		on_upgraded = { }
+	}
+}
+
+warwick = {
+    start = 4372 #Coventry.
+    date = 01.01.1068
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR = {
+			culture = normand
+			culture_group = british
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = normand
+			culture_group = british
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture = normand
+			culture_group = british
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			nobles_loyalty_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = { add_army_tradition_or_mil_power = { amount = 10 } }
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			nobles_loyalty_modifier = 0.1
+			legitimacy = 0.25
+		}
+		conditional_modifier = {
+			trigger = { 
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			modifier = { 
+				land_maintenance_modifier = -0.05
+			}
+		}
+		on_upgraded = {
+			owner = { add_army_tradition_or_mil_power = { amount = 25 } }
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.75
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			nobles_loyalty_modifier = 0.15
+			legitimacy = 0.5
+		}
+		conditional_modifier = {
+			trigger = { 
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			modifier = { 
+				land_maintenance_modifier = -0.1
+			}
+		}
+		on_upgraded = {
+			owner = { add_army_tradition_or_mil_power = { amount = 33 } }
+		}
+	}
+}

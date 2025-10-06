@@ -1,0 +1,65 @@
+# Cashmere Wool
+country_event = {
+	id = CM_moreflavour_MANCHU.1
+	title = CM_moreflavour_MANCHU.1.t
+	desc = CM_moreflavour_MANCHU.1.d
+	picture = east_asian_COLONIZATION_eventPicture
+
+	major_trigger = {
+		culture = manchu
+	}
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2106
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.7000.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		2106 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		every_country = {
+			limit = { 
+				culture = manchu 
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+		}
+
+		hidden_effect = {
+			every_province = {
+				limit = {
+					region = manchuria_region
+					culture = manchu
+					trade_goods = fish
+				}
+				add_permanent_province_modifier = {
+					name = CM_moreflavour_MANCHU_better_fish
+					duration = 3650
+				}
+				2106 = {
+					add_permanent_province_modifier = {
+						name = CM_moreflavour_MANCHU_better_fish
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+}

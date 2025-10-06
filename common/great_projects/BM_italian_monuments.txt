@@ -759,13 +759,13 @@ uffizi = {
 				}
 				owner = {
 					overlord = {
-						add_prestige_or_monarch_power = { amount = 10 }
+						add_prestige_or_monarch_power = { amount = 25 }
 					}
 				}
 			}
 			else = {
 				owner = {
-					add_prestige_or_monarch_power = { amount = 10 }
+					add_prestige_or_monarch_power = { amount = 25 }
 				}
 			}
 		}
@@ -807,13 +807,13 @@ uffizi = {
 				}
 				owner = {
 					overlord = {
-						add_prestige_or_monarch_power = { amount = 25 }
+						add_prestige_or_monarch_power = { amount = 50 }
 					}
 				}
 			}
 			else = {
 				owner = {
-					add_prestige_or_monarch_power = { amount = 25 }
+					add_prestige_or_monarch_power = { amount = 50 }
 				}
 			}
 		}
@@ -855,15 +855,97 @@ uffizi = {
 				}
 				owner = {
 					overlord = {
-						add_prestige_or_monarch_power = { amount = 50 }
+						add_prestige_or_monarch_power = { amount = 100 }
 					}
 				}
 			}
 			else = {
 				owner = {
-					add_prestige_or_monarch_power = { amount = 50 }
+					add_prestige_or_monarch_power = { amount = 100 }
 				}
 			}
+		}
+	}
+}
+
+
+duomo_di_ancona = {
+	start = 119 #Ancona.
+	date = 01.01.1017
+	time = { months = 0 }
+	build_cost = 700
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 0.5
+			monthly_fervor_increase = 0.25
+			church_power_modifier = 0.05
+			vassal_income = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 1
+			monthly_fervor_increase = 0.5
+			church_power_modifier = 0.1
+			vassal_income = 0.25
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 2
+			monthly_fervor_increase = 1
+			church_power_modifier = 0.25
+			vassal_income = 0.33
+		}
+		on_upgraded = { 
+			custom_tooltip = duomo_di_ancona_TT
 		}
 	}
 }
