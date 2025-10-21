@@ -284,6 +284,18 @@
  portuguese_cortes_reform: "Portugese Cortes"
  portuguese_cortes_reform_desc: "The Cortes was an assembly of representatives of the nobles, clergy and bourgeoisie. Much alike a the various forms of parliaments in Europe at the time, it was used by the Portugese Monarchy to sway influence over the estates and make sure their concerns were heard. It was often tradition that the Portugese King would rely on small assemblies of notables, and only summoned the full Cortes on extraordinary occasions."
 
+ mechanic_enables_cortes_yes:0 "The '§YSupremacy over the Crown§!' Nobility Privilege will now grant an event every §Y20§! years that grant rewards depending on our choices."
+
+ portuguese_empire_reform: "Portuguese Empire"
+ portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility, clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people. We shall lead the civilizing mission in our territories and beyondm we shall encompass racial tolerance and humanism towards our subjects unlike Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
+ BM_form_portugese_empire_title:0 "Declare the Portugese Empire"
+ BM_form_portugese_empire_desc:0 "We have cemented our dominant rule in across the world, all the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and it's citizens are all Portugese subjects whether they speak another language or have different customs. Under the flag of Portugal, we are all Portugese, we are all citizens of the same Empire."
+ Kingdom_Of_Brazil:0 "Kingdom of Brazil"
+ desc_Kingdom_Of_Brazil:0 ""
+ mechanic_enables_kingdom_of_brazil_yes:0 "Our colonial subject in @BRA §YBrazil§! will receive: \n£sea_land_forcelimit_modifier£ Land Force Limit Modifier: §G+100.0%§!"
+ 
+ BM_free_second_golden_age_or_start_free_new_one_TT:0 "If we have had or are currently in a §YGolden Age§!, you will be able to start a second one. \nIf you have not yet had one, you will receive one for free."
+
  ## EVENTS:
  BM_government_reforms.7.t: "The Cortes of [GetYear]"
  BM_government_reforms.7.d: "The King has summoned the annual Cortes, how should he spend his time?"
@@ -318,8 +330,6 @@
 
  casa_de_india_reform: "Casa da India"
  casa_de_india_reform_desc: "Originally established to oversee the Iberian and Moroccan trade routes, the Casa da India now helps manage the west indies, the gold mines of africa, and the far eastern provinces, providing us with many profitable routes of trade."
- mechanic_enable_casa_de_india_yes: "Casa da India: Provinces in §YTrade Companies§! receives '§YFeitoria Trade Post§!' modifier granting: \nLocal Trade Value Modifier: §G+15.0%§! \nGoods Produced Modifier: §G+15.0%§!"
- BM_casa_de_india: "Feitoria Trade Post"
 
 
 

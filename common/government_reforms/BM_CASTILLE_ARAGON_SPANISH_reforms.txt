@@ -49,6 +49,12 @@ ARA_crown_of_aragon = {
 		}
 		has_parliament = yes
 	}
+	effect = {
+		BM_enable_crown_of_aragon_province_update = yes
+	}
+	removed_effect = {
+		BM_enable_crown_of_aragon_province_update = yes
+	}
 	boost_income = yes
 	custom_attributes = {
 		BM_enable_crown_of_aragon = yes

@@ -1650,6 +1650,7 @@ portuguese_monarchy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		primary_culture = portugese
+		has_reform = portuguese_monarchy_reform
 	}
 	nation_designer_trigger = {
 		primary_culture = portugese

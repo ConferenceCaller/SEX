@@ -28,4 +28,44 @@ country_decisions = {
 		}
 	}	
 
+	BM_form_portugese_empire = {
+		color = {
+			235 250 0
+		}
+		major = yes
+		potential = {
+			OR = {
+				tag = POR
+				has_reform = portuguese_monarchy_reform
+			}
+		}
+		allow = {
+			has_subject_of_type = colony
+			total_own_and_non_tributary_subject_development = 1000
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				colonial_region = colonial_brazil
+				is_city = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_country_flag = BM_has_enacted_golden_age
+					}
+					clr_country_flag = BM_has_enacted_golden_age
+				}
+				else = {
+					add_country_modifier = {
+						name = BM_in_economic_golden_era
+						duration = 9125
+					}
+				}
+			}
+			custom_tooltip = BM_free_second_golden_age_or_start_free_new_one_TT
+			add_government_reform = portuguese_empire_reform
+		}
+	}
+
 }

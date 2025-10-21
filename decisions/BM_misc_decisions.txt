@@ -15,6 +15,9 @@ country_decisions = {
 			dip_power = 100
 			mil_power = 100
 			is_bankrupt = no
+			NOT = {
+				has_country_modifier = BM_in_economic_golden_era
+			}
 		}
 		effect = {
 			set_country_flag = BM_has_enacted_golden_age

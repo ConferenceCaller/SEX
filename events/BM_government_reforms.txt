@@ -519,7 +519,7 @@ country_event = {
 				clr_country_flag = Cortes_Pope
 			}
 			Cortes_Gold = {
-				add_years_of_income = 0.8
+				add_years_of_income = 0.3
 				clr_country_flag = Cortes_Gold
 			}
 		}

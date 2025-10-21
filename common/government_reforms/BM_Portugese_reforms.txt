@@ -25,6 +25,13 @@ portuguese_cortes_reform = {
 			has_reform = portuguese_cortes_reform
 		}
 	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = BM_government_reforms.7
+			}
+		}
+	}
 	modifiers = {
 		legitimacy = 0.5
 		all_estate_loyalty_equilibrium = 0.05
@@ -35,6 +42,45 @@ portuguese_cortes_reform = {
 	}
 	ai = {
 		factor = 100
+	}
+}
+
+portuguese_empire_reform = {
+	icon = portuguese_thassalocracy
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = portuguese_empire_reform
+	}
+	trigger = {
+		has_reform = portuguese_empire_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	modifiers = {
+		trade_efficiency = 0.10
+		max_absolutism = 10
+		trade_company_investment_cost = -0.25
+		navy_tradition = 1
+	}
+	custom_attributes = {
+		enables_kingdom_of_brazil = yes
+	}
+	effect = {
+		hidden_effect = {
+			every_subject_country = {
+				ge_country_kingdom_of_brazil_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_subject_country = {
+				remove_country_modifier = Kingdom_Of_Brazil
+			}
+		}
+	}
+	ai = {
+		factor = 102
 	}
 }
 
@@ -150,7 +196,7 @@ casa_de_india_reform = {
 		merchants = 1
 	}
 	custom_attributes = {
-		enable_casa_de_india = yes
+		can_use_trade_post = yes
 		can_establish_trade_protectorates = yes
 	}
 	ai = {

@@ -26,7 +26,6 @@ BM_immigrant_settlements_province_update = {
 	}
 }
 
-
 #Province effect - used for buildings
 update_improved_military_buildings_modifier = {
 	if = {
@@ -254,34 +253,6 @@ BM_house_of_knights_effect = {
 					id = BM_government_reforms.5
 				}
 			}
-		}
-	}
-}
-
-
-BM_casa_de_india_province_update = {
-	if = {
-		limit = {
-			owner = {
-				has_government_attribute = enable_casa_de_india
-			}
-			is_owned_by_trade_company = yes
-		}
-		add_province_modifier = {
-			name = BM_casa_de_india
-			duration = -1
-		}
-	}
-	else = {
-		remove_province_modifier = BM_casa_de_india
-	}
-	if = {
-		limit = {
-			has_country_flag = por_feitoria_system
-			is_owned_by_trade_company = yes
-		}
-		owner = {
-			add_mercantilism_or_monarch_power = { amount = 1 }	
 		}
 	}
 }
@@ -744,5 +715,24 @@ ge_country_peasant_council_update = {
 	}
 	else = {
 		remove_country_modifier = Peasant_Council
+	}
+}
+
+ge_country_kingdom_of_brazil_update = {
+	if = {
+		limit = {
+			is_colonial_nation = yes
+			overlord = { has_government_attribute = enables_kingdom_of_brazil }
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+		add_country_modifier = {
+			name = "Kingdom_Of_Brazil"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Kingdom_Of_Brazil
 	}
 }

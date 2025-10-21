@@ -370,5 +370,10 @@ spriteTypes = {
 		name = "government_reform_economy_industry"
 		texturefile = "gfx//interface//government_reform_icons//economy_industry.dds"
 	}
+		
+	spriteType = {
+		name = "government_portuguese_thassalocracy"
+		texturefile = "gfx//interface//government_reform_icons//portuguese_thassalocracy.dds"
+	}
+	
 }
-economy_industry

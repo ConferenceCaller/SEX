@@ -158,11 +158,9 @@ BM_portugese_marines_training_fields_modifier = {
 	local_sailors_modifier = 0.5
 }
 
-BM_casa_de_india = {
-	trade_value_modifier = 0.15
-	trade_goods_size_modifier = 0.15
+Kingdom_Of_Brazil = {
+	land_forcelimit_modifier = 1
 }
-
 
 
 # FRANCE
@@ -281,16 +279,16 @@ BM_crown_of_aragon_aragon_area_modifier = {
 	local_manpower_modifier = 0.25
 }
 BM_crown_of_aragon_catalonia_area_modifier = {
-	province_trade_power_modifier = 0.2
+	province_trade_power_modifier = 0.25
 }
 BM_crown_of_aragon_valencia_area_modifier = {
-	trade_goods_size_modifier = 0.15
+	trade_goods_size_modifier = 0.25
 }
 BM_crown_of_aragon_corsica_sardinia_area_modifier = {
 	local_sailors_modifier = 0.25
 }
 BM_crown_of_aragon_sicily_area_modifier = {
-	local_tax_modifier = 0.33
+	local_tax_modifier = 0.25
 }
 
 # Legitimation through Representation

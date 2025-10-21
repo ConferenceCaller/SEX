@@ -2373,7 +2373,7 @@ dom_cas_missions_3_b = {
 			area = catalonia_area 
 			OR = {
 				NOT = { owned_by = ROOT }
-				local_autonomy_above_min = 10 
+				local_autonomy_above_min = 5 
 			}
 		}
 		trigger = {
@@ -2384,7 +2384,7 @@ dom_cas_missions_3_b = {
 			catalonia_area = {
 				type = all
 				owned_by = ROOT 
-				NOT = { local_autonomy_above_min = 10 }
+				NOT = { local_autonomy_above_min = 5 }
 			}
 			stability = 1 
 			NOT = { num_of_rebel_armies = 1 }
@@ -2408,7 +2408,7 @@ dom_cas_missions_3_b = {
 				limit = { government = monarchy }
 				catalonia_area = {
 					type = all 
-					NOT = { local_autonomy_above_min = 10 }
+					NOT = { local_autonomy_above_min = 5 }
 					owned_by = ROOT 
 				}
 				NOT = { 
