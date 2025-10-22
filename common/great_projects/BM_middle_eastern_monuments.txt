@@ -320,7 +320,7 @@ umayyad_mosque = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
+			monthly_piety_accelerator = 0.0005
 			manpower_in_true_faith_provinces = 0.05
 		}
 		on_upgraded = { 
@@ -349,7 +349,7 @@ umayyad_mosque = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
+			monthly_piety_accelerator = 0.001
 			manpower_in_true_faith_provinces = 0.1
 		}
 		on_upgraded = {
@@ -379,9 +379,9 @@ umayyad_mosque = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
-			manpower_in_true_faith_provinces = 0.1
-			manpower_recovery_speed = 0.05
+			monthly_piety_accelerator = 0.0015
+			manpower_in_true_faith_provinces = 0.15
+			manpower_recovery_speed = 0.1
 		}
 		on_upgraded = {
 			owner = {
@@ -479,9 +479,6 @@ ulugh_beg_observatory = {
 			}
 		}
 		on_upgraded = {
-			owner = {
-				add_innovativeness_or_monarch_power = { amount = 3 }
-			}
 		}
 	}
 	tier_2 = {
@@ -514,9 +511,6 @@ ulugh_beg_observatory = {
 			}
 		}
 		on_upgraded = {
-			owner = {
-				add_innovativeness_or_monarch_power = { amount = 5 }
-			}
 		}
 	}
 	tier_3 = {
@@ -553,9 +547,6 @@ ulugh_beg_observatory = {
 		}
 		
 		on_upgraded = {
-			owner = {
-				add_innovativeness_or_monarch_power = { amount = 10 }
-			}
 		}
 	}
 }
@@ -875,7 +866,6 @@ yazd_windcatchers = {
 		region_modifier = { }
 		country_modifiers = {
 			global_supply_limit_modifier = 0.1
-			prestige = 0.1
 		}
 		on_upgraded = {
 		}
@@ -895,7 +885,7 @@ yazd_windcatchers = {
 		country_modifiers = {
 			global_supply_limit_modifier = 0.25
 			land_attrition = -0.1
-			prestige = 0.25
+			prestige = 0.5
 		}
 		on_upgraded = {
 		}
@@ -914,7 +904,7 @@ yazd_windcatchers = {
 		country_modifiers = {
 			global_supply_limit_modifier = 0.33
 			land_attrition = -0.1
-			prestige = 0.5
+			prestige = 1
 		}
 		on_upgraded = {
 		}
@@ -1002,5 +992,256 @@ fu_hormuz_toll = {
 				add_mercantilism_or_monarch_power = { amount = 6 }
 			}
 		}
+	}
+}
+
+krak_des_chevaliers = { #Christian monument in the Middle East. Don't feel like making a new file specifically for this type of monument. It is fairly unique, and can't be used alongside Masyaf.
+	start = 378 #Trablos/Tarabulus al-Sham in Syria.
+	date = 01.01.1141
+	time = { months = 0 }
+	build_cost = 500
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 0.5
+			monthly_fervor_increase = 0.25
+			church_power_modifier = 0.05
+			enforce_religion_cost = -0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 1
+			monthly_fervor_increase = 0.5
+			church_power_modifier = 0.1
+			enforce_religion_cost = -0.25
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 1.5
+			monthly_fervor_increase = 0.75
+			church_power_modifier = 0.25
+			enforce_religion_cost = -0.33
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				custom_tooltip = empower_inquisitors_tt
+				hidden_effect = {
+					owner = { set_country_flag = empower_inquisitors_flag }
+				}
+			}
+		}
+	}
+}
+
+masyaf = {
+	start = 378 #Trablos/Tarabulus al-Sham in Syria.
+	date = 01.01.1141 #Real date unknown.
+	time = { months = 0 }
+	build_cost = 750
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.15
+			global_spy_defence = 0.25
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.33
+			global_spy_defence = 0.5
+			leader_land_manuever = 1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.33
+			global_spy_defence = 1
+			leader_land_manuever = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+alkarak_castle = {
+	start = 380 #Al Karak/Al Kerak in Transjordan.
+	date = 01.01.1142
+	time = { months = 0 }
+	build_cost = 500
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.1
+		}
+		area_modifier = {
+		}
+		region_modifier = { }
+		country_modifiers = {
+			cavalry_cost = -0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_hostile_attrition = 1
+		}
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			cavalry_cost = -0.1
+			cavalry_power = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_hostile_attrition = 1
+			max_hostile_attrition = 1
+		}
+		area_modifier = {
+			local_defensiveness = 0.3
+		}
+		region_modifier = { }
+		country_modifiers = {
+			cavalry_cost = -0.1
+			cavalry_power = 0.15
+		}
+		on_upgraded = { }
 	}
 }

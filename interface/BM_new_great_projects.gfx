@@ -547,15 +547,47 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_kotohira.dds"
 	}
 	spriteType = {
-	name = "GFX_great_project_warwick"	
-	texturefile = "gfx//interface//great_projects//great_project_warwick.dds"
+		name = "GFX_great_project_warwick"	
+		texturefile = "gfx//interface//great_projects//great_project_warwick.dds"
 	}
 	spriteType = {
-	name = "GFX_great_project_escola_de_marina"	
-	texturefile = "gfx//interface//great_projects//great_project_escola_de_marina.dds"
+		name = "GFX_great_project_escola_de_marina"	
+		texturefile = "gfx//interface//great_projects//great_project_escola_de_marina.dds"
 	}
 	spriteType = {
-	name = "GFX_great_project_duomo_di_ancona"	
-	texturefile = "gfx//interface//great_projects//great_project_duomo_di_ancona.dds"
+		name = "GFX_great_project_kreuzenstein"	
+		texturefile = "gfx//interface//great_projects//great_project_kreuzenstein.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_zolkiew"	
+		texturefile = "gfx//interface//great_projects//great_project_zolkiew.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_segovia_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_segovia_castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_krak_des_chevaliers"	
+		texturefile = "gfx//interface//great_projects//great_project_krak_des_chevaliers.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_masyaf"	
+		texturefile = "gfx//interface//great_projects//great_project_masyaf.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_alkarak_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_alkarak_castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_aachen_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_aachen_cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_ME_aachen_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_ME_aachen_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_limburg_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_limburg_cathedral.dds"
 	}
 }

@@ -11,6 +11,7 @@ the_combination_act = {
 	}
 	
 	production_efficiency = 0.2
+	global_unrest = -1
 
 	effect = {}
 	removed_effect = {}
@@ -419,7 +420,7 @@ the_tolerance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	reform_progress_growth = 0.1
+	reform_progress_growth = 0.2
 	idea_cost = -0.1
 
 	effect = {}
@@ -767,6 +768,7 @@ vassal_obligations_act = {
 	
 	diplomatic_upkeep = 2 
 	vassal_forcelimit_bonus = 1
+	vassal_naval_forcelimit_bonus = 0.5
 	
 	effect = {}
 	removed_effect = {}
@@ -808,7 +810,7 @@ foreign_advisors = {
 		full_idea_group = innovativeness_ideas
 	}	
 	
-	advisor_cost = -0.1
+	advisor_cost = -0.15
 	ae_impact = -0.1
 	
 	effect = {}
@@ -876,7 +878,7 @@ overseas_dominions = {
 	}	
 	
 	reduced_liberty_desire_on_other_continent = 20
-	vassal_naval_forcelimit_bonus = 0.25
+	vassal_sailors_bonus = 0.5
 	vassal_manpower_bonus = 0.25
 	
 	effect = {}
@@ -1090,7 +1092,7 @@ harbour_administration = {
 		full_idea_group = administrative_ideas
 	}
 
-	embracement_cost = -0.2
+	naval_maintenance_modifier = -0.15
 	global_ship_recruit_speed = -0.2
 	navy_tradition_decay = -0.01
 	
@@ -1400,6 +1402,7 @@ cultural_understanding = {
 		full_idea_group = humanist_ideas
 		full_idea_group = spy_ideas
 	}	
+
 	num_accepted_cultures = 1
 	spy_offence = 0.2
 	rebel_support_efficiency = 1
@@ -1456,7 +1459,6 @@ the_citrus_statute = {
 
 diplomatic_cooperation_act = {
 	monarch_power = DIP
-
 
 	potential = {
 		has_idea_group = innovativeness_ideas
@@ -1531,6 +1533,7 @@ church_sponsored_guilds = {
 		full_idea_group = religious_ideas
 		full_idea_group = trade_ideas
 	}
+
 	global_tax_modifier = 0.1
 	global_trade_goods_size_modifier = 0.1
 	global_missionary_strength = 0.01
@@ -1578,6 +1581,7 @@ anti_heresy_act = {
 	shock_damage = 0.1
 	global_heretic_missionary_strength = 0.03
 	global_heathen_missionary_strength = 0.01
+
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
@@ -1646,8 +1650,8 @@ to_the_ground_policy = {
 		full_idea_group = horde_gov_ideas
 	}
 	
-	raze_power_gain = 0.33
-	horde_unity = 1
+	raze_power_gain = 0.25
+	horde_unity = 0.5
 	
 	effect = {}
 	removed_effect = {}
@@ -1669,8 +1673,8 @@ calming_the_tides_policy = {
 		full_idea_group = horde_gov_ideas
 	}
 	
-	global_unrest = -2
-	prestige = 0.5
+	global_unrest = -1
+	prestige = 1
 	
 	effect = {}
 	removed_effect = {}
@@ -1875,6 +1879,7 @@ ora_et_labora_policy = {
 		full_idea_group = innovativeness_ideas
 		full_idea_group = theocracy_gov_ideas
 	}
+	
 	trade_efficiency = 0.05
 	global_trade_goods_size_modifier = 0.1
 	land_attrition = -0.2

@@ -483,16 +483,8 @@ BM_enable_crown_of_aragon_province_update = {
 			owner = {
 				has_government_attribute = BM_enable_crown_of_aragon
 			}
-			OR = {
-				area = aragon_area
-				area = catalonia_area
-				area = valencia_area
-				area = corsica_sardinia_area
-				area = western_sicily_area
-				area = sicily_area
-			}
 		}
-		if = {
+		every_owned_province = {
 			limit = { 
 				area = aragon_area
 			}
@@ -501,7 +493,7 @@ BM_enable_crown_of_aragon_province_update = {
 				duration = -1
 			}
 		}
-		if = {
+		every_owned_province = {
 			limit = { 
 				area = catalonia_area
 			}
@@ -510,7 +502,7 @@ BM_enable_crown_of_aragon_province_update = {
 				duration = -1
 			}
 		}
-		if = {
+		every_owned_province = {
 			limit = { 
 				area = valencia_area
 			}
@@ -519,7 +511,7 @@ BM_enable_crown_of_aragon_province_update = {
 				duration = -1
 			}
 		}
-		if = {
+		every_owned_province = {
 			limit = { 
 				area = corsica_sardinia_area
 			}
@@ -528,7 +520,7 @@ BM_enable_crown_of_aragon_province_update = {
 				duration = -1
 			}
 		}
-		if = {
+		every_owned_province = {
 			limit = { 
 				OR = {
 					area = western_sicily_area

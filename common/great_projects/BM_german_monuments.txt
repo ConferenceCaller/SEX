@@ -1970,3 +1970,347 @@ graz_castle = {
 		}
 	}
 }
+
+kreuzenstein = {
+	start = 134 #Wienerwald. Technically it's right outside of Vienna but that province is already quite busy. I don't think this is a stretch.
+	date = 01.01.1150
+	time = { months = 120 }
+	build_cost = 800
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			vassal_manpower_bonus = 0.25
+		}
+		on_upgraded = {
+			add_base_manpower = 1
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			vassal_manpower_bonus = 0.33
+			diplomatic_reputation = 1
+		}
+		on_upgraded = {
+			add_base_manpower = 2
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			vassal_manpower_bonus = 0.5
+			diplomatic_reputation = 2
+			leader_cost = -0.1
+		}
+		on_upgraded = {
+			add_or_upgrade_fort_building = yes
+		}
+	}
+}
+
+aachen_cathedral = {
+	start = 1878 #Aachen.
+	date = 01.01.805
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			imperial_authority_value = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+		}
+		region_modifier = { }
+		country_modifiers = {
+			overextension_impact_modifier = -0.1
+			imperial_authority_value = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = {
+		}
+		country_modifiers = {
+			core_creation = -0.1
+			overextension_impact_modifier = -0.25
+			imperial_authority_value = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+ME_aachen_palace = {
+	start = 1878
+	date = 795.01.01
+	time = { months = 60 }
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 1 #that's correct
+	type = monument
+	build_trigger = { 
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			OR = {
+				is_part_of_hre = yes
+				is_emperor = yes
+				government_rank = 3
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			OR = {
+				is_part_of_hre = yes
+				is_emperor = yes
+				government_rank = 3
+			}
+		}
+	}
+	keep_trigger = { 
+	}
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {
+		}
+		area_modifier = { }
+		country_modifiers = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			tax_income = 12
+			local_tax_modifier = 0.1
+		}
+		area_modifier = { }
+		country_modifiers = {
+			reasons_to_elect = 5
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_emperor = yes
+				}
+			}
+			modifier = {
+				diplomatic_reputation = 1
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			tax_income = 24
+			local_tax_modifier = 0.25
+		}
+		area_modifier = { }
+		country_modifiers = {
+			reasons_to_elect = 10
+			max_absolutism_effect = 0.1
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_emperor = yes
+				}
+			}
+			modifier = {
+				diplomatic_reputation = 1
+				max_absolutism = 5
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			tax_income = 48
+			local_tax_modifier = 0.5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			reasons_to_elect = 15
+			max_absolutism_effect = 0.1
+			governing_capacity = 150
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					is_emperor = yes
+				}
+			}
+			modifier = {
+				diplomatic_reputation = 2
+				max_absolutism = 10
+			}
+		}
+	}
+}
+
+limburg_cathedral = {
+	start = 83 #Nassau.
+	date = 01.01.910
+	time = { months = 0 }
+	build_cost = 600
+	can_be_moved = no
+	starting_tier = 2
+	type = monument
+	on_built = { }
+	on_destroyed = { }
+	build_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion = {
+			religion = catholic
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {	}
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			trade_goods_size = 1
+		}
+		area_modifier = { 
+			local_build_cost = -0.1
+			local_build_time = -0.1
+		}
+		country_modifiers = {
+			papal_influence = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			trade_goods_size = 2
+		}
+		area_modifier = { 
+			local_build_cost = -0.2
+			local_build_time = -0.2
+		}
+		country_modifiers = {
+			papal_influence = 1
+			burghers_loyalty_modifier = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			trade_goods_size = 3
+		}
+		area_modifier = { 
+			local_build_cost = -0.3
+			local_build_time = -0.3
+		}
+		country_modifiers = {
+			papal_influence = 1.5
+			burghers_loyalty_modifier = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+}

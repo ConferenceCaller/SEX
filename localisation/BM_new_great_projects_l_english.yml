@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
  fu_axum_obelisk:0 "Obelisk of Aksum"
  fu_axum_obelisk_desc:0 ""
@@ -319,3 +319,36 @@
 
  warwick:0 "Warwick Castle"
  warwick_desc:0 ""
+
+ kreuzenstein:0 "Kreuzenstein Castle"
+ kreuzenstein_desc:0 ""
+
+ zolkiew:0 "Fortified City of Zólkiew"
+ zolkiew_desc:0 ""
+
+ akkerman:0 "Akkerman Fortress"
+ akkerman_desc:0 ""
+
+ segovia_castle:0 "Alcázar of Segovia"
+ segovia_castle_desc:0 ""
+
+ krak_des_chevaliers:0 "Karak des Chevaliers"
+ krak_des_chevaliers_desc:0 ""
+
+ masyaf:0 "Masyaf Stronghold"
+ masyaf_desc:0 ""
+
+ alkarak_castle:0 "Qal'at al-Karak"
+ alkarak_castle_desc:0 ""
+
+ aachen_cathedral:0 "Aachen Cathedral"
+ aachen_cathedral_desc:0 ""
+
+ ME_aachen_palace:0 "Palace of Charlemagne"
+ ME_aachen_palace_desc:0 ""
+
+ limburg_cathedral:0 "Georgsdom"
+ limburg_cathedral_desc:0 ""
+
+ fu_escola_de_marina:0 "Escola de Marina"
+ fu_escola_de_marina_desc:0 ""

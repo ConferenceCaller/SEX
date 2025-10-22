@@ -99,6 +99,7 @@ crusading_kingdom_reform = {
 	monastic = yes
 	custom_attributes = {
 		monastic_order = yes
+		free_religious_culture = yes
 	}
 	fixed_rank = 2
 }

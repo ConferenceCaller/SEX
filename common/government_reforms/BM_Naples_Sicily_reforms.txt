@@ -307,7 +307,7 @@ constitution_of_melfi_reform = {
 		all_estate_influence_modifier = -0.1
 	}
 	custom_attributes = {
-		enables_liber_augustalis = yes #-10% Estate Loyalty while you are over 90% Legitimacy
+		enables_liber_augustalis = yes # +10% Estate Loyalty while you are over 90% Legitimacy
 	}
 	ai = {
 		factor = 100
